@@ -1,0 +1,16 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Local working data (not published)
+data/inbox/
+data/articles/
+data/pending.json
+data/_wav/
+data/tts_smoketest.wav
+
+# Keep tracked (the record + what gets served):
+#   data/state.json
+#   data/summaries/
+#   docs/  (feed.xml, cover.png, audio/*.mp3)
