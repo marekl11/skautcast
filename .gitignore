@@ -1,7 +1,17 @@
 # Python
 .venv/
+.venv-cv/
+.venv-fish/
 __pycache__/
 *.pyc
+
+# Secrets
+.elevenlabs_key
+.gemini_key
+
+# Local-only assets / experiment artifacts
+voices/
+checkpoints/
 
 # Local working data (not published)
 data/inbox/

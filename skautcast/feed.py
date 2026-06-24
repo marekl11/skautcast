@@ -1,9 +1,32 @@
 """Generate the podcast RSS feed (docs/feed.xml) from state.json."""
 from datetime import datetime, timezone
 
+import requests
 from feedgen.feed import FeedGenerator
 
 from . import config, state
+
+
+def _ensure_image(h: str, url: str):
+    """Download an episode's article image into docs/img/<hash>.<ext> and return
+    its Pages URL. Self-hosting avoids feedgen's png/jpg-extension requirement and
+    keeps artwork available even if the source moves it."""
+    if not url or not url.startswith("http"):
+        return None
+    imgdir = config.DOCS / "img"
+    imgdir.mkdir(parents=True, exist_ok=True)
+    for ext in ("jpg", "png"):
+        if (imgdir / f"{h}.{ext}").exists():
+            return f"{config.BASE_URL}/img/{h}.{ext}"
+    try:
+        r = requests.get(url, timeout=20, headers={"User-Agent": config.USER_AGENT})
+        if r.status_code != 200:
+            return None
+        ext = "png" if "png" in r.headers.get("Content-Type", "").lower() else "jpg"
+        (imgdir / f"{h}.{ext}").write_bytes(r.content)
+        return f"{config.BASE_URL}/img/{h}.{ext}"
+    except requests.RequestException:
+        return None
 
 
 def ensure_cover() -> None:
@@ -65,10 +88,16 @@ def build_feed() -> int:
         fe.id(h)
         fe.guid(h, permalink=False)
         fe.title(ep.get("title") or "Skautská novinka")
-        fe.description(ep.get("summary_text") or ep.get("title") or "")
+        desc = ep.get("summary_text") or ep.get("title") or ""
+        if ep.get("url"):
+            desc = f"{desc}\n\nZdroj: {ep['url']}"
+        fe.description(desc)
         fe.pubDate(_pubdate(ep.get("first_seen", "")))
         if ep.get("url"):
             fe.link(href=ep["url"])
+        img = _ensure_image(h, ep.get("image_url"))
+        if img:
+            fe.podcast.itunes_image(img)
         fe.enclosure(
             f"{config.BASE_URL}/{ep['audio_path']}",
             str(ep.get("audio_bytes") or 0),

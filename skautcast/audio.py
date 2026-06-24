@@ -12,17 +12,17 @@ from . import config
 def to_mp3(wav_path: Path, mp3_path: Path) -> Path:
     ff = imageio_ffmpeg.get_ffmpeg_exe()
     mp3_path.parent.mkdir(parents=True, exist_ok=True)
-    proc = subprocess.run(
-        [
-            ff, "-y", "-loglevel", "error",
-            "-i", str(wav_path),
-            "-ac", str(config.MP3_CHANNELS),
-            "-ar", str(config.MP3_SAMPLE_RATE),
-            "-b:a", config.MP3_BITRATE,
-            str(mp3_path),
-        ],
-        capture_output=True, text=True,
-    )
+    cmd = [ff, "-y", "-loglevel", "error", "-i", str(wav_path)]
+    audio_filter = getattr(config, "AUDIO_FILTER", "")
+    if audio_filter:
+        cmd += ["-af", audio_filter]
+    cmd += [
+        "-ac", str(config.MP3_CHANNELS),
+        "-ar", str(config.MP3_SAMPLE_RATE),
+        "-b:a", config.MP3_BITRATE,
+        str(mp3_path),
+    ]
+    proc = subprocess.run(cmd, capture_output=True, text=True)
     if proc.returncode != 0:
         raise RuntimeError(f"ffmpeg failed: {proc.stderr}")
     return mp3_path

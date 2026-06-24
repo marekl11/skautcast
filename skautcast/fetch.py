@@ -133,6 +133,7 @@ def fetch(html_path: Path, msgid: str, subject: str) -> list[dict]:
         # extract the article body
         article_text = ""
         title = ""
+        image_url = ""
         if page_html:
             article_text = trafilatura.extract(
                 page_html, url=final_url,
@@ -140,8 +141,11 @@ def fetch(html_path: Path, msgid: str, subject: str) -> list[dict]:
             ) or ""
             try:
                 md = trafilatura.extract_metadata(page_html)
-                if md and md.title:
-                    title = md.title.strip()
+                if md:
+                    if md.title:
+                        title = md.title.strip()
+                    if getattr(md, "image", None):
+                        image_url = md.image  # og:image -> episode artwork
             except Exception:
                 pass
 
@@ -160,6 +164,7 @@ def fetch(html_path: Path, msgid: str, subject: str) -> list[dict]:
             "title_hint": title,
             "source": source,
             "article_text": article_text,
+            "image_url": image_url,
             "newsletter_subject": subject,
             "newsletter_msgid": msgid,
             "fetched_at": state.now_iso(),
@@ -171,6 +176,7 @@ def fetch(html_path: Path, msgid: str, subject: str) -> list[dict]:
         st["episodes"][h] = {
             "url": key,
             "title": title,
+            "image_url": image_url,
             "first_seen": record["fetched_at"],
             "newsletter_subject": subject,
             "newsletter_msgid": msgid,

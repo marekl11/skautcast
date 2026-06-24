@@ -1,19 +1,14 @@
-# SkautCast dependencies
-#
-# IMPORTANT: install PyTorch FIRST, separately, because it needs its own index.
-#   GPU (NVIDIA, recommended on this machine):
-#     pip install torch --index-url https://download.pytorch.org/whl/cu126
-#   CPU only:
-#     pip install torch
-#
-# Then:  pip install -r requirements.txt
+# SkautCast — core dependencies (Gemini / ElevenLabs cloud TTS path)
+requests                # API calls, follow redirects, fetch articles + images
+beautifulsoup4          # parse the newsletter HTML
+lxml                    # fast parser for bs4 / trafilatura
+trafilatura             # extract clean article text + og:image
+feedgen                 # build the podcast RSS feed
+mutagen                 # read mp3 duration + size
+imageio-ffmpeg          # bundled ffmpeg binary (wav -> mp3), no system install
+Pillow                  # generate placeholder cover art
 
-coqui-tts>=0.27        # XTTS-v2 (maintained idiap fork; provides the `TTS` import)
-beautifulsoup4         # parse the newsletter HTML
-lxml                   # fast parser for bs4 / trafilatura
-requests               # follow sparkpost redirects, fetch articles
-trafilatura            # extract clean article text
-feedgen                # build the podcast RSS feed
-mutagen                # read mp3 duration + size
-imageio-ffmpeg         # bundled ffmpeg binary (wav -> mp3), no system install needed
-Pillow                 # generate placeholder cover art
+# --- Optional: local XTTS-v2 fallback (free/offline, lower quality) ----------
+# Only needed if you set TTS_BACKEND="xtts". Heavy (PyTorch). Install separately:
+#   pip install torch torchaudio torchcodec --index-url https://download.pytorch.org/whl/cu126
+#   pip install "coqui-tts>=0.27" "transformers<5"
