@@ -58,6 +58,29 @@ def nearby_text(a_tag) -> str:
     return a_tag.get_text(" ", strip=True)
 
 
+def extract_links(page_html: str, final_url: str, key: str) -> list[dict]:
+    """Author-curated links from the article body (markdown links via trafilatura),
+    as [{text, url}], excluding the article's own URL and images."""
+    out: list[dict] = []
+    try:
+        md = trafilatura.extract(
+            page_html, url=final_url, output_format="markdown",
+            include_links=True, include_comments=False, include_tables=False,
+        ) or ""
+    except Exception:
+        return out
+    seen = set()
+    for m in re.finditer(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", md):
+        text, u = m.group(1).strip(), m.group(2)
+        if u.rstrip("/") == key or u in seen or IMG_EXT_RE.search(u):
+            continue
+        seen.add(u)
+        out.append({"text": text[:80], "url": u})
+        if len(out) >= 8:
+            break
+    return out
+
+
 # --- link resolution + filtering -------------------------------------------
 def is_article_url(final_url: str) -> bool:
     p = urlparse(final_url)
@@ -134,6 +157,7 @@ def fetch(html_path: Path, msgid: str, subject: str) -> list[dict]:
         article_text = ""
         title = ""
         image_url = ""
+        links = []
         if page_html:
             article_text = trafilatura.extract(
                 page_html, url=final_url,
@@ -148,6 +172,7 @@ def fetch(html_path: Path, msgid: str, subject: str) -> list[dict]:
                         image_url = md.image  # og:image -> episode artwork
             except Exception:
                 pass
+            links = extract_links(page_html, final_url, key)
 
         source = "article"
         if len(article_text) < config.MIN_ARTICLE_CHARS:
@@ -165,6 +190,7 @@ def fetch(html_path: Path, msgid: str, subject: str) -> list[dict]:
             "source": source,
             "article_text": article_text,
             "image_url": image_url,
+            "links": links,
             "newsletter_subject": subject,
             "newsletter_msgid": msgid,
             "fetched_at": state.now_iso(),
@@ -177,6 +203,7 @@ def fetch(html_path: Path, msgid: str, subject: str) -> list[dict]:
             "url": key,
             "title": title,
             "image_url": image_url,
+            "links": links,
             "first_seen": record["fetched_at"],
             "newsletter_subject": subject,
             "newsletter_msgid": msgid,

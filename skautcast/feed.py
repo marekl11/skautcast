@@ -49,6 +49,22 @@ def ensure_cover() -> None:
     img.save(config.COVER_FILE)
 
 
+def _episode_description(ep: dict) -> str:
+    """Show notes: useful links first (source article + author-curated in-article
+    links), then the summary text."""
+    head = []
+    if ep.get("url"):
+        head.append(f"Článek: {ep['url']}")
+    for link in (ep.get("links") or []):
+        text = (link.get("text") or "").strip()
+        url = link.get("url")
+        if not url:
+            continue
+        head.append(f"{text}: {url}" if text else url)
+    body = ep.get("summary_text") or ep.get("title") or ""
+    return "Odkazy:\n" + "\n".join(head) + "\n\n" + body if head else body
+
+
 def _pubdate(iso: str) -> datetime:
     try:
         dt = datetime.fromisoformat(iso)
@@ -88,19 +104,19 @@ def build_feed() -> int:
         fe.id(h)
         fe.guid(h, permalink=False)
         fe.title(ep.get("title") or "Skautská novinka")
-        desc = ep.get("summary_text") or ep.get("title") or ""
-        if ep.get("url"):
-            desc = f"{desc}\n\nZdroj: {ep['url']}"
-        fe.description(desc)
+        fe.description(_episode_description(ep))
         fe.pubDate(_pubdate(ep.get("first_seen", "")))
         if ep.get("url"):
             fe.link(href=ep["url"])
         img = _ensure_image(h, ep.get("image_url"))
         if img:
             fe.podcast.itunes_image(img)
+        # ?v=<bytes> changes whenever the audio changes, so podcast clients
+        # re-download instead of keeping a stale cached file.
+        ver = ep.get("audio_bytes") or 0
         fe.enclosure(
-            f"{config.BASE_URL}/{ep['audio_path']}",
-            str(ep.get("audio_bytes") or 0),
+            f"{config.BASE_URL}/{ep['audio_path']}?v={ver}",
+            str(ver),
             "audio/mpeg",
         )
         if ep.get("duration_sec"):
