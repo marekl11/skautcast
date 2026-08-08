@@ -104,6 +104,7 @@ def build_feed() -> int:
     cover_url = f"{config.BASE_URL}/{config.COVER_FILE.name}"
     fg.logo(cover_url)
     fg.podcast.itunes_image(cover_url)
+    fg.podcast.itunes_subtitle(config.FEED_SUBTITLE)
     fg.podcast.itunes_explicit("no")
     fg.podcast.itunes_author(config.FEED_AUTHOR)
     fg.podcast.itunes_category(config.FEED_CATEGORY)

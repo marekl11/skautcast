@@ -37,6 +37,7 @@ BASE_URL = os.environ.get(
 ).rstrip("/")
 
 FEED_TITLE = "Skautské minutky"
+FEED_SUBTITLE = "Novinky z Křižovatky"   # itunes:subtitle — one-liner under the title
 FEED_AUTHOR = "Skautské minutky"
 FEED_EMAIL = os.environ.get("SKAUTCAST_EMAIL", "mareksakul@gmail.com")
 # NOTE: the closing AI sentence is the written half of the AI Act disclosure and is
