@@ -44,7 +44,7 @@ FEED_EMAIL = os.environ.get("SKAUTCAST_EMAIL", "mareksakul@gmail.com")
 FEED_DESCRIPTION = (
     "Skautské novinky z Křižovatky, namluvené a zkrácené na malé jednotky minut. "
     "Žádné prokousávání se články – projedeš názvy, vyzobeš si jen ty díly, co "
-    "chceš, a zbytek s klidem přeskočíš, ideálně třeba cestou na schůzku! "
+    "chceš, a zbytek s klidem přeskočíš. Ideálně třeba cestou na schůzku! "
     "Epizody vytváří umělá inteligence – píše shrnutí i je namlouvá."
 )
 FEED_LANGUAGE = "cs"
