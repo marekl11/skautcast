@@ -39,12 +39,13 @@ BASE_URL = os.environ.get(
 FEED_TITLE = "Skautské minutky"
 FEED_AUTHOR = "Skautské minutky"
 FEED_EMAIL = os.environ.get("SKAUTCAST_EMAIL", "mareksakul@gmail.com")
+# NOTE: the closing AI sentence is the written half of the AI Act disclosure and is
+# not optional — see the AI notice section below and README.
 FEED_DESCRIPTION = (
-    "Krátké zvukové shrnutí novinek z ústředí Junáka – českého skauta. "
-    "V každém díle vezmeme jeden článek pro vedoucí a střediska a převyprávíme "
-    "ho stručně a srozumitelně: co se děje, proč to je důležité a kde najdeš víc. "
-    "Žádné dlouhé čtení – jen to podstatné, ať máš přehled cestou do práce, "
-    "na procházce nebo cestou na tábor. "
+    "Skautské novinky z Křižovatky, namluvené a zkrácené na jednotky minut. "
+    "Žádné prokousávání se články – projedeš názvy, pustíš si jen ty díly, co se "
+    "tě týkají, a zbytek s klidem přeskočíš. Ideální cestou do práce, na schůzku "
+    "nebo na tábor. "
     "Epizody vytváří umělá inteligence – píše shrnutí i je namlouvá."
 )
 FEED_LANGUAGE = "cs"
