@@ -19,7 +19,10 @@ PENDING_FILE = DATA / "pending.json"  # list of hashes awaiting a summary
 DOCS = ROOT / "docs"             # GitHub Pages publish root
 AUDIO = DOCS / "audio"           # published mp3 episodes
 FEED_FILE = DOCS / "feed.xml"
-COVER_FILE = DOCS / "cover.jpg"  # jpg: the artwork has gradients PNG compresses badly
+# jpg: the artwork has gradients PNG compresses badly. The -vN suffix is cache-busting:
+# itunes:image can't carry a ?v= query (feedgen requires a .jpg/.png suffix), so bump the
+# number when the artwork changes to force players to re-fetch instead of serving a cached one.
+COVER_FILE = DOCS / "cover-v2.jpg"
 ASSETS = ROOT / "assets"         # intro jingle + generated AI-notice clips
 
 
