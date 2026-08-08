@@ -42,10 +42,9 @@ FEED_EMAIL = os.environ.get("SKAUTCAST_EMAIL", "mareksakul@gmail.com")
 # NOTE: the closing AI sentence is the written half of the AI Act disclosure and is
 # not optional — see the AI notice section below and README.
 FEED_DESCRIPTION = (
-    "Skautské novinky z Křižovatky, namluvené a zkrácené na jednotky minut. "
-    "Žádné prokousávání se články – projedeš názvy, pustíš si jen ty díly, co se "
-    "tě týkají, a zbytek s klidem přeskočíš. Ideální cestou do práce, na schůzku "
-    "nebo na tábor. "
+    "Skautské novinky z Křižovatky, namluvené a zkrácené na malé jednotky minut. "
+    "Žádné prokousávání se články – projedeš názvy, vyzobeš si jen ty díly, co "
+    "chceš, a zbytek s klidem přeskočíš, ideálně třeba cestou na schůzku! "
     "Epizody vytváří umělá inteligence – píše shrnutí i je namlouvá."
 )
 FEED_LANGUAGE = "cs"
