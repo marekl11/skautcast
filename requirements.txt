@@ -1,14 +1,9 @@
-# SkautCast — core dependencies (Gemini / ElevenLabs cloud TTS path)
-requests                # API calls, follow redirects, fetch articles + images
+# SkautCast — dependencies (Gemini cloud TTS pipeline)
+requests                # Gemini TTS calls, follow redirects, fetch articles + images
 beautifulsoup4          # parse the newsletter HTML
 lxml                    # fast parser for bs4 / trafilatura
 trafilatura             # extract clean article text + og:image
 feedgen                 # build the podcast RSS feed
 mutagen                 # read mp3 duration + size
-imageio-ffmpeg          # bundled ffmpeg binary (wav -> mp3), no system install
+imageio-ffmpeg          # bundled ffmpeg binary (wav -> mp3, jingle/notice mixing)
 Pillow                  # generate placeholder cover art
-
-# --- Optional: local XTTS-v2 fallback (free/offline, lower quality) ----------
-# Only needed if you set TTS_BACKEND="xtts". Heavy (PyTorch). Install separately:
-#   pip install torch torchaudio torchcodec --index-url https://download.pytorch.org/whl/cu126
-#   pip install "coqui-tts>=0.27" "transformers<5"

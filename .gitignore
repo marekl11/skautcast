@@ -1,26 +1,24 @@
 # Python
 .venv/
-.venv-cv/
-.venv-fish/
 __pycache__/
 *.pyc
 
 # Secrets
-.elevenlabs_key
 .gemini_key
+.elevenlabs_key
 
-# Local-only assets / experiment artifacts
+# Local-only experiment artifacts (leftovers from earlier voice tests)
 voices/
-checkpoints/
+voice_samples/
 
 # Local working data (not published)
 data/inbox/
 data/articles/
 data/pending.json
 data/_wav/
-data/tts_smoketest.wav
 
 # Keep tracked (the record + what gets served):
 #   data/state.json
 #   data/summaries/
+#   assets/  (jingle + generated AI-notice clips — needed to build audio)
 #   docs/  (feed.xml, cover.png, audio/*.mp3)

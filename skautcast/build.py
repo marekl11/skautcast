@@ -1,31 +1,29 @@
 """Synthesize audio for every summary, then rebuild the feed.
 
-For each data/summaries/<hash>.md, render it with the configured TTS backend
-(config.TTS_BACKEND: "gemini" / "elevenlabs" / "xtts") -> docs/audio/<hash>.mp3
--> update state -> regenerate docs/feed.xml. An episode is re-rendered whenever
-its summary text changes (tracked by a content hash), so editing a summary and
-re-running build refreshes just that episode.
+For each data/summaries/<hash>.md, render it with Gemini TTS -> docs/audio/<hash>.mp3,
+update state, and regenerate docs/feed.xml. Each episode gets an AI-narration notice
+and the intro jingle prepended (notice -> jingle -> speech). An episode is re-rendered
+whenever its summary text changes (tracked by a content hash); pass --force to
+re-render everything (e.g. after changing the audio pipeline).
 
-Usage:  python -m skautcast.build
+Usage:  python -m skautcast.build [--force]
 """
 import hashlib
 import re
+import sys
 
-from . import audio, config, feed, state
+from . import audio, config, feed, gemini, state
 
 _MD_LINK = re.compile(r"\[([^\]]+)\]\([^)]+\)")
 
 
-def parse_summary(path) -> tuple[str, str]:
-    raw = path.read_text(encoding="utf-8").strip()
-    lines = raw.splitlines()
-    title = path.stem
-    start = 0
+def parse_summary(raw: str, default_title: str) -> tuple[str, str]:
+    lines = raw.strip().splitlines()
+    title, start = default_title, 0
     if lines and lines[0].lstrip().startswith("#"):
         title = lines[0].lstrip("#").strip()
         start = 1
-    body = "\n".join(lines[start:]).strip()
-    return title, body
+    return title, "\n".join(lines[start:]).strip()
 
 
 def clean_for_tts(text: str) -> str:
@@ -36,27 +34,30 @@ def clean_for_tts(text: str) -> str:
     return text.strip()
 
 
-def _summary_sha(path) -> str:
-    return hashlib.sha1(path.read_bytes()).hexdigest()[:12]
+def _voice_for(h: str) -> str:
+    """Deterministically pick a Gemini voice from the pool based on the episode
+    hash, so the feed alternates male/female but a given episode is stable across
+    re-renders. Falls back to the single default voice if no pool is configured."""
+    pool = getattr(config, "GEMINI_VOICES", None) or [config.GEMINI_VOICE]
+    try:
+        idx = int(h[:8], 16) % len(pool)
+    except ValueError:
+        idx = 0
+    return pool[idx]
 
 
-def _synthesize(spoken: str, mp3_path, wav_path) -> None:
-    """Render `spoken` to mp3_path using the configured backend."""
-    backend = getattr(config, "TTS_BACKEND", "gemini")
-    if backend == "elevenlabs":
-        from . import elevenlabs
-        elevenlabs.synth_mp3(spoken, mp3_path)
-    elif backend == "gemini":
-        from . import gemini
-        gemini.synth_wav(spoken, wav_path)
-        audio.to_mp3(wav_path, mp3_path)
-    else:  # local XTTS fallback
-        from . import tts
-        tts.synth(spoken, wav_path)
-        audio.to_mp3(wav_path, mp3_path)
+def _render(spoken: str, mp3_path, wav_path, voice: str) -> None:
+    """Synthesize `spoken` with Gemini and encode to mp3, prepending the voice's
+    AI-notice and the intro jingle."""
+    gemini.synth_wav(spoken, wav_path, voice=voice)
+    intro = [
+        (audio.ensure_disclaimer(voice), config.DISCLAIMER_GAP_MS),
+        (config.JINGLE_FILE, config.JINGLE_GAP_MS),
+    ]
+    audio.to_mp3(wav_path, mp3_path, intro_clips=intro)
 
 
-def build() -> int:
+def build(force: bool = False) -> int:
     config.ensure_dirs()
     st = state.load_state()
     wav_dir = config.DATA / "_wav"
@@ -73,22 +74,24 @@ def build() -> int:
         summ = config.SUMMARIES / f"{h}.md"
         if not summ.exists():
             continue
+        data = summ.read_bytes()
+        sha = hashlib.sha1(data).hexdigest()[:12]
         mp3 = config.AUDIO / f"{h}.mp3"
-        sha = _summary_sha(summ)
-        # skip only if audio exists AND the summary hasn't changed since
-        if ep.get("audio_path") and mp3.exists() and ep.get("summary_sha") == sha:
+        # skip only if audio exists AND the summary hasn't changed since (unless forced)
+        if not force and ep.get("audio_path") and mp3.exists() and ep.get("summary_sha") == sha:
             continue
-        todo.append((h, ep, summ, sha))
+        todo.append((h, ep, summ, sha, data.decode("utf-8")))
 
     if not todo:
         print("[build] nothing to synthesize (all summaries up to date).")
-    for i, (h, ep, summ, sha) in enumerate(todo, 1):
-        title, body = parse_summary(summ)
+    for i, (h, ep, summ, sha, raw) in enumerate(todo, 1):
+        title, body = parse_summary(raw, summ.stem)
         spoken = clean_for_tts(f"{title}. {body}")
-        print(f"[build] ({i}/{len(todo)}) synthesizing: {title}", flush=True)
+        voice = _voice_for(h)
+        print(f"[build] ({i}/{len(todo)}) synthesizing [{voice}]: {title}", flush=True)
 
         mp3 = config.AUDIO / f"{h}.mp3"
-        _synthesize(spoken, mp3, wav_dir / f"{h}.wav")
+        _render(spoken, mp3, wav_dir / f"{h}.wav", voice)
         dur, size = audio.probe(mp3)
 
         ep.update(
@@ -96,6 +99,7 @@ def build() -> int:
             summary_text=body,
             summary_sha=sha,
             summary_path=str(summ.relative_to(config.ROOT)),
+            voice=voice,
             audio_path=f"audio/{h}.mp3",
             audio_bytes=size,
             duration_sec=dur,
@@ -110,4 +114,9 @@ def build() -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(0 if build() >= 0 else 1)
+    # Czech titles must survive a legacy-codepage Windows console.
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+    raise SystemExit(0 if build(force="--force" in sys.argv[1:]) >= 0 else 1)

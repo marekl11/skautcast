@@ -23,7 +23,18 @@ def publish(message: str) -> int:
         print("Then enable Pages: Settings -> Pages -> source = main / /docs")
         return 1
 
-    _git("add", "docs", "data/state.json", "data/summaries")
+    # git add is all-or-nothing: a single missing pathspec aborts the whole stage
+    # (and would then look like "nothing to publish"). Only add paths that exist,
+    # and fail loudly if the add itself errors.
+    specs = [p for p in ("docs", "data/state.json", "data/summaries")
+             if (config.ROOT / p).exists()]
+    if not specs:
+        print("[publish] nothing to add (expected paths are missing).")
+        return 1
+    add = _git("add", *specs)
+    if add.returncode != 0:
+        print(add.stdout, add.stderr)
+        return 1
     if _git("diff", "--cached", "--quiet").returncode == 0:
         print("[publish] nothing to publish.")
         return 0

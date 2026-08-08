@@ -243,4 +243,9 @@ def _main(argv: list[str]) -> int:
 
 
 if __name__ == "__main__":
+    # Czech titles must survive a legacy-codepage Windows console.
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
     raise SystemExit(_main(sys.argv[1:]))

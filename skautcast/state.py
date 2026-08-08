@@ -5,6 +5,7 @@ redo one. It is keyed by a short hash of the resolved article URL.
 """
 import json
 import hashlib
+import os
 from datetime import datetime, timezone
 
 from . import config
@@ -20,16 +21,24 @@ def now_iso() -> str:
 
 
 def load_state() -> dict:
-    if config.STATE_FILE.exists():
+    if not config.STATE_FILE.exists():
+        return {"newsletters_seen": [], "episodes": {}}
+    try:
         return json.loads(config.STATE_FILE.read_text(encoding="utf-8"))
-    return {"newsletters_seen": [], "episodes": {}}
+    except (json.JSONDecodeError, OSError) as exc:
+        raise RuntimeError(
+            f"{config.STATE_FILE} is unreadable/corrupt ({exc}). It is tracked in "
+            f"git — restore it with:  git checkout -- data/state.json"
+        ) from exc
 
 
 def save_state(state: dict) -> None:
+    """Write state.json atomically (write a temp file, then os.replace) so an
+    interrupted write can never leave the pipeline's only history file truncated."""
     config.STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
-    config.STATE_FILE.write_text(
-        json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
+    tmp = config.STATE_FILE.with_name(config.STATE_FILE.name + ".tmp")
+    tmp.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
+    os.replace(tmp, config.STATE_FILE)
 
 
 def is_known(state: dict, url: str) -> bool:

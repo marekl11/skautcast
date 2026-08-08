@@ -22,13 +22,19 @@ def _pcm_to_wav(pcm: bytes, path: Path, rate: int = 24000) -> None:
         w.writeframes(pcm)
 
 
-def synth_wav(text: str, wav_path: Path) -> Path:
+def synth_wav(text: str, wav_path: Path, voice: str | None = None,
+              style: str | None = None) -> Path:
+    """Synthesize `text` to a 24 kHz mono WAV. `style` overrides GEMINI_STYLE when
+    given (pass "" to read the text plainly, e.g. for the AI notice); None falls
+    back to the configured podcast style."""
     if not config.GEMINI_API_KEY:
         raise RuntimeError("GEMINI_API_KEY not set (env var or .gemini_key file).")
     wav_path = Path(wav_path)
     wav_path.parent.mkdir(parents=True, exist_ok=True)
+    voice = voice or config.GEMINI_VOICE
 
-    style = getattr(config, "GEMINI_STYLE", "")
+    if style is None:
+        style = getattr(config, "GEMINI_STYLE", "")
     prompt = f"{style}\n\n{text}" if style else text
 
     body = {
@@ -37,7 +43,7 @@ def synth_wav(text: str, wav_path: Path) -> Path:
             "responseModalities": ["AUDIO"],
             "speechConfig": {
                 "voiceConfig": {
-                    "prebuiltVoiceConfig": {"voiceName": config.GEMINI_VOICE}
+                    "prebuiltVoiceConfig": {"voiceName": voice}
                 }
             },
         },

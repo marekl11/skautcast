@@ -22,7 +22,16 @@ def _ensure_image(h: str, url: str):
         r = requests.get(url, timeout=20, headers={"User-Agent": config.USER_AGENT})
         if r.status_code != 200:
             return None
-        ext = "png" if "png" in r.headers.get("Content-Type", "").lower() else "jpg"
+        # Podcast artwork must be JPEG or PNG. Map the content type explicitly and
+        # skip anything else (webp/gif/untyped) so it falls back to the channel cover
+        # instead of shipping mislabeled bytes clients can't decode.
+        ctype = r.headers.get("Content-Type", "").lower()
+        if "png" in ctype:
+            ext = "png"
+        elif "jpeg" in ctype or "jpg" in ctype:
+            ext = "jpg"
+        else:
+            return None
         (imgdir / f"{h}.{ext}").write_bytes(r.content)
         return f"{config.BASE_URL}/img/{h}.{ext}"
     except requests.RequestException:
@@ -50,8 +59,9 @@ def ensure_cover() -> None:
 
 
 def _episode_description(ep: dict) -> str:
-    """Show notes: useful links first (source article + author-curated in-article
-    links), then the summary text."""
+    """Show notes: the AI disclosure at the very top (it must not be something the
+    reader has to scroll for), then useful links (source article + author-curated
+    in-article links), then the summary text."""
     head = []
     if ep.get("url"):
         head.append(f"Článek: {ep['url']}")
@@ -62,7 +72,13 @@ def _episode_description(ep: dict) -> str:
             continue
         head.append(f"{text}: {url}" if text else url)
     body = ep.get("summary_text") or ep.get("title") or ""
-    return "Odkazy:\n" + "\n".join(head) + "\n\n" + body if head else body
+
+    parts = [config.AI_DISCLOSURE_LINE]
+    if head:
+        parts.append("Odkazy:\n" + "\n".join(head))
+    if body:
+        parts.append(body)
+    return "\n\n".join(parts)
 
 
 def _pubdate(iso: str) -> datetime:
@@ -85,8 +101,9 @@ def build_feed() -> int:
     fg.description(config.FEED_DESCRIPTION)
     fg.language(config.FEED_LANGUAGE)
     fg.author({"name": config.FEED_AUTHOR, "email": config.FEED_EMAIL})
-    fg.logo(f"{config.BASE_URL}/cover.png")
-    fg.podcast.itunes_image(f"{config.BASE_URL}/cover.png")
+    cover_url = f"{config.BASE_URL}/{config.COVER_FILE.name}"
+    fg.logo(cover_url)
+    fg.podcast.itunes_image(cover_url)
     fg.podcast.itunes_explicit("no")
     fg.podcast.itunes_author(config.FEED_AUTHOR)
     fg.podcast.itunes_category(config.FEED_CATEGORY)

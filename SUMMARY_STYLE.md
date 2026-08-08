@@ -35,5 +35,6 @@ what you told them" structure.
 - **One topic per episode**, ~1.5–3 minutes spoken (roughly 1000–1800 characters).
 - First line is always `# <Episode title>` (becomes the AntennaPod episode name).
 
-The Gemini voice (Charon) is additionally prompted (config `GEMINI_STYLE`) for a calm
-but expressive, non-monotone delivery with emphasis on key words and short pauses.
+The Gemini voice (alternating Charon / Callirrhoe per episode) is additionally prompted
+(config `GEMINI_STYLE`) for a calm but expressive, non-monotone delivery with emphasis on
+key words and short pauses.
