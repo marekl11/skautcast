@@ -35,6 +35,17 @@ what you told them" structure.
 - **One topic per episode**, ~1.5–3 minutes spoken (roughly 1000–1800 characters).
 - First line is always `# <Episode title>` (becomes the AntennaPod episode name).
 
+## The blurb (show notes)
+
+Directly under the title, add a `> ` blockquote of **2–3 sentences**. This is written
+for the **eye**, not the ear — it is never spoken, and rewriting it does not re-render
+the audio (the content hash covers only the spoken text).
+
+It is the only body text that reaches the show notes, so it must stand alone: say what
+the episode is about **and what was actually decided or concluded**, so a reader gets
+the point in ~20 seconds and can then decide whether to spend the two minutes listening.
+Don't tease ("dozvíte se, jak to dopadlo") and don't just restate the title.
+
 The Gemini voice (alternating Charon / Callirrhoe per episode) is additionally prompted
 (config `GEMINI_STYLE`) for a calm but expressive, non-monotone delivery with emphasis on
 key words and short pauses.

@@ -17,13 +17,24 @@ from . import audio, config, feed, gemini, state
 _MD_LINK = re.compile(r"\[([^\]]+)\]\([^)]+\)")
 
 
-def parse_summary(raw: str, default_title: str) -> tuple[str, str]:
+def parse_summary(raw: str, default_title: str) -> tuple[str, str, str]:
+    """Split a summary file into (title, blurb, body).
+
+    The blurb is an optional `> ...` block directly under the title. It goes into the
+    show notes only and is never spoken, so rewriting it does not change the audio.
+    """
     lines = raw.strip().splitlines()
     title, start = default_title, 0
     if lines and lines[0].lstrip().startswith("#"):
         title = lines[0].lstrip("#").strip()
         start = 1
-    return title, "\n".join(lines[start:]).strip()
+    while start < len(lines) and not lines[start].strip():
+        start += 1
+    blurb = []
+    while start < len(lines) and lines[start].lstrip().startswith(">"):
+        blurb.append(lines[start].lstrip().lstrip(">").strip())
+        start += 1
+    return title, " ".join(blurb).strip(), "\n".join(lines[start:]).strip()
 
 
 def clean_for_tts(text: str) -> str:
@@ -74,19 +85,23 @@ def build(force: bool = False) -> int:
         summ = config.SUMMARIES / f"{h}.md"
         if not summ.exists():
             continue
-        data = summ.read_bytes()
-        sha = hashlib.sha1(data).hexdigest()[:12]
+        title, blurb, body = parse_summary(summ.read_text(encoding="utf-8"), summ.stem)
+        spoken = clean_for_tts(f"{title}. {body}")
+        # Hash the SPOKEN text, not the file: rewriting the show-notes blurb would
+        # otherwise re-synthesize audio that comes out identical.
+        sha = hashlib.sha1(spoken.encode("utf-8")).hexdigest()[:12]
         mp3 = config.AUDIO / f"{h}.mp3"
-        # skip only if audio exists AND the summary hasn't changed since (unless forced)
+        # skip only if audio exists AND the spoken text hasn't changed (unless forced)
         if not force and ep.get("audio_path") and mp3.exists() and ep.get("summary_sha") == sha:
+            # still refresh the show-notes fields, which cost nothing to update
+            ep.update(title=title, blurb=blurb, summary_text=body)
             continue
-        todo.append((h, ep, summ, sha, data.decode("utf-8")))
+        todo.append((h, ep, summ, sha, title, blurb, body, spoken))
+    state.save_state(st)
 
     if not todo:
         print("[build] nothing to synthesize (all summaries up to date).")
-    for i, (h, ep, summ, sha, raw) in enumerate(todo, 1):
-        title, body = parse_summary(raw, summ.stem)
-        spoken = clean_for_tts(f"{title}. {body}")
+    for i, (h, ep, summ, sha, title, blurb, body, spoken) in enumerate(todo, 1):
         voice = _voice_for(h)
         print(f"[build] ({i}/{len(todo)}) synthesizing [{voice}]: {title}", flush=True)
 
@@ -96,6 +111,7 @@ def build(force: bool = False) -> int:
 
         ep.update(
             title=title,
+            blurb=blurb,
             summary_text=body,
             summary_sha=sha,
             summary_path=str(summ.relative_to(config.ROOT)),

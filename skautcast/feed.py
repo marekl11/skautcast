@@ -1,5 +1,6 @@
 """Generate the podcast RSS feed (docs/feed.xml) from state.json."""
 from datetime import datetime, timezone
+from html import escape
 
 import requests
 from feedgen.feed import FeedGenerator
@@ -59,26 +60,31 @@ def ensure_cover() -> None:
 
 
 def _episode_description(ep: dict) -> str:
-    """Show notes: the AI disclosure at the very top (it must not be something the
-    reader has to scroll for), then useful links (source article + author-curated
-    in-article links), then the summary text."""
-    head = []
-    if ep.get("url"):
-        head.append(f"Článek: {ep['url']}")
-    for link in (ep.get("links") or []):
-        text = (link.get("text") or "").strip()
-        url = link.get("url")
-        if not url:
-            continue
-        head.append(f"{text}: {url}" if text else url)
-    body = ep.get("summary_text") or ep.get("title") or ""
+    """Show notes, as a small HTML document: the AI disclosure, a short blurb of what
+    the episode says, then the source link.
 
-    parts = [config.AI_DISCLOSURE_LINE]
-    if head:
-        parts.append("Odkazy:\n" + "\n".join(head))
-    if body:
-        parts.append(body)
-    return "\n\n".join(parts)
+    Podcast clients render a limited HTML subset (p, a, b, i, lists), which is what
+    gives us the blank lines between paragraphs and a clickable link — plain text
+    would show the URL as dead characters. The blurb is deliberately a couple of
+    sentences, not the transcript: it should be readable in ~20 seconds so someone
+    can decide whether to spend the two minutes listening.
+    """
+    blurb = ep.get("blurb") or _first_paragraph(ep.get("summary_text") or "")
+    parts = [f"<p>{escape(config.AI_DISCLOSURE_LINE)}</p>"]
+    if blurb:
+        parts.append(f"<p>{escape(blurb)}</p>")
+    if ep.get("url"):
+        parts.append(f'<p><a href="{escape(ep["url"], quote=True)}">'
+                     f'Přečíst celý článek</a></p>')
+    return "\n".join(parts)
+
+
+def _first_paragraph(text: str) -> str:
+    """Fallback blurb for summaries written before the `> blurb` block existed."""
+    for para in text.split("\n"):
+        if para.strip():
+            return para.strip()
+    return ""
 
 
 def _pubdate(iso: str) -> datetime:

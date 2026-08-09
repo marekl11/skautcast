@@ -47,15 +47,26 @@ instead if it ever needs to be tighter.
 The disclosure has **two halves, and both are required** — don't drop one while tidying up:
 
 - **Spoken** (`DISCLAIMER_TEXT`) — the audible disclaimer at the start of every episode.
-- **Written** (`AI_DISCLOSURE_LINE`) — the first line of every episode's show notes, plus a
-  sentence in `FEED_DESCRIPTION`. The Code of Practice on Transparency of AI-generated
-  Content asks for a visual label *in addition to* the audible one wherever a screen is
-  available, and the show-notes text is itself AI-written.
+- **Written** (`AI_DISCLOSURE_LINE`) — the first paragraph of every episode's show notes,
+  plus a sentence in `FEED_DESCRIPTION`. The Code of Practice on Transparency of
+  AI-generated Content asks for a visual label *in addition to* the audible one wherever a
+  screen is available, and the show-notes text is itself AI-written.
 
 Both mention the *text* as well as the voice, because episodes publish with no human
 editorial review — which is what would otherwise exempt AI-generated text under Article
 50(4) of the AI Act. If a human ever starts reviewing episodes before publication, that
 part of the wording can be revisited.
+
+### Show notes
+
+Emitted as a small HTML document (`feed._episode_description`): AI disclosure, the
+episode's blurb, then a link to the source article. Podcast clients render a limited HTML
+subset, which is what gives the paragraphs their spacing and makes the link clickable —
+a bare URL in plain text shows up as dead characters in most apps.
+
+The blurb comes from the `> ` block under the title in the summary file, never from the
+transcript. Because the content hash covers only the *spoken* text, rewriting a blurb
+refreshes the show notes without re-synthesizing any audio.
 
 ## One-time setup
 
