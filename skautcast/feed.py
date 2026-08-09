@@ -71,11 +71,17 @@ def _episode_description(ep: dict) -> str:
     """
     blurb = ep.get("blurb") or _first_paragraph(ep.get("summary_text") or "")
     parts = [f"<p>{escape(config.AI_DISCLOSURE_LINE)}</p>"]
-    if blurb:
-        parts.append(f"<p>{escape(blurb)}</p>")
+
+    # Link first so it doesn't get lost under the text, with the blurb on the very next
+    # line: a <br> keeps them in one paragraph, where a second <p> would push the blurb
+    # a blank line away and bury the link again.
+    second = []
     if ep.get("url"):
-        parts.append(f'<p><a href="{escape(ep["url"], quote=True)}">'
-                     f'Přečíst celý článek</a></p>')
+        second.append(f'<a href="{escape(ep["url"], quote=True)}">Přečíst celý článek</a>')
+    if blurb:
+        second.append(escape(blurb))
+    if second:
+        parts.append("<p>" + "<br>".join(second) + "</p>")
     return "\n".join(parts)
 
 
