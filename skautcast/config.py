@@ -49,7 +49,7 @@ FEED_DESCRIPTION = (
     "Skautské novinky z Křižovatky, namluvené a zkrácené na malé jednotky minut. "
     "Žádné prokousávání se články – projedeš názvy, vyzobeš si jen ty díly, co "
     "chceš, a zbytek s klidem přeskočíš. Ideálně třeba cestou na schůzku! "
-    "Epizody vytváří umělá inteligence – píše shrnutí i je namlouvá."
+    "Epizody píše i namlouvá umělá inteligence."
 )
 FEED_LANGUAGE = "cs"
 FEED_CATEGORY = "Society & Culture"
