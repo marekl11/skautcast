@@ -51,9 +51,19 @@ def synth_wav(text: str, wav_path: Path, voice: str | None = None,
     url = f"{API}/{config.GEMINI_TTS_MODEL}:generateContent"
 
     # Retry with backoff on rate limits / transient errors (free tier is rate-limited).
+    # Network faults are retried too: a single read timeout used to abort a whole
+    # batch run part-way through, throwing away nothing but costing a restart.
     for attempt in range(5):
-        resp = requests.post(url, params={"key": config.GEMINI_API_KEY},
-                             json=body, timeout=180)
+        try:
+            resp = requests.post(url, params={"key": config.GEMINI_API_KEY},
+                                 json=body, timeout=180)
+        except requests.RequestException as exc:
+            if attempt == 4:
+                raise RuntimeError(f"Gemini TTS unreachable: {exc}") from exc
+            wait = 2 ** attempt * 3
+            print(f"  [gemini] {type(exc).__name__}, retrying in {wait}s ...", flush=True)
+            time.sleep(wait)
+            continue
         if resp.status_code == 200:
             break
         if resp.status_code in (429, 500, 503) and attempt < 4:

@@ -13,7 +13,7 @@
       <link>https://marekl11.github.io/skautcast/feed.xml</link>
     </image>
     <language>cs</language>
-    <lastBuildDate>Sun, 09 Aug 2026 10:41:11 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2026 13:27:21 +0000</lastBuildDate>
     <itunes:author>Skautské minutky</itunes:author>
     <itunes:category text="Society &amp; Culture"/>
     <itunes:image href="https://marekl11.github.io/skautcast/cover-v2.jpg"/>
@@ -33,6 +33,325 @@
       <pubDate>Tue, 23 Jun 2026 20:43:23 +0000</pubDate>
       <itunes:image href="https://marekl11.github.io/skautcast/img/57aed40895cae606.jpg"/>
       <itunes:duration>190</itunes:duration>
+    </item>
+    <item>
+      <title>Zprávy Výkonné rady: co se dělo na jaře</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/zpravy-vykonne-rady-za-obdobi-brezen-duben-2026</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/zpravy-vykonne-rady-za-obdobi-brezen-duben-2026"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Největší úspěch jara: díky tlaku České rady dětí a mládeže se do rozpočtu kapitoly mládeže vrátilo padesát milionů korun a Junák dostal neinvestiční dotaci ve výši 63,4 milionu, tedy přesně tolik, kolik žádal. Výkonná rada zároveň schválila harmonogram zavádění Dětského certifikátu a Skautská krizová linka prošla velkou obměnou operátorek. Vážná zpráva je kolem Jamboree 2028: pokud se nenajde vedoucí přípravného týmu, ročník se pravděpodobně zruší.&lt;/p&gt;</description>
+      <guid isPermaLink="false">5a223efeea5aaf6c</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/5a223efeea5aaf6c.mp3?v=1504364" length="1504364" type="audio/mpeg"/>
+      <pubDate>Tue, 23 Jun 2026 20:43:25 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/5a223efeea5aaf6c.png"/>
+      <itunes:duration>188</itunes:duration>
+    </item>
+    <item>
+      <title>Střediskový sněm krok za krokem</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/pripravte-se-na-strediskovy-snem-krok-za-krokem</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/pripravte-se-na-strediskovy-snem-krok-za-krokem"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Sněm svolává středisková rada nejméně třicet dní předem a kandidátní komise musí být ustavena nejpozději dva týdny před ním. Řádný sněm volí vedení střediska, případné další členy rady a delegáty na vyšší sněmy. Novinka od června 2026: revizní činnost už nemusí zajišťovat vlastní revizní komise, sněm může místo toho pověřit radu, aby si ji sdílela s jinou jednotkou nebo uzavřela smlouvu se samostatným revizorem.&lt;/p&gt;</description>
+      <guid isPermaLink="false">77b06ef1722010fc</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/77b06ef1722010fc.mp3?v=1487852" length="1487852" type="audio/mpeg"/>
+      <pubDate>Tue, 23 Jun 2026 20:43:26 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/77b06ef1722010fc.jpg"/>
+      <itunes:duration>186</itunes:duration>
+    </item>
+    <item>
+      <title>Desatero z analýzy skautských průšvihů</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/analyzovali-jsme-skautske-prusvihy-z-poslednich-tri-let-na-co-si-davat-pozor</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/analyzovali-jsme-skautske-prusvihy-z-poslednich-tri-let-na-co-si-davat-pozor"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Rozbor skautských průšvihů z let 2023 až 2025 ukázal, že většina úrazů včetně těch nejvážnějších vznikla obyčejnými pády, nejčastěji při hrách a při běžném pohybu venku. Dalších patnáct procent způsobily ostré nástroje, tedy nůž, sekera a pila. Rizikovou kombinací je i doprava: mladý vedoucí, nevyspalý, v půjčeném autě, které nezná, s dětmi a často v noci.&lt;/p&gt;</description>
+      <guid isPermaLink="false">fdb53ab9e7ca6f3f</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/fdb53ab9e7ca6f3f.mp3?v=1514732" length="1514732" type="audio/mpeg"/>
+      <pubDate>Tue, 23 Jun 2026 20:43:28 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/fdb53ab9e7ca6f3f.jpg"/>
+      <itunes:duration>189</itunes:duration>
+    </item>
+    <item>
+      <title>Komunikace v náročných situacích</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/jak-zvladnout-komunikaci-v-narocnych-situacich-tipy-a-doporuceni</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/jak-zvladnout-komunikaci-v-narocnych-situacich-tipy-a-doporuceni"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Krizi ustojíte podstatně snáz s lidmi, kteří vás znají a důvěřují vám, takže běžná komunikace s rodiči je investice, která se vrátí přesně ve chvíli, kdy přijde problém. Když konflikt nastane, máte plné právo si asertivně říct o čas na rozmyšlenou, pokud nikdo není v ohrožení zdraví. A především: cesta stoprocentní pravdy funguje líp než mlžení, protože zatloukání se v krizové komunikaci dřív nebo později vymstí.&lt;/p&gt;</description>
+      <guid isPermaLink="false">b511411020c22878</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/b511411020c22878.mp3?v=1419884" length="1419884" type="audio/mpeg"/>
+      <pubDate>Tue, 23 Jun 2026 20:43:29 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/b511411020c22878.jpg"/>
+      <itunes:duration>177</itunes:duration>
+    </item>
+    <item>
+      <title>V Česku ubývá dětí. Co to znamená pro skauting</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/v-cesku-vyrazne-ubyva-deti-bez-vyhledu-zlepseni-co-to-znamena-pro-skauting</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/v-cesku-vyrazne-ubyva-deti-bez-vyhledu-zlepseni-co-to-znamena-pro-skauting"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;V roce 2025 se narodilo zhruba o jedenatřicet procent méně dětí než v průměru let 2015 až 2021 a růst počtu dětských členů v Junáku se od roku 2024 téměř zastavil. Organizace sice pořád roste, ale hlavně tím, že stárnou stávající členové. Pokud se nic nezmění, může do roku 2035 klesnout počet nováčků až o polovinu, a dopad bude výrazně nerovnoměrný podle krajů.&lt;/p&gt;</description>
+      <guid isPermaLink="false">856d7cea82dc24dd</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/856d7cea82dc24dd.mp3?v=1401068" length="1401068" type="audio/mpeg"/>
+      <pubDate>Tue, 23 Jun 2026 20:43:34 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/856d7cea82dc24dd.jpg"/>
+      <itunes:duration>175</itunes:duration>
+    </item>
+    <item>
+      <title>Kdo od září povede oddíl? A jak?</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/kdo-od-zari-povede-oddil-a-jak-2</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/kdo-od-zari-povede-oddil-a-jak-2"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Většinu lidí samo od sebe nenapadne, že by mohli být dobrými rádci nebo vedoucími, takže nástupnictví nevzniká samo, je potřeba ho opakovaně nabízet. Když se vedení mění, nic nepředpokládejte a všechno si dohodněte, ideálně písemně jako dobrovolnickou dohodu, kterou lze později upravovat. A nováčka v roli nenechávejte plavat: potřebuje mentora, nejlépe svého předchůdce, a prostor se vzdělávat.&lt;/p&gt;</description>
+      <guid isPermaLink="false">1004012ac3499281</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/1004012ac3499281.mp3?v=1341548" length="1341548" type="audio/mpeg"/>
+      <pubDate>Tue, 23 Jun 2026 20:43:36 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/1004012ac3499281.jpg"/>
+      <itunes:duration>168</itunes:duration>
+    </item>
+    <item>
+      <title>Tři balíčky hotového programu pro oddíl i družinu</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/program-ktery-dava-smysl-nejen-na-tabor-vyzkousejte-pripravene-balicky-aktivit-pro-oddil-i-druzinu</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/program-ktery-dava-smysl-nejen-na-tabor-vyzkousejte-pripravene-balicky-aktivit-pro-oddil-i-druzinu"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Ústředí nabízí tři programové balíčky, které si stačí vybrat, přihlásit oddíl formulářem a materiály přijdou poštou. Stezka s družinovým kalendářem pomáhá rádcům splnit stezku prvního stupně bez velkých příprav, Připravení a odolní řeší emoce, hranice a psychickou odolnost a Ekoprogramy nabízejí třináct bloků k udržitelnosti. Zapojit se přitom dá kdykoli během roku, nejen na táboře.&lt;/p&gt;</description>
+      <guid isPermaLink="false">d912fd385ace8c6d</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/d912fd385ace8c6d.mp3?v=1290668" length="1290668" type="audio/mpeg"/>
+      <pubDate>Tue, 23 Jun 2026 20:43:37 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/d912fd385ace8c6d.jpg"/>
+      <itunes:duration>161</itunes:duration>
+    </item>
+    <item>
+      <title>Jak pečovat o dobré jméno skautingu</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/jak-pecovat-o-dobre-jmeno-skautingu-behem-prazdnin</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/jak-pecovat-o-dobre-jmeno-skautingu-behem-prazdnin"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Ze selhání jednotlivce se v očích veřejnosti může rázem stát selhání celé organizace, obzvlášť v době rychlých zkratek, takže vystupovat viditelně jako skaut něco zavazuje. Pro náročné situace existuje nonstop Skautská krizová linka a tisková mluvčí, která poradí s komunikací s novináři. A při focení pozor na souhlasy rodičů, které jsou součástí přihlášky, a na to, aby na fotkách nebyli odhalení lidé.&lt;/p&gt;</description>
+      <guid isPermaLink="false">c3086e6316f7b37a</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/c3086e6316f7b37a.mp3?v=1401836" length="1401836" type="audio/mpeg"/>
+      <pubDate>Tue, 23 Jun 2026 20:43:45 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/c3086e6316f7b37a.jpg"/>
+      <itunes:duration>175</itunes:duration>
+    </item>
+    <item>
+      <title>Skautská energie: jak projekt funguje a proč vznikl</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/skautska-energie-startuje-informacni-kampan-pro-rodice-cleny-i-strediska</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/skautska-energie-startuje-informacni-kampan-pro-rodice-cleny-i-strediska"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Skautská energie funguje dvanáct let, sdružuje asi patnáct tisíc odběrných míst a díky tomu vyjednává lepší podmínky u dodavatelů elektřiny a plynu pro domácnosti, střediska i firmy. Výnos zároveň spolufinancuje služby, které využívá celé hnutí, tedy třeba skautské časopisy nebo skautIS. Přihlašování do letošní aukce bylo otevřené do 31. července, takže tenhle ročník je uzavřený, ale projekt běží dál.&lt;/p&gt;</description>
+      <guid isPermaLink="false">9bf0e9d045c2a1ce</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/9bf0e9d045c2a1ce.mp3?v=1116524" length="1116524" type="audio/mpeg"/>
+      <pubDate>Tue, 23 Jun 2026 20:43:47 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/9bf0e9d045c2a1ce.jpg"/>
+      <itunes:duration>140</itunes:duration>
+    </item>
+    <item>
+      <title>Pracovní volno s náhradou mzdy: nárok, který se nevyužívá</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/zazadej-o-pracovni-volno-s-nahradou-mzdy-na-tabor-na-upravenem-formulari</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/zazadej-o-pracovni-volno-s-nahradou-mzdy-na-tabor-na-upravenem-formulari"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Kdo je zaměstnaný a zároveň dlouhodobě a soustavně pracuje s dětmi, má nárok na týden pracovního volna s náhradou mzdy, takže na vícedenní akci nemusí čerpat dovolenou. Loni bylo kladně vyřízeno jedenadevadesát procent žádostí, ale řada lidí musela dodatečně doplňovat přehled své dobrovolnické činnosti, proto se formulář upravil a prostor na to už v něm je. Stát letos refunduje nejvýš 276,90 koruny na hodinu, tedy zhruba jedenáct tisíc za týden.&lt;/p&gt;</description>
+      <guid isPermaLink="false">48107c0579c8e1f4</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/48107c0579c8e1f4.mp3?v=1070636" length="1070636" type="audio/mpeg"/>
+      <pubDate>Tue, 23 Jun 2026 20:43:50 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/48107c0579c8e1f4.jpg"/>
+      <itunes:duration>134</itunes:duration>
+    </item>
+    <item>
+      <title>Perso poradna: motivaci nelze nařídit, jen jí uklidit z cesty</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/ohlednuti-za-kvetnovou-online-perso-poradnou-na-tema-motivace</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/ohlednuti-za-kvetnovou-online-perso-poradnou-na-tema-motivace"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Z květnové personalistické poradny vyšel jeden zásadní závěr: druhé lidi motivovat nejde. Můžete jen vytvářet podmínky, které sytí jejich vnitřní motivaci, a odstraňovat demotivátory. Konkrétní pomocí je dobrovolnická dohoda, která roli časově ohraničí, takže se lidé nebojí, že se upisují napořád, a rozdělení kompetencí, aby funkce nepůsobila tak velká.&lt;/p&gt;</description>
+      <guid isPermaLink="false">fdbeaca1b22b3050</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/fdbeaca1b22b3050.mp3?v=1522412" length="1522412" type="audio/mpeg"/>
+      <pubDate>Tue, 23 Jun 2026 20:43:51 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/fdbeaca1b22b3050.png"/>
+      <itunes:duration>190</itunes:duration>
+    </item>
+    <item>
+      <title>Zhodnoťte oddíl, dokud máte rok v živé paměti</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/jak-nakopnout-oddil-do-noveho-roku-vyuzijte-spolecny-cas-na-tabore</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/jak-nakopnout-oddil-do-noveho-roku-vyuzijte-spolecny-cas-na-tabore"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Nejlepší chvíle na zhodnocení oddílu je ta, kdy máte celý rok čerstvě v paměti a celý tým pohromadě, typicky na konci tábora. Pomůžou nástroje Semafor a Hodnocení kvality, které pojmenují, jak jste na tom s programem, lidmi, bezpečností a komunikací s rodiči. Klíč je nedělat to najednou: dvacet minut večer a jedna vybraná oblast z pěti stačí, a zářijové rady pak ušetří hodiny dohadování.&lt;/p&gt;</description>
+      <guid isPermaLink="false">aa9efc3a2a4fbbe0</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/aa9efc3a2a4fbbe0.mp3?v=1247084" length="1247084" type="audio/mpeg"/>
+      <pubDate>Sun, 09 Aug 2026 11:57:35 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/aa9efc3a2a4fbbe0.png"/>
+      <itunes:duration>156</itunes:duration>
+    </item>
+    <item>
+      <title>Táborová ordinace a další věci, co se vyplatí mít</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/klid-v-dusi-a-nohy-nahore</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/klid-v-dusi-a-nohy-nahore"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Na zdravotnických kurzech se učí záchrana života, jenže realita akcí jsou odřená kolena, klíšťata a nevolnosti. Přesně na tuhle mezeru cílí Táborová ordinace, publikace od lékařů a právníků v čele s pediatrem Matoušem Záleským, která radí s dávkováním léků, alergiemi, chronickými onemocněními i právními aspekty. K tomu pár drobností na volné chvíle: omalovánky s příběhem táborového dne, karetní hra Táboření v čase a sada skautských pohlednic s doplňovačkami.&lt;/p&gt;</description>
+      <guid isPermaLink="false">6df62a9bdf0aa666</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/6df62a9bdf0aa666.mp3?v=1328876" length="1328876" type="audio/mpeg"/>
+      <pubDate>Sun, 09 Aug 2026 11:57:37 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/6df62a9bdf0aa666.jpg"/>
+      <itunes:duration>166</itunes:duration>
+    </item>
+    <item>
+      <title>Členský příspěvek na rok 2027 stoupá na 560 korun</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/nacelnictvo-schvalilo-vysi-clenskeho-prispevku-na-rok-2027</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/nacelnictvo-schvalilo-vysi-clenskeho-prispevku-na-rok-2027"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Ústřední část členského příspěvku na rok 2027 je stanovena na 560 korun na člena, což je o sto korun víc než letos, tedy výrazněji než v předchozích letech. Důvodem je, aby Kancelář ústředí uměla zaplatit dost kvalifikovaných lidí a obstála jako zaměstnavatel v konkurenci. K téhle částce se při registraci ještě přičítá příspěvek kraji, okresu a vlastnímu středisku, takže výsledná suma je vyšší.&lt;/p&gt;</description>
+      <guid isPermaLink="false">ddb0f4d307beace7</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/ddb0f4d307beace7.mp3?v=1377836" length="1377836" type="audio/mpeg"/>
+      <pubDate>Sun, 09 Aug 2026 11:57:38 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/ddb0f4d307beace7.jpg"/>
+      <itunes:duration>172</itunes:duration>
+    </item>
+    <item>
+      <title>Nový programový list: Svojsík pro benjamínky</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/priblizte-benjaminkum-pribeh-zakladatele-svojsika</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/priblizte-benjaminkum-pribeh-zakladatele-svojsika"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Pátého září uplyne sto padesát let od narození zakladatele českého skautingu A. B. Svojsíka a k tomu výročí vyšel nový programový list pro benjamínky. Vysvětluje mimo jiné, proč se nejmladší kategorie jmenuje právě benjamínci, a přidává ilustrovanou přílohu s komiksem. Aktivity jsou dělané do terénu, ne k sezení v klubovně, včetně papírového Svojsíka na špejli, kterého si děti berou s sebou ven.&lt;/p&gt;</description>
+      <guid isPermaLink="false">c2402da9fca6274e</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/c2402da9fca6274e.mp3?v=1301228" length="1301228" type="audio/mpeg"/>
+      <pubDate>Sun, 09 Aug 2026 11:57:47 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/c2402da9fca6274e.jpg"/>
+      <itunes:duration>163</itunes:duration>
+    </item>
+    <item>
+      <title>Tři příručky k psychickému a sociálnímu bezpečí</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/posilte-psychicke-a-fyzicke-bezpeci-na-taborech</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/posilte-psychicke-a-fyzicke-bezpeci-na-taborech"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Ke stažení jsou tři příručky, které řeší bezpečí na pobytových akcích z různých stran. Konsent nabízí metodiku pro přípravu celého vedení včetně nácviků, jak zasáhnout, když jste svědkem nevhodného chování, a odpovídá i na citlivou otázku vztahů mezi vedoucími a účastnicemi. Locika je psaná pro rodiče a Česká rada dětí a mládeže přidává checklist pro psychické bezpečí v celé organizaci.&lt;/p&gt;</description>
+      <guid isPermaLink="false">dcbe174bb997447d</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/dcbe174bb997447d.mp3?v=1593452" length="1593452" type="audio/mpeg"/>
+      <pubDate>Sun, 09 Aug 2026 11:58:19 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/dcbe174bb997447d.jpg"/>
+      <itunes:duration>199</itunes:duration>
+    </item>
+    <item>
+      <title>Nová hygienická vyhláška: voda, nádobí i sprchy</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/zmeny-ohledne-vody-nadobi-i-sprch-co-prinasi-nova-hygienicka-vyhlaska</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/zmeny-ohledne-vody-nadobi-i-sprch-co-prinasi-nova-hygienicka-vyhlaska"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Nová vyhláška ruší pevné počty umyvadel, sprch a záchodů na počet dětí, nově stačí, aby jich byl dostatek a byly přístupné všem, a nemusí se ani rozlišovat podle pohlaví. Zásadní novinka je poslední oplach nádobí pod tekoucí pitnou vodou, takže společný lavor na ešusy už neprojde. A od letoška musí být nádobí a pracovní plochy z materiálu určeného pro styk s potravinami, což musíte umět hygieně doložit.&lt;/p&gt;</description>
+      <guid isPermaLink="false">d9fada6c5b8812b4</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/d9fada6c5b8812b4.mp3?v=1587692" length="1587692" type="audio/mpeg"/>
+      <pubDate>Sun, 09 Aug 2026 11:58:21 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/d9fada6c5b8812b4.jpg"/>
+      <itunes:duration>198</itunes:duration>
+    </item>
+    <item>
+      <title>Jak žijí environmentální témata ve skautu</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/jak-ziji-environmentalni-temata-ve-skautu-prinasime-vysledky-vyzkumu</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/jak-ziji-environmentalni-temata-ve-skautu-prinasime-vysledky-vyzkumu"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Výzkum mezi vedoucími ukázal, že environmentální témata lidem lhostejná nejsou, ale prohrávají soubojem o čas s jinými společenskými tématy a s běžným provozem. Nejdůležitější zjištění je ale jiné: chybí společná shoda, co si pod tím tématem vlastně představit, protože každý si pod ním představuje něco jiného. Výsledkem je, že zahrnutí těchhle témat stojí a padá na nasazení jednotlivců místo toho, aby bylo součástí společné vize.&lt;/p&gt;</description>
+      <guid isPermaLink="false">409b83918c025b22</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/409b83918c025b22.mp3?v=1580396" length="1580396" type="audio/mpeg"/>
+      <pubDate>Sun, 09 Aug 2026 11:58:22 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/409b83918c025b22.jpg"/>
+      <itunes:duration>198</itunes:duration>
+    </item>
+    <item>
+      <title>Náborový balíček zdarma a letní sleva na Junshopu</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/prihlaste-se-k-podpore-naboru-2026-ceka-na-vas-balicek-zdarma-a-letni-sleva-v-junshopu</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/prihlaste-se-k-podpore-naboru-2026-ceka-na-vas-balicek-zdarma-a-letni-sleva-v-junshopu"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Každé středisko nebo oddíl, které chystá nábor, si může objednat jeden náborový balíček úplně zdarma, stačí vyplnit krátký formulář a přijde vám stoprocentní slevový kód. K tomu platí dvacetiprocentní sleva na všechny náborové materiály na Junshopu, ta ale běží jen po dobu léta, takže s ní neotálejte. Vybíráte mezi balíčkem pro mladší děti do deseti let a pro starší od deseti do patnácti.&lt;/p&gt;</description>
+      <guid isPermaLink="false">2b005c3a1c5200ec</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/2b005c3a1c5200ec.mp3?v=1109804" length="1109804" type="audio/mpeg"/>
+      <pubDate>Sun, 09 Aug 2026 11:58:24 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/2b005c3a1c5200ec.png"/>
+      <itunes:duration>139</itunes:duration>
+    </item>
+    <item>
+      <title>Knihy, které tě provedou roverským věkem</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/priprav-se-na-dalsi-krok-ve-skautingu-publikace</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/priprav-se-na-dalsi-krok-ve-skautingu-publikace"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Pro začínající rovery je určený Roverský kompas, interaktivní brožura, která slouží jako most mezi skautskou stezkou a roverským světem. Kdo vede kmen, sáhne po Roverské metodice, první komplexní publikaci svého druhu u nás, na které tým autorů pracoval pět let. A pro ty, kdo míří na čekatelský kurz, je tu učebnice Čekatelská zkouška se dvěma stovkami stran od zkušených lektorů.&lt;/p&gt;</description>
+      <guid isPermaLink="false">ee404707a250f380</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/ee404707a250f380.mp3?v=1408556" length="1408556" type="audio/mpeg"/>
+      <pubDate>Sun, 09 Aug 2026 11:58:25 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/ee404707a250f380.jpg"/>
+      <itunes:duration>176</itunes:duration>
+    </item>
+    <item>
+      <title>Alkohol ve skautu: co ukázala data od 1366 lidí</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/alkohol-ve-skautske-cinnosti-co-rikaji-data-a-proc-zacit-u-sebe</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/alkohol-ve-skautske-cinnosti-co-rikaji-data-a-proc-zacit-u-sebe"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Průzkum mezi 1366 skauty ukázal, že téměř polovina na akcích alkohol vůbec nepije a pravidelně jen čtyři a půl procenta. Když Obrok a Miquik proběhly bez alkoholu, účastníkům to nevadilo, ubylo úrazů a klesl počet zásahů zdravotníků i týmů psychické podpory. Nejtěžší je změna v týmech, kde pijí všichni a nikdo téma neotevírá, protože tam chybí i ten spor, ze kterého změna obvykle vzejde.&lt;/p&gt;</description>
+      <guid isPermaLink="false">bd0afe315252f59b</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/bd0afe315252f59b.mp3?v=1532012" length="1532012" type="audio/mpeg"/>
+      <pubDate>Sun, 09 Aug 2026 11:58:29 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/bd0afe315252f59b.jpg"/>
+      <itunes:duration>191</itunes:duration>
+    </item>
+    <item>
+      <title>Jak připravit náborovou akci krok za krokem</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/jak-pripravit-naborovou-akci-ktera-privede-nove-cleny-prakticky-pruvodce-krok-za-krokem</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/jak-pripravit-naborovou-akci-ktera-privede-nove-cleny-prakticky-pruvodce-krok-za-krokem"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Úspěšný nábor nestojí na nápaditém programu, ale na organizaci. Nejdřív si určete, koho chcete oslovit a kolik dětí reálně zvládnete přijmout, pak teprve řešte místo, termín a program. Nejúčinnější propagací je osobní pozvánka od vašich vlastních členů, a rozhoduje i to, co uděláte po akci: kdo se zájemci neozve do pár dní, přijde o ně.&lt;/p&gt;</description>
+      <guid isPermaLink="false">d17b58cae3d2743e</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/d17b58cae3d2743e.mp3?v=1198508" length="1198508" type="audio/mpeg"/>
+      <pubDate>Sun, 09 Aug 2026 11:59:03 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/d17b58cae3d2743e.jpg"/>
+      <itunes:duration>150</itunes:duration>
+    </item>
+    <item>
+      <title>Valný sněm 2027: čtyři témata předsněmové diskuze</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/valny-snem-2027-se-blizi-predstavujeme-temata-predsnemove-diskuze</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/valny-snem-2027-se-blizi-predstavujeme-temata-predsnemove-diskuze"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Náčelnictvo se shodlo na čtyřech tématech předsněmové diskuze: pravidelné jmenování starosty, způsob stanovení delegátů Valného sněmu, Strategie 2030 a skautská výchova. Nemusíte probrat všechna, klidně si vyberte dvě nebo tři, ale vyhraďte si na ně dost času. Ke každému tématu jsou na Křižovatce hotové materiály včetně doporučeného formátu diskuze, dotazníku pro záznam výstupů a vzoru dobře formulovaného usnesení.&lt;/p&gt;</description>
+      <guid isPermaLink="false">eb4923a463a12c38</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/eb4923a463a12c38.mp3?v=1143212" length="1143212" type="audio/mpeg"/>
+      <pubDate>Sun, 09 Aug 2026 11:59:06 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/eb4923a463a12c38.jpg"/>
+      <itunes:duration>143</itunes:duration>
+    </item>
+    <item>
+      <title>Zkus si Náčelnictvo jako pozorovatel</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/nahledni-pod-poklicku-nacelnictva-jako-pozorovatel-ci-pozorovatelka</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/nahledni-pod-poklicku-nacelnictva-jako-pozorovatel-ci-pozorovatelka"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Až do příštího Valného sněmu se můžeš přihlásit jako pozorovatel nebo pozorovatelka Náčelnictva, zúčastnit se jednoho až tří jednání a dostat přístup k podkladům. Nemusíš přitom vůbec uvažovat o kandidatuře, stačí zájem o konkrétní celostátní téma. Každý pozorovatel navíc dostane buddyho, tedy zkušenějšího člena Náčelnictva, se kterým si materiály probere předem i po jednání.&lt;/p&gt;</description>
+      <guid isPermaLink="false">feac89cb33de38f1</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/feac89cb33de38f1.mp3?v=1262636" length="1262636" type="audio/mpeg"/>
+      <pubDate>Sun, 09 Aug 2026 11:59:07 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/feac89cb33de38f1.jpg"/>
+      <itunes:duration>158</itunes:duration>
+    </item>
+    <item>
+      <title>Solidarita jako nové téma v Dobráčkovi</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/solidarita-nove-tema-v-dobrackovi-bud-u-tvorby-podpory-pro-oddily</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/solidarita-nove-tema-v-dobrackovi-bud-u-tvorby-podpory-pro-oddily"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Dobráček chystá na nový školní rok novou tematickou linku, tentokrát o solidaritě s lidmi v tíživé situaci, a shání k její tvorbě lidi z oddílů. Nejde o závazek na desítky hodin: stačí jedno online setkání, sepsání vlastní zkušenosti do sdíleného dokumentu nebo zpětná vazba k hotovému. Cílem je ukázat, jak z jednorázové akce typu Tříkrálová sbírka udělat promyšlený zážitek s reflexí, ne to po akci zabalit.&lt;/p&gt;</description>
+      <guid isPermaLink="false">0b98fb01ee45fd77</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/0b98fb01ee45fd77.mp3?v=1424876" length="1424876" type="audio/mpeg"/>
+      <pubDate>Sun, 09 Aug 2026 11:59:43 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/0b98fb01ee45fd77.png"/>
+      <itunes:duration>178</itunes:duration>
+    </item>
+    <item>
+      <title>Skautské průšvihy: dítě pokousané táborovým psem</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/skautske-prusvihy-deti-pokousane-taborovymi-psy</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/skautske-prusvihy-deti-pokousane-taborovymi-psy"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Na tábor si vedoucí vzal velkého psa, který se po tábořišti směl pohybovat jen s náhubkem. Mimo tábořiště ho ale neměl a nečekaně vystartoval po dítěti, které přišlo poprosit o nabroušení nože. Dispečink vyhodnotil situaci tak vážně, že poslal vrtulník, a o události vyšel článek dřív, než stihlo středisko cokoli sdělit rodičům. Doporučení zní jasně: psa, u kterého nemáte ověřenou klidnou povahu i za změněných okolností, na tábor raději neberte.&lt;/p&gt;</description>
+      <guid isPermaLink="false">7da0f9f6b32dfc95</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/7da0f9f6b32dfc95.mp3?v=1729388" length="1729388" type="audio/mpeg"/>
+      <pubDate>Sun, 09 Aug 2026 11:59:46 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/7da0f9f6b32dfc95.jpg"/>
+      <itunes:duration>216</itunes:duration>
+    </item>
+    <item>
+      <title>SKAUTbot jde do beta testování</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/skaut-bot-hlasi-dalsi-krok</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/skaut-bot-hlasi-dalsi-krok"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;SKAUTbot uzavřel alfa testování a do bety posílá pět parťáků: poradce při vedení lidí, roverského průvodce, průvodce vzděláváním, komunikačního parťáka a pomocníka pro vedení vlčat a světlušek. Testovat může každý, kdo má oficiální skautský Google účet, a hotová verze se má představit na začátku září. Na rozdíl od běžných AI nástrojů staví na ověřených zdrojích Junáka, konverzace chrání licence Google Workspace a data se nepoužívají k trénování veřejných modelů.&lt;/p&gt;</description>
+      <guid isPermaLink="false">0cda3dd4e5af1e61</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/0cda3dd4e5af1e61.mp3?v=1300268" length="1300268" type="audio/mpeg"/>
+      <pubDate>Sun, 09 Aug 2026 11:59:47 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/0cda3dd4e5af1e61.png"/>
+      <itunes:duration>163</itunes:duration>
+    </item>
+    <item>
+      <title>Drsná póza nebo vážný problém? Jak číst chování kluků</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/drsna-poza-nebo-vazny-problem-jak-cist-chovani-kluku-v-oddile</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/drsna-poza-nebo-vazny-problem-jak-cist-chovani-kluku-v-oddile"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Na červnové výchovné poradně se řešil nárůst toxického chování u kluků, kteří si vzorce přinášejí z internetu a od influencerů. Zásadní je rozlišit pózu od záměru, protože spousta kluků vůbec nerozumí významu slov, která opakují, takže prvním krokem je rozhovor, ne trest. Hranice se ale musí nastavovat okamžitě a opakovaně: přejít sexistickou poznámku mlčením znamená dát tichý souhlas.&lt;/p&gt;</description>
+      <guid isPermaLink="false">5ec6fdcd9bfbf278</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/5ec6fdcd9bfbf278.mp3?v=1620908" length="1620908" type="audio/mpeg"/>
+      <pubDate>Sun, 09 Aug 2026 11:59:53 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/5ec6fdcd9bfbf278.jpg"/>
+      <itunes:duration>203</itunes:duration>
+    </item>
+    <item>
+      <title>Červnové Náčelnictvo očima Kádi</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/deni-na-cervnovem-nacelnictvu-ocima-kadi-zacti-se-do-clanku-nebo-nahledni-do-zapisu-z-jednani</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/deni-na-cervnovem-nacelnictvu-ocima-kadi-zacti-se-do-clanku-nebo-nahledni-do-zapisu-z-jednani"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;Náčelnictvo na červnovém jednání odladilo čtyři témata předsněmové diskuze a schválilo členské příspěvky na příští rok. Novinkou je pilotní Skautské fórum mladých, tedy jakési „předVSJ“ pro rovery a rangers, jehož přihlašování se otevře zhruba v říjnu. Došlo taky na koncepci velkých akcí, projekt spolkového časopisu, navrhovanou podobu skautského vzdělávání a rozdělení peněz, kterých od ministerstva nakonec přišlo o něco víc.&lt;/p&gt;</description>
+      <guid isPermaLink="false">2c84d879dfcc697a</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/2c84d879dfcc697a.mp3?v=1425836" length="1425836" type="audio/mpeg"/>
+      <pubDate>Sun, 09 Aug 2026 11:59:56 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/2c84d879dfcc697a.jpg"/>
+      <itunes:duration>178</itunes:duration>
     </item>
   </channel>
 </rss>

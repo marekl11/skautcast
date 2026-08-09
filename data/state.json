@@ -1,6 +1,10 @@
 {
   "newsletters_seen": [
-    "19e89994ac942681"
+    "19e89994ac942681",
+    "1dd61dbc72dfa453",
+    "7ddba3c6ebf0efc1",
+    "a717147c36e14c15",
+    "eb39e7a0ceb526f6"
   ],
   "episodes": {
     "57aed40895cae606": {
@@ -25,16 +29,16 @@
     },
     "5a223efeea5aaf6c": {
       "url": "https://zpravodajstvi.skaut.cz/clanek/zpravy-vykonne-rady-za-obdobi-brezen-duben-2026",
-      "title": "Zprávy Výkonné rady za období březen – duben 2026",
+      "title": "Zprávy Výkonné rady: co se dělo na jaře",
       "first_seen": "2026-06-23T20:43:25.011517+00:00",
       "newsletter_subject": "Balicek ustredi cerven 2026",
       "newsletter_msgid": "19e89994ac942681",
       "article_path": "data\\articles\\5a223efeea5aaf6c.json",
-      "summary_path": null,
-      "audio_path": null,
-      "audio_bytes": null,
-      "duration_sec": null,
-      "status": "fetched",
+      "summary_path": "data\\summaries\\5a223efeea5aaf6c.md",
+      "audio_path": "audio/5a223efeea5aaf6c.mp3",
+      "audio_bytes": 1504364,
+      "duration_sec": 188,
+      "status": "published",
       "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/ede85a28-9d3f-4563-8be1-2c968d29d06c.png",
       "links": [
         {
@@ -69,16 +73,21 @@
           "text": "článek",
           "url": "https://zpravodajstvi.skaut.cz/clanek/od-roku-2027-budou-vedouci-dokladat-detsky-certifikat-co-to-pro-nas-znamena"
         }
-      ]
+      ],
+      "blurb": "Největší úspěch jara: díky tlaku České rady dětí a mládeže se do rozpočtu kapitoly mládeže vrátilo padesát milionů korun a Junák dostal neinvestiční dotaci ve výši 63,4 milionu, tedy přesně tolik, kolik žádal. Výkonná rada zároveň schválila harmonogram zavádění Dětského certifikátu a Skautská krizová linka prošla velkou obměnou operátorek. Vážná zpráva je kolem Jamboree 2028: pokud se nenajde vedoucí přípravného týmu, ročník se pravděpodobně zruší.",
+      "summary_text": "V tomhle díle projdeme Zprávy Výkonné rady za březen a duben. Je to obsáhlý dokument, takže vyberu to, co má dopad na běžné středisko. A připomínám, že jde o zprávy z jara, takže některé uvedené termíny už jsou pryč.\n\nZačneme penězi, protože tam je nejlepší zpráva. V reakci na plánované škrty v rozpočtu kapitoly mládeže ministerstva školství se díky intenzivní spolupráci v rámci České rady dětí a mládeže, včetně silné komunikace v médiích a na sítích, podařilo vrátit padesát milionů korun. Výše vyhrazených prostředků se tím dostala zpět na loňskou úroveň. Navazuje na to i rozhodnutí ministerstva o neinvestiční dotaci pro letošní rok ve výši třiašedesáti a čtyř desetin milionu, tedy přesně v té výši, o kterou Junák žádal.\n\nDruhá věc s přímým dopadem je Dětský certifikát. Výkonná rada schválila harmonogram náběhového období, tedy odkdy a jak se bude dokládat, a způsob, jak to zakotvit ve vnitřním právu organizace. Se zástupci České rady dětí a mládeže zároveň proběhlo jednání s ministrem spravedlnosti, hlavně o možnosti podávat žádosti hromadně elektronicky, což by jednotkám hodně ulevilo.\n\nHodně se dělo v oblasti bezpečného skautingu. Skautská krizová linka prošla významnou obměnou, na provozu se podílejí čtyři nové operátorky a operátoři absolvovali návazný výcvik telefonické krizové intervence od Linky bezpečí. Proběhly další dva víkendové kurzy základů krizové intervence, kterými prošlo přes čtyřicet lidí, takže celkem přibylo jedenašedesát proškolených vedoucích. K tomu vlna online seminářů na témata kyberbezpečí, sexuální bezpečí a výchova, LGBT tematika, vapování a úzkosti a panické ataky.\n\nZ programu stojí za zmínku aktualizované odborky, které jsou nově k mání i v pevných deskách, a upravené ocenění Lví skaut, které teď cílí na děti do šestnácti let a má zjednodušený schvalovací proces. V oblasti environmentálních výzev vznikly diskuzní karty Krok k udržitelnosti, se kterými zvládnete debatu na středisku i bez externího lektora, a jsou volně ke stažení.\n\nA teď ta nepříjemná zpráva. Stále se hledá vedoucí přípravného týmu Národního skautského jamboree 2028. Ve zprávách se píše, že pokud se vedení nepodaří najít, ročník se pravděpodobně zruší. Přihlašování mělo skončit v polovině června, takže jak to dopadlo, se dozvíme z novějších zpráv.\n\nNakonec jedna hezká věc. Projekt Světlo a teplo pro Ukrajinu běží už čtvrtým rokem. Zapojilo se přes sto středisek, oddílů a kmenů, vyrobilo se přes padesát tisíc zákopových svíček a nově i maskovací sítě. Projekt měl velký mediální ohlas a koordinátoři dostali pozvání na Pražský hrad.\n\nShrňme si to. Padesát milionů zpátky do rozpočtu mládeže, plná dotace pro Junáka, rozjíždí se Dětský certifikát, posílila krizová linka a nad Jamboree 2028 visel otazník.",
+      "summary_sha": "249dcbb44d15",
+      "voice": "Charon",
+      "published_at": "2026-08-09T12:42:20.498350+00:00"
     },
     "77b06ef1722010fc": {
       "url": "https://zpravodajstvi.skaut.cz/clanek/pripravte-se-na-strediskovy-snem-krok-za-krokem",
-      "title": "Jak připravit střediskový sněm krok za krokem",
+      "title": "Střediskový sněm krok za krokem",
       "first_seen": "2026-06-23T20:43:26.583770+00:00",
       "newsletter_subject": "Balicek ustredi cerven 2026",
       "newsletter_msgid": "19e89994ac942681",
       "article_path": "data\\articles\\77b06ef1722010fc.json",
-      "status": "fetched",
+      "status": "published",
       "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/3ff7cd88-ef7f-423d-852b-5ad1a56edfc5.jpeg",
       "links": [
         {
@@ -105,16 +114,25 @@
           "text": "do skautISu",
           "url": "https://napoveda.skaut.cz/skautis/akce/snemy/usneseni"
         }
-      ]
+      ],
+      "blurb": "Sněm svolává středisková rada nejméně třicet dní předem a kandidátní komise musí být ustavena nejpozději dva týdny před ním. Řádný sněm volí vedení střediska, případné další členy rady a delegáty na vyšší sněmy. Novinka od června 2026: revizní činnost už nemusí zajišťovat vlastní revizní komise, sněm může místo toho pověřit radu, aby si ji sdílela s jinou jednotkou nebo uzavřela smlouvu se samostatným revizorem.",
+      "summary_text": "Sněmovní období začíná, tak si v tomhle díle projdeme, jak střediskový sněm připravit, aby na něm nic nechybělo.\n\nZačneme svoláním. Sněm obvykle svolává středisková rada, a to s předstihem nejméně třiceti dnů, aby se delegáti stihli připravit a přijít. Delegáty jsou činovníci, kteří jsou členy střediska, a to bez ohledu na to, jestli svou funkci vykonávají u vás, nebo v jiné jednotce. Jakmile sněm zadáte do skautISu, odejde automatická zpráva delegátům i nadřízené jednotce, ale i tak se vyplatí to poslat i vlastními kanály, tedy do konference nebo do činovnické skupiny na WhatsAppu.\n\nHned na začátku si ujasněte, jestli chystáte sněm řádný, nebo mimořádný. Řádný probíhá obvykle jednou za tři roky, v období před Valným sněmem, a má právo plné volby. Mimořádný má stejné pravomoci kromě té plné volby a řeší se na něm třeba jen volba delegátů na vyšší sněmy nebo revizní komise.\n\nDruhý krok jsou komise. Nejpozději dva týdny před sněmem musí být ustavena kandidátní komise, jednočlenná až tříčlenná, která shromažďuje možné kandidáty. Návrhy se dají podávat předem ve skautISu nebo písemně, ale i ústně přímo na sněmu. O průběh voleb a počítání hlasů se pak stará tříčlenná volební komise, kterou volí sněm, a alespoň jeden její člen nesmí v těch volbách sám kandidovat.\n\nCo se na řádném sněmu volí? Především vedení střediska, tedy vedoucí a jeho zástupce, případně dva zástupce, kteří kandidují společně jako provázaná dvojice nebo trojice. Dál sněm rozhodne, jestli chce mít další volené členy rady a kolik, a pokud počet neurčí, žádní se nevolí. A pak delegáti na vyšší sněmy, tedy na krajský, případně okresní, a na celostátní Valný sněm, vždycky se určuje pořadí zvolených i náhradníků podle počtu hlasů.\n\nTeď ta novinka, kvůli které se to letos vyplatí projít pořádně. Od června 2026 má sněm u revizní činnosti na výběr ze tří možností. Buď zvolí vlastní revizní komisi, přičemž u střediska musí mít aspoň dva členy a u vyšší jednotky aspoň tři. Nebo může pověřit radu, aby uzavřela smlouvu o zajištění revizní činnosti s jinou organizační jednotkou a její komisi sdílela. Nebo může pověřit radu, aby uzavřela smlouvu se samostatným revizorem, tedy osobou s odborným oprávněním. V posledních dvou případech se vlastní komise vůbec neustavuje. U samostatného revizora ale pozor, tuhle možnost volte, jen když víte, že ve vaší lokalitě někdo takový bude dostupný.\n\nSněm může také přijímat usnesení pro vyšší jednotku, což je přesně místo pro výstupy z předsněmové diskuze. A z každého sněmu je povinné sepsat veřejný zápis.\n\nShrňme si to. Třicet dní na svolání, dva týdny na kandidátní komisi, na sněmu se volí vedení, rada, revize a delegáti, a letos si dejte pozor na nové možnosti u revizní činnosti. Podrobný postup najdeš ve skautISu.",
+      "summary_sha": "8a44eae7cc95",
+      "summary_path": "data\\summaries\\77b06ef1722010fc.md",
+      "voice": "Callirrhoe",
+      "audio_path": "audio/77b06ef1722010fc.mp3",
+      "audio_bytes": 1487852,
+      "duration_sec": 186,
+      "published_at": "2026-08-09T12:44:12.886307+00:00"
     },
     "fdb53ab9e7ca6f3f": {
       "url": "https://zpravodajstvi.skaut.cz/clanek/analyzovali-jsme-skautske-prusvihy-z-poslednich-tri-let-na-co-si-davat-pozor",
-      "title": "Desatero doporučení pro bezpečné tábory: poučení z průšvihů",
+      "title": "Desatero z analýzy skautských průšvihů",
       "first_seen": "2026-06-23T20:43:28.048049+00:00",
       "newsletter_subject": "Balicek ustredi cerven 2026",
       "newsletter_msgid": "19e89994ac942681",
       "article_path": "data\\articles\\fdb53ab9e7ca6f3f.json",
-      "status": "fetched",
+      "status": "published",
       "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/eeebec13-f246-4123-aab5-fdead4889e03.jpeg",
       "links": [
         {
@@ -149,20 +167,29 @@
           "text": "Kodex jednání dospělých",
           "url": "http://skaut.cz/kodex"
         }
-      ]
+      ],
+      "blurb": "Rozbor skautských průšvihů z let 2023 až 2025 ukázal, že většina úrazů včetně těch nejvážnějších vznikla obyčejnými pády, nejčastěji při hrách a při běžném pohybu venku. Dalších patnáct procent způsobily ostré nástroje, tedy nůž, sekera a pila. Rizikovou kombinací je i doprava: mladý vedoucí, nevyspalý, v půjčeném autě, které nezná, s dětmi a často v noci.",
+      "summary_text": "V tomhle díle si projdeme desatero, které vzniklo z analýzy skautských průšvihů a takzvaných skoroprůšvihů za roky 2023 až 2025. Je to vůbec první přehled, který se takhle zveřejňuje.\n\nZačneme živly. Bouřkám, silným větrům ani záplavám nezabráníme, ale můžeme se připravit na okamžik, kdy udeří. Vypracujte si krizový plán pro rizika, která jsou na vašem tábořišti nejpravděpodobnější, a evakuační postupy si předem natrénujte. Kdo co odnáší kam, kde je bezpečné místo, jak se tam dostanete. Když táboříte v týpí, dbejte na důsledné ukotvení trojnohy i plachet. A sledujte výstrahy Českého hydrometeorologického ústavu.\n\nDruhé je oheň. Nikdy ho nenechávejte bez dozoru a mějte připravený dostatek vody. Nezapomínejte, že plameny se můžou nepozorovaně šířit kořeny pod zemí. A ani uzavřený oheň není zárukou bezpečí: ve sledovaném období shořela na táborech jedna sauna a několik párů pohorek, které někdo sušil na rozpálených kamnech. Pomůže zavést ohňovou hlídku.\n\nTřetí bod je o autech a stojí za zamyšlení, protože popisuje situaci, do které se snadno dostane každý. Polovina vedoucích oddílů je mladších čtyřiatřiceti let, na táborech bývají nevyspalí, auto si často musí půjčit, takže ho neznají, a na tábor se obvykle půjčuje to nejhorší auto. K tomu přidejte víc pasažérů a jízdu v noci na výsadek. Ta kombinace rizik výrazně zvyšuje pravděpodobnost i závažnost nehody.\n\nČtvrtý bod je nejpřekvapivější. Z evidence pojistných událostí vyplývá, že k většině úrazů, včetně těch nejvážnějších, došlo v důsledku pádů. Ne při lezení po skalách nebo na divoké vodě, kde se lidi systematicky připravují a jistí, ale při obyčejných hrách, soutěžích a při prostém pohybu venku. Pohybová výkonnost dětí v populaci přitom klesá. Doporučení proto zní vrátit do skautské činnosti systematickou pohybovou přípravu. Autoři upřímně přiznávají, že přímá příčinná souvislost prokázaná není, tedy že víc cvičení nezaručí méně úrazů, ale přínosů má tolik, že stojí za to i tak.\n\nPátý bod: ostré nástroje způsobily patnáct procent úrazů. Nůž, sekera a pila jsou neodmyslitelní pomocníci, takže se jich nemáme vzdávat, ale máme usilovat o co nejlepší přípravu. To znamená udržovat nástroje ostré a v bezvadném stavu, nastavit bezpečnostní pravidla, tedy dost prostoru, bezpečné přenášení a správný způsob použití, a používat ochranné pomůcky.\n\nA ještě jedna věc z přehledu: při výskytu vysoce nakažlivých onemocnění je potřeba bedlivě sledovat jejich šíření a včas rozhodnout o odeslání nakažených domů.\n\nShrňme si to. Nejvíc úrazů dělají obyčejné pády, hned za nimi ostré nástroje. Připravte si krizový plán na živly, hlídejte oheň, mějte pokoru před auty a nepodceňujte výcvik s nožem a sekerou. Celý přehled i s tipy, co s doporučeními dělat, najdeš na Křižovatce.",
+      "summary_sha": "1dfdc458df5c",
+      "summary_path": "data\\summaries\\fdb53ab9e7ca6f3f.md",
+      "voice": "Callirrhoe",
+      "audio_path": "audio/fdb53ab9e7ca6f3f.mp3",
+      "audio_bytes": 1514732,
+      "duration_sec": 189,
+      "published_at": "2026-08-09T12:45:32.695630+00:00"
     },
     "b511411020c22878": {
       "url": "https://zpravodajstvi.skaut.cz/clanek/jak-zvladnout-komunikaci-v-narocnych-situacich-tipy-a-doporuceni",
-      "title": "Jak zvládnout komunikaci v náročných situacích: Tipy a doporučení",
+      "title": "Komunikace v náročných situacích",
       "first_seen": "2026-06-23T20:43:29.551778+00:00",
       "newsletter_subject": "Balicek ustredi cerven 2026",
       "newsletter_msgid": "19e89994ac942681",
       "article_path": "data\\articles\\b511411020c22878.json",
-      "summary_path": null,
-      "audio_path": null,
-      "audio_bytes": null,
-      "duration_sec": null,
-      "status": "fetched",
+      "summary_path": "data\\summaries\\b511411020c22878.md",
+      "audio_path": "audio/b511411020c22878.mp3",
+      "audio_bytes": 1419884,
+      "duration_sec": 177,
+      "status": "published",
       "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/f6f09d58-63b6-4400-b53e-d7c308c45570.jpeg",
       "links": [
         {
@@ -173,7 +200,12 @@
           "text": "Jak mluvit o skautingu",
           "url": "https://drive.google.com/file/d/1cwqPK5-nA-JgL1hsh3vLKwltKZVC7cRn/view"
         }
-      ]
+      ],
+      "blurb": "Krizi ustojíte podstatně snáz s lidmi, kteří vás znají a důvěřují vám, takže běžná komunikace s rodiči je investice, která se vrátí přesně ve chvíli, kdy přijde problém. Když konflikt nastane, máte plné právo si asertivně říct o čas na rozmyšlenou, pokud nikdo není v ohrožení zdraví. A především: cesta stoprocentní pravdy funguje líp než mlžení, protože zatloukání se v krizové komunikaci dřív nebo později vymstí.",
+      "summary_text": "V tomhle díle si projdeme, jak komunikovat, když se něco pokazí. A začneme tím, co se dělá dlouho předtím.\n\nV každodenním shonu se může zdát, že e-maily rodičům nebo články na oddílový web berou jen čas. Jenže když přijde skutečný problém, ustojíte ho mnohem snáz s lidmi, kteří znají vás i vaši činnost a důvěřují vám. Takže budujte vztahy, odpovídejte na dotazy včas a vytvářejte příležitosti, kde vás rodiče můžou potkat. Trpělivě informujte, sdílejte fotky a shrnutí akcí a vysvětlujte, v čem tkví podstata skautské výchovy a jak jako dobrovolníci ošetřujete rizika. Mějte aktualizované kontakty a nastavené komunikační kanály, ať vás v krizovém momentu nezdržují technické věci. A budujte vztahy i s okolím, se starosty, lesníky i sousedy.\n\nKdyž konflikt přijde, opřete se o krizové minimum. Za prvé rozvaha. Zastavte se a nadechněte. Pokud nikdo není v ohrožení zdraví, máte plné právo si asertivně říct o čas na rozmyšlenou. Za druhé si zmapujte aktéry, tedy koho se to týká, kdo u toho byl a koho musíte informovat, ať už jde o vedoucího střediska nebo rodiče. Za třetí zjistěte fakta, protože bez nich nemůžete jednat. Za čtvrté buďte věcní. Oddělte fakta od emocí, mluvte popisně a střídmě o tom, co víte jistě a co teprve zjišťujete. Za páté pracujte s nejistotou. Nemusíte vědět všechno hned, ale řekněte, jaké kroky jste udělali, jaké chystáte a kdy dodáte další informace.\n\nŠestý bod je empatie, a je asi nejdůležitější. Za křikem ze strany rodičů nestojí útok na vás, ale strach o bezpečí dítěte. V tom máte úplně stejný cíl. A sedmý bod: nebojte se říct si o pomoc. Zapojte zkušenější lidi ze střediska nebo využijte nonstop Skautskou krizovou linku.\n\nA pak je tu síla pravdy. V krizi jsou vedoucí pod obrovským tlakem a snadno se objeví nápad problém ututlat, svést vinu na někoho jiného nebo mlžit. Jenže když zvolíte cestu stoprocentní pravdy, situace se většinou vyřeší v klidu a s menším dopadem. Když se k problému postavíte čelem, lidé s vámi začnou jednat jako s partnerem, se kterým se hledá řešení. A navíc si to zapamatují, protože zkušenost, že jste něčím náročným prošli společně a úspěšně, je cenná.\n\nPoslední věc je komunikace s dětmi po náročném zážitku. Strach dětí je přirozený, takže ho nezlehčujte větami typu nic se nestalo. Vytvořte bezpečný prostor, kde se můžete k situaci vrátit, odpovědět na dotazy a projevit pocity.\n\nShrňme si to. Komunikujte v klidu, ať máte na co navázat v krizi. Když krize přijde, nadechněte se, zjistěte fakta, oddělte je od emocí a řekněte pravdu. A pamatujte, že rodiče nekřičí na vás, ale ze strachu o dítě.",
+      "summary_sha": "9e08606d81c3",
+      "voice": "Charon",
+      "published_at": "2026-08-09T12:47:02.532188+00:00"
     },
     "a0c0dbbd718daebc": {
       "url": "https://zpravodajstvi.skaut.cz/clanek/investicni-vyzva-msmt-na-rekonstrukci-kluboven-a-zakladen",
@@ -216,16 +248,16 @@
     },
     "856d7cea82dc24dd": {
       "url": "https://zpravodajstvi.skaut.cz/clanek/v-cesku-vyrazne-ubyva-deti-bez-vyhledu-zlepseni-co-to-znamena-pro-skauting",
-      "title": "V Česku výrazně ubývá dětí. Bez výhledu zlepšení. Co to znamená pro skauting?",
+      "title": "V Česku ubývá dětí. Co to znamená pro skauting",
       "first_seen": "2026-06-23T20:43:34.323332+00:00",
       "newsletter_subject": "Balicek ustredi cerven 2026",
       "newsletter_msgid": "19e89994ac942681",
       "article_path": "data\\articles\\856d7cea82dc24dd.json",
-      "summary_path": null,
-      "audio_path": null,
-      "audio_bytes": null,
-      "duration_sec": null,
-      "status": "fetched",
+      "summary_path": "data\\summaries\\856d7cea82dc24dd.md",
+      "audio_path": "audio/856d7cea82dc24dd.mp3",
+      "audio_bytes": 1401068,
+      "duration_sec": 175,
+      "status": "published",
       "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/61e2296c-de83-42f8-8c82-018195d2be6c.jpeg",
       "links": [
         {
@@ -240,7 +272,12 @@
           "text": "stream ohledně dělení oddílů",
           "url": "https://zpravodajstvi.skaut.cz/clanek/online-setkani-jak-na-deleni-velkych-oddilu-pripojte-se-3-cervna"
         }
-      ]
+      ],
+      "blurb": "V roce 2025 se narodilo zhruba o jedenatřicet procent méně dětí než v průměru let 2015 až 2021 a růst počtu dětských členů v Junáku se od roku 2024 téměř zastavil. Organizace sice pořád roste, ale hlavně tím, že stárnou stávající členové. Pokud se nic nezmění, může do roku 2035 klesnout počet nováčků až o polovinu, a dopad bude výrazně nerovnoměrný podle krajů.",
+      "summary_text": "V tomhle díle si projdeme demografickou analýzu a to, co znamená pro skauting. Dlouho jsme byli zvyklí, že se skautská rodina rozrůstá a oddíly praskají ve švech. Nová data ukazují, že se hřiště, na kterém hrajeme, v příštích letech výrazně změní.\n\nČísla mluví jasně. V roce 2025 se u nás narodilo přibližně o jedenatřicet procent méně dětí než v průměru mezi lety 2015 a 2021. K tomu sledujeme silný přesun mladých lidí a rodin z periferií do menších obcí v blízkosti velkých měst.\n\nUvnitř organizace se to už projevuje. Od roku 2024 růst počtu dětských členů téměř ustal a drží se pod jedním procentem. Celkově sice pořád rosteme, ale je to hlavně tím, že ročně přibývají tři až čtyři procenta dospělých členů. A pozor, nejde primárně o dospělé nováčky. Významné je to, že postupně stárnou naši stávající členové. Společenství tedy přirozeně stárne a podíl členů v dětském věku klesá. Pokud nic nezměníme, může do roku 2035 klesnout počet nováčků mezi vlčaty, světluškami i skauty až o polovinu. A počítat musíme i s mnohem silnější konkurencí ostatních organizací a kroužků.\n\nZajímavé je, že současnost tomu zatím neodpovídá. Pořád máme každý rok kolem deseti tisíc nováčků a odhadem nízké tisíce dětí na čekacích listinách. Zároveň už ale existují oddíly, které musí pořádat nábory. A obojí zpravidla závisí na regionu a velikosti obce.\n\nOdtud plyne asi nejužitečnější závěr celé analýzy, totiž že dopady nebudou všude stejné. Kolem let 2035 až 2040 můžeme čekat skauting ve třech rychlostech. V demograficky rostoucích krajích, tedy v Praze a ve Středočeském kraji, si oddíly počty snadněji udrží nebo mírně porostou. Ve stagnujících krajích, což jsou Plzeňský, Jihomoravský, Pardubický a Jihočeský, se situace příliš nezmění. A pak jsou kraje ohrožené: Moravskoslezský, Zlínský, Karlovarský, Ústecký, Olomoucký, Královéhradecký, Liberecký a Vysočina. Tam bude úbytek dětí velmi výrazný a středisku hrozí reálné riziko, že kvůli nedostatku dětí začnou některé oddíly zanikat. K tomu se přidává rozdíl mezi velkými městy, jejich okrajovými částmi a malými obcemi, které čelí odlivu obyvatel.\n\nJak se k tomu organizace staví? Aktivně, a to hlavně v rámci strategického tématu Růst, kde vznikají další analýzy. Motto zní neměnit cíl, ale uzpůsobit nástroje. Analýzy byly představeny krajským radám na online setkání v květnu a další postup se s nimi bude ladit.\n\nShrňme si to. Dětí ubývá rychleji, než kdokoli čekal, růst dětské členské základny se zastavil a organizace stárne. Nejde ale o rovnoměrný problém, takže se vyplatí podívat se, do které ze tří rychlostí patří váš kraj, a podle toho plánovat.",
+      "summary_sha": "e6c5e3c759f3",
+      "voice": "Charon",
+      "published_at": "2026-08-09T12:48:24.667694+00:00"
     },
     "1004012ac3499281": {
       "url": "https://zpravodajstvi.skaut.cz/clanek/kdo-od-zari-povede-oddil-a-jak-2",
@@ -249,11 +286,11 @@
       "newsletter_subject": "Balicek ustredi cerven 2026",
       "newsletter_msgid": "19e89994ac942681",
       "article_path": "data\\articles\\1004012ac3499281.json",
-      "summary_path": null,
-      "audio_path": null,
-      "audio_bytes": null,
-      "duration_sec": null,
-      "status": "fetched",
+      "summary_path": "data\\summaries\\1004012ac3499281.md",
+      "audio_path": "audio/1004012ac3499281.mp3",
+      "audio_bytes": 1341548,
+      "duration_sec": 168,
+      "status": "published",
       "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/369dcb7c-7b3e-4345-854d-6ab409f51f29.jpeg",
       "links": [
         {
@@ -288,20 +325,25 @@
           "text": "Tipy najdeš ve Skautském světě",
           "url": "https://casopisy.skaut.cz/svet/1437"
         }
-      ]
+      ],
+      "blurb": "Většinu lidí samo od sebe nenapadne, že by mohli být dobrými rádci nebo vedoucími, takže nástupnictví nevzniká samo, je potřeba ho opakovaně nabízet. Když se vedení mění, nic nepředpokládejte a všechno si dohodněte, ideálně písemně jako dobrovolnickou dohodu, kterou lze později upravovat. A nováčka v roli nenechávejte plavat: potřebuje mentora, nejlépe svého předchůdce, a prostor se vzdělávat.",
+      "summary_text": "V tomhle díle se podíváme na předávání vedení oddílu. Září klepe na dveře a s ním otázka, kdo to od podzimu povede.\n\nZačněme tím, kde vůbec brát nástupce. Na nástupnictví je dobré myslet dřív, než vedoucí sbalí kufry. Většinu lidí totiž samo od sebe nenapadne, že by mohli být dobrými rádci nebo vedoucími. Zkuste jim to opakovaně nabízet a mluvit s nimi o tom, třeba v klidu u ohně nebo o poledňáku v lese. Oddíly často přebírají vedoucí v roverském věku, a tady pozor, roveři a rangers jsou pořád ještě výchovná kategorie, takže je potřeba hledat rovnováhu mezi vedením oddílu a jejich vlastním roverstvím. Někdy se objeví i šikovný dospělý nováček z řad rodičů nebo bývalých členů. Zapojit ho vyžaduje trpělivost a energii, ale může z něj vyrůst velká opora týmu.\n\nA hlavně, personalistika je týmová práce. I když za fungující nástupnictví odpovídá vedoucí střediska, hodí se mít někoho, třeba zpravodaje, kdo zná dospělé a dospívající ve středisku, přemýšlí o nich a pomáhá hledat lidi do rolí.\n\nDruhá část je, jak se v nové roli neztratit. Každý vedoucí je jiný, má jiné priority, časové možnosti i dovednosti. Když se mění vedení, musí se tomu přizpůsobit i fungování týmu. Možná se změní termíny rad, komunikační kanály, možná se o zodpovědnost podělí víc lidí. Zásadní je nic nepředpokládat a na všem se dohodnout. Na co se v nové roli těšíš a z čeho máš obavy? Jak dlouho chceš oddíl vést a kolik času mu můžeš dát? Potřebuješ pomoct s vůdcovskou zkouškou, hospodařením nebo registrací? Tyhle otázky by měl začínajícímu vedoucímu klást vedoucí střediska, ideálně v důvěrné atmosféře. A aby se na sliby nezapomnělo, udělejte si z rozhovoru písemný záznam, dobrovolnickou dohodu, kterou pak můžete společně upravovat.\n\nAť už se vedoucím stane kdokoliv, nenechme ho v tom plavat. Ideální je, když se mu věnuje jeho předchůdce. Když to nejde kvůli času nebo vztahům, hledejte mentora jinde, může to být vedoucí z jiného oddílu, instruktor vzdělávací akce nebo někdo, koho doporučí výchovný zpravodaj z okresu. A každý vedoucí potřebuje prostor se vzdělávat, takže ho středisko může podpořit třeba Elixírem, seminářem na klíč nebo výjezdem na zkušenou do jiného oddílu.\n\nShrňme si to. Nástupce je potřeba oslovovat opakovaně a dopředu. Při předání si všechno vyjasněte a sepište do dobrovolnické dohody. A novému vedoucímu zajistěte mentora a možnost se učit. Když někdo váhá, jestli roli vzít, může pomoct i koučink.",
+      "summary_sha": "03268a95e6ea",
+      "voice": "Charon",
+      "published_at": "2026-08-09T12:49:47.635554+00:00"
     },
     "d912fd385ace8c6d": {
       "url": "https://zpravodajstvi.skaut.cz/clanek/program-ktery-dava-smysl-nejen-na-tabor-vyzkousejte-pripravene-balicky-aktivit-pro-oddil-i-druzinu",
-      "title": "Program (nejen) na tábor, který dává smysl. Vyzkoušejte připravené balíčky aktivit pro oddíl i družinu",
+      "title": "Tři balíčky hotového programu pro oddíl i družinu",
       "first_seen": "2026-06-23T20:43:37.606220+00:00",
       "newsletter_subject": "Balicek ustredi cerven 2026",
       "newsletter_msgid": "19e89994ac942681",
       "article_path": "data\\articles\\d912fd385ace8c6d.json",
-      "summary_path": null,
-      "audio_path": null,
-      "audio_bytes": null,
-      "duration_sec": null,
-      "status": "fetched",
+      "summary_path": "data\\summaries\\d912fd385ace8c6d.md",
+      "audio_path": "audio/d912fd385ace8c6d.mp3",
+      "audio_bytes": 1290668,
+      "duration_sec": 161,
+      "status": "published",
       "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/007a30d6-62bb-4fc1-97b2-a3f4854332c2.jpeg",
       "links": [
         {
@@ -320,7 +362,12 @@
           "text": "posilme.skaut.cz",
           "url": "http://posilme.skaut.cz"
         }
-      ]
+      ],
+      "blurb": "Ústředí nabízí tři programové balíčky, které si stačí vybrat, přihlásit oddíl formulářem a materiály přijdou poštou. Stezka s družinovým kalendářem pomáhá rádcům splnit stezku prvního stupně bez velkých příprav, Připravení a odolní řeší emoce, hranice a psychickou odolnost a Ekoprogramy nabízejí třináct bloků k udržitelnosti. Zapojit se přitom dá kdykoli během roku, nejen na táboře.",
+      "summary_text": "V tomhle díle si projdeme tři balíčky hotového programu, které si můžete nechat poslat zdarma. Hodí se, když nemáte kapacitu vymýšlet všechno od nuly.\n\nZapojení je jednoduché. Vyberete si téma, přihlásíte oddíl pomocí formuláře na webu, obdržíte balíček s materiály a můžete začít. Pojďme si projít, mezi čím vybíráte.\n\nPrvní je Stezka s družinovým kalendářem. Hodí se, když chcete pracovat se stezkou a podpořit rádce a rádkyně při vedení družiny. V družinovém kalendáři jsou návrhy aktivit na každý týden a k tomu dostanete programové listy s doporučeným plánem plnění stezky během roku. Ten zároveň nechává prostor pro vlastní úpravy podle potřeb družiny. Díky tomu si děti dokážou splnit stezku prvního stupně bez velkých příprav. Po přihlášení oddíl získá startovací balíček se stezkou pro každého člena družiny.\n\nDruhý je program Připravení a odolní. Ten se zaměřuje na duševní pohodu, bezpečné vztahy a posilování psychické odolnosti. Aktivity otevírají témata emocí, nastavování hranic, zvládání stresu a bezpečí a pomáhají členům oddílu lépe zvládat náročné situace. Kromě programových aktivit dostanete i bonusové materiály, konkrétně dvakrát karty Pět plus dva kroků v podpůrném rozhovoru, dvakrát karty Místa strachu od Nevypusť duši, karty Reflexit a knihu Táborová ordinace.\n\nA třetí jsou Ekoprogramy pro oddíl a kmen. Ty pomáhají otevřít environmentální témata srozumitelně a prakticky. Nabízejí třináct bloků her, výzev a aktivit k zamyšlení, a to ve skautské i roverské verzi. Vedou děti ke kritickému myšlení a k porozumění souvislostem. Všechny aktivity se dají dělat venku a některé venkovní prostředí přímo vyžadují. Součástí balíčku jsou programové listy, metodika a bonusové materiály podle věkové kategorie, tedy kniha Klima je příležitost, badatelské pomůcky nebo desková hra Rozbřesk.\n\nPůvodně se to nabízelo hlavně jako program na tábor, ale to není podmínka. Zapojit se můžete kdykoli během roku a programy se dají přizpůsobit fungování vašeho oddílu. Aktivity ze Stezky se hodí na stmelování družin, Připravení a odolní fungují všude, kde vznikne prostor na hlubší rozhovor, a nedokončené ekobloky se dají dohnat na schůzkách a výpravách.\n\nShrňme si to. Tři balíčky, tři různá zaměření: stezka a družiny, psychická odolnost, a udržitelnost. Všechny programy i přihlašovací formuláře najdeš na webu posilme.skaut.cz. A pokud si nejsi jistý, který vybrat, dá se napsat na adresu sablony zavináč skaut tečka cz.",
+      "summary_sha": "31fc60866665",
+      "voice": "Charon",
+      "published_at": "2026-08-09T12:50:57.961501+00:00"
     },
     "d989d04f7dc45462": {
       "url": "https://zpravodajstvi.skaut.cz/clanek/online-setkani-jak-na-deleni-velkych-oddilu-pripojte-se-3-cervna",
@@ -432,16 +479,16 @@
     },
     "c3086e6316f7b37a": {
       "url": "https://zpravodajstvi.skaut.cz/clanek/jak-pecovat-o-dobre-jmeno-skautingu-behem-prazdnin",
-      "title": "Jak pečovat o dobré jméno skautingu během prázdnin?",
+      "title": "Jak pečovat o dobré jméno skautingu",
       "first_seen": "2026-06-23T20:43:45.417276+00:00",
       "newsletter_subject": "Balicek ustredi cerven 2026",
       "newsletter_msgid": "19e89994ac942681",
       "article_path": "data\\articles\\c3086e6316f7b37a.json",
-      "summary_path": null,
-      "audio_path": null,
-      "audio_bytes": null,
-      "duration_sec": null,
-      "status": "fetched",
+      "summary_path": "data\\summaries\\c3086e6316f7b37a.md",
+      "audio_path": "audio/c3086e6316f7b37a.mp3",
+      "audio_bytes": 1401836,
+      "duration_sec": 175,
+      "status": "published",
       "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/5027ce7c-1f89-4df7-9baa-648569ce4ea1.jpeg",
       "links": [
         {
@@ -460,20 +507,25 @@
           "text": "Jak mluvit o skautingu",
           "url": "https://krizovatka.skaut.cz/komunikace-a-propagace/prirucka-jak-mluvit"
         }
-      ]
+      ],
+      "blurb": "Ze selhání jednotlivce se v očích veřejnosti může rázem stát selhání celé organizace, obzvlášť v době rychlých zkratek, takže vystupovat viditelně jako skaut něco zavazuje. Pro náročné situace existuje nonstop Skautská krizová linka a tisková mluvčí, která poradí s komunikací s novináři. A při focení pozor na souhlasy rodičů, které jsou součástí přihlášky, a na to, aby na fotkách nebyli odhalení lidé.",
+      "summary_text": "V tomhle díle si projdeme, jak pečovat o dobré jméno skautingu. Původně to bylo psané k prázdninám, ale většina rad platí celoročně.\n\nZačneme viditelností. Skautské oblečení, šátky nebo oddílová trička pomáhají odlišit se v davu a mít přehled o všech účastnících třeba při cestě na akci. S tím ale přichází závazek. K pohybu ve veřejném prostoru patří, že bychom svým chováním neměli zklamat očekávání, a ta u nás mají lidé právem dost vysoko. Skautské hodnoty, slušné chování, ohleduplnost, pomoc druhým a dodržování pravidel jsou úplný základ. A tady je ten důvod, proč na tom záleží víc, než se zdá: ze selhání jednotlivce se v očích veřejnosti může rázem stát selhání celé organizace, obzvlášť v dnešní době plné rychlých zkratek.\n\nDruhá věc je připravenost. Když nastane náročnější situace, neboj se ozvat na Skautskou krizovou linku, která funguje nonstop každý den. Pokud potřebuješ podporu v kontaktu s novináři, je tu skautská tisková mluvčí. Poradí ti, jak krizi řešit, jak komunikovat s médii, případně pomůžou spojit se s psychologem, krizovým interventem nebo právníkem. Dobrým pomocníkem je i Krizový lístek, který si můžeš vytisknout a dát do peněženky nebo do pouzdra na mobil.\n\nTřetí oblast je focení. Jedna fotka řekne někdy víc než dlouhý text, takže se vyplatí fotit s rozmyslem. Skvěle fungují záběry ze společných her, z pomoci druhým nebo z praktických činností, tedy věci, které odpovídají komunikačním cílům: dobrodružství, příroda, charakter, kamarádi. Naopak se vyvaruj fotek s odhalenými dětmi i dospělými a s lidmi v neuctivých pozicích. A nezapomeň na kontrolu souhlasů rodičů s fotografováním, které jsou součástí přihlášek do organizace.\n\nČtvrtá věc je komunikace s rodiči během akcí. Domluvte se na četnosti a způsobu informování tak, aby to vyhovovalo oběma stranám. Rodiče ocení aspoň občasné informace, ale chod a program akce mají přednost. Existuje ale výjimka, na kterou se snadno zapomene: třeba po silné bouřce v okolí tábora je dobré ozvat se rodičům brzy a dát jim vědět, že jsou všichni v pořádku. Jinak se to dozvědí odjinud a domýšlejí si.\n\nA poslední rada je o tom, jak o skautingu mluvit. Dej si pozor na slova jako rádce, družina, výsadek, cétéháčko nebo ešák, kterým lidé mimo skauting nemusí rozumět. A vyhni se obsahu, který podporuje stereotypy, tedy že jsme armáda pro děti nebo že učíme přežít v lese.\n\nShrňme si to. Buď poznat a podle toho se chovej, věz, komu zavolat, když se něco stane, foť s ohledem na souhlasy i důstojnost a mluv o skautingu srozumitelně.",
+      "summary_sha": "f6aef4264e79",
+      "voice": "Callirrhoe",
+      "published_at": "2026-08-09T12:52:25.089077+00:00"
     },
     "9bf0e9d045c2a1ce": {
       "url": "https://zpravodajstvi.skaut.cz/clanek/skautska-energie-startuje-informacni-kampan-pro-rodice-cleny-i-strediska",
-      "title": "Skautská energie: startuje informační kampaň pro rodiče, členy i střediska",
+      "title": "Skautská energie: jak projekt funguje a proč vznikl",
       "first_seen": "2026-06-23T20:43:47.031441+00:00",
       "newsletter_subject": "Balicek ustredi cerven 2026",
       "newsletter_msgid": "19e89994ac942681",
       "article_path": "data\\articles\\9bf0e9d045c2a1ce.json",
-      "summary_path": null,
-      "audio_path": null,
-      "audio_bytes": null,
-      "duration_sec": null,
-      "status": "fetched",
+      "summary_path": "data\\summaries\\9bf0e9d045c2a1ce.md",
+      "audio_path": "audio/9bf0e9d045c2a1ce.mp3",
+      "audio_bytes": 1116524,
+      "duration_sec": 140,
+      "status": "published",
       "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/8acfb479-aed0-489e-a49a-31232e247d0d.jpeg",
       "links": [
         {
@@ -484,7 +536,12 @@
           "text": "Skaut Mobilu",
           "url": "https://www.skautmobil.cz"
         }
-      ]
+      ],
+      "blurb": "Skautská energie funguje dvanáct let, sdružuje asi patnáct tisíc odběrných míst a díky tomu vyjednává lepší podmínky u dodavatelů elektřiny a plynu pro domácnosti, střediska i firmy. Výnos zároveň spolufinancuje služby, které využívá celé hnutí, tedy třeba skautské časopisy nebo skautIS. Přihlašování do letošní aukce bylo otevřené do 31. července, takže tenhle ročník je uzavřený, ale projekt běží dál.",
+      "summary_text": "V tomhle díle si vysvětlíme, co je Skautská energie a proč se jí Junák dlouhodobě věnuje. Vzniklo k tomu informační kampaň mířená na rodiče, členy i střediska, a stojí za to tomu rozumět, i když jste letošní termín minuli.\n\nNejdřív fakta. Projekt funguje už dvanáct let a dnes sdružuje přibližně patnáct tisíc odběrných míst. Díky tomu objemu dokáže pro domácnosti, střediska i firmy vyjednávat zajímavější podmínky u dodavatelů elektřiny a plynu. To je ta první část přínosu.\n\nTa druhá je možná méně známá. Projekt zároveň pomáhá spolufinancovat služby a infrastrukturu, které využívá celé hnutí. Konkrétně třeba skautské časopisy, skautIS nebo podporu dobrovolníků. Takže když se někdo zapojí, přispěje nepřímo i na věci, ze kterých čerpají všichni.\n\nDůležité je, že nejde o povinnost ani závazek, stejně jako u Skaut Mobilu. Smyslem kampaně bylo hlavně dát lidem vědět, že taková možnost existuje, vysvětlit princip a nabídnout jednoduchý způsob, jak si nezávazně ověřit možné úspory. Komunikace probíhala postupně formou e-mailů, esemesek i tištěného dopisu, vždy s možností se jediným kliknutím odhlásit. A nikomu, kdo se v minulosti odhlásil z komunikace projektů Skaut Mobil nebo Skautská energie, se nic neposílalo.\n\nTeď k termínům, ať je jasno. Kampaň běžela od konce května do konce července. Přihlašování do letošní aukce bylo otevřené do jednatřicátého července a samotná aukce proběhla v srpnu. Letošní kolo je tedy uzavřené. Projekt ale pokračuje dál, takže se hodí o něm vědět dopředu a hlídat si příští ročník.\n\nA ještě jedna souvislost, kterou v článku zmiňuje starosta i vedoucí projektu. Podobné komunitní projekty mají pro organizaci čím dál větší význam. Poslední měsíce, kdy se řešily škrty v rozpočtu kapitoly mládeže, znovu ukázaly, jak důležité je, aby skauting nestál jen na dotacích a členských příspěvcích, ale měl i vlastní stabilní zdroje financování. To je vlastně hlavní důvod, proč se do Skaut Mobilu a Skautské energie dlouhodobě investuje.\n\nShrňme si to. Dvanáct let, patnáct tisíc odběrných míst, lepší ceny energií a k tomu spolufinancování společné infrastruktury. Letošní aukce už proběhla, ale vědět o projektu se vyplatí i tak.",
+      "summary_sha": "17fc6ac95096",
+      "voice": "Charon",
+      "published_at": "2026-08-09T12:53:22.872305+00:00"
     },
     "b3cb5bb38ebcf0ab": {
       "url": "https://zpravodajstvi.skaut.cz/clanek/od-1-6-2026-se-meni-prumerna-cena-nafty-pro-vypocet-cestovnich-nahrad-vite-jake-sazby-stanovuje-vyhlaska-v-obdobich-roku-2026",
@@ -512,16 +569,16 @@
     },
     "48107c0579c8e1f4": {
       "url": "https://zpravodajstvi.skaut.cz/clanek/zazadej-o-pracovni-volno-s-nahradou-mzdy-na-tabor-na-upravenem-formulari",
-      "title": "Zažádej o pracovní volno s náhradou mzdy na tábor na upraveném formuláři",
+      "title": "Pracovní volno s náhradou mzdy: nárok, který se nevyužívá",
       "first_seen": "2026-06-23T20:43:50.061513+00:00",
       "newsletter_subject": "Balicek ustredi cerven 2026",
       "newsletter_msgid": "19e89994ac942681",
       "article_path": "data\\articles\\48107c0579c8e1f4.json",
-      "summary_path": null,
-      "audio_path": null,
-      "audio_bytes": null,
-      "duration_sec": null,
-      "status": "fetched",
+      "summary_path": "data\\summaries\\48107c0579c8e1f4.md",
+      "audio_path": "audio/48107c0579c8e1f4.mp3",
+      "audio_bytes": 1070636,
+      "duration_sec": 134,
+      "status": "published",
       "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/f8d37b6b-54aa-4a6d-b2af-c0d94a102057.jpeg",
       "links": [
         {
@@ -540,20 +597,25 @@
           "text": "formulář potvrzení",
           "url": "https://krizovatka.skaut.cz/spisovna/formulare-a-vzory/akce-a-tabory/potvrzeni-strediska-o-vyuziti-pracovniho-volna"
         }
-      ]
+      ],
+      "blurb": "Kdo je zaměstnaný a zároveň dlouhodobě a soustavně pracuje s dětmi, má nárok na týden pracovního volna s náhradou mzdy, takže na vícedenní akci nemusí čerpat dovolenou. Loni bylo kladně vyřízeno jedenadevadesát procent žádostí, ale řada lidí musela dodatečně doplňovat přehled své dobrovolnické činnosti, proto se formulář upravil a prostor na to už v něm je. Stát letos refunduje nejvýš 276,90 koruny na hodinu, tedy zhruba jedenáct tisíc za týden.",
+      "summary_text": "V tomhle díle si projdeme nárok, o kterém spousta vedoucích neví nebo ho nevyužívá. Pracovní volno s náhradou mzdy.\n\nKdo na něj má nárok? Každý, kdo je v zaměstnaneckém pracovním poměru a zároveň dlouhodobě a soustavně dobrovolnicky pracuje s dětmi a mládeží. Ty dva pojmy mají přesný výklad. Dlouhodobost znamená minimálně jeden rok před akcí, na kterou volno žádáte. A soustavnou činnost vykládá Česká správa sociálního zabezpečení jako minimálně jednou za čtrnáct dnů.\n\nJak to funguje prakticky? Na část tábora nebo na jinou vícedenní akci nemusíte čerpat dovolenou. Stačí zažádat u svého zaměstnavatele a okresní správa sociálního zabezpečení mu potom část vaší mzdy proplatí. V roce 2026 stát refunduje nejvýš dvě stě sedmdesát šest korun a devadesát haléřů za hodinu, což při běžné čtyřicetihodinové pracovní době znamená za týden nejvýš jedenáct tisíc sedmdesát šest korun.\n\nTeď to nejužitečnější, tedy proč se ta žádost někdy zadrhne. Podle ankety ve SkautFóru bylo loni jedenadevadesát procent žádostí vyřízeno kladně, takže úspěšnost je vysoká. Řada žadatelů ale musela v průběhu řízení něco doplňovat, nejčastěji přehled své dlouhodobé dobrovolnické činnosti, který většina okresních správ požadovala. Proto se formulář upravil a je v něm teď prostor na rozepsání dobrovolných aktivit. K tomu vznikly podrobné instrukce pro vyplnění, které jsou na Křižovatce i v komentované verzi formuláře. Pokud jste uspěli s loňskou verzí a máte ji uloženou, můžete klidně používat dál tu.\n\nKde všechno hledat? Průběžně aktualizované podrobné informace jsou na Křižovatce. Váš zaměstnavatel i vy se můžete informovat na stránkách České správy sociálního zabezpečení. A ve Spisovně na Křižovatce najdete jak formulář žádosti o pracovní volno s náhradou mzdy, tak formulář potvrzení o účasti na akci, protože potřebujete oba.\n\nKdyž by něco nebylo jasné nebo narazíte při vyřizování na komplikaci, dá se napsat na adresu lide zavináč skaut tečka cz.\n\nShrňme si to. Rok dobrovolničení a aktivita aspoň jednou za čtrnáct dní vám dávají nárok na týden placeného volna na akci s dětmi. Vyplňte upravený formulář včetně přehledu dobrovolné činnosti, přidejte potvrzení o účasti, a nemusíte na to obětovat dovolenou.",
+      "summary_sha": "024fff7bbcd4",
+      "voice": "Callirrhoe",
+      "published_at": "2026-08-09T12:54:29.836536+00:00"
     },
     "fdbeaca1b22b3050": {
       "url": "https://zpravodajstvi.skaut.cz/clanek/ohlednuti-za-kvetnovou-online-perso-poradnou-na-tema-motivace",
-      "title": "Ohlédnutí za květnovou online perso poradnou na téma Motivace",
+      "title": "Perso poradna: motivaci nelze nařídit, jen jí uklidit z cesty",
       "first_seen": "2026-06-23T20:43:51.679770+00:00",
       "newsletter_subject": "Balicek ustredi cerven 2026",
       "newsletter_msgid": "19e89994ac942681",
       "article_path": "data\\articles\\fdbeaca1b22b3050.json",
-      "summary_path": null,
-      "audio_path": null,
-      "audio_bytes": null,
-      "duration_sec": null,
-      "status": "fetched",
+      "summary_path": "data\\summaries\\fdbeaca1b22b3050.md",
+      "audio_path": "audio/fdbeaca1b22b3050.mp3",
+      "audio_bytes": 1522412,
+      "duration_sec": 190,
+      "status": "published",
       "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/37586cd3-ec02-4cec-8c67-de4d88e2b972.png",
       "links": [
         {
@@ -580,7 +642,12 @@
           "text": "výchovné poradny",
           "url": "https://zpravodajstvi.skaut.cz/clanek/vychovne-online-poradny-poradi"
         }
-      ]
+      ],
+      "blurb": "Z květnové personalistické poradny vyšel jeden zásadní závěr: druhé lidi motivovat nejde. Můžete jen vytvářet podmínky, které sytí jejich vnitřní motivaci, a odstraňovat demotivátory. Konkrétní pomocí je dobrovolnická dohoda, která roli časově ohraničí, takže se lidé nebojí, že se upisují napořád, a rozdělení kompetencí, aby funkce nepůsobila tak velká.",
+      "summary_text": "V tomhle díle si shrneme květnovou online personalistickou poradnu na téma motivace. A rovnou tím nejdůležitějším zjištěním, které z ní vyšlo.\n\nVšichni se ptáme: jak mám lidi motivovat, aby něco dělali? Ze sdílení účastníků vyplynulo, že ostatní lidi motivovat nelze. Můžeme ale dělat dvě věci. Vytvářet vhodné podmínky, které jejich vnitřní motivaci sytí, a odstraňovat demotivátory, tedy překážky, které jim chuť do práce berou.\n\nKaždý člověk je přitom jiný. Co funguje u jednoho, nemusí fungovat u druhého, a navíc se motivace mění v čase a podle životní fáze. Jinak na tom bude maturant a jinak rodič malých dětí. Motivace skautů se obvykle točí kolem šesti oblastí: smysluplnost a hodnoty, tedy pocit, že dělám správnou věc. Parta a přátelství. Seberealizace, možnost růst a přebírat zodpovědnost. Užitečnost, předávání zkušeností mladším. Životní styl, tedy zábava, příroda, dobrodružství. A vliv, možnost působit na lidi kolem sebe.\n\nTeď ke konkrétním otázkám. První: jak motivovat lidi k přebírání funkcí tam, kde je personální krize a lidé se bojí, že se upisují na dlouho? To je častý problém v krajích, odkud se odchází za studiem. Pomůže dobrovolnická dohoda, která roli ohraničí na určitý čas a stanoví podmínky. Dál upřímná komunikace v bezpečném prostředí, aby člověk mohl vyslovit obavy. Rozdělení kompetencí, aby role nepůsobila tak velká. A změna toho, jak se na roli ve středisku díváme. To, že se dosud vykonávala určitým způsobem, neznamená, že to tak musí zůstat, když ji převezme někdo nový.\n\nDruhá otázka: jak poznat, že člověk ztrácí zájem, ještě dřív, než odejde? Nejčastěji se to děje u maturantů a prváků na vysoké. Procházejí velkou životní proměnou, musí se stabilizovat a zjistit, kolik času jim na skauting vlastně zbývá. Riziko je, že po delší absenci je parta už nevezme zpátky. Pomůže dát lidem prostor zapojit se v jakékoli míře, která jim vyhovuje, zůstat v kontaktu přes sociální sítě, zvát je na tradiční akce a zkusit je zapojit online.\n\nTřetí: jak zlepšit komunikaci na středisku? Správně nastavit kanály podle pracovních skupin a rozlišovat jejich typ. Diskuzní kanál, kde lidé říkají názor, a oznamovací, kde jen potvrdí, že informaci přijali. K tomu jasná pravidla, do kolika dní se odpovídá, a používání hlasování, aby se nikdo nemusel vyjadřovat slovy.\n\nA čtvrtá: co s lidmi, kteří mají potenciál, ale nízkou aktivitu? Většinou mají spoustu jiných aktivit. Domluvte se s nimi na jednorázových akcích, berte je jako cennou zálohu a hledejte pro ně role podle jejich vnitřní motivace a času.\n\nShrňme si to. Motivaci nevyrobíte, můžete jen odstranit překážky a nabídnout podmínky. Ohraničte role dohodou, rozdělte kompetence, zůstávejte s lidmi v kontaktu i když poleví, a ptejte se, co konkrétně baví je.",
+      "summary_sha": "f7cf39a4d5bc",
+      "voice": "Callirrhoe",
+      "published_at": "2026-08-09T12:55:53.190216+00:00"
     },
     "390a781b2695ef9b": {
       "url": "https://zpravodajstvi.skaut.cz/clanek/jaky-mate-signal-na-tabore-a-v-klubovne-pomozte-nam-vytvorit-skautskou-mapu-pokryti",
@@ -661,6 +728,1050 @@
       "status": "fetched",
       "image_url": "https://s3.eu-central-1.amazonaws.com/skaut-gov-contember-prod/news/0a2d79ff-03e9-47a1-a066-c12258b0211d.webp",
       "links": []
+    },
+    "aa9efc3a2a4fbbe0": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/jak-nakopnout-oddil-do-noveho-roku-vyuzijte-spolecny-cas-na-tabore",
+      "title": "Zhodnoťte oddíl, dokud máte rok v živé paměti",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/a25f1598-f036-4c43-b14c-66b0610d422f.png",
+      "links": [
+        {
+          "text": "Semafor – inspiraci pro tábory",
+          "url": "https://krizovatka.skaut.cz/fungujici-tym/zpetna-vazba-je-dulezita/rychle-zhodnoceni-oddilu-semafor/semafor-inspirace-pro-tabory"
+        },
+        {
+          "text": "Hodnocení kvality",
+          "url": "https://krizovatka.skaut.cz/fungujici-tym/zpetna-vazba-je-dulezita/hodnoceni-kvality-ve-skaut-i-su-zpetne-zrcatko"
+        }
+      ],
+      "first_seen": "2026-08-09T11:57:35.879955+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Využijte tábor k plánování oddílového roku a zapište si termín Obroku",
+      "newsletter_msgid": "1dd61dbc72dfa453",
+      "article_path": "data\\articles\\aa9efc3a2a4fbbe0.json",
+      "summary_path": "data\\summaries\\aa9efc3a2a4fbbe0.md",
+      "audio_path": "audio/aa9efc3a2a4fbbe0.mp3",
+      "audio_bytes": 1247084,
+      "duration_sec": 156,
+      "status": "published",
+      "blurb": "Nejlepší chvíle na zhodnocení oddílu je ta, kdy máte celý rok čerstvě v paměti a celý tým pohromadě, typicky na konci tábora. Pomůžou nástroje Semafor a Hodnocení kvality, které pojmenují, jak jste na tom s programem, lidmi, bezpečností a komunikací s rodiči. Klíč je nedělat to najednou: dvacet minut večer a jedna vybraná oblast z pěti stačí, a zářijové rady pak ušetří hodiny dohadování.",
+      "summary_text": "V tomhle díle si řekneme, kdy a jak zhodnotit, jak oddílu vlastně uplynulý rok šel. Článek to původně mířil na tábor, ale princip platí pořád: udělejte to ve chvíli, kdy máte rok v živé paměti a tým pohromadě, ať už u dohasínajícího ohně, nebo na první zářijové radě.\n\nProč zrovna tábor? Protože tam nastávají chvíle, kdy se program rozběhne sám. Den naruby, kdy na část dne přeberou vedení děti. Velká etapovka v lese. Odpolední blok, který kompletně šéfují roveři. Najednou stojíte trochu opodál, hlídáte jen bezpečnost a dospělý tým má po dlouhé době volné ruce. To je ten správný okamžik uvařit si kávu, sednout si a otevřít Semafor.\n\nSemafor je inspirace pro tábory, ke které se hodí ještě Hodnocení kvality. Ty nástroje pomůžou pojmenovat věci, které všichni podvědomě tušíte, ale v běžném shonu je přehlížíte. Zjistíte, jak jste na tom s programem, s lidskými zdroji, s bezpečností nebo s komunikací s rodiči. A protože máte úspěchy i nezdary celého roku čerstvě v hlavě, bude ta reflexe upřímná a trefná.\n\nJak na to bez stresu? Tři rady. Za prvé, dávkujte si to po večerech. Nemusíte nad tím strávit celou noc ani svolávat tříhodinovou radu, klidně si sedněte na dvacet minut, až všechno ztichne. Za druhé, vyberte si jen jednu oblast z pěti, které Semafor pokrývá. Nesnažte se vyřešit všechno naráz, vezměte téma, které vás nejvíc pálí, a proberte ho do hloubky. Další dny můžete, ale nemusíte, navázat. A za třetí, neřešte zítřek, ale budoucnost. Jestli vás vedení oddílu pořád baví. Jestli v týmu nechybí lidi. Jak hladce funguje přechod dětí z družin do roverského věku.\n\nTen hlavní argument je v tom, že pár společných chvil teď ušetří hodiny tápání a dohadování na zářijových radách. Do nového skautského roku vykročíte s jasnou představou místo s prázdnou hlavou.\n\nShrňme si to. Zhodnoťte oddíl, dokud je rok čerstvý a tým u sebe. Použijte Semafor nebo Hodnocení kvality, dejte tomu dvacet minut a jedno téma, a ptejte se na budoucnost, ne na zítřek. Podklady a inspirační kartičky najdeš na Křižovatce v sekci Semafor pro tábory.",
+      "summary_sha": "3cedb0dcc569",
+      "voice": "Charon",
+      "published_at": "2026-08-09T12:57:30.634400+00:00"
+    },
+    "6df62a9bdf0aa666": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/klid-v-dusi-a-nohy-nahore",
+      "title": "Táborová ordinace a další věci, co se vyplatí mít",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/411af5e4-1d70-4220-a6b6-3718d891d8cf.jpeg",
+      "links": [
+        {
+          "text": "Táborovou ordinaci",
+          "url": "https://www.junshop.cz/taborova-ordinace"
+        },
+        {
+          "text": "Kelímek skautští zakladatelé",
+          "url": "https://www.junshop.cz/kelimek-skautsti-zakladatele"
+        },
+        {
+          "text": "Skautské omalovánky",
+          "url": "https://www.junshop.cz/skautske-omalovanky"
+        },
+        {
+          "text": "Táboření v čase",
+          "url": "https://www.junshop.cz/taboreni-v-case"
+        },
+        {
+          "text": "Sada skautských pohlednic",
+          "url": "https://www.junshop.cz/sada-skautskych-pohlednic"
+        },
+        {
+          "text": "Namísto resuscitace kašlíky, virózy a angíny. Zdravotníci řeší zejména běžnější ",
+          "url": "https://zpravodajstvi.skaut.cz/clanek/namisto-resuscitace-kasliky-virozy-a-anginy-zdravotnici-resi-zejmena-beznejsi-choroby-pomaha-jim-v-tom-taborova-ordinace"
+        },
+        {
+          "text": "Jak si zkrátit čekání na jaro? Vyzkoušejte nové omalovánky a hry",
+          "url": "https://zpravodajstvi.skaut.cz/clanek/jak-si-zkratit-cekani-na-jaro-vyzkousejte-nove-omalovanky-a-hry"
+        },
+        {
+          "text": "Objev novou skautskou karetní hru, která tě vrátí v čase – a to doslova",
+          "url": "https://zpravodajstvi.skaut.cz/clanek/objev-novou-skautskou-karetni-hru-ktera-te-vrati-v-case-a-to-doslova"
+        }
+      ],
+      "first_seen": "2026-08-09T11:57:37.368180+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Využijte tábor k plánování oddílového roku a zapište si termín Obroku",
+      "newsletter_msgid": "1dd61dbc72dfa453",
+      "article_path": "data\\articles\\6df62a9bdf0aa666.json",
+      "summary_path": "data\\summaries\\6df62a9bdf0aa666.md",
+      "audio_path": "audio/6df62a9bdf0aa666.mp3",
+      "audio_bytes": 1328876,
+      "duration_sec": 166,
+      "status": "published",
+      "blurb": "Na zdravotnických kurzech se učí záchrana života, jenže realita akcí jsou odřená kolena, klíšťata a nevolnosti. Přesně na tuhle mezeru cílí Táborová ordinace, publikace od lékařů a právníků v čele s pediatrem Matoušem Záleským, která radí s dávkováním léků, alergiemi, chronickými onemocněními i právními aspekty. K tomu pár drobností na volné chvíle: omalovánky s příběhem táborového dne, karetní hra Táboření v čase a sada skautských pohlednic s doplňovačkami.",
+      "summary_text": "V tomhle díle si projdeme pár věcí, které se hodí zdravotníkům i vedoucím. A začneme tou nejužitečnější.\n\nNa zdravotnických kurzech se často učíme zachraňovat životy. Realita akcí s dětmi ale bývá jiná. Řešíme odřená kolena, klíšťata, nevolnosti a běžná nachlazení. A přesně na tuhle mezeru míří Táborová ordinace. Je to odborná, ale srozumitelně psaná publikace od lékařů a právníků v čele s pediatrem Matoušem Záleským a přehledně mapuje běžnou agendu. Poradí s dávkováním léků, s alergiemi, s chronickými onemocněními i s hygienou a právními aspekty. Tedy s věcmi, které na kurzu obvykle proletí a v praxi vás pak zaskočí.\n\nDruhá věc je praktická drobnost. K horkým dnům patří neustálý přísun tekutin, a k tomu dobře poslouží kelímek Skautští zakladatelé. Je lehký, odolný, půllitrový, má ouško, takže se snadno připne k batohu, a zbaví vás jednorázových plastů.\n\nZbytek je na volné chvíle, tedy na polední klid nebo na cestu. Skautské omalovánky nejsou jen obyčejné obrázky. Vyprávějí ucelený příběh jednoho táborového dne a ukrývají v sobě i ručičkové hodiny, takže si u nich děti procvičí, kdy je čas na program a kdy na večerku. Hodí se pro vlčata, světlušky a benjamínky.\n\nPro starší, rovery a vedení je tu karetní hra Táboření v čase. Nepotřebujete k ní hrací desku, stačí si sednout na deku. Víte, kdy byl vynalezen ešus, spínací špendlík nebo pláštěnka? Ta hra je svižná a vtáhne vás do historie vynálezů, bez kterých si dnešní výpravy neumíme představit.\n\nA poslední je sada skautských pohlednic. V balení je deset kousků z kvalitního papíru s autorskými skautskými ilustracemi. Nejsou to ale jen pohlednice na známku. Najdete v nich doplňovačky, hříčky a dokonce speciální místo pro uchování vylisované přírodniny z louky. Takže je to vzkaz domů, který zabaví děti a na ledničce vydrží ještě dlouho.\n\nShrňme si to. Táborová ordinace je věc, kterou ocení každý zdravotník i vedoucí, protože pokrývá to, co se opravdu děje. A zbytek jsou drobnosti pro klidnější část dne, které fungují stejně dobře na výpravě jako na táboře.",
+      "summary_sha": "a5eb31632f5f",
+      "voice": "Callirrhoe",
+      "published_at": "2026-08-09T12:58:48.853936+00:00"
+    },
+    "ddb0f4d307beace7": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/nacelnictvo-schvalilo-vysi-clenskeho-prispevku-na-rok-2027",
+      "title": "Členský příspěvek na rok 2027 stoupá na 560 korun",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/54e29be6-62e1-4a40-b70d-0217ebcde455.jpeg",
+      "links": [
+        {
+          "text": "Strategii 2030",
+          "url": "https://krizovatka.skaut.cz/organizace/strategie/strategie-2030"
+        },
+        {
+          "text": "Dostupný skauting",
+          "url": "https://krizovatka.skaut.cz/dostupny-skauting/dostupny-skauting-zakladni-informace-o-programu"
+        },
+        {
+          "text": "Darujme kroužky dětem",
+          "url": "https://krizovatka.skaut.cz/dostupny-skauting/projekt-crdm"
+        },
+        {
+          "text": "Vše o členském příspěvku",
+          "url": "https://krizovatka.skaut.cz/administrativa/registrace-a-evidence-clenu/clenske-prispevky"
+        },
+        {
+          "text": "výsledky auditů",
+          "url": "https://drive.google.com/file/d/1ABCH2OPyQdMO1BU5u3RRZpCaKkJyNG1l/view?pli=1"
+        },
+        {
+          "text": "ÚRKJ",
+          "url": "https://krizovatka.skaut.cz/organizace/ustredni-organy/ustredni-revizni-komise"
+        }
+      ],
+      "first_seen": "2026-08-09T11:57:38.874925+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Využijte tábor k plánování oddílového roku a zapište si termín Obroku",
+      "newsletter_msgid": "1dd61dbc72dfa453",
+      "article_path": "data\\articles\\ddb0f4d307beace7.json",
+      "summary_path": "data\\summaries\\ddb0f4d307beace7.md",
+      "audio_path": "audio/ddb0f4d307beace7.mp3",
+      "audio_bytes": 1377836,
+      "duration_sec": 172,
+      "status": "published",
+      "blurb": "Ústřední část členského příspěvku na rok 2027 je stanovena na 560 korun na člena, což je o sto korun víc než letos, tedy výrazněji než v předchozích letech. Důvodem je, aby Kancelář ústředí uměla zaplatit dost kvalifikovaných lidí a obstála jako zaměstnavatel v konkurenci. K téhle částce se při registraci ještě přičítá příspěvek kraji, okresu a vlastnímu středisku, takže výsledná suma je vyšší.",
+      "summary_text": "V tomhle díle si projdeme, kolik se bude platit za členství v roce 2027 a proč to podražilo.\n\nZačneme číslem. Pro rok 2027 je členský příspěvek pro ústřední úroveň stanovený na pět set šedesát korun za každého člena a členku. Proti letošku je to o sto korun víc, což je zvýšení výraznější než v předchozích letech.\n\nDůležité je rozumět tomu, že tohle není celá částka, kterou zaplatíte. Příspěvek vybírají během registrace střediska prostřednictvím oddílů a skládá se z několika částí. Kromě té ústřední je tam příspěvek skautskému kraji, příspěvek skautskému okresu, pokud okres existuje a vybírá ho, a příspěvek samotnému středisku, který si jednotka nechává na svou činnost. Součet těchhle částek je to, co každý zaplatí.\n\nProč to vlastně platíme? Členské příspěvky tvoří zhruba polovinu příjmů hlavního spolku a jsou tedy klíčové pro stabilitu jeho financování. Za ty peníze Kancelář ústředí poskytuje jednotkám i jednotlivým dobrovolníkům podporu, kterou většinou bereme jako samozřejmost. Patří sem rozvoj roveringu a Rovernet. Podpora v oblasti bezpečí, tedy Skautská krizová linka, workshopy a vzdělávání. Nábory a cílená podpora regionů ohrožených demografickou krizí. Metodická podpora a programové nástroje. Vydávání a distribuce časopisů. Správa pojištění pro všechny a správa rejstříků. Sledování legislativy a jednání se státem. Pomoc jednotkám v náročných situacích, ať jde o dělení středisek, hospodářské potíže, úrazy na akcích nebo problémy s institucemi. Vývoj IT nástrojů, které snižují administrativu. A taky administrativa dotací, třeba od ministerstva školství, nebo Fond nemovitostí s půjčkami na rekonstrukce kluboven.\n\nA proč zrovna teď o sto korun? Náčelnictvo to zdůvodňuje tím, že Kancelář ústředí potřebuje zaměstnávat dost kvalifikovaných lidí a jako zaměstnavatel obstát v konkurenci. Bez toho je těžké dostát očekáváním, která na ni jednotky mají. Výzvy před organizací nejsou malé: zavedení Dětského certifikátu, nutné investice do IT, změna systému vzdělávání, získávání nových finančních zdrojů a udržování výchovných nástrojů.\n\nShrňme si to. Pět set šedesát korun na ústřední úroveň, sto korun nahoru, a k tomu se přičítá kraj, okres a středisko. Peníze jdou hlavně na to, aby Kancelář ústředí měla kapacity na služby, které jednotky denně využívají.",
+      "summary_sha": "01ae70874388",
+      "voice": "Callirrhoe",
+      "published_at": "2026-08-09T13:00:10.912207+00:00"
+    },
+    "ac77cad2a8292926": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/obrok-se-blizi-zarad-ho-do-strediskoveho-kalendare",
+      "title": "Obrok se blíží. Zařaď ho do střediskového kalendáře",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/c4b1e42a-c70c-4eb9-beb3-a56cedc41e69.jpeg",
+      "links": [
+        {
+          "text": "obrok.skaut.cz",
+          "url": "http://obrok.skaut.cz/"
+        }
+      ],
+      "first_seen": "2026-08-09T11:57:40.306198+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Využijte tábor k plánování oddílového roku a zapište si termín Obroku",
+      "newsletter_msgid": "1dd61dbc72dfa453",
+      "article_path": "data\\articles\\ac77cad2a8292926.json",
+      "summary_path": null,
+      "audio_path": null,
+      "audio_bytes": null,
+      "duration_sec": null,
+      "status": "fetched"
+    },
+    "c24e82daf47ddd73": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/jeste-nevite-kam-s-oddilem-v-lete-2027-mame-tip-na-spolecnou-zahranicni-vypravu",
+      "title": "Ještě nevíte, kam s oddílem v létě 2027? Máme tip na společnou zahraniční výpravu",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/2549d093-c241-4c22-88b9-db172ab84da1.jpeg",
+      "links": [
+        {
+          "text": "společnou českou výpravu na mezinárodní skautskou základnu Kandersteg",
+          "url": "https://zpravodajstvi.skaut.cz/clanek/zazij-skauting-v-srdci-alp-vezmi-svuj-oddil-do-kanderstegu"
+        },
+        {
+          "text": "kisc2027.skauting.cz",
+          "url": "https://kisc2027.skauting.cz"
+        }
+      ],
+      "first_seen": "2026-08-09T11:57:41.750558+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Využijte tábor k plánování oddílového roku a zapište si termín Obroku",
+      "newsletter_msgid": "1dd61dbc72dfa453",
+      "article_path": "data\\articles\\c24e82daf47ddd73.json",
+      "summary_path": null,
+      "audio_path": null,
+      "audio_bytes": null,
+      "duration_sec": null,
+      "status": "fetched"
+    },
+    "c63710232e15e7be": {
+      "url": "https://krizovatka.skaut.cz/kontakty/kancelar-ustredi/2021-06/komunikace",
+      "title": "Komunikace",
+      "image_url": "/assets/images/og-image.3f33a199.png",
+      "links": [
+        {
+          "text": "Komunikace a propagace.",
+          "url": "https://krizovatka.skaut.cz/komunikace-a-propagace"
+        },
+        {
+          "text": "Skautské zpravodajství",
+          "url": "https://zpravodajstvi.skaut.cz/"
+        },
+        {
+          "text": "Křižovatku",
+          "url": "https://krizovatka.skaut.cz/"
+        },
+        {
+          "text": "WhatsApp kanál SkautINFO",
+          "url": "https://www.whatsapp.com/channel/0029Va9KXpeIyPtPFyashd3k"
+        },
+        {
+          "text": "Facebookový profil SkautINFO",
+          "url": "https://www.facebook.com/SkautInfo"
+        }
+      ],
+      "first_seen": "2026-08-09T11:57:44.178614+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Využijte tábor k plánování oddílového roku a zapište si termín Obroku",
+      "newsletter_msgid": "1dd61dbc72dfa453",
+      "article_path": "data\\articles\\c63710232e15e7be.json",
+      "summary_path": null,
+      "audio_path": null,
+      "audio_bytes": null,
+      "duration_sec": null,
+      "status": "fetched"
+    },
+    "dbd91a783a981a26": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/hledame-specialistu-specialistku-pro-vnitrni-organizaci",
+      "title": "[UKONČENO] Hledáme specialistu / specialistku pro organizaci",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/ca4fbbfd-b599-4e87-bd2c-505f8f737ab5.jpeg",
+      "links": [],
+      "first_seen": "2026-08-09T11:57:45.696203+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Využijte tábor k plánování oddílového roku a zapište si termín Obroku",
+      "newsletter_msgid": "1dd61dbc72dfa453",
+      "article_path": "data\\articles\\dbd91a783a981a26.json",
+      "summary_path": null,
+      "audio_path": null,
+      "audio_bytes": null,
+      "duration_sec": null,
+      "status": "fetched"
+    },
+    "c2402da9fca6274e": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/priblizte-benjaminkum-pribeh-zakladatele-svojsika",
+      "title": "Nový programový list: Svojsík pro benjamínky",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/9eba2edb-1566-498a-8f4c-ee00a0884310.jpeg",
+      "links": [
+        {
+          "text": "Benjamín a já (my)",
+          "url": "https://drive.google.com/file/d/1qlk0ZXQt7OhZ_BfvM-tDuWc2PSyZyBjs/view?usp=drive_link"
+        },
+        {
+          "text": "Benjamínci - programové listy a metodika",
+          "url": "https://krizovatka.skaut.cz/benjaminci/pesinky"
+        }
+      ],
+      "first_seen": "2026-08-09T11:57:47.205886+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Využijte tábor k plánování oddílového roku a zapište si termín Obroku",
+      "newsletter_msgid": "1dd61dbc72dfa453",
+      "article_path": "data\\articles\\c2402da9fca6274e.json",
+      "summary_path": "data\\summaries\\c2402da9fca6274e.md",
+      "audio_path": "audio/c2402da9fca6274e.mp3",
+      "audio_bytes": 1301228,
+      "duration_sec": 163,
+      "status": "published",
+      "blurb": "Pátého září uplyne sto padesát let od narození zakladatele českého skautingu A. B. Svojsíka a k tomu výročí vyšel nový programový list pro benjamínky. Vysvětluje mimo jiné, proč se nejmladší kategorie jmenuje právě benjamínci, a přidává ilustrovanou přílohu s komiksem. Aktivity jsou dělané do terénu, ne k sezení v klubovně, včetně papírového Svojsíka na špejli, kterého si děti berou s sebou ven.",
+      "summary_text": "V tomhle díle si představíme nový programový list pro benjamínky, a hodí se k tomu jedno konkrétní datum. Pátého září si připomeneme sto padesát let od narození Antonína Benjamina Svojsíka, zakladatele českého skautingu. To je ideální příležitost přiblížit tuhle osobnost i těm nejmenším.\n\nList spadá do oblasti kompetencí Svět okolo nás, konkrétně do tématu Příběhy našeho světa. Cílem je hravou a věkově přiměřenou formou rozvíjet klíčové kompetence benjamínků a otevřít jim dveře do historie skautingu.\n\nZkuste si položit otázku, kterou možná nikdy nikdo z vašich benjamínků nedostal. Proč se vlastně nejmladší skautská kategorie jmenuje benjamínci a jak to souvisí s Antonínem Benjaminem Svojsíkem? V novém listu najdete odpověď i inspiraci, jak tohle téma otevřít tak, aby si ho děti prožily, ne jen vyslechly. Jako bonus je součástí bohatá ilustrovaná příloha včetně kresleného komiksu.\n\nA teď to podstatné pro praxi: aktivity jsou navržené tak, aby benjamínky zvedly ze židlí. Nejde o povídání v klubovně. Využijete je během běžného skautského roku na schůzkách a výpravách, ale stejně dobře poslouží jako program na letním nebo příměstském táboře. Jedna z aktivit je obzvlášť pěkná. Děti si můžou vystřihnout papírového Svojsíka, upevnit ho na špejli a vyrazit s ním ven. Můžou ho pak vzít na nejrůznější místa a zažít s ním vlastní dobrodružství.\n\nKde materiály hledat? Pokud máš už všechny programové listy vytištěné a chceš si přidat jen tenhle, stáhni si samostatný list, který se jmenuje Benjamín a já, a to včetně ilustrované přílohy s komiksem. Pokud si chceš prohlédnout všechny listy pohromadě, jdi na Křižovatku do sekce Benjamínci, programové listy a metodika.\n\nShrňme si to. K výročí sto padesáti let od narození Svojsíka vyšel nový programový list pro benjamínky, který vysvětluje původ jejich názvu, nabízí komiks a hlavně aktivity ven z klubovny. Ulehčí ti přípravu programu a děti se hravě dozvědí, na jaké kořeny jako skauti navazujeme.",
+      "summary_sha": "13ed4eeaa64a",
+      "voice": "Callirrhoe",
+      "published_at": "2026-08-09T13:01:35.851068+00:00"
+    },
+    "6628c1973c00c95e": {
+      "url": "https://krizovatka.skaut.cz/kontakty/newslettery/2021-10",
+      "title": "E-mailové newslettery",
+      "image_url": "/assets/images/og-image.3f33a199.png",
+      "links": [],
+      "first_seen": "2026-08-09T11:58:08.759576+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Využijte tábor k plánování oddílového roku a zapište si termín Obroku",
+      "newsletter_msgid": "1dd61dbc72dfa453",
+      "article_path": "data\\articles\\6628c1973c00c95e.json",
+      "summary_path": null,
+      "audio_path": null,
+      "audio_bytes": null,
+      "duration_sec": null,
+      "status": "fetched"
+    },
+    "dcbe174bb997447d": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/posilte-psychicke-a-fyzicke-bezpeci-na-taborech",
+      "title": "Tři příručky k psychickému a sociálnímu bezpečí",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/83e692c1-cc83-4678-bf98-c346d298edf2.jpeg",
+      "links": [
+        {
+          "text": "Příručka o sociálním bezpečí na letních táborech",
+          "url": "https://konsent.cz/pro-taborove-vedouci/"
+        },
+        {
+          "text": "v tomto programovém listu",
+          "url": "https://docs.google.com/document/d/1t639rkLXivBe0DBJgmkQ4SOeTmp7am0AihiSsZ9vaNI/edit?usp=sharing"
+        },
+        {
+          "text": "Příručka od organizace Locika",
+          "url": "https://www.centrumlocika.cz/novinky/nove-materialy-k-prevenci-nasili-na-taborech-a-volnocasovych-akcich-ke-stazeni"
+        },
+        {
+          "text": "Příručka od ČRDM",
+          "url": "https://crdm.cz/publikace/pruvodce-wellbeingem-pro-vedouci-volnocasovych-aktivit-spolu-a-v-pohode/"
+        }
+      ],
+      "first_seen": "2026-08-09T11:58:19.639039+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Využijte podporu pro nábory a posilte bezpečí i hygienu na táborech",
+      "newsletter_msgid": "7ddba3c6ebf0efc1",
+      "article_path": "data\\articles\\dcbe174bb997447d.json",
+      "summary_path": "data\\summaries\\dcbe174bb997447d.md",
+      "audio_path": "audio/dcbe174bb997447d.mp3",
+      "audio_bytes": 1593452,
+      "duration_sec": 199,
+      "status": "published",
+      "blurb": "Ke stažení jsou tři příručky, které řeší bezpečí na pobytových akcích z různých stran. Konsent nabízí metodiku pro přípravu celého vedení včetně nácviků, jak zasáhnout, když jste svědkem nevhodného chování, a odpovídá i na citlivou otázku vztahů mezi vedoucími a účastnicemi. Locika je psaná pro rodiče a Česká rada dětí a mládeže přidává checklist pro psychické bezpečí v celé organizaci.",
+      "summary_text": "V tomhle díle si představíme tři materiály k bezpečí na táborech a pobytových akcích. Každý je psaný pro trochu jinou situaci, tak si je pojďme rozlišit.\n\nPrvní je příručka od organizace Konsent, jmenuje se Tábory v bezpečí nejsou bez péče. Míří na sociální bezpečí a pomáhá nastavit jasné hranice, jaké vztahy jsou na letních táborech přípustné a jaké ne. Odpovídá i na otázku, kterou si spousta týmů netroufne otevřít nahlas, totiž jestli je v pořádku, když vznikají vztahy mezi vedoucími, nebo mezi vedoucími a účastnicemi tábora. Vysvětluje, proč v prostředí s mocenskou asymetrií může snadno docházet ke groomingu a sexuálnímu násilí.\n\nCo v ní najdete konkrétně? Kompletní metodiku k přípravě celého vedení tábora, a to včetně praktických nácviků. Jak se vymezit proti nevhodnému chování. Jak zasáhnout, když jsem svědkem nevhodného chování někoho jiného. A jak reagovat, když se mi někdo z účastníků svěří. Součástí je přehledný checklist, díky kterému zhodnotíte, jestli jste na takové situace připravení, a taky aktivity, které můžete dělat přímo s účastníky. K tématu sexuálního bezpečí existuje ještě samostatný programový list s aktivitami, které vycházejí z lekcí Konsentu pro vyučující, ale jsou upravené pro skautské prostředí.\n\nDruhá příručka je od organizace Locika a jmenuje se Prevence násilí na táborech a volnočasových akcích. Ta je psaná pro rodiče, takže se hodí spíš k předání než ke studiu. Pomocí infografik vysvětluje, jak s dětmi mluvit o hranicích, souhlasu a nevhodném chování ještě před odjezdem, na co se ptát pořadatelů a jak rozpoznat varovné signály u vedoucích. Obsahuje i doporučení, jak reagovat, když se dítě dostane do nepříjemné situace nebo se svěří, a jak podpořit dítě, které se o nevhodném chování dozví od kamaráda. Nechybí přehled kontaktů, kam se obrátit pro pomoc.\n\nA třetí je příručka České rady dětí a mládeže, jmenuje se Spolu a v pohodě. Ta slouží jako úvod do psychického bezpečí v organizacích pracujících s dětmi. Pomáhá otevřít diskuzi o hodnotách, fungování skupiny, společné vizi i potřebách dětí a dospělých. Prostřednictvím otázek k zamyšlení podporuje reflexi toho, jak tým funguje. Součástí je opět praktický checklist, kterým zhodnotíte, jestli máte nastavené podmínky podporující psychické bezpečí účastníků i vedoucích. Díky přehlednosti se hodí jako výchozí materiál pro ty, kdo se tématu chtějí začít věnovat systematicky.\n\nShrňme si to. Konsent pro přípravu vedení a sociální bezpečí, Locika pro rodiče a Česká rada dětí a mládeže pro systematickou práci s psychickým bezpečím v organizaci. Všechny tři jsou volně ke stažení a všechny obsahují checklist, takže se dají použít i jako rychlá kontrola před akcí.",
+      "summary_sha": "f549b03e1aa0",
+      "voice": "Callirrhoe",
+      "published_at": "2026-08-09T13:03:16.103070+00:00"
+    },
+    "d9fada6c5b8812b4": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/zmeny-ohledne-vody-nadobi-i-sprch-co-prinasi-nova-hygienicka-vyhlaska",
+      "title": "Nová hygienická vyhláška: voda, nádobí i sprchy",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/9d83e37a-faef-4a43-b120-b46ed031a8ae.jpeg",
+      "links": [
+        {
+          "text": "Metodiku Státního zdravotního ústavu si případně můžete přečíst tady.",
+          "url": "https://szu.gov.cz/temata-zdravi-a-bezpecnosti/zivotni-prostredi/kvalita-vody/pitna-voda/letni-tabory/"
+        },
+        {
+          "text": "najdete ho tady.",
+          "url": "https://docs.google.com/document/d/1JlNAZtnl9eH_Lrm2VetxIUBPt98KxZ1w/edit"
+        },
+        {
+          "text": "Křižovatce",
+          "url": "https://krizovatka.skaut.cz/vedu-oddil/tabory/nova-hygienicka-vyhlaska-od-roku-2026-co-se-meni-pro-tabory"
+        },
+        {
+          "text": "Ve SkautFóru",
+          "url": "https://www.facebook.com/groups/skautforum/posts/2414564885702582"
+        },
+        {
+          "text": "www.skaut.cz/tabory",
+          "url": "http://www.skaut.cz/tabory"
+        },
+        {
+          "text": "seleska.skauting.cz",
+          "url": "https://seleska.skauting.cz/ke-stazeni/"
+        },
+        {
+          "text": "e-sbirka.gov.cz",
+          "url": "https://e-sbirka.gov.cz/"
+        },
+        {
+          "text": "zakonyprolidi.cz",
+          "url": "http://zakonyprolidi.cz/"
+        }
+      ],
+      "first_seen": "2026-08-09T11:58:21.134267+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Využijte podporu pro nábory a posilte bezpečí i hygienu na táborech",
+      "newsletter_msgid": "7ddba3c6ebf0efc1",
+      "article_path": "data\\articles\\d9fada6c5b8812b4.json",
+      "summary_path": "data\\summaries\\d9fada6c5b8812b4.md",
+      "audio_path": "audio/d9fada6c5b8812b4.mp3",
+      "audio_bytes": 1587692,
+      "duration_sec": 198,
+      "status": "published",
+      "blurb": "Nová vyhláška ruší pevné počty umyvadel, sprch a záchodů na počet dětí, nově stačí, aby jich byl dostatek a byly přístupné všem, a nemusí se ani rozlišovat podle pohlaví. Zásadní novinka je poslední oplach nádobí pod tekoucí pitnou vodou, takže společný lavor na ešusy už neprojde. A od letoška musí být nádobí a pracovní plochy z materiálu určeného pro styk s potravinami, což musíte umět hygieně doložit.",
+      "summary_text": "V tomhle díle si projdeme, co mění nová hygienická vyhláška pro tábory. Změn je několik a některé jsou překvapivě příznivé.\n\nZačneme hygienickým zázemím, kde se hodně uvolnilo. Vyhláška ruší dosavadní pevné počty, tedy jedno umyvadlo na pět dětí, jednu sprchovou růžici na třicet a jeden záchod na patnáct. Nově je zásadní jen to, aby bylo všeho dostatek a aby to bylo přístupné pro všechny děti. Stejně tak už není nutné rozlišovat záchody a sprchy podle pohlaví, vždycky ale musíte zajistit dostatečnou intimitu. A ke sprchování se nově nevyžaduje pitná voda. Ta je pořád potřeba k pití, čištění zubů, vaření, mytí nádobí, čištění pracovních ploch v kuchyni a pro provoz ošetřovny.\n\nTeď ta nejdůležitější změna, kvůli které se budou muset upravit zvyky. Poslední oplach jídelního nádobí i vlastního nádobí dětí musí být pod tekoucí pitnou vodou. Lavor, ve kterém si oplachoval ešus celý tábor, tak už neprojde. Může být mezistupněm, ale na konci musí být tekoucí voda, ať už z barelu s kohoutem, poléváním naběračkou nebo z přivedené hadice. A pozor, oplachem není ponoření nádobí do nádoby s vodou, byť čistou a pitnou. Oplachovou vodu si můžete chytat a použít na první hrubé umytí špinavých hrnců, takže se dá šetřit.\n\nDruhá věc, kterou je potřeba pohlídat. Od letošního roku musí být pracovní plochy, nástroje a nádobí z materiálu určeného pro styk s potravinami, ne jen vhodného. To znamená, že musíte být schopni hygieně prokázat, že prkénka, hrnce, tácy i nože jsou z určeného materiálu, tedy schovanou účtenkou nebo prohlášením výrobce. Pomůže evropský symbol sklenice a vidličky. U vybavení starého třeba deset let, ke kterému už účty nemáte, bude prokazování obtížné, takže u nejproblematičtějších kusů, tedy zkorodovaných, hliníkových nebo dílenských desek, zvažte obměnu. Hliníkové nádobí už raději nepoužívejte.\n\nZastřešit je nově potřeba i prostor pro mytí kuchyňského nádobí, tedy hrnců, pánví, prkének a mís, kromě dosavadní kuchyně, jídelny a skladu potravin. Ešusy, talíře a hrnky ale můžete mýt i mimo zastřešený prostor.\n\nPříjemná změna se týká dětí: nově se můžou podílet na přípravě a výdeji stravy bez omezení, zatímco dřív jen před tepelným zpracováním a při pomocných pracích. Rozsah pomoci je na zvážení kuchaře, zdravotníka a vůdce.\n\nA nakonec odpadní vody. Pro stanové tábory dál platí výjimka, takže povolení nepotřebujete, pokud vody neobsahují závadné látky, počet dětí do patnácti let nepřesahuje šedesát, ubytování je výhradně ve stanech a jsou provedená opatření k ochraně vod. Prakticky to znamená vsakovačku a latríny dál od kuchyně, studny a vodního toku. Oleje se musí odvážet k likvidaci, ne vylévat.\n\nShrňme si to. Volnější pravidla u sprch a záchodů, ale přísnější u nádobí. Poslední oplach jen pod tekoucí pitnou vodou, nádobí z certifikovaného materiálu a zastřešené místo na mytí hrnců.",
+      "summary_sha": "08dc4996b037",
+      "voice": "Charon",
+      "published_at": "2026-08-09T13:05:08.198451+00:00"
+    },
+    "409b83918c025b22": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/jak-ziji-environmentalni-temata-ve-skautu-prinasime-vysledky-vyzkumu",
+      "title": "Jak žijí environmentální témata ve skautu",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/b3cc79f4-7d12-4207-ab7a-d02001d02836.jpeg",
+      "links": [
+        {
+          "text": "strategickém tématu Environmentální výzvy",
+          "url": "https://krizovatka.skaut.cz/organizace/strategie/strategie-2030/strategicke-tema-environmentalni-vyzvy"
+        },
+        {
+          "text": "Envirozcestník",
+          "url": "https://krizovatka.skaut.cz/enviro/envirozcestnik"
+        },
+        {
+          "text": "Ekoprogramy pro oddíl a kmen",
+          "url": "https://posilme.skaut.cz/vzdelavanim-k-dobrodruzstvi/ekoprogramy/"
+        },
+        {
+          "text": "Patronáty",
+          "url": "https://www.skautskyinstitut.cz/patronaty"
+        }
+      ],
+      "first_seen": "2026-08-09T11:58:22.638076+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Využijte podporu pro nábory a posilte bezpečí i hygienu na táborech",
+      "newsletter_msgid": "7ddba3c6ebf0efc1",
+      "article_path": "data\\articles\\409b83918c025b22.json",
+      "summary_path": "data\\summaries\\409b83918c025b22.md",
+      "audio_path": "audio/409b83918c025b22.mp3",
+      "audio_bytes": 1580396,
+      "duration_sec": 198,
+      "status": "published",
+      "blurb": "Výzkum mezi vedoucími ukázal, že environmentální témata lidem lhostejná nejsou, ale prohrávají soubojem o čas s jinými společenskými tématy a s běžným provozem. Nejdůležitější zjištění je ale jiné: chybí společná shoda, co si pod tím tématem vlastně představit, protože každý si pod ním představuje něco jiného. Výsledkem je, že zahrnutí těchhle témat stojí a padá na nasazení jednotlivců místo toho, aby bylo součástí společné vize.",
+      "summary_text": "V tomhle díle si projdeme výsledky výzkumu o tom, jak se ve skautu pracuje s environmentálními tématy. Vznikl v rámci strategického tématu Environmentální výzvy a stojí za pozornost hlavně proto, že přinesl nečekaný závěr.\n\nNejdřív jak vznikal, protože to je na tom sympatické. Ústředí se rozhodlo nejdřív poslouchat, a aby se neodrazilo od dojmů, ale od reálných dat, spojilo se se sociologickou organizací Sociores a s týmem Bohuslava Binky z Masarykovy univerzity. Na jaře šel dotazník všem vedoucím oddílů, středisek a vzdělávacích akcí a k tomu proběhly osobní diskuse s několika desítkami lidí v Praze, Brně, Plzni, Olomouci a Pardubicích.\n\nPrvní zjištění je dobrá zpráva. Skautům a skautkám nejsou problémy současného světa lhostejné. Většina vnímá environmentální témata jako důležitá a spojuje si je s tím, co skauting dělá dlouhodobě, tedy se vztahem k přírodě, odpovědností, šetrností a službou okolí. Část lidí dokonce popisovala, jak změny životního prostředí dopadají už teď na jejich běžnou činnost, hlavně kvůli vysychání vodních zdrojů nebo extrémnímu počasí. V praxi ale dáváme silnější důraz na jiná společenská témata, jako je rozdělení společnosti, válka nebo ohrožení demokracie. Environmentální témata zatím nejsou vnímaná jako společná priorita organizace, spíš jako jedno z mnoha. A v konkurenci s běžnými provozními povinnostmi na ně pak v programu nezbývá čas.\n\nDruhé zjištění autoři sami označují za nejdůležitější. Chybí nám společná shoda, co si pod tím tématem představit. Většina jeho význam neodmítá, ale každý si pod ním představuje něco trochu jiného. Někdo klade důraz na ochranu přírody a vztah ke krajině, pro jiného je prioritou šetrnost ve fungování oddílu, pro dalšího dopady změn klimatu. Bariérou je i pociťovaná nesrozumitelnost pojmů. A i když se shodneme, že ochrana přírody a hospodárnost jsou klíčové skautské hodnoty, názory na to, jak se mají projevovat v praxi, se hodně liší. Chybí taky prostor pro společnou diskusi, ať už v jednotkách, nebo v celé organizaci. Výsledek je ten, že zahrnutí těchhle témat stojí a padá na nasazení motivovaných jedinců.\n\nA třetí zjištění: část lidí tápe, jak téma pojmout v praxi. Jak o něm mluvit s dětmi, jaké aktivity dávají smysl a jak poznat, že jdeme správným směrem.\n\nCo s tím? Kompletní výsledky jsou zveřejněné ve dvou reportech, kvalitativním a kvantitativním. A pro tu chybějící diskusi vznikly diskuzní karty Krok k udržitelnosti, se kterými zvládnete debatu na středisku i bez externího lektora, a jsou volně ke stažení.\n\nShrňme si to. Zájem existuje, ale prohrává s časem. Hlavní překážka není nezájem, ale to, že se neshodneme, o čem přesně mluvíme. A první krok je proto obyčejná debata ve vlastním středisku.",
+      "summary_sha": "311e1757e71d",
+      "voice": "Callirrhoe",
+      "published_at": "2026-08-09T13:07:13.583946+00:00"
+    },
+    "2b005c3a1c5200ec": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/prihlaste-se-k-podpore-naboru-2026-ceka-na-vas-balicek-zdarma-a-letni-sleva-v-junshopu",
+      "title": "Náborový balíček zdarma a letní sleva na Junshopu",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/963f2024-1289-4af5-a897-53f58db9c51d.png",
+      "links": [
+        {
+          "text": "jednoduchého formuláře",
+          "url": "https://skaut.cz/nabory"
+        },
+        {
+          "text": "Náborové materiály na Junshop.cz",
+          "url": "https://www.junshop.cz/naborove-materialy"
+        },
+        {
+          "text": "Balíček pro starší děti (10–15 let)",
+          "url": "https://www.junshop.cz/naborovy-balicek-pro-starsi"
+        },
+        {
+          "text": "Náborová kartička",
+          "url": "https://www.junshop.cz/naborova-karticka-10-ks"
+        },
+        {
+          "text": "Leták pro rodiče – karta",
+          "url": "https://www.junshop.cz/letak-pro-rodice-karta-25ks"
+        },
+        {
+          "text": "Náborový plakát A3 Superschopnosti",
+          "url": "https://www.junshop.cz/naborovy-plakat-a3-superschopnosti"
+        },
+        {
+          "text": "Skautské náplasti",
+          "url": "https://www.junshop.cz/skautske-naplasti"
+        },
+        {
+          "text": "Přebíračka",
+          "url": "https://www.junshop.cz/prebiracka"
+        }
+      ],
+      "first_seen": "2026-08-09T11:58:24.072791+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Využijte podporu pro nábory a posilte bezpečí i hygienu na táborech",
+      "newsletter_msgid": "7ddba3c6ebf0efc1",
+      "article_path": "data\\articles\\2b005c3a1c5200ec.json",
+      "summary_path": "data\\summaries\\2b005c3a1c5200ec.md",
+      "audio_path": "audio/2b005c3a1c5200ec.mp3",
+      "audio_bytes": 1109804,
+      "duration_sec": 139,
+      "status": "published",
+      "blurb": "Každé středisko nebo oddíl, které chystá nábor, si může objednat jeden náborový balíček úplně zdarma, stačí vyplnit krátký formulář a přijde vám stoprocentní slevový kód. K tomu platí dvacetiprocentní sleva na všechny náborové materiály na Junshopu, ta ale běží jen po dobu léta, takže s ní neotálejte. Vybíráte mezi balíčkem pro mladší děti do deseti let a pro starší od deseti do patnácti.",
+      "summary_text": "Ústředí letos znovu nabízí dvě konkrétní věci, které pomůžou s náborem. Pojďme si je projít, ať vám nic neuteče.\n\nPrvní je náborový balíček zdarma. Každá jednotka, tedy středisko nebo oddíl, má nárok na jeden balíček bez placení. Vybíráte z dvou variant podle věku. Balíček pro starší děti, tedy deset až patnáct let, obsahuje pětadvacet náborových kartiček, pětadvacet letáků pro rodiče, pět plakátů A3 s motivem Superschopnosti, balení skautských náplastí a pět přebíraček. Balíček pro mladší děti do deseti let má pětadvacet náborových časopisů, pětadvacet letáků pro rodiče, pět plakátů A2 s motivem Vozík, náplasti a list s tetováním, na kterém je čtyřiapadesát obrázků.\n\nJak se k němu dostat? Vyplníte krátký přihlašovací formulář, na e-mail vám přijde unikátní stoprocentní slevový kód, v e-shopu Junshop vložíte vybraný balíček do košíku, zadáte kód a objednávku dokončíte za nula korun.\n\nDruhá výhoda je dvacetiprocentní sleva na kompletní sortiment v kategorii náborové materiály na Junshopu. Ta platí pro všechny bez ohledu na to, jestli se k pořádání náboru přihlásíte. Takže i když chcete jen dokoupit pár plakátů nebo časopisů navíc, sleva se vám započítá. Pozor ale na jednu věc: sleva je vypsaná na léto, takže jestli si chcete přiobjednat, je nejvyšší čas. Klidně si do stejné objednávky přidejte i stezky a další materiály, které stejně budete se začátkem skautského roku potřebovat.\n\nKde hledat dál? Na Křižovatce je aktualizovaná sekce nábory, která provede tím, jak uspořádat efektivní nábor, co si připravit, jaké otázky si klást a hlavně co udělat pro to, aby vám nováčci v oddíle vydrželi. Protože přivést děti je jedna věc, udržet je věc druhá.\n\nShrňme si to. Jeden balíček zdarma na jednotku přes formulář a slevový kód, k tomu dvacet procent dolů na náborové materiály po dobu léta. A na Křižovatce návod, jak nábor zvládnout celý.",
+      "summary_sha": "a8f9dce43a80",
+      "voice": "Charon",
+      "published_at": "2026-08-09T13:08:45.869622+00:00"
+    },
+    "ee404707a250f380": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/priprav-se-na-dalsi-krok-ve-skautingu-publikace",
+      "title": "Knihy, které tě provedou roverským věkem",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/a98857b7-9a4f-43b2-a10d-cf18a958635a.jpeg",
+      "links": [
+        {
+          "text": "Roverský kompas",
+          "url": "https://www.junshop.cz/roversky-kompas"
+        },
+        {
+          "text": "Když začínáš: Roverský kompas",
+          "url": "https://krizovatka.skaut.cz/roveri-rangers/kdyz-zacinas-roversky-kompas"
+        },
+        {
+          "text": "Roverská metodika",
+          "url": "https://www.junshop.cz/roverska-metodika"
+        },
+        {
+          "text": "Čekatelská zkouška",
+          "url": "https://www.junshop.cz/cekatelska-zkouska"
+        },
+        {
+          "text": "Skautské vize",
+          "url": "https://www.junshop.cz/skautske-vize"
+        },
+        {
+          "text": "Duševní stabilita na kurzu",
+          "url": "https://www.junshop.cz/dusevni-stabilita-na-kurzu"
+        },
+        {
+          "text": "e-shopu",
+          "url": "https://www.junshop.cz/"
+        }
+      ],
+      "first_seen": "2026-08-09T11:58:25.536911+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Využijte podporu pro nábory a posilte bezpečí i hygienu na táborech",
+      "newsletter_msgid": "7ddba3c6ebf0efc1",
+      "article_path": "data\\articles\\ee404707a250f380.json",
+      "summary_path": "data\\summaries\\ee404707a250f380.md",
+      "audio_path": "audio/ee404707a250f380.mp3",
+      "audio_bytes": 1408556,
+      "duration_sec": 176,
+      "status": "published",
+      "blurb": "Pro začínající rovery je určený Roverský kompas, interaktivní brožura, která slouží jako most mezi skautskou stezkou a roverským světem. Kdo vede kmen, sáhne po Roverské metodice, první komplexní publikaci svého druhu u nás, na které tým autorů pracoval pět let. A pro ty, kdo míří na čekatelský kurz, je tu učebnice Čekatelská zkouška se dvěma stovkami stran od zkušených lektorů.",
+      "summary_text": "V tomhle díle si projdeme knihy, které se hodí, když stojíš na křižovatce mezi skautským a roverským věkem, nebo když se chystáš vést.\n\nZačneme tou nejjednodušší. Roverský kompas s podtitulem Objev svou vlastní cestu je interaktivní brožura pro ty, kdo v roveringu teprve začínají. Slouží jako most mezi skautskou stezkou a roverským světem. Přes deset kapitol, které se jmenují třeba Staň se součástí roverského společenství nebo Naplňuj heslo Sloužím, ti ukáže, co všechno ti rovering může nabídnout. Každá kapitola obsahuje praktický úkol a QR kód s další porcí inspirace, svoje pokroky si značíš přímo do mapy a na konci si naplánuješ osobní cíle.\n\nDruhá je Roverská metodika s podtitulem Putování ke skautské dospělosti. Ta je pro ty, kdo se chtějí ponořit hlouběji, nebo už pomáhají s vedením kmene. Je to výsledek pětileté práce týmu autorů a vůbec první komplexní publikace pro jednadvacáté století u nás. V pěti kapitolách probírá teorii, praxi i historii roveringu. Najdeš v ní konkrétní tipy pro práci v oddíle, detaily o roverské symbolice a osobním růstu, ale i důležité kapitoly o psychické bezpečnosti a službě.\n\nTřetí je učebnice Čekatelská zkouška. Pokud tě láká podílet se na vedení oddílu a chystáš se na čekatelský kurz, tohle je základ. Aktualizovaný dotisk z roku 2024 má přes dvě stě stránek a přehledně shrne ucelené minimum ze všech oborů, které v začátcích potřebuješ, tedy skautskou metodiku, zdravovědu, právo i organizaci. A není to nudná teorie. Jednotlivé kapitoly psali zkušení lektoři z kurzů, takže je kniha plná praktických příkladů a rad, jak věci rovnou vyzkoušet v oddílové praxi.\n\nČtvrtá je jiného ražení. Skautské vize je kniha rozhovorů, které vedl Miloš Říha, přezdívaný Šípek, šéf Skautského institutu. Vyzpovídal v ní řadu osobností, jejichž osudy se v nějakém momentu protnuly se skautským hnutím. Někteří strávili v oddíle jen kousek dětství, jiní jsou aktivní dodnes, ale všichni se shodují, že pro ně skautská zkušenost byla zásadní životní inspirací. Kniha přitom jen nevzpomíná, ale dívá se dopředu a pojmenovává výzvy, před kterými společnost stojí.\n\nA pátá je specializovaná: Duševní stabilita na kurzu, příručka o psychické pohodě na vzdělávacích akcích. Je primárně pro instruktory zážitkových kurzů, protože právě ty můžou vlivem zkušenostně reflektivního učení vyvolat u účastníků různé reakce, i ty negativní.\n\nShrňme si to. Kompas na začátek, Metodika pro vedení kmene, Čekatelská zkouška před kurzem, Skautské vize k přemýšlení a Duševní stabilita pro instruktory. Do roverské i vůdcovské knihovničky se rozhodně žádná z nich neztratí.",
+      "summary_sha": "7085f6dd7984",
+      "voice": "Callirrhoe",
+      "published_at": "2026-08-09T13:10:08.675414+00:00"
+    },
+    "bd0afe315252f59b": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/alkohol-ve-skautske-cinnosti-co-rikaji-data-a-proc-zacit-u-sebe",
+      "title": "Alkohol ve skautu: co ukázala data od 1366 lidí",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/ed4498fd-29e3-4220-816c-39b4c0090eb9.jpeg",
+      "links": [
+        {
+          "text": "silných karcinogenů",
+          "url": "https://doi.org/10.4178/epih.e2023092"
+        },
+        {
+          "text": "diabetem II. typu",
+          "url": "https://doi.org/10.1371/journal.pone.0194127"
+        },
+        {
+          "text": "paměti",
+          "url": "https://doi.org/10.1007/s00213-022-06060-5"
+        },
+        {
+          "text": "skautské křižovatce",
+          "url": "https://krizovatka.skaut.cz/bezpecnyskauting/skautske-pravni-alkoholove-minimum"
+        },
+        {
+          "text": "profesor Miovský",
+          "url": "https://casopis.skauting.cz/skautsti-vedouci-maji-v-prevenci-rizikoveho-chovani-deti-a-mladeze-zasadni-roli-11989"
+        },
+        {
+          "text": "preventivně",
+          "url": "https://zpravodajstvi.skaut.cz/clanek/preventivni-aktivity-k-tematu-alkoholu-a-navykovych-latek"
+        }
+      ],
+      "first_seen": "2026-08-09T11:58:29.216493+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Využijte podporu pro nábory a posilte bezpečí i hygienu na táborech",
+      "newsletter_msgid": "7ddba3c6ebf0efc1",
+      "article_path": "data\\articles\\bd0afe315252f59b.json",
+      "summary_path": "data\\summaries\\bd0afe315252f59b.md",
+      "audio_path": "audio/bd0afe315252f59b.mp3",
+      "audio_bytes": 1532012,
+      "duration_sec": 191,
+      "status": "published",
+      "blurb": "Průzkum mezi 1366 skauty ukázal, že téměř polovina na akcích alkohol vůbec nepije a pravidelně jen čtyři a půl procenta. Když Obrok a Miquik proběhly bez alkoholu, účastníkům to nevadilo, ubylo úrazů a klesl počet zásahů zdravotníků i týmů psychické podpory. Nejtěžší je změna v týmech, kde pijí všichni a nikdo téma neotevírá, protože tam chybí i ten spor, ze kterého změna obvykle vzejde.",
+      "summary_text": "V tomhle díle si projdeme, co ukázal dotazník o alkoholu ve skautské činnosti. Zapojilo se do něj tisíc tři sta šedesát šest lidí, z toho skoro polovina ve věku osmnáct až pětadvacet let, nejčastěji lidé z vedení oddílu.\n\nZačneme čísly, protože ta jsou překvapivě střízlivá. Téměř polovina skautů uvedla, že na skautských akcích alkohol nikdy nepije. Zbytek pije příležitostně, tedy na několika akcích do roka, a pravidelnou konzumaci uvedlo jen dvaašedesát lidí, což je čtyři a půl procenta. Když se na výpravách nebo táborech pije, dělají to dospělí a většinou tak, aby to účastníci mladší osmnácti let neviděli. Někdy ale dojde na konzumaci i před dospívajícími. A nežádoucí chování, tedy buzení dětí opilými vedoucími, dospávání kocoviny nebo nezvládnuté programy, se objevuje nejčastěji na táborech, kde jsme spolu delší dobu.\n\nZajímavý je experiment s velkými akcemi. Poslední dva roky běží snaha proměnit kulturu kolem alkoholu na akcích, kde jsou účastníci pod osmnáct let. Obrok i Miquik proběhly bez alkoholu a bez zásadních problémů. Většině respondentů, kteří tam byli, to nevadilo. A hlavně: ubylo úrazů a snížil se počet intervencí zdravotníků i týmů psychické podpory.\n\nTeď k tomu, jak se v týmu domluvit. Ke shodě se ve většině středisek dochází po řadě diskuzí, někde funguje nepsané pravidlo z dřívějška a někde téma zatím vůbec neotevřeli. A tady je nečekaný závěr, který stojí za zapamatování. Neshody kolem alkoholu vznikají nejčastěji tam, kde se pije příležitostně nebo pijí jen někteří. Jenže ty neshody znamenají, že je téma živé a vzbuzuje emoce, což je vlastně příležitost ke změně. Nejhůř se změna prosazuje v týmech, kde pijí všichni pořád a nikdo na to neupozorňuje.\n\nO co se v diskuzi opřít? Dřívější tvrzení, že malá dávka alkoholu je zdraví prospěšná, bylo odborníky vyvráceno. Alkohol je na seznamu silných karcinogenů a má silnou souvislost s cukrovkou druhého typu, zhoršenou pamětí a spánkem. Ale téma není jen o zdraví. Skautští vedoucí mají vůči dětem přenesenou rodičovskou odpovědnost, a děti se učí napodobováním. Dodržování pravidel vedoucím určuje vzor chování. A schopnost odříct si to, co je lákadlem, je způsob, jak posilovat seberegulaci a ukázat, že máme nad svým jednáním kontrolu.\n\nJak s tím pracovat prakticky? Změna nepřijde ze dne na den. Stojí na otevřené diskusi, postupných krocích, sdílení dobré praxe, třeba nahradit alkohol při společném posezení výběrovými čaji, a na podpoře v týmu.\n\nShrňme si to. Většina skautů na akcích nepije, akce bez alkoholu fungují a mají měřitelně méně úrazů, a i malý postupný krok má dlouhodobě velkou sílu. Podklady k tématu najdeš na Křižovatce v sekci o alkoholu.",
+      "summary_sha": "4a96feda48a6",
+      "voice": "Callirrhoe",
+      "published_at": "2026-08-09T13:11:48.494018+00:00"
+    },
+    "5035a997c585a4c8": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/hledame-pravou-ruku-koordinatorky-skautskych-casopisu",
+      "title": "Hledáme pravou ruku koordinátorky skautských časopisů",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/e482ec95-d5b9-4fa3-a6aa-1139eec9c4cd.jpeg",
+      "links": [],
+      "first_seen": "2026-08-09T11:58:30.731557+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Využijte podporu pro nábory a posilte bezpečí i hygienu na táborech",
+      "newsletter_msgid": "7ddba3c6ebf0efc1",
+      "article_path": "data\\articles\\5035a997c585a4c8.json",
+      "summary_path": null,
+      "audio_path": null,
+      "audio_bytes": null,
+      "duration_sec": null,
+      "status": "fetched"
+    },
+    "494177c5c90cafdf": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/jota-joti-2026-se-blizi-prihlaste-sebe-nebo-svuj-oddil-uz-nyni",
+      "title": "JOTA–JOTI 2026 se blíží. Přihlaste sebe nebo svůj oddíl už nyní",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/b62253b8-a17b-4aba-9ade-d90757214ad7.jpeg",
+      "links": [
+        {
+          "text": "jotajoti.info",
+          "url": "https://www.jotajoti.info/?utm_source=chatgpt.com"
+        },
+        {
+          "text": "Registrace JOTA–JOTI 2026",
+          "url": "https://treehouse.scout.org/topic/registration-jota-joti-2026-open?utm_source=chatgpt.com"
+        }
+      ],
+      "first_seen": "2026-08-09T11:58:32.174092+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Využijte podporu pro nábory a posilte bezpečí i hygienu na táborech",
+      "newsletter_msgid": "7ddba3c6ebf0efc1",
+      "article_path": "data\\articles\\494177c5c90cafdf.json",
+      "summary_path": null,
+      "audio_path": null,
+      "audio_bytes": null,
+      "duration_sec": null,
+      "status": "fetched"
+    },
+    "d17b58cae3d2743e": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/jak-pripravit-naborovou-akci-ktera-privede-nove-cleny-prakticky-pruvodce-krok-za-krokem",
+      "title": "Jak připravit náborovou akci krok za krokem",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/6311cfe8-65c5-41cf-bb26-9632a532b783.jpeg",
+      "links": [
+        {
+          "text": "informační materiály pro rodiče",
+          "url": "https://zpravodajstvi.skaut.cz/clanek/prihlaste-se-k-podpore-naboru-2026-ceka-na-vas-balicek-zdarma-a-letni-sleva-v-junshopu"
+        },
+        {
+          "text": "Jak uspořádat efektivní nábor nových členů",
+          "url": "https://krizovatka.skaut.cz/vedu-oddil/jak-usporadat-efektivni-nabor-novych-clenu"
+        }
+      ],
+      "first_seen": "2026-08-09T11:59:03.082116+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Připravte náborovou akci krok za krokem a zapojte se do předsněmové diskuze",
+      "newsletter_msgid": "a717147c36e14c15",
+      "article_path": "data\\articles\\d17b58cae3d2743e.json",
+      "summary_path": "data\\summaries\\d17b58cae3d2743e.md",
+      "audio_path": "audio/d17b58cae3d2743e.mp3",
+      "audio_bytes": 1198508,
+      "duration_sec": 150,
+      "status": "published",
+      "blurb": "Úspěšný nábor nestojí na nápaditém programu, ale na organizaci. Nejdřív si určete, koho chcete oslovit a kolik dětí reálně zvládnete přijmout, pak teprve řešte místo, termín a program. Nejúčinnější propagací je osobní pozvánka od vašich vlastních členů, a rozhoduje i to, co uděláte po akci: kdo se zájemci neozve do pár dní, přijde o ně.",
+      "summary_text": "V tomto díle si projdeme, jak připravit náborovou akci, která opravdu přivede nové členy. Nejde o to vymyslet co nejsložitější program. Rozhoduje promyšlená organizace.\n\nZačněte cílem. Koho vlastně chcete oslovit? Potřebujete doplnit družiny skautů a skautek ve věku deset až patnáct let, nebo otevíráte novou smečku vlčat? Jasně určená cílová skupina ovlivní všechno další, program, místo i způsob propagace. Hned s tím si odpovězte na druhou otázku: kolik nových dětí zvládnete přijmout. Buďte realističtí. Lepší je vzít méně dětí a věnovat se jim pořádně, než nabrat víc, než tým utáhne.\n\nPak teprve řešte konkrétní podobu. Místo vyberte tak, aby na něj děti i rodiče snadno došli, tedy klubovnu, park, okolí školy nebo sídliště, kde se vaše cílová skupina běžně pohybuje. U termínu zvažte, jestli bude lepší odpoledne ve všední den, nebo víkend. A program? Ten by měl být aktivní a ukázat skauting na vlastní kůži. Ukázka první pomoci, vaření na ohni, týmová výzva. Nezapomeňte ale ani na klidnější část, aby se nováčci stihli seznámit.\n\nBez propagace se o akci nikdo nedozví. Nemusí být velká, ale musí být cílená. Zdaleka nejúčinnější je osobní doporučení, takže povzbuďte vlastní skauty a skautky, ať pozvou kamarády a spolužáky. K tomu přidejte událost na Facebooku, fotky z příprav na Instagramu a plakáty ve škole, v knihovně nebo na obecní vývěsce.\n\nV týmu si předem rozdělte role. Kdo vítá příchozí, kdo vede aktivity, kdo hlídá materiál. A hlavně nezapomeňte na člověka, který se bude věnovat rodičům, představí jim skauting a odpoví na dotazy. Šátky nebo kroje pomůžou, aby bylo na první pohled poznat, na koho se obrátit.\n\nA poslední věc, na které to nejčastěji padá. Navazující komunikace je stejně důležitá jako samotná akce. První dojem rozhoduje, jestli se dítě bude chtít vrátit, ale jestli se mu skutečně vrátí, záleží na tom, jestli se ozvete. Mějte připravené, jak si vezmete kontakt a kdy se rodičům ohlásíte.\n\nShrňme si to. Určete si cílovou skupinu a realistický počet míst, vyberte dostupné místo a zážitkový program, propagujte hlavně přes vlastní členy, rozdělte si role v týmu a nezapomeňte se po akci ozvat. Podrobný návod najdeš na Křižovatce v sekci nábory.",
+      "summary_sha": "9101d5cd78cc",
+      "voice": "Charon",
+      "published_at": "2026-08-09T13:13:06.253720+00:00"
+    },
+    "d86e9dfc2bacd380": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/kdyz-na-tabore-prsi-nebo-je-cas-na-poledni-klid-tipy-na-rychle-hry-a-aktivity-pod-strechu",
+      "title": "Když na táboře prší nebo je čas na polední klid: Tipy na rychlé hry a aktivity pod střechou",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/b04e263a-daa9-424c-b740-d1e41ecdaa01.jpeg",
+      "links": [
+        {
+          "text": "Prohlédnout Skautské prší na JUNshopu",
+          "url": "https://www.junshop.cz/karty-skautske-prsi"
+        },
+        {
+          "text": "Prohlédnout Skautské omalovánky na JUNshopu",
+          "url": "https://www.junshop.cz/skautske-omalovanky"
+        },
+        {
+          "text": "Vyzkoušet Přebíračku z JUNshopu",
+          "url": "https://www.junshop.cz/prebiracka"
+        },
+        {
+          "text": "Objevit hru Táboření v čase na JUNshopu",
+          "url": "https://www.junshop.cz/taboreni-v-case"
+        },
+        {
+          "text": "Prohlédnout Dopisní sadu na JUNshopu",
+          "url": "https://www.junshop.cz/letni-skautska-dopisni-sada"
+        },
+        {
+          "text": "Prohlédnout si vybavení pro volné táborové chvíle na JUNshopu",
+          "url": "https://www.junshop.cz/"
+        },
+        {
+          "text": "Jak si zkrátit čekání na jaro? Vyzkoušejte nové omalovánky a hry",
+          "url": "https://zpravodajstvi.skaut.cz/clanek/jak-si-zkratit-cekani-na-jaro-vyzkousejte-nove-omalovanky-a-hry"
+        },
+        {
+          "text": "Pořiďte si skautské karty v upravené podobě. Prší? V tomhle se najdeš",
+          "url": "https://zpravodajstvi.skaut.cz/clanek/aktualizovane-skautske-karty-prsi"
+        }
+      ],
+      "first_seen": "2026-08-09T11:59:04.616617+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Připravte náborovou akci krok za krokem a zapojte se do předsněmové diskuze",
+      "newsletter_msgid": "a717147c36e14c15",
+      "article_path": "data\\articles\\d86e9dfc2bacd380.json",
+      "summary_path": null,
+      "audio_path": null,
+      "audio_bytes": null,
+      "duration_sec": null,
+      "status": "fetched"
+    },
+    "eb4923a463a12c38": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/valny-snem-2027-se-blizi-predstavujeme-temata-predsnemove-diskuze",
+      "title": "Valný sněm 2027: čtyři témata předsněmové diskuze",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/5f34629c-b79c-45e7-80cf-cae32599e5c2.jpeg",
+      "links": [
+        {
+          "text": "usnesení Valného sněmu 2024",
+          "url": "https://krizovatka.skaut.cz/organizace/snemy-a-volby/valny-snem/valny-snem-2024"
+        },
+        {
+          "text": "Zobrazit předsněmovou diskuzi na Křižovatce",
+          "url": "https://skaut.cz/predsnemova-diskuze"
+        }
+      ],
+      "first_seen": "2026-08-09T11:59:06.168439+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Připravte náborovou akci krok za krokem a zapojte se do předsněmové diskuze",
+      "newsletter_msgid": "a717147c36e14c15",
+      "article_path": "data\\articles\\eb4923a463a12c38.json",
+      "summary_path": "data\\summaries\\eb4923a463a12c38.md",
+      "audio_path": "audio/eb4923a463a12c38.mp3",
+      "audio_bytes": 1143212,
+      "duration_sec": 143,
+      "status": "published",
+      "blurb": "Náčelnictvo se shodlo na čtyřech tématech předsněmové diskuze: pravidelné jmenování starosty, způsob stanovení delegátů Valného sněmu, Strategie 2030 a skautská výchova. Nemusíte probrat všechna, klidně si vyberte dvě nebo tři, ale vyhraďte si na ně dost času. Ke každému tématu jsou na Křižovatce hotové materiály včetně doporučeného formátu diskuze, dotazníku pro záznam výstupů a vzoru dobře formulovaného usnesení.",
+      "summary_text": "Valný sněm 2027 se blíží a s ním předsněmová diskuze. V tomhle díle si projdeme, o čem se bude debatovat a co pro to máte připravené.\n\nNáčelnictvo se shodlo na čtyřech tématech. Všechna reflektují usnesení Valného sněmu z roku 2024 a úkoly, které z nich pro Náčelnictvo vyplynuly. Jsou to: pravidelné jmenování starosty, způsob stanovení delegátů Valného sněmu, Strategie 2030 a téma o skautské výchově.\n\nJak taková diskuze probíhá? Je běžnou součástí střediskových, okresních a krajských sněmů. Ale nemusí zůstat jen tam. Debatu o některém z témat můžete klidně zařadit na program vzdělávacího kurzu, potáborového setkání nebo střediskového setkání k plánování dalšího skautského roku. A důležitá věc: je na vás, jestli se budete věnovat všem čtyřem tématům, nebo si vyberete alespoň dvě až tři. Jen si na to vyhraďte přiměřený čas, doporučené minimum je uvedené u každého tématu v materiálech.\n\nA ty materiály stojí za zmínku, protože je to vážně připravené k použití. Ke každému tématu najdete základní představení a z čeho vychází. Doporučený formát diskuze včetně odhadu, kolik času zabere. Vlastní materiál, tedy výstup práce Náčelnictva na daném tématu. Dotazník, do kterého jednoduše zaznamenáte výstupy, a to i v situaci, kdy nechcete přijímat žádné usnesení. A konečně vzor dobře formulovaného usnesení, do kterého stačí doplnit výstup vaší diskuze a vyjádřit tak jasný názor.\n\nCo se s tím pak stane? Výstupy poslouží jako podklad pro další práci Náčelnictva a Výkonné rady při přípravě materiálů pro Valný sněm. Zároveň budou zpětnou vazbou na dosavadní práci na Strategii 2030. Takže to není debata do prázdna. Svůj názor můžete vyjádřit buď přijetím usnesení a jeho zadáním do skautISu, nebo zaznamenáním výstupu do online dotazníku.\n\nShrňme si to. Čtyři témata: starosta, delegáti, Strategie 2030 a výchova. Vyberte si alespoň dvě, materiály máte hotové na Křižovatce v sekci předsněmová diskuze, a výstup zadejte buď jako usnesení do skautISu, nebo do dotazníku.",
+      "summary_sha": "95375434fdc5",
+      "voice": "Charon",
+      "published_at": "2026-08-09T13:14:03.102077+00:00"
+    },
+    "feac89cb33de38f1": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/nahledni-pod-poklicku-nacelnictva-jako-pozorovatel-ci-pozorovatelka",
+      "title": "Zkus si Náčelnictvo jako pozorovatel",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/99e4a04c-bda1-4501-b0ea-898ba47d0601.jpeg",
+      "links": [
+        {
+          "text": "stránce Náčelnictva na Skautské křižovatce",
+          "url": "https://krizovatka.skaut.cz/organizace/ustredni-organy/nacelnictvo"
+        }
+      ],
+      "first_seen": "2026-08-09T11:59:07.812050+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Připravte náborovou akci krok za krokem a zapojte se do předsněmové diskuze",
+      "newsletter_msgid": "a717147c36e14c15",
+      "article_path": "data\\articles\\feac89cb33de38f1.json",
+      "summary_path": "data\\summaries\\feac89cb33de38f1.md",
+      "audio_path": "audio/feac89cb33de38f1.mp3",
+      "audio_bytes": 1262636,
+      "duration_sec": 158,
+      "status": "published",
+      "blurb": "Až do příštího Valného sněmu se můžeš přihlásit jako pozorovatel nebo pozorovatelka Náčelnictva, zúčastnit se jednoho až tří jednání a dostat přístup k podkladům. Nemusíš přitom vůbec uvažovat o kandidatuře, stačí zájem o konkrétní celostátní téma. Každý pozorovatel navíc dostane buddyho, tedy zkušenějšího člena Náčelnictva, se kterým si materiály probere předem i po jednání.",
+      "summary_text": "V tomhle díle si řekneme o možnosti, jak nahlédnout Náčelnictvu pod pokličku, aniž bys musel hned kandidovat.\n\nVychází to z jednoduchého pozorování: přijít poprvé na jednání Náčelnictva, nikoho tam neznat a začít se orientovat v rozsáhlých materiálech není nic snadného. Proto pracovní skupina Náčelnictva pro zapojení mladých do řízení organizace spustila podporu, která má první seznámení usnadnit. Až do příštího Valného sněmu se můžeš zapojit jako pozorovatel nebo pozorovatelka.\n\nPro koho to je? Pro každého, kdo chce lépe porozumět tomu, co Náčelnictvo řeší, jak jeho jednání probíhají a jaká odpovědnost se s působením v něm pojí. A tady je důležité, že nemusíš vědět, že chceš kandidovat. Zkušenost se hodí, i když tě zajímá konkrétní celostátní téma, uvažuješ o zapojení do některé pracovní skupiny nebo prostě chceš líp poznat, jak ústřední orgány fungují.\n\nPrakticky to vypadá takhle. Zúčastníš se jednoho až tří jednání Náčelnictva, ta jsou ostatně běžně otevřená veřejnosti. Navíc dostaneš přístup k podkladům, takže si je můžeš v klidu předem projít a lépe rozumět tomu, o čem se bude jednat.\n\nA nezůstaneš v tom sám. Každý pozorovatel si vybere svého buddyho, tedy zkušenějšího člena nebo členku Náčelnictva, který pomůže se zorientovat. S buddym můžeš před jednáním probrat materiály, doptat se na širší souvislosti nebo si po jednání shrnout, co se vlastně odehrálo. Podle dohody tě může přizvat i na poradu některé z pracovních skupin. Rozsah zapojení záleží hlavně na tom, co tě zajímá. Zaměřit se můžeš třeba na vzdělávání, výchovu a program, rovering, strategii organizace, zapojování mladých do rozhodování, legislativu, environmentální výzvy nebo na fungování Náčelnictva jako celku.\n\nJak se přihlásit? Na stránce Náčelnictva na Skautské křižovatce si vyber některého z uvedených buddy a ozvi se mu na zveřejněný kontakt. Společně si ujasníte, co tě zajímá: kterého jednání se zúčastníš, jestli se potkáte před jednáním nebo po něm, kterým tématům chceš líp rozumět a jestli se připojíš na poradu pracovní skupiny. Přístup k materiálům v roli pozorovatele ti pak zařídí.\n\nShrňme si to. Jedno až tři jednání, přístup k podkladům, buddy k ruce a žádný závazek kandidovat. Stačí si vybrat buddyho na Křižovatce a napsat mu.",
+      "summary_sha": "31729d963497",
+      "voice": "Callirrhoe",
+      "published_at": "2026-08-09T13:15:13.283648+00:00"
+    },
+    "5d7b183f8128180b": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/vega-festival-pro-vsechny-skautske-zeny",
+      "title": "Vega - festival pro všechny skautské ženy",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/3e19f730-aad0-44fe-b0a6-4a58ef0021b1.png",
+      "links": [
+        {
+          "text": "Událost na Facebooku",
+          "url": "https://fb.me/e/6SsPFI5Rj"
+        },
+        {
+          "text": "Webové stránky pořádajících kurzů (Lyra)",
+          "url": "https://lyra.skauting.cz/vega/"
+        }
+      ],
+      "first_seen": "2026-08-09T11:59:11.514527+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Připravte náborovou akci krok za krokem a zapojte se do předsněmové diskuze",
+      "newsletter_msgid": "a717147c36e14c15",
+      "article_path": "data\\articles\\5d7b183f8128180b.json",
+      "summary_path": null,
+      "audio_path": null,
+      "audio_bytes": null,
+      "duration_sec": null,
+      "status": "fetched"
+    },
+    "ce5165fcd3e5e219": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/posledni-dny-pro-prihlaseni-do-aukce-skautske-energie",
+      "title": "Poslední dny pro přihlášení do aukce Skautské energie",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/0e82aeff-c576-4666-96f1-3021917a4d94.png",
+      "links": [
+        {
+          "text": "moje.skautskaenergie.cz",
+          "url": "https://moje.skautskaenergie.cz"
+        }
+      ],
+      "first_seen": "2026-08-09T11:59:12.889264+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Připravte náborovou akci krok za krokem a zapojte se do předsněmové diskuze",
+      "newsletter_msgid": "a717147c36e14c15",
+      "article_path": "data\\articles\\ce5165fcd3e5e219.json",
+      "summary_path": null,
+      "audio_path": null,
+      "audio_bytes": null,
+      "duration_sec": null,
+      "status": "fetched"
+    },
+    "0b98fb01ee45fd77": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/solidarita-nove-tema-v-dobrackovi-bud-u-tvorby-podpory-pro-oddily",
+      "title": "Solidarita jako nové téma v Dobráčkovi",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/82b75553-2da7-4fd1-a3fe-1efa148c90db.png",
+      "links": [
+        {
+          "text": "dobracek.skaut.cz",
+          "url": "http://dobracek.skaut.cz/"
+        },
+        {
+          "text": "Ochrana přírody",
+          "url": "https://dobracek.skaut.cz/environmentalni-vyzvy/"
+        },
+        {
+          "text": "Péče o památky",
+          "url": "https://dobracek.skaut.cz/pece-o-pamatky/"
+        },
+        {
+          "text": "Podpora seniorů",
+          "url": "https://dobracek.skaut.cz/podpora-senioru/"
+        }
+      ],
+      "first_seen": "2026-08-09T11:59:43.212992+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Pomozte vytvořit novou linku Dobráčka a oslavte Svojsíkovo výročí společnou Večerkou",
+      "newsletter_msgid": "eb39e7a0ceb526f6",
+      "article_path": "data\\articles\\0b98fb01ee45fd77.json",
+      "summary_path": "data\\summaries\\0b98fb01ee45fd77.md",
+      "audio_path": "audio/0b98fb01ee45fd77.mp3",
+      "audio_bytes": 1424876,
+      "duration_sec": 178,
+      "status": "published",
+      "blurb": "Dobráček chystá na nový školní rok novou tematickou linku, tentokrát o solidaritě s lidmi v tíživé situaci, a shání k její tvorbě lidi z oddílů. Nejde o závazek na desítky hodin: stačí jedno online setkání, sepsání vlastní zkušenosti do sdíleného dokumentu nebo zpětná vazba k hotovému. Cílem je ukázat, jak z jednorázové akce typu Tříkrálová sbírka udělat promyšlený zážitek s reflexí, ne to po akci zabalit.",
+      "summary_text": "V tomhle díle si řekneme o novém tématu v projektu Dobráček a o tom, jak se dá do jeho přípravy zapojit.\n\nZačneme dobrou zprávou. V tématu solidarity skauti rozhodně pozadu nejsou. Tříkrálové sbírky, dobročinné kavárny a cukrárny pro lidi v tíživé zdravotní a finanční situaci, pomoc při živelných katastrofách, Květinový den, Světlo a teplo pro Ukrajinu a spousta dalších. Jsme v tom akční a máme zkušenosti.\n\nA přesně proto se tým Dobráčka rozhodl na tohle téma zaměřit. Cílem je vytvořit podporu pro smysluplné Zapojení do společnosti, které je pevnou součástí skautské výchovné metody. Jinými slovy, posunout se od samotné akce o kousek dál. Po vzoru předchozích tematických linek, kterými byly Ochrana přírody, Péče o památky a Podpora seniorů, mají s novým školním rokem vzniknout programové aktivity na schůzky. Ty pomůžou téma otevřít, probádat, vybrat si nějakou formu pomoci a připravit se na ni. A pak to po akci nezabalit, ale naopak pořádně oslavit, ohlédnout se za tím, co to přineslo nám i dalším lidem, a koupit si nášivku na kroj.\n\nObsahově chce linka pokrýt oblasti, které oddíly už často dělají, ale zaslouží si metodickou podporu. Od Tříkrálové nebo potravinové sbírky přes pomoc lidem bez domova až po zapojení při živelných katastrofách. Hlavní myšlenka je ukázat, jak z jednorázové akce udělat pro kluky a holky promyšlený a hluboký skautský zážitek s reflexí.\n\nA teď to, proč o tom mluvíme. Tým shání lidi, kteří budou u tvorby té podpory s nimi. A dopředu uklidňuje, že nehledá závazek na desítky hodin. Pomoct jde odkudkoliv, klidně od rybníka nebo cestou na tábor. Může jít o jedno online setkání, o sepsání vaší zkušenosti z oddílu do sdíleného dokumentu, nebo dokonce jen o zpětnou vazbu k tomu, co vymyslí oni. Jak sami píšou, každá čtvrthodina ušetří budoucí hodiny práce vedoucím v oddílech, takže i v tomhle se ta solidarita promítá.\n\nŽádné specifické dovednosti potřeba nejsou. Hodíte se, pokud jste už někdy pořádali benefiční akci, pokud se do solidárních kroků zapojujete jako jednotlivec, třeba občasnou koupí Nocleženky nebo Nového prostoru, pokud jsou vám blízká témata lidské důstojnosti a pomoci druhým, nebo prostě jen přemýšlíte, jak tahle témata zábavně předat dětem v oddíle.\n\nShrňme si to. Nová linka Dobráčka o solidaritě vzniká na nový školní rok a hledá lidi z praxe. Ozvat se můžeš Markétě Musilové, přezdívané Blecha, a to i když váháš, jestli máš dost času. Nic závazného.",
+      "summary_sha": "6a07a790237c",
+      "voice": "Callirrhoe",
+      "published_at": "2026-08-09T13:20:35.012692+00:00"
+    },
+    "2a0be1800da5ff87": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/oslavime-svojsikovy-150-narozeniny-spolecnou-vecerkou",
+      "title": "Oslavíme Svojsíkovy 150. narozeniny společnou Večerkou?",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/080478e2-0ddf-42aa-ad58-4b1867a8b6b4.png",
+      "links": [
+        {
+          "text": "plakátů z časopisu Skaut",
+          "url": "https://drive.google.com/drive/folders/13So4safNCUlJ2frXgsNA7kLkn43Q4LGL"
+        },
+        {
+          "text": "programový list pro benjamínky",
+          "url": "https://zpravodajstvi.skaut.cz/clanek/priblizte-benjaminkum-pribeh-zakladatele-svojsika"
+        },
+        {
+          "text": "tento díl",
+          "url": "https://decko.ceskatelevize.cz/video/e218553110200003"
+        },
+        {
+          "text": "nahrávky Večerky",
+          "url": "https://krizovatka.skaut.cz/vedu-oddil/nahravky-skautske-hymny-a-vecerky"
+        },
+        {
+          "text": "skautskyinstitut.cz/svojsik",
+          "url": "https://www.skautskyinstitut.cz/svojsik"
+        }
+      ],
+      "first_seen": "2026-08-09T11:59:44.909285+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Pomozte vytvořit novou linku Dobráčka a oslavte Svojsíkovo výročí společnou Večerkou",
+      "newsletter_msgid": "eb39e7a0ceb526f6",
+      "article_path": "data\\articles\\2a0be1800da5ff87.json",
+      "summary_path": null,
+      "audio_path": null,
+      "audio_bytes": null,
+      "duration_sec": null,
+      "status": "fetched"
+    },
+    "7da0f9f6b32dfc95": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/skautske-prusvihy-deti-pokousane-taborovymi-psy",
+      "title": "Skautské průšvihy: dítě pokousané táborovým psem",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/2c87e009-97fc-45a8-a125-365aca6b8378.jpeg",
+      "links": [
+        {
+          "text": "nečekaného útoku psa z útulku",
+          "url": "https://www.idnes.cz/plzen/zpravy/nemcovice-utuilek-skauti-venceni-psi-zraneni-policie-obvineni-rokycansko.A260303_893613_plzen-zpravy_jzk"
+        },
+        {
+          "text": "Jak jednat v krizové situaci",
+          "url": "https://krizovatka.skaut.cz/bezpecnyskauting/krizove-situace-reseni/jak-jednat-v-krizove-situaci"
+        },
+        {
+          "text": "prusvihy.skaut.cz",
+          "url": "http://prusvihy.skaut.cz"
+        }
+      ],
+      "first_seen": "2026-08-09T11:59:46.384580+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Pomozte vytvořit novou linku Dobráčka a oslavte Svojsíkovo výročí společnou Večerkou",
+      "newsletter_msgid": "eb39e7a0ceb526f6",
+      "article_path": "data\\articles\\7da0f9f6b32dfc95.json",
+      "summary_path": "data\\summaries\\7da0f9f6b32dfc95.md",
+      "audio_path": "audio/7da0f9f6b32dfc95.mp3",
+      "audio_bytes": 1729388,
+      "duration_sec": 216,
+      "status": "published",
+      "blurb": "Na tábor si vedoucí vzal velkého psa, který se po tábořišti směl pohybovat jen s náhubkem. Mimo tábořiště ho ale neměl a nečekaně vystartoval po dítěti, které přišlo poprosit o nabroušení nože. Dispečink vyhodnotil situaci tak vážně, že poslal vrtulník, a o události vyšel článek dřív, než stihlo středisko cokoli sdělit rodičům. Doporučení zní jasně: psa, u kterého nemáte ověřenou klidnou povahu i za změněných okolností, na tábor raději neberte.",
+      "summary_text": "V tomhle díle si projdeme jeden skautský průšvih a hlavně to, co z něj plyne. Jde o dítě pokousané psem na táboře.\n\nCo se stalo. Jeden z vedoucích měl na táboře svého psa. Nešlo o malého ratlíka, ale o pořádného psa, a protože nebyl úplně nejpřátelštější, vedení tábora rozhodlo, že se po tábořišti smí pohybovat jen s náhubkem. Jenže událost se odehrála mimo tábořiště, kde už pes náhubek neměl. Vedoucí si vzal nože z kuchyně a šel je brousit ke svému autu s nářadím, zaparkovanému opodál. Pes klidně ležel pod autem. Pak přišlo jedno z dětí s dalším nožem a zeptalo se, jestli by ho vedoucí taky nabrousil. V tu chvíli pes po dítěti vystartoval.\n\nChlapec byl pokousán na hýždích a zádech. Zdravotník okamžitě volal sto dvanáct a dispečerka vyhodnotila situaci vzhledem k velikosti psa a dítěte dramaticky. Na místo vyslala několik složek integrovaného záchranného systému. Přijela policie, přiletěl vrtulník, dorazila záchranka. Naštěstí se ukázalo, že dítě není v ohrožení života a kromě menších tržných ran je v pořádku, takže ho záchranka odvezla do nemocnice na šití.\n\nA teď to, co bývá překvapením. Během několika minut přišla zpráva, že s někým mluvili novináři a že na tábor možná dorazí štáb. Nakonec nedorazil, ale během několika hodin vyšel online článek, přestože nikdo nemluvil ani s vedoucími, ani s rodiči. Středisko zpočátku nevědělo, jak komunikovat s rodiči, a obrátilo se na ústředí. Než ale přišla odpověď, kontaktovali rodiče ústředí sami, což situaci vyostřilo. Nakonec se všechno vyjasnilo, vedoucí se k věci postavil čelem a s rodiči i klukem to urovnal. Kluk je pořád členem a jezdí na výpravy. Středisko od té doby vydalo jasnou stopku psům na akcích.\n\nProč je to riziko větší, než se zdá? Míru rizika ovlivňuje velikost psa i plemeno, protože některá jsou cíleně šlechtěná k vyšší útočnosti. Jsou zdokumentované případy feny honáckého plemene, ve které pohyb většího množství dětí probouzel přirozený sklon shánět stádo, takže děti štípala do zadku a lýtek. A pozor, i malý pes může způsobit trvalé zranění, třeba jizvu v obličeji nebo poškození šlach na ruce.\n\nDruhá věc jsou samotné děti. Někteří kluci a holky na psy zvyklí nejsou. Neumí číst signály v psí řeči, nepoznají, kdy pes nestojí o pozornost, a nevědí, že kousnutí může být přirozená obrana, když ho třeba nečekaně probudí ve stínu.\n\nA do třetice: tábor je stresové prostředí i pro psa. Hodně lidí, hluk, pohyb, nepředvídatelnost a k tomu vedra. I pes, o kterém jsme přesvědčení, že ho dobře známe, se může chovat úplně jinak než doma.\n\nShrňme si to. Nebrat na tábor psa, u kterého nemáme ověřenou klidnou povahu i za změněných okolností. Pokud pes někdy po někom vystartoval, není to dobrý nápad. A pokud pes na táboře je, počítejte s tím, že problém nekončí u zranění, ale pokračuje komunikací s rodiči a možná i s médii.",
+      "summary_sha": "468a7a18d11e",
+      "voice": "Charon",
+      "published_at": "2026-08-09T13:22:32.978785+00:00"
+    },
+    "0cda3dd4e5af1e61": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/skaut-bot-hlasi-dalsi-krok",
+      "title": "SKAUTbot jde do beta testování",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/ce9210d3-b23c-4c87-a0af-805cdcff6ff4.png",
+      "links": [
+        {
+          "text": "https://krizovatka.skaut.cz/it-projekty-a-nastroje/online-projekty/skaut-bot",
+          "url": "https://krizovatka.skaut.cz/it-projekty-a-nastroje/online-projekty/skaut-bot"
+        },
+        {
+          "text": "https://zpravodajstvi.skaut.cz/clanek/budujeme-skaut-bota-inteligentni-pomocnik-",
+          "url": "https://zpravodajstvi.skaut.cz/clanek/budujeme-skaut-bota-inteligentni-pomocnik-pro-vedouci-se-blizi"
+        }
+      ],
+      "first_seen": "2026-08-09T11:59:47.863814+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Pomozte vytvořit novou linku Dobráčka a oslavte Svojsíkovo výročí společnou Večerkou",
+      "newsletter_msgid": "eb39e7a0ceb526f6",
+      "article_path": "data\\articles\\0cda3dd4e5af1e61.json",
+      "summary_path": "data\\summaries\\0cda3dd4e5af1e61.md",
+      "audio_path": "audio/0cda3dd4e5af1e61.mp3",
+      "audio_bytes": 1300268,
+      "duration_sec": 163,
+      "status": "published",
+      "blurb": "SKAUTbot uzavřel alfa testování a do bety posílá pět parťáků: poradce při vedení lidí, roverského průvodce, průvodce vzděláváním, komunikačního parťáka a pomocníka pro vedení vlčat a světlušek. Testovat může každý, kdo má oficiální skautský Google účet, a hotová verze se má představit na začátku září. Na rozdíl od běžných AI nástrojů staví na ověřených zdrojích Junáka, konverzace chrání licence Google Workspace a data se nepoužívají k trénování veřejných modelů.",
+      "summary_text": "V tomhle díle si řekneme o SKAUTbotovi, který vstoupil do fáze beta testování a shání testery.\n\nNejdřív co to vlastně je. Cílem je bezpečný, spolehlivý a rychlý nástroj, který odpoví na otázky kolem skautské praxe, od personálních otázek přes podmínky zkoušek až po nápady na program. Jde o to odlehčit všem od zdlouhavého dohledávání informací.\n\nMožná si říkáš, proč nepoužít běžně dostupné AI nástroje. Ty ale často neznají specifický skautský kontext, neumí pracovat s našimi vnitřními předpisy, a tak nenabídnou to nejlepší pro naši praxi. SKAUTbot naproti tomu staví na ověřených zdrojích Junáka a na lidském know-how expertních skupin. Do ladění obsahu se zapojily nižší desítky oborových školitelů a alfa testerů, tedy expertů z hnutí, kteří prošli speciálním školením. Smyslem je, aby si boti nevymýšleli.\n\nDo bety teď jde pět parťáků. Poradce při vedení lidí. Roverský průvodce. Průvodce vzděláváním. Komunikační a propagační parťák. A pomocník pro vedení vlčat a světlušek. Další mají brzy přibýt.\n\nA teď to důležité upozornění. Nejde o finální řešení. Boti se pořád učí a můžou dělat chyby. Kompletní a doladěná verze se má oficiálně představit a předat do užívání na začátku září. Právě proto je role testerů klíčová. Tvůrci potřebují boty vystavit reálnému provozu, takže se jich ptejte na to, co v oddíle nebo středisku opravdu řešíte, a dávejte vědět, co funguje skvěle a kde bot střílí vedle.\n\nJak se zapojit? Beta testování je dostupné pro každého, kdo má oficiální skautský Google účet, tedy s doménou skaut.cz nebo skautka.cz. Technické detaily, návod na spuštění jednotlivých botů i odkaz na formulář pro zpětnou vazbu najdeš na Křižovatce v sekci SKAUTbot.\n\nZa zmínku stojí i to, jak se řeší bezpečnost. Konverzace jsou chráněné licencí Google Workspace, data nikam neunikají a netrénují se na nich veřejné modely. Autoři zmiňují i ekologii, protože přesně zacílené odpovědi šetří výpočetní výkon a energii oproti běžným nenaučeným modelům. Projekt finančně podpořila Nadace O2.\n\nShrňme si to. Pět botů v testovacím provozu, přístup přes skautský Google účet, ostrá verze v září. A hlavně: v téhle fázi jsou chyby očekávané, takže je hlaste, ať je do září co vyladit.",
+      "summary_sha": "dfc09f6c186b",
+      "voice": "Charon",
+      "published_at": "2026-08-09T13:24:05.552913+00:00"
+    },
+    "ba8d8e248cf5f6d3": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/novinka-pro-vychovne-zpravodaje-se-vy-z-chysta-dve-jednodenni-setkani",
+      "title": "Novinka pro výchovné zpravodaje: SeVýZ chystá dvě jednodenní setkání",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/acda1a30-025a-4483-b992-c283bd3e341d.jpeg",
+      "links": [],
+      "first_seen": "2026-08-09T11:59:52.022782+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Pomozte vytvořit novou linku Dobráčka a oslavte Svojsíkovo výročí společnou Večerkou",
+      "newsletter_msgid": "eb39e7a0ceb526f6",
+      "article_path": "data\\articles\\ba8d8e248cf5f6d3.json",
+      "summary_path": null,
+      "audio_path": null,
+      "audio_bytes": null,
+      "duration_sec": null,
+      "status": "fetched"
+    },
+    "5ec6fdcd9bfbf278": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/drsna-poza-nebo-vazny-problem-jak-cist-chovani-kluku-v-oddile",
+      "title": "Drsná póza nebo vážný problém? Jak číst chování kluků",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/a642d3e7-ed38-41e9-af3f-f1677e61b5dd.jpeg",
+      "links": [
+        {
+          "text": "Česká rada dětí a mládeže",
+          "url": "https://crdm.cz/clanky/aktuality/radikalizace-mladeze-na-socialnich-sitich-vystupy-kulateho-stolu-s-experty-pracovniky-s-mladezi-i-mladymi-lidmi/"
+        },
+        {
+          "text": "Kdo vyhraje boj o hodnoty našich dětí?",
+          "url": "https://casopis.skauting.cz/kdo-vyhraje-boj-o-hodnoty-nasich-deti-12058"
+        },
+        {
+          "text": "podcast Po uši ve skautu s hostem Pavlem Houdkem",
+          "url": "https://ceskepodcasty.cz/podcast/po-usi-ve-skautu/22-houdek-klicem-k-vychove-kluku-je-vzajemny-vztah-podcastova-zkouska"
+        },
+        {
+          "text": "Skauting, únor 2023",
+          "url": "https://casopis.skauting.cz/sexualni-vychova-ve-skautu-8447"
+        },
+        {
+          "text": "Skauting, říjen 2023",
+          "url": "https://casopis.skauting.cz/kdyz-zacne-nazor-nekoho-jineho-byt-problem-aneb-vychova-proti-extremismu-9483"
+        },
+        {
+          "text": "Můj kamarád, s. 5",
+          "url": "https://casopisy.skaut.cz/knihovna/592"
+        },
+        {
+          "text": "Můj domov, s. 105–106",
+          "url": "https://casopisy.skaut.cz/knihovna/892"
+        }
+      ],
+      "first_seen": "2026-08-09T11:59:53.511196+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Pomozte vytvořit novou linku Dobráčka a oslavte Svojsíkovo výročí společnou Večerkou",
+      "newsletter_msgid": "eb39e7a0ceb526f6",
+      "article_path": "data\\articles\\5ec6fdcd9bfbf278.json",
+      "summary_path": "data\\summaries\\5ec6fdcd9bfbf278.md",
+      "audio_path": "audio/5ec6fdcd9bfbf278.mp3",
+      "audio_bytes": 1620908,
+      "duration_sec": 203,
+      "status": "published",
+      "blurb": "Na červnové výchovné poradně se řešil nárůst toxického chování u kluků, kteří si vzorce přinášejí z internetu a od influencerů. Zásadní je rozlišit pózu od záměru, protože spousta kluků vůbec nerozumí významu slov, která opakují, takže prvním krokem je rozhovor, ne trest. Hranice se ale musí nastavovat okamžitě a opakovaně: přejít sexistickou poznámku mlčením znamená dát tichý souhlas.",
+      "summary_text": "V tomhle díle se podíváme na téma, které se otevřelo na červnové výchovné poradně. Nárůst toxického chování u kluků v oddílech.\n\nNejde o běžné klukovské pošťuchování. Řeč je o narážkách, agresivitě a nerespektujících postojích, které kluci čím dál častěji nasávají z online světa, z dezinformačních bublin nebo ze specifického rodinného zázemí. Není to jen skautský problém, intenzivně se jím zabývá i Česká rada dětí a mládeže.\n\nNež se dostaneme k doporučením, jedna důležitá poznámka k pojmům. V podcastu Po uši ve skautu k tomu zaznělo dobré přirovnání. Když řekneme toxický odpad, myslíme tím jen určitou část odpadu, ne všechen. Stejně tak toxická maskulinita je úzký výsek, na který je potřeba být pozorný. Ne každá maskulinita je toxická.\n\nA teď konkrétní kroky, které by si mělo vedení ujasnit dopředu.\n\nZa prvé, rozlišuj pózu od záměru. Máme tendenci trestat ty, kteří jen trochu naplňují mediální obraz. Buďme pozorní, protože spousta kluků vůbec nerozumí významu slov, která říkají. Jen opakují to, co někde slyšeli. Prvním krokem je proto vždycky rozhovor a vysvětlení.\n\nZa druhé, důsledně nastavujte hranice. Co tolerujeme a co je za čarou? Hranice se musí nastavovat okamžitě a opakovaně. Pokud přejdeme sexistickou poznámku nebo ponižování slabšího mlčením, dáváme tím tichý souhlas. Když ale kluk významu svých slov dobře rozumí, myslí je vážně a rodiče situaci zlehčují, je čas na jasná ultimáta. Hlavním cílem vedení je ochránit oddíl, ne držet dotyčného za každou cenu na úkor ostatních.\n\nZa třetí, mluvte adresně a na rovinu. Zastavte situaci a zeptejte se přímo: víš, co znamená, co jsi právě řekl? Uvědomuješ si, jak se kvůli tomu můžou cítit ostatní? Někdy je lepší vzít si dotyčného stranou a neptat se před celým kolektivem.\n\nZa čtvrté, hledejte zdroj. Je to jen póza z TikToku, nebo obranný mechanismus z domova? To jsou dvě různé situace a chtějí jiné řešení.\n\nZa páté, buďte transparentní vůči rodičům. Když se objeví vážnější projevy, tedy opakované srážení slabších nebo absence náhledu i po promluvě, řešte to s rodiči otevřeně a bez odkládání.\n\nA za šesté, využijte koedukaci. Společné fungování, kdy kluci a holky sdílejí služby i výzvy, je nejlepší přirozený lék proti předsudkům a neúctě. U oddílů, které během roku fungují odděleně a potkají se až na táboře, to ale ze začátku může být výzva.\n\nShrňme si to. Nemávat nad tím rukou s tím, že z toho vyrostou. Nejdřív rozhovor a vysvětlení, pak důsledné hranice, a když nepomůže nic, chránit oddíl. Může se totiž rozhodovat o tom, jestli u kluků vyhraje drsná póza z internetu, nebo skautské hodnoty. Výchovné poradny probíhají každou první středu v měsíci.",
+      "summary_sha": "aa7927695c93",
+      "voice": "Callirrhoe",
+      "published_at": "2026-08-09T13:25:39.002611+00:00"
+    },
+    "42fb5407da4c6575": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/vyplati-se-letos-pridat-ke-skautske-energii-odpoved-hledaly-seznam-zpravy",
+      "title": "Vyplatí se letos přidat ke Skautské energii? Odpověď hledaly Seznam Zprávy",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/508f15e8-14f4-4ddb-90fb-a22f2f648eaa.png",
+      "links": [
+        {
+          "text": "Článek",
+          "url": "https://www.seznamzpravy.cz/clanek/ekonomika-cash-only-skauti-opet-drazi-energie-vyplati-se-k-nim-pridat-309325"
+        },
+        {
+          "text": "Skautská energie",
+          "url": "https://www.skautskaenergie.cz"
+        },
+        {
+          "text": "Éra drahých energií končí. Oči otevírá aukce českých skautů",
+          "url": "https://www.seznamzpravy.cz/clanek/ekonomika-cash-only-era-drahych-energii-konci-oci-otevira-aukce-ceskych-skautu-283947"
+        },
+        {
+          "text": "Registrace do letošní aukce Skautské energie",
+          "url": "https://moje.skautskaenergie.cz"
+        }
+      ],
+      "first_seen": "2026-08-09T11:59:54.943787+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Pomozte vytvořit novou linku Dobráčka a oslavte Svojsíkovo výročí společnou Večerkou",
+      "newsletter_msgid": "eb39e7a0ceb526f6",
+      "article_path": "data\\articles\\42fb5407da4c6575.json",
+      "summary_path": null,
+      "audio_path": null,
+      "audio_bytes": null,
+      "duration_sec": null,
+      "status": "fetched"
+    },
+    "2c84d879dfcc697a": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/deni-na-cervnovem-nacelnictvu-ocima-kadi-zacti-se-do-clanku-nebo-nahledni-do-zapisu-z-jednani",
+      "title": "Červnové Náčelnictvo očima Kádi",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/7e8a42fa-4dae-48db-b130-f57923c770ec.jpeg",
+      "links": [],
+      "first_seen": "2026-08-09T11:59:56.457475+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Pomozte vytvořit novou linku Dobráčka a oslavte Svojsíkovo výročí společnou Večerkou",
+      "newsletter_msgid": "eb39e7a0ceb526f6",
+      "article_path": "data\\articles\\2c84d879dfcc697a.json",
+      "summary_path": "data\\summaries\\2c84d879dfcc697a.md",
+      "audio_path": "audio/2c84d879dfcc697a.mp3",
+      "audio_bytes": 1425836,
+      "duration_sec": 178,
+      "status": "published",
+      "blurb": "Náčelnictvo na červnovém jednání odladilo čtyři témata předsněmové diskuze a schválilo členské příspěvky na příští rok. Novinkou je pilotní Skautské fórum mladých, tedy jakési „předVSJ“ pro rovery a rangers, jehož přihlašování se otevře zhruba v říjnu. Došlo taky na koncepci velkých akcí, projekt spolkového časopisu, navrhovanou podobu skautského vzdělávání a rozdělení peněz, kterých od ministerstva nakonec přišlo o něco víc.",
+      "summary_text": "V tomhle díle se podíváme na červnové zasedání Náčelnictva, a to očima jeho členky Kláry Waldhegerové, přezdívané Káďa, která z něj napsala postřehy.\n\nZačneme novinkou, která stojí za pozornost. Několik materiálů souviselo s pilotním Skautským fórem mladých. Je to takové předVSJ pro rovery a rangers, ne nutně delegáty Valného sněmu, které se Náčelnictvo rozhodlo vyzkoušet, aby posílilo hlas mladých na sněmu. Přihlašování by se mělo otevřít zhruba v říjnu, takže jestli máte kolem sebe někoho, koho by se to mohlo týkat, sledujte to.\n\nDruhé velké téma byly sněmy. Střediskové sněmy pomalu začínají, na podzim přijdou sněmy vyšších organizačních jednotek, a tak Náčelnictvo logicky ladilo materiály do předsněmové diskuze. Konkrétně jde o Strategii 2030, možné změny ve způsobu stanovení delegátů Valného sněmu, pravidelné jmenování starosty a téma o skautské výchově.\n\nZajímavý je i posun ve vztahu k takzvaným zvláštním organizačním jednotkám. Náčelnictvo věnovalo čas Tiskovému a distribučnímu centru a Skautskému institutu. Káďa má dojem, že tohle Náčelnictvo se víc snaží ponořit do jejich fungování a spolupráce s Výkonnou radou, a že jsou z toho všichni spíš rádi.\n\nNěkolik materiálů se na jednání vracelo opakovaně a tentokrát už se je podle Kádi podařilo dotáhnout. Šlo o koncepci celostátních a velkých akcí, posuny v projektu spolkového časopisu, analýzu centrální správy skautských Google služeb a navrhovanou podobu skautského vzdělávání.\n\nDošlo samozřejmě i na peníze. Od ministerstva školství nakonec přišlo o něco víc, než se čekalo, takže se rozhodovalo, co s tím. Náčelnictvo už dřív schválilo navýšení rozpočtu Kanceláře ústředí, aby se mohla rozvíjet, a teď mu Výkonná rada referovala, jak na tom jsou. A jako každý rok se schvalovala výše členských příspěvků na příští kalendářní rok.\n\nZa zmínku stojí ještě jedna věc, která se běžně nedělá. V pátek pozdě večer a pak i o pauzách probíhal nestrukturovaný program, kde bylo možné napsat individuální zpětnou vazbu jednotlivým členům a členkám Náčelnictva, kteří o ni projevili zájem, ať už písemně do obálky, nebo ústně napřímo.\n\nShrňme si to. Fórum mladých s přihlašováním v říjnu, doladěná předsněmová témata, schválené příspěvky a několik dotažených koncepcí. Kompletní zápis z jednání najdeš na Křižovatce.",
+      "summary_sha": "fb14fa3b6499",
+      "voice": "Callirrhoe",
+      "published_at": "2026-08-09T13:27:21.261498+00:00"
+    },
+    "b16cc7a00e4a615e": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/explorer-belt-zna-sve-vedeni-pripravy-obnovene-akce-pokracuji",
+      "title": "Explorer Belt zná své vedení. Přípravy obnovené akce pokračují",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/36fde2ae-c748-40fa-a870-24e6d5afa0b9.jpeg",
+      "links": [],
+      "first_seen": "2026-08-09T11:59:57.914482+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Pomozte vytvořit novou linku Dobráčka a oslavte Svojsíkovo výročí společnou Večerkou",
+      "newsletter_msgid": "eb39e7a0ceb526f6",
+      "article_path": "data\\articles\\b16cc7a00e4a615e.json",
+      "summary_path": null,
+      "audio_path": null,
+      "audio_bytes": null,
+      "duration_sec": null,
+      "status": "fetched"
+    },
+    "bde08818481291a3": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/dobrovolnictvi-v-pyrenejich-vyjed-v-lete-2026-do-skautskeho-centra-griebal",
+      "title": "Dobrovolnictví v Pyrenejích: Vyjeď v létě 2026 do skautského centra Griébal",
+      "image_url": "https://skaut-gov-contember-prod.s3.eu-central-1.amazonaws.com/news/7f940b45-9d14-4f63-aa01-48082cfc2063.jpeg",
+      "links": [
+        {
+          "text": "Informačním balíčku",
+          "url": "https://drive.google.com/file/d/1YB9oSS_xXscL3xZ9bAM0tja2u_ybEFuq/view"
+        },
+        {
+          "text": "Evropském portálu pro mládež",
+          "url": "https://youth.europa.eu/solidarity/opportunity/48370_es"
+        }
+      ],
+      "first_seen": "2026-08-09T11:59:59.369135+00:00",
+      "newsletter_subject": "⚜ Skautské novinky: Pomozte vytvořit novou linku Dobráčka a oslavte Svojsíkovo výročí společnou Večerkou",
+      "newsletter_msgid": "eb39e7a0ceb526f6",
+      "article_path": "data\\articles\\bde08818481291a3.json",
+      "summary_path": null,
+      "audio_path": null,
+      "audio_bytes": null,
+      "duration_sec": null,
+      "status": "fetched"
     }
   }
 }

@@ -1,0 +1,1865 @@
+Delivered-To: mareksakul@gmail.com
+Received: by 2002:a05:612c:f2d:b0:5ad:e1a1:7f78 with SMTP id kb13csp2165021vqb;
+        Thu, 2 Jul 2026 05:42:12 -0700 (PDT)
+X-Received: by 2002:a05:690e:1288:b0:664:ca89:3cb with SMTP id 956f58d0204a3-66507b46fb3mr8953842d50.26.1782996132317;
+        Thu, 02 Jul 2026 05:42:12 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1782996132; cv=none;
+        d=google.com; s=arc-20260327;
+        b=cWwSk3ttJ1EPTFcEr00KIR0eH6FxJxrYX4t94LN6LGP2B93u8X2iakGmHRWpAI1GrE
+         kwvKRer/Fy4aqBrJqCju+gCDcU1CMDkfL+IM6QmbC7p3zoFN2nnzl3tw4pa6QSmqe5J9
+         rNCSLw8frZdTeU0Z+FCLAGMvkPXd1Z3Xxo8mIzLNYFQQiZofAdu5vnHhQKlGkthuz3KV
+         4DHfBpTbCOtXcUql7H9GLMCPpV77KV7vdl7nbQt0exHbGOnGRYOfsBtdwEtS1haH12EQ
+         vBOdXG1SZCEzbZeR/wQwxLjwzDlJpT+CApypldkU/GHJGIZOIBtkAkO7breBqyXK3Hqf
+         9Geg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=list-id:list-unsubscribe-post:list-unsubscribe:reply-to:precedence
+         :from:subject:mime-version:date:message-id:to:dkim-signature;
+        bh=ft6GyashuOKPelL3lLLbf7N/Mt/2l+eA3XKR4LPTBKI=;
+        fh=aad7IMOvnq6Pi++QPzSypauUHm59LdCRCfq356TYqGI=;
+        b=hvmfmK5hPZhOLzIzEUSScr/uAnAJLk+vIm7myLaESbVu3NLN0cWpCpr1uUCBTtCAjY
+         3iW2DUL82kdnwEcFjPK/Xwt0hyvxIEjKb4PZ0XHxsTmN9t9kY5Q1b5NV8o8FQnXjR/b7
+         LM+87Hil/rvHiVG0vnKq6P7QCtp6soD97Hg8mTKjGHHfH0f4+vN0y3RmdliNLc8Usj6U
+         54OBR4edM28FNm/iTcT4tS3/O3oaqr6VnkEXazNKDoSbMhPXq/cOiE0wZNHcDRdVXQHO
+         XnR7h6Ai+JFGFPPI7CQ2khsPkvU2pdmtN1gLTX3aIDlrRU3hhlsD3bX2qWV8zImK9jsI
+         e4NA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@ecomailapp.cz header.s=ecomail header.b=V17+JDxl;
+       spf=pass (google.com: domain of msprvs1=20643j6forh-s=bounces-15996-55899@bounce.ecomailapp.cz designates 147.253.211.100 as permitted sender) smtp.mailfrom="msprvs1=20643j6forh-s=bounces-15996-55899@bounce.ecomailapp.cz";
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=skaut.cz
+Return-Path: <msprvs1=20643j6forh-s=bounces-15996-55899@bounce.ecomailapp.cz>
+Received: from mta-211-100.sparkpostmail.com (mta-211-100.sparkpostmail.com. [147.253.211.100])
+        by mx.google.com with ESMTPS id 956f58d0204a3-66623df3799si2059742d50.54.2026.07.02.05.42.11
+        for <mareksakul@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 02 Jul 2026 05:42:12 -0700 (PDT)
+Received-SPF: pass (google.com: domain of msprvs1=20643j6forh-s=bounces-15996-55899@bounce.ecomailapp.cz designates 147.253.211.100 as permitted sender) client-ip=147.253.211.100;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@ecomailapp.cz header.s=ecomail header.b=V17+JDxl;
+       spf=pass (google.com: domain of msprvs1=20643j6forh-s=bounces-15996-55899@bounce.ecomailapp.cz designates 147.253.211.100 as permitted sender) smtp.mailfrom="msprvs1=20643j6forh-s=bounces-15996-55899@bounce.ecomailapp.cz";
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=skaut.cz
+X-MSFBL: azpFTxRba27iLCX3TLkGxB71N3n8ydKhtAvhiKsznWY=|eyJyIjoibWFyZWtzYWt
+	1bEBnbWFpbC5jb20iLCJtZXNzYWdlX2lkIjoiNmE0NWEzNWM0NjZhZTAzMjEyZjM
+	iLCJ0ZW5hbnRfaWQiOiJzcGMiLCJjdXN0b21lcl9pZCI6IjE1OTk2Iiwic3ViYWN
+	jb3VudF9pZCI6IjU1ODk5In0=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=ecomailapp.cz;
+	s=ecomail; t=1782996131; i=@ecomailapp.cz;
+	bh=ft6GyashuOKPelL3lLLbf7N/Mt/2l+eA3XKR4LPTBKI=;
+	h=To:Message-ID:Date:Content-Type:Subject:From:List-Unsubscribe:
+	 List-Unsubscribe-Post:From:To:Cc:Subject:Feedback-Id;
+	b=V17+JDxla/mPib9VsVnybmlXBXFTqDLPs466q/gcTr5A7bnq561xCQxRisnkBGcAC
+	 KWv/RI7WtRrlJ0vxcfWizyrytBsVZy9TyZKFaWxZILwI4hTuhnbyJxW4n7HWXEsvPJ
+	 i3c+5F6IucYS38jOTUpUupgfK6Rv45pBaZcFDHmk=
+Received: from [10.90.17.121] ([10.90.17.121])
+	by i-0824cb18193ba834f.mta1vrest.sd.prd.sparkpost (ecelerity 5.2.0.76158 r(msys-ecelerity:tags/5.2.0.44)) with REST
+	id 3F/21-03915-3AC564A6; Thu, 02 Jul 2026 12:42:11 +0000
+To: =?utf-8?B?UMOhcmVrIA==?= <mareksakul@gmail.com>
+Message-ID: <3F.21.03915.3AC564A6@i-0824cb18193ba834f.mta1vrest.sd.prd.sparkpost>
+Date: Thu, 02 Jul 2026 12:42:09 +0000
+Content-Type: multipart/alternative; boundary="_----1EECAQyTvR7I7EdZ/n9xRQ===_36/D0-03915-1AC564A6"
+MIME-Version: 1.0
+Subject: =?utf-8?B?4pqcIFNrYXV0c2vDqSBub3Zpbmt5OiBQb21venRlIHZ5dHZvxZlp?=
+	=?utf-8?B?dCBub3ZvdSBsaW5rdSBEb2Jyw6HEjWthIGEgb3NsYXZ0ZSBTdm9qc8Ota292?=
+	=?utf-8?B?byB2w71yb8SNw60gc3BvbGXEjW5vdSBWZcSNZXJrb3U=?=
+X-Ecomail-User: skautkom
+From: =?utf-8?B?U2thdXRza8OhIGvFmWnFvm92YXRrYQ==?= <krizovatka@skaut.cz>
+Precedence: Bulk
+Reply-To: skautinfo@skaut.cz
+List-Unsubscribe: <mailto:unsubscribe@unsub.spmta.com?subject=unsubscribe%3Abujb7Y1mZFX16ytQvkajRJENmyXg4jlYMdyfF4ewtaE~%7CeyAicmNwdF90byI6ICJtYXJla3Nha3VsQGdtYWlsLmNvbSIsICJ0ZW5hbnRfaWQiOiAic3BjIiwgImN1c3RvbWVyX2lkIjogIjE1OTk2IiwgInN1YmFjY291bnRfaWQiOiAiNTU4OTkiLCAibWVzc2FnZV9pZCI6ICI2YTQ1YTM1YzQ2NmFlMDMyMTJmMyIgfQ~~>,<https://unsubscribe.spmta.com/u/uNok9tmQ0VJ7Vub_ATgSXw~~/AAA-fBA~/8x-GFm0prmpFipcVvXc-FuQdjBcJlN00yZnDhBmsSPPq8md2G7-2qf-S1icUKRupEspHkFOr5FubiGsAzMlncw~~>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Id: <spc.15996.55899.sparkpostmail.com>
+
+--_----1EECAQyTvR7I7EdZ/n9xRQ===_36/D0-03915-1AC564A6
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="UTF-8"
+
+Skautsk=C3=A9 novinky p=C5=99in=C3=A1=C5=A1ej=C3=AD souhrn d=C5=AFle=C5=BEi=
+t=C3=BDch informac=C3=AD. Poj=C4=8F si je p=C5=99e=C4=8D=C3=ADst!=0A=0AZobr=
+azit e-mail online=0A[https://go.sparkpostmail.com/f/a/VKS9GXOq9c_Xu_VhG01W=
+FQ~~/AAA-fBA~/RW2tnA6nnAWEUlhJ5a7NSVzZzW63N8SvAalHUzbRctv3VdU5cyjWvLOZongCU=
+2fDA1NzvtIQ8A0B-IaNluyr8YmCdXvlwpaup882n_hp7BmAeirMypTpOkr3nCMsOpP3ZsruB4yB=
+xQi0r8mycYZBlvwRzQWgEX-kyG0f36URfPpOYzduMUH_URg4BqONgqM2acfmjhArU3166aXkmrD=
+1cM5k3hyzr8abc4eO4f8TQAR7e55MnpGHFO_iMHhU3FoijHGQCqxmYwhZi7yN5CLcA1JmWe9sjM=
+-r93LxjvjQhWEnOaXNQajnMTtXhks8rqhodjnnI2SwN8GFGXnJEa23d9cdUjFoUZHWovQhrMQ73=
+RmRKGpmT6Ny5cDjG54O26dlVdJAONBxDxITlA1cWIfWwyVTpd8upRqQkdRBr8mzVgk~]=0A=0A=
+=09=09[Skautsk=C3=A9 novinky]=0A[https://go.sparkpostmail.com/f/a/VKS9GXOq9=
+c_Xu_VhG01WFQ~~/AAA-fBA~/RW2tnA6nnAWEUlhJ5a7NSVzZzW63N8SvAalHUzbRctv3VdU5cy=
+jWvLOZongCU2fDA1NzvtIQ8A0B-IaNluyr8YmCdXvlwpaup882n_hp7BmAeirMypTpOkr3nCMsO=
+pP3ZsruB4yBxQi0r8mycYZBlvwRzQWgEX-kyG0f36URfPpOYzduMUH_URg4BqONgqM2acfmjhAr=
+U3166aXkmrD1cM5k3hyzr8abc4eO4f8TQAR7e55MnpGHFO_iMHhU3FoijHGQCqxmYwhZi7yN5CL=
+cA1JmWe9sjM-r93LxjvjQhWEnOaXNQajnMTtXhks8rqhodjnnI2SwN8GFGXnJEa23d9cdUjFoUZ=
+HWovQhrMQ73RmRKGpmT6Ny5cDjG54O26dlVdJAONBxDxITlA1cWIfWwyVTpd8upRqQkdRBr8mzV=
+gk~]=0A=0A=09=09[Skautsk=C3=A9 novinky]=0A=0ANOVINKY ZE ZPRAVODAJSTV=C3=8D =
+ZA POSLEDN=C3=8D T=C3=9DDEN=0A=0A=C4=8C=C3=8DSLO 41 | =C4=8Dervenec 2026=0A=
+=0A=E2=9A=9C SKAUTSK=C3=89 NOVINKY: POMOZTE VYTVO=C5=98IT NOVOU LINKU DOBR=
+=C3=81=C4=8CKA A OSLAVTE SVOJS=C3=8DKOVO V=C3=9DRO=C4=8C=C3=8D SPOLE=C4=8CN=
+OU VE=C4=8CERKOU=0A=0AChyst=C3=A1 se nov=C3=A1 tematick=C3=A1 linka Dobr=C3=
+=A1=C4=8Dka zam=C4=9B=C5=99en=C3=A1 na solidaritu a vy m=C5=AF=C5=BEete pom=
+oci s tvorbou hotov=C3=BDch program=C5=AF=0A[https://go.sparkpostmail.com/f=
+/a/zhagByo63FrGgILRLcdk9g~~/AAA-fBA~/RNICQElG1asUF5HafUHAOKxaeKGXVi2cPViRbQ=
+WklEIeYLxwnMCvPpz-2R2jLrktC3CYbRlaZmxA-5GLq59AA1_bRgpQisU3Dsz8wRVqRSTj8JR6W=
+Y-7ShCrN55WL32Y6U2Qj55mTHDHIW2KmOabOQ9RKk1HCg9SGD8Eo3UO87Qwzm3_oXcuLsWBjOdJ=
+EbKkhWJDT5iazNQ4HE_LzK_sRsMIaP6bTmURUuuL-5q4bZddRBa7PfXJx6KkVUvVXI7T5ReAFxn=
+VQop8OZZIUzuVgAuC816mcmNmy2glQ1DhTWZARZ6jJlOgwXCZnbakwlEsEs_ob6DDiPW1WDUfBH=
+qhbkaI09FJ3dD6tcMxlJEM2mXk-JzCHw2cGdOvVSAR_mZFq1Avkqbvt1Wmv93tIue9x1_Xlcv_I=
+ZatgJgFzD674Ydz-g2Bc2gXpte8AjD9nztSW4pZQKs9QJsO1jZH3A5STg~~]=0Apro ostatn=
+=C3=AD vedouc=C3=AD. V z=C3=A1=C5=99=C3=AD n=C3=A1s nav=C3=ADc =C4=8Dek=C3=
+=A1 v=C3=BDznamn=C3=A9 jubileum zakladatele =C4=8Desk=C3=A9ho skautingu. P=
+=C5=99ipojte se na d=C3=A1lku k oslav=C3=A1m 150 let od narozen=C3=AD A. B.=
+ Svojs=C3=ADka a zazp=C3=ADvejte si v odd=C3=ADlech spole=C4=8Dnou Skautsko=
+u ve=C4=8Derku=0A[https://go.sparkpostmail.com/f/a/yrsmiidnfEwc4ORRUlG9jg~~=
+/AAA-fBA~/-FN0AJA_S5dSEPgxhUE0zXS0aGEobsf6b5wy9b51TcAo-KzcDtFKkI7kFKyTxuP1i=
+2y3-y9L0Caf1wJjfxB5aFf_Ts7tChJSgDrt6utQ0tWccZiPyLPUxLoi1bEUhGo8Pmmsvezbcv1_=
+SC_PJSJbMwKsgWKnIprBeZ4l0XjGRFkb23e8x615op8-Rr1F6hXPw2wdObxxIm8SNkXyAYxjlzW=
+Vmd6MlZUddooqq0dB5y_jDZU7xMvW_7Tc1YSHJUhngaNPwuZXh2L6S2wiNGXXvAoSs7DDoPC40P=
+JHIpeOa_k5OU_S_WkVFw32YIkkg_iZyVLT4vYtEoLsYSuzvoysXAz-kqciD1vunSHmLm6_qO8s0=
+lo9p5Rm9mOLvZEVa2MoOeYPcQlW-qPJJ9fjiMqVBSUj9irn7fvxgdxT5xGrZxQvMQSthX07N_oX=
+Z5KuvIUS].=0A=0A =0A=0AMnoho vedouc=C3=ADch bere v l=C3=A9t=C4=9B na z=C3=
+=A1kladny sv=C3=A9 =C4=8Dty=C5=99noh=C3=A9 par=C5=A5=C3=A1ky, kte=C5=99=C3=
+=AD maj=C3=AD =C5=99adu p=C5=99=C3=ADnos=C5=AF, ale znamenaj=C3=AD i zodpov=
+=C4=9Bdnost. P=C5=99e=C4=8Dt=C4=9Bte si o p=C5=99=C3=ADnosech a rizic=C3=AD=
+ch p=C5=99=C3=ADtomnosti ps=C5=AF na t=C3=A1borech=0A[https://go.sparkpostm=
+ail.com/f/a/H95_X4Tsiu7owGTAGjKgvA~~/AAA-fBA~/Pn9XO6uYV6PFMp2gdWm_4veF24uQN=
+1qqTgFt_KQUbRX9sO9_EPZ4q3wSlbnZeIlhNkAOnUgSIyLObd1SccT7S3bklkIgeibl2Yb_N2aS=
+pK_S0CzXlEWrzldJmwycDX7WvC-MBElaWmLHf5eyhucd2KtEPXFPrCsgkWM5y3fodtwMKZCzQZ4=
+MPaPBpvzfcVKrmabLJ0WLleQ3qooj6snfaQZ-gge3DalEWx7S08e7fAsmJc-2E2a3BP546NgO9h=
+jbGy_wlQ36Ud25TvJcLGyRlQWTgf7DyG8nLMnChWk1JKOKBn_CjoCi2LfYzhXDWi3r3Mg71fpjC=
+eGZITk5BZFdInXmESbTo1NaUNs7dUWHxQQoubwuHhylmwJdPca7cXXqVaaM9zVcPAAlGKOnExT4=
+u2WezZJ3uB0o1lZt_bdnBoo~].=0A=0A =0A=0AB=C4=9Bhem pr=C3=A1zdninov=C3=A9ho p=
+rovozu m=C5=AF=C5=BEete tak=C3=A9 vyzkou=C5=A1et ve=C5=99ejn=C3=A9 beta tes=
+tov=C3=A1n=C3=AD p=C4=9Bti asistent=C5=AF SKAUTbota=0A[https://go.sparkpost=
+mail.com/f/a/iVK6g1h712TCjiD5wGFu_Q~~/AAA-fBA~/PaXMXyZSpl5PQIrNU_FXXPdNYg5u=
+AWCzID0MfuwnU1XJIE0FHWHgpVK5a8DqMLssz6Lc7C-XbOA4gkUXPJcqdD84flvVAob4UIR5KG4=
+bCErwdbHwH1SXHrQPUWfySVnk4LZkFh9IdkfrErZDel9mOafgUTI4y9YzuYzGHWqx0dTXh0vjpz=
+T2TQE33pZqCFalr5ttg0YLoZS3kJ3Uf6YMTF5Mum9KZZGy9vhDdYKDk0F_xRWHa0mfc6BvfAeiv=
+o_BSykoJtzMNGKtXQ_yFeKVwLzCau5xBsaRAB_O0_ljT5UX5swpQzc_0l7-hSP6b-xQoyatQadf=
+XQWF5u_e3ZHDbodWphZDznnUMDBbamvq5u7ry_DQ5oyYMpjUWgYrCZSCcBCRe1ZRm7S--Wr65v2=
+SUw~~]=0Aa uleh=C4=8Dit si tak administrativu.=0A=0A =0A=0AP=C5=99ejeme kli=
+dn=C3=A9 p=C5=99=C3=ADpravy na letn=C3=AD akce!=0A=0A=09=09[Petra Dan=C4=9B=
+=C4=8Dkov=C3=A1 =E2=80=93 Pe=C5=A5ule]=0A[https://go.sparkpostmail.com/f/a/=
+DVGGhyvVM7JeSz19V9kq6A~~/AAA-fBA~/z6VZJ05fDrLEQVEGzk310_EEfZlbGMtHVYu5wqdsY=
+ku0tUsHmJQY0h7RckVIC6VGZ7Nni9VMxvdOhYSkTyoHejmVlCgxv4oMXprY5RHRfpxDUDQ86Bmm=
+LlJZTVi2fhR3kkeVhdIiaorUUFUgU-dMI0lLDdTuvfu7TL6ajDgKCXqhldWxeocYt_Hbwz_S_6t=
+owbYQR9JMBD54i4E4xrm74sqwfbEnTHxwEM8vpCWVXuSadWfDBSjlKRwtcQrMgjboCnYF4vydEH=
+RdYS_YT9BrmCHnWqiloV2m4e6H-HSii-X7ZenA5y96XvdajTDspJ3lUM8uN2bnYfnYEt61v8d4Z=
+rqlC02elxU7cXSFGL1swMiBqcbT4dVjccyxeunuqTVCnFQVtIBoboyFskbFFMJ484kHtH90m1Da=
+tp24oHb186k~]=0A=0APETRA DAN=C4=9A=C4=8CKOV=C3=81 =E2=80=93 PE=C5=A4ULE=0Ar=
+edaktorka intern=C3=AD komunikace=0A=0ASOLIDARITA =E2=80=93 NOV=C3=89 T=C3=
+=89MA V DOBR=C3=81=C4=8CKOVI. BU=C4=8E U TVORBY PODPORY PRO ODD=C3=8DLY=0A[=
+https://go.sparkpostmail.com/f/a/zhagByo63FrGgILRLcdk9g~~/AAA-fBA~/RNICQElG=
+1asUF5HafUHAOKxaeKGXVi2cPViRbQWklEIeYLxwnMCvPpz-2R2jLrktC3CYbRlaZmxA-5GLq59=
+AA1_bRgpQisU3Dsz8wRVqRSTj8JR6WY-7ShCrN55WL32Y6U2Qj55mTHDHIW2KmOabOQ9RKk1HCg=
+9SGD8Eo3UO87Qwzm3_oXcuLsWBjOdJEbKkhWJDT5iazNQ4HE_LzK_sRsMIaP6bTmURUuuL-5q4b=
+ZddRBa7PfXJx6KkVUvVXI7T5ReAFxnVQop8OZZIUzuVgAuC816mcmNmy2glQ1DhTWZARZ6jJlOg=
+wXCZnbakwlEsEs_ob6DDiPW1WDUfBHqhbkaI09FJ3dD6tcMxlJEM2mXk-JzCHw2cGdOvVSAR_mZ=
+Fq1Avkqbvt1Wmv93tIue9x1_Xlcv_IZatgJgFzD674Ydz-g2Bc2gXpte8AjD9nztSW4pZQKs9QJ=
+sO1jZH3A5STg~~]=0A=0A=09=09=0A[https://go.sparkpostmail.com/f/a/zhagByo63Fr=
+GgILRLcdk9g~~/AAA-fBA~/RNICQElG1asUF5HafUHAOKxaeKGXVi2cPViRbQWklEIeYLxwnMCv=
+Ppz-2R2jLrktC3CYbRlaZmxA-5GLq59AA1_bRgpQisU3Dsz8wRVqRSTj8JR6WY-7ShCrN55WL32=
+Y6U2Qj55mTHDHIW2KmOabOQ9RKk1HCg9SGD8Eo3UO87Qwzm3_oXcuLsWBjOdJEbKkhWJDT5iazN=
+Q4HE_LzK_sRsMIaP6bTmURUuuL-5q4bZddRBa7PfXJx6KkVUvVXI7T5ReAFxnVQop8OZZIUzuVg=
+AuC816mcmNmy2glQ1DhTWZARZ6jJlOgwXCZnbakwlEsEs_ob6DDiPW1WDUfBHqhbkaI09FJ3dD6=
+tcMxlJEM2mXk-JzCHw2cGdOvVSAR_mZFq1Avkqbvt1Wmv93tIue9x1_Xlcv_IZatgJgFzD674Yd=
+z-g2Bc2gXpte8AjD9nztSW4pZQKs9QJsO1jZH3A5STg~~]=0A=0AProjekt =E2=80=9EDobr=
+=C3=A1=C4=8Dek =E2=80=93 skauti a skautky pom=C3=A1haj=C3=AD=E2=80=9C chyst=
+=C3=A1 na nov=C3=BD =C5=A1koln=C3=AD rok velkou novinku: =C4=8Dtvrtou temat=
+ickou linku zam=C4=9B=C5=99enou na solidaritu. Chceme odd=C3=ADl=C5=AFm ule=
+h=C4=8Dit pr=C3=A1ci a p=C5=99ipravit pro n=C4=9B hotov=C3=A9 programy, d=
+=C3=ADky kter=C3=BDm bude=0Atoto t=C3=A9ma hra=C4=8Dka. Pom=C3=A1h=C3=A1te =
+u=C5=BE te=C4=8F lidem v nouzi nebo po=C5=99=C3=A1d=C3=A1te dobro=C4=8Dinn=
+=C3=A9 akce=3F Poj=C4=8Fte s n=C3=A1mi p=C5=99es l=C3=A9to vytvo=C5=99it po=
+dporu, kterou ocen=C3=AD vedouc=C3=AD po cel=C3=A9 republice.=0A=0AOSLAV=C3=
+=8DME SVOJS=C3=8DKOVY 150. NAROZENINY SPOLE=C4=8CNOU VE=C4=8CERKOU=3F=0A[ht=
+tps://go.sparkpostmail.com/f/a/yrsmiidnfEwc4ORRUlG9jg~~/AAA-fBA~/-FN0AJA_S5=
+dSEPgxhUE0zXS0aGEobsf6b5wy9b51TcAo-KzcDtFKkI7kFKyTxuP1i2y3-y9L0Caf1wJjfxB5a=
+Ff_Ts7tChJSgDrt6utQ0tWccZiPyLPUxLoi1bEUhGo8Pmmsvezbcv1_SC_PJSJbMwKsgWKnIprB=
+eZ4l0XjGRFkb23e8x615op8-Rr1F6hXPw2wdObxxIm8SNkXyAYxjlzWVmd6MlZUddooqq0dB5y_=
+jDZU7xMvW_7Tc1YSHJUhngaNPwuZXh2L6S2wiNGXXvAoSs7DDoPC40PJHIpeOa_k5OU_S_WkVFw=
+32YIkkg_iZyVLT4vYtEoLsYSuzvoysXAz-kqciD1vunSHmLm6_qO8s0lo9p5Rm9mOLvZEVa2MoO=
+eYPcQlW-qPJJ9fjiMqVBSUj9irn7fvxgdxT5xGrZxQvMQSthX07N_oXZ5KuvIUS]=0A=0A=09=
+=09=0A[https://go.sparkpostmail.com/f/a/yrsmiidnfEwc4ORRUlG9jg~~/AAA-fBA~/-=
+FN0AJA_S5dSEPgxhUE0zXS0aGEobsf6b5wy9b51TcAo-KzcDtFKkI7kFKyTxuP1i2y3-y9L0Caf=
+1wJjfxB5aFf_Ts7tChJSgDrt6utQ0tWccZiPyLPUxLoi1bEUhGo8Pmmsvezbcv1_SC_PJSJbMwK=
+sgWKnIprBeZ4l0XjGRFkb23e8x615op8-Rr1F6hXPw2wdObxxIm8SNkXyAYxjlzWVmd6MlZUddo=
+oqq0dB5y_jDZU7xMvW_7Tc1YSHJUhngaNPwuZXh2L6S2wiNGXXvAoSs7DDoPC40PJHIpeOa_k5O=
+U_S_WkVFw32YIkkg_iZyVLT4vYtEoLsYSuzvoysXAz-kqciD1vunSHmLm6_qO8s0lo9p5Rm9mOL=
+vZEVa2MoOeYPcQlW-qPJJ9fjiMqVBSUj9irn7fvxgdxT5xGrZxQvMQSthX07N_oXZ5KuvIUS]=
+=0A=0AV sobotu 5. z=C3=A1=C5=99=C3=AD 2026 uplyne 150 let od narozen=C3=AD =
+zakladatele skautingu v =C4=8Desk=C3=BDch zem=C3=ADch, Anton=C3=ADna Benjam=
+ina Svojs=C3=ADka. P=C5=99in=C3=A1=C5=A1=C3=ADme n=C3=A1pad, jak se v tento=
+ den propojit alespo=C5=88 na d=C3=A1lku, n=C4=9B=C4=8D=C3=ADm, co je n=C3=
+=A1m spole=C4=8Dn=C3=A9, =C4=8Dasto drah=C3=A9 a=0Anapln=C4=9Bn=C3=A9 kr=C3=
+=A1sn=C3=BDmi vzpom=C3=ADnkami a co prov=C3=A1z=C3=AD t=C3=A1borov=C3=A9 dn=
+y i dal=C5=A1=C3=AD ud=C3=A1losti: Skautskou ve=C4=8Derkou. Jej=C3=AD text =
+napsal pr=C3=A1v=C4=9B A. B. Svojs=C3=ADk.=0A=0ASKAUTSK=C3=89 PR=C5=AE=C5=
+=A0VIHY: D=C4=9ATI POKOUSAN=C3=89 T=C3=81BOROV=C3=9DMI PSY=0A[https://go.sp=
+arkpostmail.com/f/a/H95_X4Tsiu7owGTAGjKgvA~~/AAA-fBA~/Pn9XO6uYV6PFMp2gdWm_4=
+veF24uQN1qqTgFt_KQUbRX9sO9_EPZ4q3wSlbnZeIlhNkAOnUgSIyLObd1SccT7S3bklkIgeibl=
+2Yb_N2aSpK_S0CzXlEWrzldJmwycDX7WvC-MBElaWmLHf5eyhucd2KtEPXFPrCsgkWM5y3fodtw=
+MKZCzQZ4MPaPBpvzfcVKrmabLJ0WLleQ3qooj6snfaQZ-gge3DalEWx7S08e7fAsmJc-2E2a3BP=
+546NgO9hjbGy_wlQ36Ud25TvJcLGyRlQWTgf7DyG8nLMnChWk1JKOKBn_CjoCi2LfYzhXDWi3r3=
+Mg71fpjCeGZITk5BZFdInXmESbTo1NaUNs7dUWHxQQoubwuHhylmwJdPca7cXXqVaaM9zVcPAAl=
+GKOnExT4u2WezZJ3uB0o1lZt_bdnBoo~]=0A=0A=09=09=0A[https://go.sparkpostmail.c=
+om/f/a/H95_X4Tsiu7owGTAGjKgvA~~/AAA-fBA~/Pn9XO6uYV6PFMp2gdWm_4veF24uQN1qqTg=
+Ft_KQUbRX9sO9_EPZ4q3wSlbnZeIlhNkAOnUgSIyLObd1SccT7S3bklkIgeibl2Yb_N2aSpK_S0=
+CzXlEWrzldJmwycDX7WvC-MBElaWmLHf5eyhucd2KtEPXFPrCsgkWM5y3fodtwMKZCzQZ4MPaPB=
+pvzfcVKrmabLJ0WLleQ3qooj6snfaQZ-gge3DalEWx7S08e7fAsmJc-2E2a3BP546NgO9hjbGy_=
+wlQ36Ud25TvJcLGyRlQWTgf7DyG8nLMnChWk1JKOKBn_CjoCi2LfYzhXDWi3r3Mg71fpjCeGZIT=
+k5BZFdInXmESbTo1NaUNs7dUWHxQQoubwuHhylmwJdPca7cXXqVaaM9zVcPAAlGKOnExT4u2Wez=
+ZJ3uB0o1lZt_bdnBoo~]=0A=0ANa mnoha skautsk=C3=BDch t=C3=A1borech b=C3=BDvaj=
+=C3=AD p=C5=99=C3=ADtomn=C3=AD psi, zpravidla vedouc=C3=ADch. Mohou m=C3=AD=
+t mnoho p=C5=99=C3=ADnos=C5=AF: n=C4=9Bkdy upozorn=C3=AD hl=C3=ADdku na poh=
+yb v okol=C3=AD t=C3=A1bo=C5=99i=C5=A1t=C4=9B, pomohou vyhnat divokou zv=C4=
+=9B=C5=99 z chlad=C3=ADren a pln=C3=AD i terapeutickou funkci p=C5=99i =0At=
+=C3=A1borov=C3=BDch smutc=C3=ADch. Psi na t=C3=A1borech  p=C5=99in=C3=A1=C5=
+=A1ej=C3=AD tak=C3=A9 rizika, jak dokl=C3=A1d=C3=A1 p=C5=99=C3=ADpad z lo=
+=C5=88sk=C3=A9ho t=C3=A1bora.=0A=0ASKAUTBOT HL=C3=81S=C3=8D DAL=C5=A0=C3=8D=
+ KROK: VSTUPUJEME DO BETA TESTOV=C3=81N=C3=8D A POT=C5=98EBUJEME TVOJI POMO=
+C=0A[https://go.sparkpostmail.com/f/a/iVK6g1h712TCjiD5wGFu_Q~~/AAA-fBA~/PaX=
+MXyZSpl5PQIrNU_FXXPdNYg5uAWCzID0MfuwnU1XJIE0FHWHgpVK5a8DqMLssz6Lc7C-XbOA4gk=
+UXPJcqdD84flvVAob4UIR5KG4bCErwdbHwH1SXHrQPUWfySVnk4LZkFh9IdkfrErZDel9mOafgU=
+TI4y9YzuYzGHWqx0dTXh0vjpzT2TQE33pZqCFalr5ttg0YLoZS3kJ3Uf6YMTF5Mum9KZZGy9vhD=
+dYKDk0F_xRWHa0mfc6BvfAeivo_BSykoJtzMNGKtXQ_yFeKVwLzCau5xBsaRAB_O0_ljT5UX5sw=
+pQzc_0l7-hSP6b-xQoyatQadfXQWF5u_e3ZHDbodWphZDznnUMDBbamvq5u7ry_DQ5oyYMpjUWg=
+YrCZSCcBCRe1ZRm7S--Wr65v2SUw~~]=0A=0A=09=09=0A[https://go.sparkpostmail.com=
+/f/a/iVK6g1h712TCjiD5wGFu_Q~~/AAA-fBA~/PaXMXyZSpl5PQIrNU_FXXPdNYg5uAWCzID0M=
+fuwnU1XJIE0FHWHgpVK5a8DqMLssz6Lc7C-XbOA4gkUXPJcqdD84flvVAob4UIR5KG4bCErwdbH=
+wH1SXHrQPUWfySVnk4LZkFh9IdkfrErZDel9mOafgUTI4y9YzuYzGHWqx0dTXh0vjpzT2TQE33p=
+ZqCFalr5ttg0YLoZS3kJ3Uf6YMTF5Mum9KZZGy9vhDdYKDk0F_xRWHa0mfc6BvfAeivo_BSykoJ=
+tzMNGKtXQ_yFeKVwLzCau5xBsaRAB_O0_ljT5UX5swpQzc_0l7-hSP6b-xQoyatQadfXQWF5u_e=
+3ZHDbodWphZDznnUMDBbamvq5u7ry_DQ5oyYMpjUWgYrCZSCcBCRe1ZRm7S--Wr65v2SUw~~]=
+=0A=0AV b=C5=99eznu jsme p=C5=99edstavili vizi SKAUTbota =E2=80=93 intelige=
+ntn=C3=ADho AI pomocn=C3=ADka, kter=C3=BD m=C3=A1 u=C5=A1et=C5=99it =C4=8Da=
+s n=C3=A1m v=C5=A1em p=C5=99i skautsk=C3=A9 =C4=8Dinnosti. Sl=C3=ADbili jsm=
+e, =C5=BEe do pr=C3=A1zdnin m=C3=A1kneme na v=C3=BDvoji =E2=80=93 a jedeme =
+p=C5=99esn=C4=9B podle pl=C3=A1nu! =C3=9Asp=C4=9B=C5=A1n=C4=9B jsme=0Auzav=
+=C5=99eli alfa f=C3=A1zi a nyn=C3=AD spou=C5=A1t=C3=ADme ve=C5=99ejn=C3=A9 =
+beta testov=C3=A1n=C3=AD prvn=C3=ADch p=C4=9Bti AI asistent=C5=AF. Poj=C4=
+=8Fte do toho s n=C3=A1mi a pomozte n=C3=A1m je otestovat v re=C3=A1ln=C3=
+=A9m provozu.=0A=0ANOVINKA PRO V=C3=9DCHOVN=C3=89 ZPRAVODAJE: SEV=C3=9DZ CH=
+YST=C3=81 DV=C4=9A JEDNODENN=C3=8D SETK=C3=81N=C3=8D=0A[https://go.sparkpos=
+tmail.com/f/a/Z28ONJlIeRQO1TcyKOAYag~~/AAA-fBA~/JYxISkJJT7iXWsxhH9mfpZEeHUS=
+a3IH_2vqDrtg2_ASV2YbkS2dCsEOWlHJpTXojlJSQaRAhqKmnkpGIBzV90DAm97zepo_5nDwkIO=
+3UFVsziO03boEAh4XdgiWcxEHdFlwLa7kP_GUMdKh5-U62ZAgD-xklpprMuy_tezZUZi1npHmCI=
+HxOAMlnvNFJW7fSILg1LK4zrAIK4rpN0xBdtRFiu3PXnv9ju4SiqfZDvIbm6KwQ9EtIe3yRmWaI=
+HXTXR1tnoMRP1rTSdVB6xJLEqHT2BzPe_WN_fFiPRZAxpo0KpbSU8cj7xGo3xnsxHrXc1FCs78Z=
+IyBwuKBSY1Bj4AnHJCK6wcO70MB-E4qfiN9st3j1mZg7JDgO3WZpHnF5mBtJkhGLxLHTAREc2Gn=
+ggaqunESSXEGtROdbcGVxxKbP-Uu2IYijHKHYDyzENI2K26bwpwptNIqAlsFhri3VVXg~~]=0A=
+=0A=09=09=0A[https://go.sparkpostmail.com/f/a/Z28ONJlIeRQO1TcyKOAYag~~/AAA-=
+fBA~/JYxISkJJT7iXWsxhH9mfpZEeHUSa3IH_2vqDrtg2_ASV2YbkS2dCsEOWlHJpTXojlJSQaR=
+AhqKmnkpGIBzV90DAm97zepo_5nDwkIO3UFVsziO03boEAh4XdgiWcxEHdFlwLa7kP_GUMdKh5-=
+U62ZAgD-xklpprMuy_tezZUZi1npHmCIHxOAMlnvNFJW7fSILg1LK4zrAIK4rpN0xBdtRFiu3PX=
+nv9ju4SiqfZDvIbm6KwQ9EtIe3yRmWaIHXTXR1tnoMRP1rTSdVB6xJLEqHT2BzPe_WN_fFiPRZA=
+xpo0KpbSU8cj7xGo3xnsxHrXc1FCs78ZIyBwuKBSY1Bj4AnHJCK6wcO70MB-E4qfiN9st3j1mZg=
+7JDgO3WZpHnF5mBtJkhGLxLHTAREc2GnggaqunESSXEGtROdbcGVxxKbP-Uu2IYijHKHYDyzENI=
+2K26bwpwptNIqAlsFhri3VVXg~~]=0A=0AChyst=C3=A1te se na=C4=8Derpat novou insp=
+iraci pro v=C3=BDchovnou pr=C3=A1ci ve va=C5=A1em st=C5=99edisku, okrese =
+=C4=8Di kraji=3F Skv=C4=9Bl=C3=A1 zpr=C3=A1va: Setk=C3=A1n=C3=AD v=C3=BDcho=
+vn=C3=BDch zpravodaj=C5=AF (SeV=C3=BDZ) p=C5=99ich=C3=A1z=C3=AD s novinkou.=
+=0A=0A =0A=0ADRSN=C3=81 P=C3=93ZA NEBO V=C3=81=C5=BDN=C3=9D PROBL=C3=89M=3F=
+ JAK =C4=8C=C3=8DST CHOV=C3=81N=C3=8D KLUK=C5=AE V ODD=C3=8DLE=0A[https://g=
+o.sparkpostmail.com/f/a/Ryjfqq2rkAhGYal-Kbj60Q~~/AAA-fBA~/g36yQbjMLUcL1k9k7=
+hLbaqU6wL_H-OQtx3h_HGyVTIM6yYkbOXqhfA7nmVvfAFgI70iv3EPwDzsz5AE63bBsHe8RUfHi=
+fi4xVWMCW-DrIFIdUy2DrdumGXV94K0ZTJSaIPB2gwpkltxEPpT0fdblcFCvkS5Qyp267fgbOXs=
+ksFiIwEfpNY1EU_vRR7QeVtF7TEo6JI0-8ElhHS_IOQkNnGKui3qQz1jw419PL7JM2aWql-8Z40=
+eNFGrBGInBLIzEIMsqWnCHCqHuWP3btixLES1dQARp-zVcwOZlhtEHb-A8Iin5CAHE7DpWHq17H=
+83SMszN1gtnfY_zsx850gp7jLW2P2856v3wD4TMd-pwGIhtnNSBDD3TgApuRo9j5dgXp9_zu40v=
+JZ2dwfQnkttC-Mx4VMkh2KLhFbmcAc8BaBndVcQAD3aeAGurmE1Q4UuB]=0A=0A=09=09=0A[ht=
+tps://go.sparkpostmail.com/f/a/Ryjfqq2rkAhGYal-Kbj60Q~~/AAA-fBA~/g36yQbjMLU=
+cL1k9k7hLbaqU6wL_H-OQtx3h_HGyVTIM6yYkbOXqhfA7nmVvfAFgI70iv3EPwDzsz5AE63bBsH=
+e8RUfHifi4xVWMCW-DrIFIdUy2DrdumGXV94K0ZTJSaIPB2gwpkltxEPpT0fdblcFCvkS5Qyp26=
+7fgbOXsksFiIwEfpNY1EU_vRR7QeVtF7TEo6JI0-8ElhHS_IOQkNnGKui3qQz1jw419PL7JM2aW=
+ql-8Z40eNFGrBGInBLIzEIMsqWnCHCqHuWP3btixLES1dQARp-zVcwOZlhtEHb-A8Iin5CAHE7D=
+pWHq17H83SMszN1gtnfY_zsx850gp7jLW2P2856v3wD4TMd-pwGIhtnNSBDD3TgApuRo9j5dgXp=
+9_zu40vJZ2dwfQnkttC-Mx4VMkh2KLhFbmcAc8BaBndVcQAD3aeAGurmE1Q4UuB]=0A=0ABalen=
+=C3=AD, p=C5=99=C3=ADprava j=C3=ADdeln=C3=AD=C4=8Dku a dola=C4=8Fov=C3=A1n=
+=C3=AD etapovek. Koloto=C4=8D p=C5=99=C3=ADprav na letn=C3=AD t=C3=A1bory v=
+rchol=C3=AD, ale ruku na srdce =E2=80=93 jsme p=C5=99ipraveni i na n=C3=A1r=
+o=C4=8Dn=C3=A9 v=C3=BDzvy v chov=C3=A1n=C3=AD na=C5=A1ich d=C4=9Bt=C3=AD=3F=
+=0A=0A =0A=0AVYPLAT=C3=8D SE LETOS P=C5=98IDAT KE SKAUTSK=C3=89 ENERGII=3F =
+ODPOV=C4=9A=C4=8E HLEDALY SEZNAM ZPR=C3=81VY=0A[https://go.sparkpostmail.co=
+m/f/a/v_RHjnxh48Knqx1J5f9ZPA~~/AAA-fBA~/mwmqLsIQkAEwY-oxqSbCov1mKGRR_l-mcjk=
+Ik3SR40PaK-gjEeMlvOqvC_DETZelhIuOA10pLDPT79HJZsmfTzPT3nMvHAoThdqxwnrAWsEnt4=
+THYjXnWqYca9Z5xqepwu3i68bEo7yaYnNi0DUFtcfd_Zmup9tf4UpqA-90tFUZO5mc44ijsP2DZ=
+KcP13QIRk93uDufBzh0OavYIHBvitLKO4tXz3p5qOd2pco_dvWarScDZJaE84xMD4ojzFtc1Bal=
+088Or4w3-dIXKkKmoJe-lZxRh8P27b_vmD4qF0MLJ_prCDrPR9HYoul5zDjk9KThhL3uFleE1Hq=
+zhXnB_EvcesM9Pkh8boOwfjwR3gIWIABZIxBsUzeFHa3UshrtHKFuxtxoLu11sX2dVZIWnoBzPf=
+ru2HpI7_adhUEbDC_0xUb6EO_BVEQXDPO3TioF92F3mWV65lthlG6fCtcZSg~~]=0A=0A=09=09=
+=0A[https://go.sparkpostmail.com/f/a/v_RHjnxh48Knqx1J5f9ZPA~~/AAA-fBA~/mwmq=
+LsIQkAEwY-oxqSbCov1mKGRR_l-mcjkIk3SR40PaK-gjEeMlvOqvC_DETZelhIuOA10pLDPT79H=
+JZsmfTzPT3nMvHAoThdqxwnrAWsEnt4THYjXnWqYca9Z5xqepwu3i68bEo7yaYnNi0DUFtcfd_Z=
+mup9tf4UpqA-90tFUZO5mc44ijsP2DZKcP13QIRk93uDufBzh0OavYIHBvitLKO4tXz3p5qOd2p=
+co_dvWarScDZJaE84xMD4ojzFtc1Bal088Or4w3-dIXKkKmoJe-lZxRh8P27b_vmD4qF0MLJ_pr=
+CDrPR9HYoul5zDjk9KThhL3uFleE1HqzhXnB_EvcesM9Pkh8boOwfjwR3gIWIABZIxBsUzeFHa3=
+UshrtHKFuxtxoLu11sX2dVZIWnoBzPfru2HpI7_adhUEbDC_0xUb6EO_BVEQXDPO3TioF92F3mW=
+V65lthlG6fCtcZSg~~]=0A=0AProjekt Skautsk=C3=A1 energie se znovu objevil na =
+str=C3=A1nk=C3=A1ch Seznam Zpr=C3=A1v. Redaktor Ji=C5=99=C3=AD N=C3=A1doba =
+ve sv=C3=A9m newsletteru Cash Only nav=C3=A1zal na lo=C5=88sk=C3=BD =C4=8Dl=
+=C3=A1nek a letos se znovu v=C4=9Bnuje tomu, jak funguje na=C5=A1e spole=C4=
+=8Dn=C3=A1 aukce elekt=C5=99iny a plynu a komu=0Am=C5=AF=C5=BEe pomoci u=C5=
+=A1et=C5=99it.=0A=0AD=C4=9AN=C3=8D NA =C4=8CERVNOV=C3=89M N=C3=81=C4=8CELNI=
+CTVU O=C4=8CIMA K=C3=81DI. ZA=C4=8CTI SE DO =C4=8CL=C3=81NKU NEBO NAHL=C3=
+=89DNI DO Z=C3=81PISU Z JEDN=C3=81N=C3=8D=0A[https://go.sparkpostmail.com/f=
+/a/jYi52Byy3sEGIO7n2Yqp1A~~/AAA-fBA~/kTolrnGXkE8r1DNw1djHkUgcQAI_9QLuRwtDPI=
+-kuazQsROQvaFqdN9GeQNMFBIch2-h8gs2MRMxgehAP_vJhourhWedGmspyH9S4cCJXD51D8mCq=
+RB0i8auTD4bEtTHm07AFxHfStnsZiqrpdva5NF4UpNVAf516FKzEbOSJy_WoaOr64i2nbW_Rquy=
+ZDnHqwndfAnByfkN-8jzNv174XrQkqJYtan14c3QEYSXJ4D9e5ebwWs_quU5NrwzDUT9uohN1JJ=
+HDwZP1vIp3okiF3d938hPraZOg2JBcBryUKKT2D6wgdAh6rJ1WZr2VsLQem7gKSr3RchtYVJEeF=
+QcExzxinuFwhQi-B5Nt8Oqpqs5-_CXX5yehrsSBl474ouGxnsfgNT-zQYAPvbJoIF3wC-HacLGU=
+8SNGvJdi6e2nz_AzC2IsOSP_zlspvJ62Z1XBLCvWQoxqsPdWqZqgtWHrAsCqX_286zfV6y38uv5=
+pS8~]=0A=0A=09=09=0A[https://go.sparkpostmail.com/f/a/jYi52Byy3sEGIO7n2Yqp1=
+A~~/AAA-fBA~/kTolrnGXkE8r1DNw1djHkUgcQAI_9QLuRwtDPI-kuazQsROQvaFqdN9GeQNMFB=
+Ich2-h8gs2MRMxgehAP_vJhourhWedGmspyH9S4cCJXD51D8mCqRB0i8auTD4bEtTHm07AFxHfS=
+tnsZiqrpdva5NF4UpNVAf516FKzEbOSJy_WoaOr64i2nbW_RquyZDnHqwndfAnByfkN-8jzNv17=
+4XrQkqJYtan14c3QEYSXJ4D9e5ebwWs_quU5NrwzDUT9uohN1JJHDwZP1vIp3okiF3d938hPraZ=
+Og2JBcBryUKKT2D6wgdAh6rJ1WZr2VsLQem7gKSr3RchtYVJEeFQcExzxinuFwhQi-B5Nt8Oqpq=
+s5-_CXX5yehrsSBl474ouGxnsfgNT-zQYAPvbJoIF3wC-HacLGU8SNGvJdi6e2nz_AzC2IsOSP_=
+zlspvJ62Z1XBLCvWQoxqsPdWqZqgtWHrAsCqX_286zfV6y38uv5pS8~]=0A=0ANa programu b=
+ylo hned n=C4=9Bkolik materi=C3=A1l=C5=AF z oblasti hospoda=C5=99en=C3=AD o=
+rganizace v=C4=8Detn=C4=9B n=C3=A1vrhu v=C3=BD=C5=A1e =C4=8Dlensk=C3=A9ho p=
+=C5=99=C3=ADsp=C4=9Bvku na rok 2027, materi=C3=A1ly signalizuj=C3=ADc=C3=AD=
+, =C5=BEe se pomalu bl=C3=AD=C5=BE=C3=AD Valn=C3=BD sn=C4=9Bm, nebo t=C5=99=
+eba Koncepce celost=C3=A1tn=C3=ADch akc=C3=AD.=0A=0A =0A=0AEXPLORER BELT ZN=
+=C3=81 SV=C3=89 VEDEN=C3=8D. P=C5=98=C3=8DPRAVY OBNOVEN=C3=89 AKCE POKRA=C4=
+=8CUJ=C3=8D=0A[https://go.sparkpostmail.com/f/a/ZbxL9DcHtdjeAA0UYstT0g~~/AA=
+A-fBA~/g36yQbjMLUcL1k9k7hLbaqU6wL_H-OQtx3h_HGyVTIM6yYkbOXqhfA7nmVvfAFgIAS26=
+wxh-IoF7hW5DqoMj0gveGKEW3Vdavck3ZVaEXLHwgUVlG-0sgfPBcLvBKbG6F88Gdv6XGk1RVPU=
+8WUikC-nFZHgMtOS8YdhquhjjgmJEm59HvRmFYqYc2JLuI9NlmVCaoIxJdmUOODRD_GAlSMC4Az=
+pIvQ46GOH89I0QtBOIh3FLkKebv1_y4d5hvXcfvQAoiPoMjrac2fSxCvTRN_W0e-p0XJiDkTqfG=
+ME403eoL3sDlwlfRtR4JsfV4GpVaRPHixxGhZ24enLqVZmV3eoaL0aDgR97_ai7mN83aVGIkvv-=
+GlcZ5AE0aD70GSkXOP71EaioBtr9wipK0shCRkgKpCple1O0mULJAFhvWIpzkF_0zbb7kGt4HnH=
+XVIM7]=0A=0A=09=09=0A[https://go.sparkpostmail.com/f/a/ZbxL9DcHtdjeAA0UYstT=
+0g~~/AAA-fBA~/g36yQbjMLUcL1k9k7hLbaqU6wL_H-OQtx3h_HGyVTIM6yYkbOXqhfA7nmVvfA=
+FgIAS26wxh-IoF7hW5DqoMj0gveGKEW3Vdavck3ZVaEXLHwgUVlG-0sgfPBcLvBKbG6F88Gdv6X=
+Gk1RVPU8WUikC-nFZHgMtOS8YdhquhjjgmJEm59HvRmFYqYc2JLuI9NlmVCaoIxJdmUOODRD_GA=
+lSMC4AzpIvQ46GOH89I0QtBOIh3FLkKebv1_y4d5hvXcfvQAoiPoMjrac2fSxCvTRN_W0e-p0XJ=
+iDkTqfGME403eoL3sDlwlfRtR4JsfV4GpVaRPHixxGhZ24enLqVZmV3eoaL0aDgR97_ai7mN83a=
+VGIkvv-GlcZ5AE0aD70GSkXOP71EaioBtr9wipK0shCRkgKpCple1O0mULJAFhvWIpzkF_0zbb7=
+kGt4HnHXVIM7]=0A=0AExplorer Belt se po letech vrac=C3=AD a nyn=C3=AD zn=C3=
+=A1 i sv=C3=A9 veden=C3=AD. Jakub =E2=80=9EMarley=E2=80=9C Nani=C5=A1ta a B=
+arbora =E2=80=9EKISSeLINa=E2=80=9C Sta=C5=88kov=C3=A1 povedou p=C5=99=C3=AD=
+pravu i realizaci t=C3=A9to jedine=C4=8Dn=C3=A9 mezin=C3=A1rodn=C3=AD v=C3=
+=BDzvy pro RS.=0A=0A =0A=0ADOBROVOLNICTV=C3=8D V PYRENEJ=C3=8DCH: VYJE=C4=
+=8E V L=C3=89T=C4=9A 2026 DO SKAUTSK=C3=89HO CENTRA GRI=C3=89BAL=0A[https:/=
+/go.sparkpostmail.com/f/a/dt_xAxJeS3Y0m6mQa9eA6Q~~/AAA-fBA~/xAgN056RGwOwxbq=
+jQXJBi-rxjhO1GSH9loLHZGO9RNl6W5VP3Dwz1D120r0w2kXrtoDJqyVOSbXapQCki3pK3wS8fk=
+zpvq6sETSKLsgoywqaGVGsqLRzNb99klidHym8r0k95WEMsaxQ-SFr9rGhdWOmEoTZ12kZ6Mp-f=
+znbVCibqcxrsxDakwYOeur6fVTXSdg43m7f4l89F60Fgd8CRuP0KyVHE5LEZf6a5KIE1GMuFBec=
+2aw4mc1pTO6OOl3MfdL0xAMZMzD7iKXFjdRlqTpaAH2E4ltnxnl-nvULBHAbnyfmJYWTmTbBtUD=
+xew9mz7KfP8ZMa9N6SiLXR0TQOEB_9yYewQv5q5LuNVXamNnO5i3kBYALDE7UdhaTBTsMZU5JQ9=
+RGnFXub8zZrY11BseeKdMJWZSC9Q7arhYopfMNGHKiOcLKajtQwmZbvzDJiEHZBk7_AZdOFETdf=
+f__uw~~]=0A=0A=09=09=0A[https://go.sparkpostmail.com/f/a/dt_xAxJeS3Y0m6mQa9=
+eA6Q~~/AAA-fBA~/xAgN056RGwOwxbqjQXJBi-rxjhO1GSH9loLHZGO9RNl6W5VP3Dwz1D120r0=
+w2kXrtoDJqyVOSbXapQCki3pK3wS8fkzpvq6sETSKLsgoywqaGVGsqLRzNb99klidHym8r0k95W=
+EMsaxQ-SFr9rGhdWOmEoTZ12kZ6Mp-fznbVCibqcxrsxDakwYOeur6fVTXSdg43m7f4l89F60Fg=
+d8CRuP0KyVHE5LEZf6a5KIE1GMuFBec2aw4mc1pTO6OOl3MfdL0xAMZMzD7iKXFjdRlqTpaAH2E=
+4ltnxnl-nvULBHAbnyfmJYWTmTbBtUDxew9mz7KfP8ZMa9N6SiLXR0TQOEB_9yYewQv5q5LuNVX=
+amNnO5i3kBYALDE7UdhaTBTsMZU5JQ9RGnFXub8zZrY11BseeKdMJWZSC9Q7arhYopfMNGHKiOc=
+LKajtQwmZbvzDJiEHZBk7_AZdOFETdff__uw~~]=0A=0AL=C3=A1k=C3=A1 t=C4=9B l=C3=A9=
+to ve =C5=A0pan=C4=9Blsku, mezin=C3=A1rodn=C3=AD skautsk=C3=A9 prost=C5=99e=
+d=C3=AD a smyslupln=C3=A1 dobrovolnick=C3=A1 zku=C5=A1enost=3F P=C5=99ihlas=
+ se na letn=C3=AD projekt Evropsk=C3=A9ho sboru solidarity ve skautsk=C3=A9=
+m centru Gri=C3=A9bal. Hledaj=C3=AD se dva dobrovoln=C3=ADci z cel=C3=A9 Ev=
+ropy.=0A=0A=09=09 [https://go.sparkpostmail.com/f/a/fNeVEgrntAvLZaNoLlHyhg~=
+~/AAA-fBA~/pXLhqdXcY-_cO1CVTwrfZh6_esOsMbWq0zgvw8oXcCxU1YRao_FQookD0p4GGcwI=
+r331qGM9W_nmv0EoezIyP1vlrk4UK0mosSddEJmGBijQFO6O8plgf3y652rQ647_VNA2krhfZfr=
+NXLahUJVdXA4OGiAJyx-AQ3-iPJYBO6bOsmEF10MGB9kHlkXczd7MPTrtlHTtbnqZAGz9_PcBr0=
+-DMftBbEOhUOMnSIID4EKVjLZ8GjAIYCrRLFXTaXoleabGW5wZF-x0sz5fpyRoxLq3T7ktglclG=
+7nQoUH35ImMlAV3lheO4jqWj03AvXDoHzs6xKk9Ka3fLNqUOhuyOu3K8Shj9TNppl7D8i6fHhs~=
+]=0A=0A=09=09 [https://go.sparkpostmail.com/f/a/1KI7aZPvNupM3kdZ4jNGjA~~/AA=
+A-fBA~/172PwQCoInHPXYmVvD8yma0uB6vOvmlVN0uwVBmyLI9Dxzui8L_L3g2Lh4BnHqCCkiHg=
+t1oJvV3XHPdw_d9fnaxhk0dQvF-ZMh8aM62licDwBCoegFv0TqIylJJ0LBXdT2m5yp3W4q0IOJW=
+pfTaQ6fYJvWs-nXxPht4ZIYkWpR4H3YXqFf7TULq9QeBb2kKtqpr5Z2qSIiOBPzOxqOmeMERABg=
+cvqkQyEaOgda1ShqT1H5bsOC8yxZMZhP9MxCTxUzg8eU9XYpM2AkW8xahrM1yxeAcnvZFtrSe5s=
+xPqmbHwYLJiCWzxQtOwyRQbuc9ZQIc8aFFlWRp1bhlCnWhFd8QjM8Y-PdT0bLJQe1jWFa0~]=0A=
+=0A=09=09 [https://go.sparkpostmail.com/f/a/Kz5pGSYZodvA751Oy_x-uw~~/AAA-fB=
+A~/eFN7BHbG72vTiOD8RaNwYvWx6YHmWEE8sHnatbRPMcgNZY-O7acSYhRxEHP5zDJeahHHHpES=
+-oAn0_ECH-ohFjJN6Nj8hGRPFFwk4tKgi7YFn_eprSCN3f66aRQzdQhDp12L1wVTAU9SqejcUda=
+HAAmY3ZvA9Er1JUw_E7vd7aY_TwvibjwiA1aeiArrZDHrr58rhfbJvofLmDx6_ef23lGMBPJyA1=
+-UTEil_QHk3q0X_xuvpcV9_uKViRKHyvuPBbhjnXH2nE4oi6ej_ekrpkSU62aUaOh3RKqVCIEaJ=
+xYcObrN_aOuh_72tzNmHqBy35KwaklbA_4gL1Xk5LLUTQ9L81kroJTZOsCOJfhnyEk~]=0A=0A=
+=09=09 [https://go.sparkpostmail.com/f/a/LGD2eE10ex68ab1y6-9A5g~~/AAA-fBA~/=
+yfRzsC1tQMHhxL0pnbg7N1WQlsYVW3XUgQzF49my5iDsdYe8NfEx3xAG7WuQDORPJQWGRU9_DUJ=
+52HTJZV3eHji2WjUP-U-87IZIRv5yJ3A0cyAOeSehPl90uhIKT1DVVlbSguBwSv2dmE5CK955Sx=
+bxB3YYKvF56N1PCVxFQyxzmDImV6f46KYfGJyt6rT56iVNfRKICbwEx0m3wgHKC7mrNwpFRgaii=
+Tzte5Upo6WczIRMFu1XeKFZnC1zvUb2oNb_Ee3-dTLnhLhTzVlw-PjLZCelwDOLVXFQskG6Bcvw=
+_BZISQ0hVMXRSXNhmSgQCSVByZrMraVCdrNLK4Fgyw~~]=0A=0A=09=09[WhatsApp]=0A[http=
+s://go.sparkpostmail.com/f/a/FYIEkDvGkcVvz_peKFViAg~~/AAA-fBA~/ADTvZwxSABKY=
+Te-tWsO-Kfv7PRUuU1qMm6IGpDi3PCvyrKnqB9KqaIlXnRv_nogbmNQyp0pLK2yuQ5mzu7qOMMa=
+sdxd1Jq92v-b5rF23v2GzLc-JG_teKsJXIcavNNdTPb8C1JA8X7i5flgvlcsd07c5LEyvljIp3D=
+8SupNwABKlFi1As9yRf0PaSkpMipvJ3ga2d1bLBItN7VbygPmFtlkD5H5EVFL5jrbeCCcjhc-oR=
+-ETdllqJDepfSoF9uE76jTCYLftVwh0PS2-bSzxQ-8MbrIOyRIM1wsZX56-Rkpqj91XWx8hci-J=
+OYsn_VDF97vOrkKR1XrM1eVGuJqbs37ULFTm85rQWiLrTs2sq4Af4cNziSIpdSa_KqQEgyYfxdN=
+4eI-DgSiakpeK5R0yJg~~]=0A=0AJUN=C3=81K =E2=80=93 =C4=8CESK=C3=9D SKAUT, Z. =
+S.=0ASenov=C3=A1=C5=BEn=C3=A9 n=C3=A1m=C4=9Bst=C3=AD 24, 110 00 Praha 1=0At=
+el. 776 720 220=0A=0Akancelar@skaut.cz=0A=0Akrizovatka.skaut.cz [https://go=
+.sparkpostmail.com/f/a/yoxWk7Fcun0hed5e7BTdNg~~/AAA-fBA~/_g5zx-ww03YILWiRM=
+VPLy233aTWCIYRMjR6RXditKuxje5YWazKngCWFwFA3sAiYSBEnGwGVa_6mC5_YJhvmwb8ostKW=
+QhjoPZe9kYKMEPJjNBWbn0IQvbkAgq7W-bc6FPAhh1VwooC5VlMVbWb7uv5rJEursG88k6TAZXh=
+uwVD8xHPbPju4rDGxA0pruvkiRLCjfYqvdMKL5GojYBu5xWiKzKFUq41TDI9S_zQd0i9cdz7bNU=
+oY9UF2JSsSThNKK2ryPkACeBvJBqep94EhhW-MuBobJuDCY3-l9neZQ0SS9msaYE1vY7omN1bgg=
+HaJ6YV697KmczodUAnO_a8_PbJa3clkaEW8Nql-ySzY2N8~]=0A=0Azpravodajstvi.skaut.c=
+z [https://go.sparkpostmail.com/f/a/jykz2g4roRnGYd3cdsvniA~~/AAA-fBA~/172Pw=
+QCoInHPXYmVvD8ymcXlMbt50GMi0v32tn9NJGDkz3Y5TL2grgb8PHcURs32YKkGV39T7l9bKFr4=
+R17UJhTJ9m6gNYH0JJqanY6ea__ADTS9gCt7KVRkz6Mi474xBQWDE_9jcZ5pMr-EK9IpPXpmStZ=
+AleQcWfkuQnERE0ZsbIx4ixPIiXIDA7Y0bLEl8eGtuh_t5mmVmyo0qH6Lp49_BD7qZ9CHSvnO5n=
+QL88kKQoAyn_Fv0DRBVLGve8bTxuDO4cnC3j-6sN-CRMPmhBK-KsAQ8zYEtwQVf64RZo22Elx_R=
+ATqdqQSNRC2WwpvRBEv3cQigubDZ8iRptAOs9_aEqMtglh8iNCqQ58Wi0M~]=0A=0AZde se m=
+=C5=AF=C5=BEete z odb=C4=9Bru Skautsk=C3=BDch novinek odhl=C3=A1sit=0A[http=
+s://go.sparkpostmail.com/f/a/xVBiDeYB8IeCy9G32SEMrQ~~/AAA-fBA~/r3coTntmaek7=
+R8gRIGDT2drdLxt3lFajdpFmYD4fU-jNaH5XFIndz5m7Jrvjyb4e4uoPai92uRvsDVc7oYhnVoB=
+2w0FOf4FZ1pJY-611JVC0nsHXKT20SUVdJS2IFswMqqpZpo79sZvG9UY9Wo34XyWkXqki2Q551u=
+iRONeaYluKKv-HYNczuXU0aRuFuu76pNPTsiDhVjaSlpKAPANCV_6ISt1lD9LbFp1YzCEacKPj7=
+0l_GY3-0r3qW2C3oiiGZh5qgEeNMcB4zMIxDkBOqmnQ2Yfm4tE1AMdKgoomCPXQBwRKOCh0dwkU=
+sfl90O7Ay7-ysbJk0ZA8ngS9mMBsAHydAGNxxYFHRXEa3xpPnVxIkZVILcxU1kI4T2rZKQ9P5s7=
+q-B2y0STdpfWcS7miKsaVAbxcnzBpinjdGoWoG4ngZYoSiy6JDk1TBazvRNrL].=0ANebo naop=
+ak odeb=C3=ADrat newsletter=C5=AF v=C3=ADce=0A[https://go.sparkpostmail.com=
+/f/a/rTItsfM7fevecfwEJ_D2Uw~~/AAA-fBA~/9L_s1G-MDFJhumwtzpJncj_jX5f11DLDCV7I=
+NG9Dvv36lGIXqLGjj9OFZlrkGOAipXId6R4DntGw9iOF4JQRL3ktp8sYW4TFVYOeFyPRZpJayfd=
+mLWddiwGvHOufEqmGVtgA5MbpENO6YgYSXHq4dxhaj3_JB5IFKGW5eVw3D5ncOuHlTGs5bFp-j9=
+-ih4BGXJpl2eCs2jVaJegs5-PXrMmlPtvGmG2pXf5djO3nL3QvXItWXUZVQcObTqw4szmTduwPm=
+ZXUge4oslRRq2gxCx5SloybKQPlHUVJztRVjXgJ3KxxjfGCLw2ccjk6IE3sD4cC1OxSmmBHdDKR=
+nJcsPhq5BwkJb7kLQj28cKngOGRmuUtZ38PR7DpsVZGihaCiT6DeuFO6ydYxjuXm1yyDOQ~~].
+--_----1EECAQyTvR7I7EdZ/n9xRQ===_36/D0-03915-1AC564A6
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="UTF-8"
+
+<!doctype html><html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:=
+schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:offi=
+ce"><head><title></title><!--[if !mso]><!-- --><meta http-equiv=3D"X-UA-Com=
+patible" content=3D"IE=3Dedge"><!--<![endif]--><meta http-equiv=3D"Content-=
+Type" content=3D"text/html; charset=3DUTF-8"><meta name=3D"viewport" conten=
+t=3D"width=3Ddevice-width,initial-scale=3D1"><style type=3D"text/css">#outl=
+ook a { padding:0; }=0A          body { margin:0;padding:0;-webkit-text-siz=
+e-adjust:100%;-ms-text-size-adjust:100%; }=0A          table, td { border-c=
+ollapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt; }=0A          i=
+mg { border:0;height:auto;line-height:100%; outline:none;text-decoration:no=
+ne;-ms-interpolation-mode:bicubic; }=0A          p { display:block;margin:1=
+3px 0; }</style><!--[if mso]>=0A        <xml>=0A        <o:OfficeDocumentSe=
+ttings>=0A          <o:AllowPNG/>=0A          <o:PixelsPerInch>96</o:Pixels=
+PerInch>=0A        </o:OfficeDocumentSettings>=0A        </xml>=0A        <=
+![endif]--><!--[if lte mso 11]>=0A        <style type=3D"text/css">=0A     =
+     .outlook-group-fix { width:100% !important; }=0A        </style>=0A   =
+     <![endif]--><!--[if !mso]><!--><link href=3D"https://fonts.googleapis.=
+com/css=3Ffamily=3DOpen+Sans:400,700" rel=3D"stylesheet" type=3D"text/css">=
+<link href=3D"https://fonts.googleapis.com/css=3Ffamily=3DUbuntu:300,400,50=
+0,700" rel=3D"stylesheet" type=3D"text/css"><style type=3D"text/css">@impor=
+t url(https://fonts.googleapis.com/css=3Ffamily=3DOpen+Sans:400,700);=0A@im=
+port url(https://fonts.googleapis.com/css=3Ffamily=3DUbuntu:300,400,500,700=
+);</style><!--<![endif]--><style type=3D"text/css">@media only screen and (=
+max-width:480px) {=0A        .mj-column-per-66 { width:66.66666666666666% !=
+important; max-width: 66.66666666666666%; }=0A.mj-column-per-33 { width:33.=
+33333333333333% !important; max-width: 33.33333333333333%; }=0A.mj-column-p=
+er-100 { width:100% !important; max-width: 100%; }=0A.mj-column-per-25 { wi=
+dth:25% !important; max-width: 25%; }=0A.mj-column-per-75 { width:75% !impo=
+rtant; max-width: 75%; }=0A.mj-column-per-40 { width:40% !important; max-wi=
+dth: 40%; }=0A.mj-column-per-60 { width:60% !important; max-width: 60%; }=
+=0A      }</style><style type=3D"text/css">[owa] .mj-column-per-66 { width:=
+66.66666666666666% !important; max-width: 66.66666666666666%; }=0A[owa] .mj=
+-column-per-33 { width:33.33333333333333% !important; max-width: 33.3333333=
+3333333%; }=0A[owa] .mj-column-per-100 { width:100% !important; max-width: =
+100%; }=0A[owa] .mj-column-per-25 { width:25% !important; max-width: 25%; }=
+=0A[owa] .mj-column-per-75 { width:75% !important; max-width: 75%; }=0A[owa=
+] .mj-column-per-40 { width:40% !important; max-width: 40%; }=0A[owa] .mj-c=
+olumn-per-60 { width:60% !important; max-width: 60%; }</style><style type=
+=3D"text/css">@media only screen and (max-width:480px) {=0A      table.full=
+-width-mobile { width: 100% !important; }=0A      td.full-width-mobile { wi=
+dth: auto !important; }=0A    }</style><style type=3D"text/css">.hide_on_mo=
+bile { display: none !important;} =0A        @media only screen and (min-wi=
+dth: 480px) { .hide_on_mobile { display: block !important;} }=0A        .hi=
+de_section_on_mobile { display: none !important;} =0A        @media only sc=
+reen and (min-width: 480px) { =0A            .hide_section_on_mobile { =0A =
+               display: table !important;=0A            } =0A=0A           =
+ div.hide_section_on_mobile { =0A                display: block !important;=
+=0A            }=0A        }=0A        .hide_on_desktop { display: block !i=
+mportant;} =0A        @media only screen and (min-width: 480px) { .hide_on_=
+desktop { display: none !important;} }=0A        .hide_section_on_desktop {=
+ =0A            display: table !important;=0A            width: 100%;=0A   =
+     } =0A        @media only screen and (min-width: 480px) { .hide_section=
+_on_desktop { display: none !important;} }=0A        =0A          p, h1, h2=
+, h3 {=0A              margin: 0px;=0A          }=0A=0A          ul, li, ol=
+ {=0A            font-size: 11px;=0A            font-family: Ubuntu, Helvet=
+ica, Arial;=0A          }=0A=0A          a {=0A              text-decoratio=
+n: none;=0A              color: inherit;=0A          }=0A=0A        @media =
+only screen and (max-width:480px) {=0A            .mj-column-per-66 { width=
+:100%!important; max-width:100%!important; }.mj-column-per-100 > .mj-column=
+-per-66 { width:66.66666666666666%!important; max-width:66.66666666666666%!=
+important; }.mj-column-per-33 { width:100%!important; max-width:100%!import=
+ant; }.mj-column-per-100 > .mj-column-per-33 { width:33.33333333333333%!imp=
+ortant; max-width:33.33333333333333%!important; }.mj-column-per-100 { width=
+:100%!important; max-width:100%!important; }.mj-column-per-100 > .mj-column=
+-per-100 { width:100%!important; max-width:100%!important; }.mj-column-per-=
+25 { width:100%!important; max-width:100%!important; }.mj-column-per-100 > =
+.mj-column-per-25 { width:25%!important; max-width:25%!important; }.mj-col=
+umn-per-75 { width:100%!important; max-width:100%!important; }.mj-column-pe=
+r-100 > .mj-column-per-75 { width:75%!important; max-width:75%!important; }=
+.mj-column-per-40 { width:100%!important; max-width:100%!important; }.mj-c=
+olumn-per-100 > .mj-column-per-40 { width:40%!important; max-width:40%!impo=
+rtant; }.mj-column-per-60 { width:100%!important; max-width:100%!important;=
+ }.mj-column-per-100 > .mj-column-per-60 { width:60%!important; max-width:6=
+0%!important; }=0A        }=0A=0A        .mj-column-per-100 [class^=3D"mj-c=
+olumn-per-"] {=0A            line-height: normal;=0A        }=0A=0A        =
+.mj-button-full a {=0A            display: block !important;=0A        }=
+=0A=0A        .rounded>table>tbody>tr>td>table {=0A            border-colla=
+pse: separate !important;=0A        }=0A=0A        h1{font-family:Open Sans=
+, sans-serif;font-size:30px;color:#FFFFFF;font-weight:bold;}a{color:#007BC2=
+;}h2{font-family:Open Sans, sans-serif;font-size:17px;color:#FFFFFF;font-we=
+ight:bold;}h3{font-family:Open Sans, sans-serif;font-size:18px;color:#57575=
+7;font-weight:bold;}p{font-family:Open Sans, sans-serif;font-size:14px;colo=
+r:#575757;}ul{font-size:14px;font-family:Open Sans, sans-serif;color:#57575=
+7;}li{font-size:14px;font-family:Open Sans, sans-serif;color:#575757;}ol{fo=
+nt-size:14px;font-family:Open Sans, sans-serif;color:#575757;}</style></hea=
+d><body style=3D"background-color:#E1E8E9;"><div style=3D"background-color:=
+#E1E8E9;"><!--[if mso | IE]><table align=3D"center" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" class=3D"" style=3D"width:600px;" width=3D"600" >=
+<tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:exactly=
+;"><![endif]--><div style=3D"background:#FAFAFA;background-color:#FAFAFA;ma=
+rgin:0px auto;max-width:600px;"><table align=3D"center" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"background:#FA=
+FAFA;background-color:#FAFAFA;width:100%;"><tbody><tr><td style=3D"directio=
+n:ltr;font-size:0px;padding:0px 0px 0px 0px;text-align:center;"><!--[if mso=
+ | IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0"><tr><td class=3D"" style=3D"vertical-align:middle;width:399.99999=
+999999994px;" ><![endif]--><div class=3D"mj-column-per-66 outlook-group-fix=
+" style=3D"font-size:0px;text-align:left;direction:ltr;display:inline-block=
+;vertical-align:middle;width:66.66666666666666%;"><table border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"vertical-alig=
+n:middle;" width=3D"100%"><tr><td align=3D"center" style=3D"font-size:0px;p=
+adding:13px 10px 13px 14px;word-break:break-word;"><div style=3D"font-famil=
+y:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.5;text-=
+align:center;color:#000000;"><p style=3D"font-family: Open Sans, sans-serif=
+; font-size: 14px; color: #575757;"><span style=3D"font-size: 11px;">Skauts=
+k=C3=A9 novinky p=C5=99in=C3=A1=C5=A1ej=C3=AD souhrn d=C5=AFle=C5=BEit=C3=
+=BDch informac=C3=AD. Poj=C4=8F si je p=C5=99e=C4=8D=C3=ADst!</span></p></d=
+iv></td></tr></table></div><!--[if mso | IE]></td><td class=3D"" style=3D"v=
+ertical-align:middle;width:199.99999999999997px;" ><![endif]--><div class=
+=3D"mj-column-per-33 outlook-group-fix" style=3D"font-size:0px;text-align:l=
+eft;direction:ltr;display:inline-block;vertical-align:middle;width:33.33333=
+333333333%;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=
+=3D"presentation" style=3D"vertical-align:middle;" width=3D"100%"><tr><td a=
+lign=3D"center" style=3D"font-size:0px;padding:13px 25px 13px 25px;word-bre=
+ak:break-word;"><div style=3D"font-family:Ubuntu, Helvetica, Arial, sans-se=
+rif;font-size:13px;line-height:1.5;text-align:center;color:#000000;"><p sty=
+le=3D"font-family: Open Sans, sans-serif; font-size: 14px; color: #575757;"=
+><span style=3D"font-size: 11px;"><span style=3D"color: #808080;"><a style=
+=3D"color: #808080;" href=3D"https://go.sparkpostmail.com/f/a/VKS9GXOq9c_Xu=
+_VhG01WFQ~~/AAA-fBA~/RW2tnA6nnAWEUlhJ5a7NSVzZzW63N8SvAalHUzbRctv3VdU5cyjWvL=
+OZongCU2fDA1NzvtIQ8A0B-IaNluyr8YmCdXvlwpaup882n_hp7BmAeirMypTpOkr3nCMsOpP3Z=
+sruB4yBxQi0r8mycYZBlvwRzQWgEX-kyG0f36URfPpOYzduMUH_URg4BqONgqM2acfmjhArU316=
+6aXkmrD1cM5k3hyzr8abc4eO4f8TQAR7e55MnpGHFO_iMHhU3FoijHGQCqxmYwhZi7yN5CLcA1J=
+mWe9sjM-r93LxjvjQhWEnOaXNQajnMTtXhks8rqhodjnnI2SwN8GFGXnJEa23d9cdUjFoUZHWov=
+QhrMQ73RmRKGpmT6Ny5cDjG54O26dlVdJAONBxDxITlA1cWIfWwyVTpd8upRqQkdRBr8mzVgk~"=
+>Zobrazit e-mail online</a></span></span></p></div></td></tr></table></div>=
+<!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table><=
+/div><!--[if mso | IE]></td></tr></table><table align=3D"center" border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" class=3D"" style=3D"width:600px;" wi=
+dth=3D"600" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height=
+-rule:exactly;"><![endif]--><div style=3D"background:#26425B;background-col=
+or:#26425B;margin:0px auto;max-width:600px;"><table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"b=
+ackground:#26425B;background-color:#26425B;width:100%;"><tbody><tr><td styl=
+e=3D"direction:ltr;font-size:0px;padding:20px 0;text-align:center;"><!--[if=
+ mso | IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0"><tr><td class=3D"" style=3D"vertical-align:middle;width:600px=
+;" ><![endif]--><div class=3D"mj-column-per-100 outlook-group-fix" style=3D=
+"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-=
+align:middle;width:100%;"><table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"vertical-align:middle;" width=3D"100%=
+"><tr><td align=3D"center" style=3D"font-size:0px;padding:0px 10px 0px 10px=
+;word-break:break-word;"><table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"border-collapse:collapse;border-spaci=
+ng:0px;"><tbody><tr><td style=3D"width:270px;"><a href=3D"https://go.sparkp=
+ostmail.com/f/a/VKS9GXOq9c_Xu_VhG01WFQ~~/AAA-fBA~/RW2tnA6nnAWEUlhJ5a7NSVzZz=
+W63N8SvAalHUzbRctv3VdU5cyjWvLOZongCU2fDA1NzvtIQ8A0B-IaNluyr8YmCdXvlwpaup882=
+n_hp7BmAeirMypTpOkr3nCMsOpP3ZsruB4yBxQi0r8mycYZBlvwRzQWgEX-kyG0f36URfPpOYzd=
+uMUH_URg4BqONgqM2acfmjhArU3166aXkmrD1cM5k3hyzr8abc4eO4f8TQAR7e55MnpGHFO_iMH=
+hU3FoijHGQCqxmYwhZi7yN5CLcA1JmWe9sjM-r93LxjvjQhWEnOaXNQajnMTtXhks8rqhodjnnI=
+2SwN8GFGXnJEa23d9cdUjFoUZHWovQhrMQ73RmRKGpmT6Ny5cDjG54O26dlVdJAONBxDxITlA1c=
+WIfWwyVTpd8upRqQkdRBr8mzVgk~" target=3D"_blank" style=3D"color: #007BC2;"><=
+img alt=3D"Skautsk=C3=A9 novinky" height=3D"auto" src=3D"https://storage.go=
+ogleapis.com/skaut11862/novinky-nadpis.png" style=3D"border:0;display:block=
+;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" =
+title=3D"Skautsk=C3=A9 novinky" width=3D"270"></a></td></tr></tbody></table=
+></td></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></=
+td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table><table al=
+ign=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"" =
+style=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;font=
+-size:0px;mso-line-height-rule:exactly;"><v:rect style=3D"width:600px;" xml=
+ns:v=3D"urn:schemas-microsoft-com:vml" fill=3D"true" stroke=3D"false"><v:fi=
+ll origin=3D"0.5, 0" position=3D"0.5, 0" src=3D"https://storage.googleapis.=
+com/topol-io-plugin-6f3a6a1a-1247-4d57-a96f-7c9763f80764/plugin-assets/1/sk=
+aut/skautske-novinky%20edited_137dc019-b235-4f13-90ee-b7fd3f171288%20edited=
+_a768e19b-c414-4e54-a518-bd6747cf8b9a%20edited_233d75f7-03a3-404f-b7e3-b0df=
+5f00bec6%20edited_664c3e6d-c513-4d01-b2c5-14000303b0dd.jpg" color=3D"#fafaf=
+a" type=3D"tile" /><v:textbox style=3D"mso-fit-shape-to-text:true" inset=3D=
+"0,0,0,0"><![endif]--><div style=3D"background:#fafafa url(https://storage.=
+googleapis.com/topol-io-plugin-6f3a6a1a-1247-4d57-a96f-7c9763f80764/plugin-=
+assets/1/skaut/skautske-novinky%20edited_137dc019-b235-4f13-90ee-b7fd3f1712=
+88%20edited_a768e19b-c414-4e54-a518-bd6747cf8b9a%20edited_233d75f7-03a3-404=
+f-b7e3-b0df5f00bec6%20edited_664c3e6d-c513-4d01-b2c5-14000303b0dd.jpg) top =
+center / cover repeat;margin:0px auto;max-width:600px;"><div style=3D"line-=
+height:0;font-size:0;"><table align=3D"center" background=3D"https://storag=
+e.googleapis.com/topol-io-plugin-6f3a6a1a-1247-4d57-a96f-7c9763f80764/plugi=
+n-assets/1/skaut/skautske-novinky%20edited_137dc019-b235-4f13-90ee-b7fd3f17=
+1288%20edited_a768e19b-c414-4e54-a518-bd6747cf8b9a%20edited_233d75f7-03a3-4=
+04f-b7e3-b0df5f00bec6%20edited_664c3e6d-c513-4d01-b2c5-14000303b0dd.jpg" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=
+=3D"background:#fafafa url(https://storage.googleapis.com/topol-io-plugin-6=
+f3a6a1a-1247-4d57-a96f-7c9763f80764/plugin-assets/1/skaut/skautske-novinky%=
+20edited_137dc019-b235-4f13-90ee-b7fd3f171288%20edited_a768e19b-c414-4e54-a=
+518-bd6747cf8b9a%20edited_233d75f7-03a3-404f-b7e3-b0df5f00bec6%20edited_664=
+c3e6d-c513-4d01-b2c5-14000303b0dd.jpg) top center / cover repeat;width:100%=
+;"><tbody><tr><td style=3D"direction:ltr;font-size:0px;padding:30px 0px 30p=
+x 0px;text-align:center;"><!--[if mso | IE]><table role=3D"presentation" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td class=3D"" style=3D"=
+vertical-align:top;width:600px;" ><![endif]--><div class=3D"mj-column-per-1=
+00 outlook-group-fix" style=3D"font-size:0px;text-align:left;direction:ltr;=
+display:inline-block;vertical-align:top;width:100%;"><table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"vertical-a=
+lign:top;" width=3D"100%"><tr><td align=3D"center" style=3D"font-size:0px;p=
+adding:29px 29px 29px 29px;word-break:break-word;"><table border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"border-colla=
+pse:collapse;border-spacing:0px;"><tbody><tr><td style=3D"width:120px;"><im=
+g alt=3D"Skautsk=C3=A9 novinky" height=3D"auto" src=3D"https://storage.goog=
+leapis.com/skaut11862/logo-skaut-1.png" style=3D"border:0;border-radius:0px=
+ 0px 0px 0px;display:block;outline:none;text-decoration:none;height:auto;wi=
+dth:100%;font-size:13px;" width=3D"120"></td></tr></tbody></table></td></tr=
+><tr><td align=3D"center" style=3D"font-size:0px;padding:10px 10px 10px 10p=
+x;word-break:break-word;"><div style=3D"font-family:Ubuntu, Helvetica, Aria=
+l, sans-serif;font-size:13px;line-height:1.8;text-align:center;color:#00000=
+0;"><p style=3D"font-family: Open Sans, sans-serif; font-size: 14px; color:=
+ #575757; margin-bottom: 0px;"><span style=3D"font-size: 15px;"><strong><sp=
+an style=3D"color: #fffffe;">Novinky ze Zpravodajstv=C3=AD za posledn=C3=AD=
+ t=C3=BDden</span></strong></span></p><p style=3D"font-family: Open Sans, s=
+ans-serif; font-size: 14px; color: #575757;"><span style=3D"font-size: 16px=
+;"><span style=3D"color: #fffffe;">=C4=8C=C3=8DSLO 41 | =C4=8Dervenec 2026<=
+/span></span></p></div></td></tr></table></div><!--[if mso | IE]></td></tr>=
+</table><![endif]--></td></tr></tbody></table></div></div><!--[if mso | IE]=
+></v:textbox></v:rect></td></tr></table><table align=3D"center" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" class=3D"" style=3D"width:600px;" wid=
+th=3D"600" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-=
+rule:exactly;"><![endif]--><div style=3D"background:#FAFAFA;background-colo=
+r:#FAFAFA;margin:0px auto;max-width:600px;"><table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"b=
+ackground:#FAFAFA;background-color:#FAFAFA;width:100%;"><tbody><tr><td styl=
+e=3D"direction:ltr;font-size:0px;padding:0px 0px 0px 0px;text-align:center;=
+"><!--[if mso | IE]><table role=3D"presentation" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;wid=
+th:600px;" ><![endif]--><div class=3D"mj-column-per-100 outlook-group-fix" =
+style=3D"font-size:0px;text-align:left;direction:ltr;display:inline-block;v=
+ertical-align:top;width:100%;"><table border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" role=3D"presentation" style=3D"vertical-align:top;" width=3D"10=
+0%"><tr><td align=3D"left" style=3D"font-size:0px;padding:13px 25px 13px 25=
+px;word-break:break-word;"><div style=3D"font-family:Ubuntu, Helvetica, Ari=
+al, sans-serif;font-size:13px;line-height:1.5;text-align:left;color:#000000=
+;"><h3 style=3D"font-family: Open Sans, sans-serif; font-size: 18px; color:=
+ #575757; font-weight: bold;">=E2=9A=9C Skautsk=C3=A9 novinky: Pomozte vytv=
+o=C5=99it novou linku Dobr=C3=A1=C4=8Dka a oslavte Svojs=C3=ADkovo v=C3=BDr=
+o=C4=8D=C3=AD spole=C4=8Dnou Ve=C4=8Derkou</h3></div></td></tr></table></di=
+v><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table=
+></div><!--[if mso | IE]></td></tr></table><table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"" style=3D"width:600px;=
+" width=3D"600" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-he=
+ight-rule:exactly;"><![endif]--><div style=3D"background:#FAFAFA;background=
+-color:#FAFAFA;margin:0px auto;max-width:600px;"><table align=3D"center" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=
+=3D"background:#FAFAFA;background-color:#FAFAFA;width:100%;"><tbody><tr><td=
+ style=3D"direction:ltr;font-size:0px;padding:0px 0px 0px 0px;text-align:ce=
+nter;"><!--[if mso | IE]><table role=3D"presentation" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;=
+width:600px;" ><![endif]--><div class=3D"mj-column-per-100 outlook-group-fi=
+x" style=3D"font-size:0px;text-align:left;direction:ltr;display:inline-bloc=
+k;vertical-align:top;width:100%;"><table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" role=3D"presentation" style=3D"vertical-align:top;" width=3D=
+"100%"><tr><td align=3D"left" style=3D"font-size:0px;padding:13px 25px 13px=
+ 25px;word-break:break-word;"><div style=3D"font-family:Ubuntu, Helvetica, =
+Arial, sans-serif;font-size:13px;line-height:1.5;text-align:left;color:#000=
+000;"><p data-path-to-node=3D"1" style=3D"font-family: Open Sans, sans-seri=
+f; font-size: 14px; color: #575757;">Chyst=C3=A1 se nov=C3=A1 tematick=C3=
+=A1 linka Dobr=C3=A1=C4=8Dka zam=C4=9B=C5=99en=C3=A1 na solidaritu a vy m=
+=C5=AF=C5=BEete <!----><!----><!----><!----><!----><!----><!----><!----><!-=
+---><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><=
+!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----=
+><!----><!----><!----><a class=3D"ng-star-inserted" href=3D"https://go.spar=
+kpostmail.com/f/a/zhagByo63FrGgILRLcdk9g~~/AAA-fBA~/RNICQElG1asUF5HafUHAOKx=
+aeKGXVi2cPViRbQWklEIeYLxwnMCvPpz-2R2jLrktC3CYbRlaZmxA-5GLq59AA1_bRgpQisU3Ds=
+z8wRVqRSTj8JR6WY-7ShCrN55WL32Y6U2Qj55mTHDHIW2KmOabOQ9RKk1HCg9SGD8Eo3UO87Qwz=
+m3_oXcuLsWBjOdJEbKkhWJDT5iazNQ4HE_LzK_sRsMIaP6bTmURUuuL-5q4bZddRBa7PfXJx6Kk=
+VUvVXI7T5ReAFxnVQop8OZZIUzuVgAuC816mcmNmy2glQ1DhTWZARZ6jJlOgwXCZnbakwlEsEs_=
+ob6DDiPW1WDUfBHqhbkaI09FJ3dD6tcMxlJEM2mXk-JzCHw2cGdOvVSAR_mZFq1Avkqbvt1Wmv9=
+3tIue9x1_Xlcv_IZatgJgFzD674Ydz-g2Bc2gXpte8AjD9nztSW4pZQKs9QJsO1jZH3A5STg~~"=
+ target=3D"_blank" rel=3D"noopener" data-hveid=3D"0" data-ved=3D"0CAAQ_4QMa=
+hgKEwiz6uCi-bOVAxUAAAAAHQAAAAAQ1wE" style=3D"color: #007BC2;">pomoci s tvor=
+bou hotov=C3=BDch program=C5=AF</a><!----><!----><!----><!----><!----><!---=
+-><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!-=
+---><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><=
+!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----=
+><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!--=
+--><!----><!----> pro ostatn=C3=AD vedouc=C3=AD. V z=C3=A1=C5=99=C3=AD n=C3=
+=A1s nav=C3=ADc =C4=8Dek=C3=A1 v=C3=BDznamn=C3=A9 jubileum zakladatele =C4=
+=8Desk=C3=A9ho skautingu. P=C5=99ipojte se na d=C3=A1lku k oslav=C3=A1m 150=
+ let od narozen=C3=AD A. B. Svojs=C3=ADka a zazp=C3=ADvejte si v odd=C3=ADl=
+ech <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><=
+!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----=
+><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!--=
+--><!----><a class=3D"ng-star-inserted" href=3D"https://go.sparkpostmail.co=
+m/f/a/yrsmiidnfEwc4ORRUlG9jg~~/AAA-fBA~/-FN0AJA_S5dSEPgxhUE0zXS0aGEobsf6b5w=
+y9b51TcAo-KzcDtFKkI7kFKyTxuP1i2y3-y9L0Caf1wJjfxB5aFf_Ts7tChJSgDrt6utQ0tWccZ=
+iPyLPUxLoi1bEUhGo8Pmmsvezbcv1_SC_PJSJbMwKsgWKnIprBeZ4l0XjGRFkb23e8x615op8-R=
+r1F6hXPw2wdObxxIm8SNkXyAYxjlzWVmd6MlZUddooqq0dB5y_jDZU7xMvW_7Tc1YSHJUhngaNP=
+wuZXh2L6S2wiNGXXvAoSs7DDoPC40PJHIpeOa_k5OU_S_WkVFw32YIkkg_iZyVLT4vYtEoLsYSu=
+zvoysXAz-kqciD1vunSHmLm6_qO8s0lo9p5Rm9mOLvZEVa2MoOeYPcQlW-qPJJ9fjiMqVBSUj9i=
+rn7fvxgdxT5xGrZxQvMQSthX07N_oXZ5KuvIUS" target=3D"_blank" rel=3D"noopener" =
+data-hveid=3D"0" data-ved=3D"0CAAQ_4QMahgKEwiz6uCi-bOVAxUAAAAAHQAAAAAQ2AE" =
+style=3D"color: #007BC2;">spole=C4=8Dnou Skautskou ve=C4=8Derku</a><!----><=
+!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----=
+><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!--=
+--><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!=
+----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->=
+<!----><!----><!----><!----><!----><!----><!---->.</p><p data-path-to-node=
+=3D"1" style=3D"font-family: Open Sans, sans-serif; font-size: 14px; color:=
+ #575757;">=C2=A0</p><p data-path-to-node=3D"2" style=3D"font-family: Open =
+Sans, sans-serif; font-size: 14px; color: #575757;">Mnoho vedouc=C3=ADch be=
+re v l=C3=A9t=C4=9B na z=C3=A1kladny sv=C3=A9 =C4=8Dty=C5=99noh=C3=A9 par=
+=C5=A5=C3=A1ky, kte=C5=99=C3=AD maj=C3=AD =C5=99adu p=C5=99=C3=ADnos=C5=AF,=
+ ale znamenaj=C3=AD i zodpov=C4=9Bdnost. P=C5=99e=C4=8Dt=C4=9Bte si o <!---=
+-><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!-=
+---><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><=
+!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----=
+><a class=3D"ng-star-inserted" href=3D"https://go.sparkpostmail.com/f/a/H95=
+_X4Tsiu7owGTAGjKgvA~~/AAA-fBA~/Pn9XO6uYV6PFMp2gdWm_4veF24uQN1qqTgFt_KQUbRX9=
+sO9_EPZ4q3wSlbnZeIlhNkAOnUgSIyLObd1SccT7S3bklkIgeibl2Yb_N2aSpK_S0CzXlEWrzld=
+JmwycDX7WvC-MBElaWmLHf5eyhucd2KtEPXFPrCsgkWM5y3fodtwMKZCzQZ4MPaPBpvzfcVKrma=
+bLJ0WLleQ3qooj6snfaQZ-gge3DalEWx7S08e7fAsmJc-2E2a3BP546NgO9hjbGy_wlQ36Ud25T=
+vJcLGyRlQWTgf7DyG8nLMnChWk1JKOKBn_CjoCi2LfYzhXDWi3r3Mg71fpjCeGZITk5BZFdInXm=
+ESbTo1NaUNs7dUWHxQQoubwuHhylmwJdPca7cXXqVaaM9zVcPAAlGKOnExT4u2WezZJ3uB0o1lZ=
+t_bdnBoo~" target=3D"_blank" rel=3D"noopener" data-hveid=3D"0" data-ved=3D"=
+0CAAQ_4QMahgKEwiz6uCi-bOVAxUAAAAAHQAAAAAQ2QE" style=3D"color: #007BC2;">p=
+=C5=99=C3=ADnosech a rizic=C3=ADch p=C5=99=C3=ADtomnosti ps=C5=AF na t=C3=
+=A1borech</a><!----><!----><!----><!----><!----><!----><!----><!----><!----=
+><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!--=
+--><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!=
+----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->=
+<!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->.</p>=
+<p data-path-to-node=3D"2" style=3D"font-family: Open Sans, sans-serif; fon=
+t-size: 14px; color: #575757;">=C2=A0</p><p data-path-to-node=3D"2" style=
+=3D"font-family: Open Sans, sans-serif; font-size: 14px; color: #575757;">B=
+=C4=9Bhem pr=C3=A1zdninov=C3=A9ho provozu m=C5=AF=C5=BEete tak=C3=A9 vyzkou=
+=C5=A1et ve=C5=99ejn=C3=A9 <!----><!----><!----><!----><!----><!----><!----=
+><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!--=
+--><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!=
+----><!----><!----><!----><!----><a class=3D"ng-star-inserted" href=3D"http=
+s://go.sparkpostmail.com/f/a/iVK6g1h712TCjiD5wGFu_Q~~/AAA-fBA~/PaXMXyZSpl5P=
+QIrNU_FXXPdNYg5uAWCzID0MfuwnU1XJIE0FHWHgpVK5a8DqMLssz6Lc7C-XbOA4gkUXPJcqdD8=
+4flvVAob4UIR5KG4bCErwdbHwH1SXHrQPUWfySVnk4LZkFh9IdkfrErZDel9mOafgUTI4y9YzuY=
+zGHWqx0dTXh0vjpzT2TQE33pZqCFalr5ttg0YLoZS3kJ3Uf6YMTF5Mum9KZZGy9vhDdYKDk0F_x=
+RWHa0mfc6BvfAeivo_BSykoJtzMNGKtXQ_yFeKVwLzCau5xBsaRAB_O0_ljT5UX5swpQzc_0l7-=
+hSP6b-xQoyatQadfXQWF5u_e3ZHDbodWphZDznnUMDBbamvq5u7ry_DQ5oyYMpjUWgYrCZSCcBC=
+Re1ZRm7S--Wr65v2SUw~~" target=3D"_blank" rel=3D"noopener" data-hveid=3D"0" =
+data-ved=3D"0CAAQ_4QMahgKEwiz6uCi-bOVAxUAAAAAHQAAAAAQ2gE" style=3D"color: #=
+007BC2;">beta testov=C3=A1n=C3=AD p=C4=9Bti asistent=C5=AF SKAUTbota</a><!-=
+---><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><=
+!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----=
+><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!--=
+--><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!=
+----><!----><!----><!----><!----><!----><!----><!----> a uleh=C4=8Dit si ta=
+k administrativu.</p><p data-path-to-node=3D"2" style=3D"font-family: Open =
+Sans, sans-serif; font-size: 14px; color: #575757;">=C2=A0</p><p data-path-=
+to-node=3D"2" style=3D"font-family: Open Sans, sans-serif; font-size: 14px;=
+ color: #575757;">P=C5=99ejeme klidn=C3=A9 p=C5=99=C3=ADpravy na letn=C3=AD=
+ akce!</p></div></td></tr></table></div><!--[if mso | IE]></td></tr></table=
+><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></=
+table><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"" style=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-=
+height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div st=
+yle=3D"background:#FAFAFA;background-color:#FAFAFA;margin:0px auto;max-widt=
+h:600px;"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" role=3D"presentation" style=3D"background:#FAFAFA;background-color:=
+#FAFAFA;width:100%;"><tbody><tr><td style=3D"direction:ltr;font-size:0px;pa=
+dding:10px 10px 10px 10px;text-align:center;"><!--[if mso | IE]><table role=
+=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td =
+class=3D"" style=3D"width:580px;" ><![endif]--><div class=3D"mj-column-per-=
+100 outlook-group-fix" style=3D"font-size:0;line-height:0;text-align:left;d=
+isplay:inline-block;width:100%;direction:ltr;"><!--[if mso | IE]><table rol=
+e=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td=
+ style=3D"vertical-align:top;width:145px;" ><![endif]--><div class=3D"mj-co=
+lumn-per-25 outlook-group-fix" style=3D"font-size:0px;text-align:left;direc=
+tion:ltr;display:inline-block;vertical-align:top;width:25%;"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"v=
+ertical-align:top;" width=3D"100%"><tr><td align=3D"center" style=3D"font-s=
+ize:0px;padding:0px 0px 0px 15px;word-break:break-word;"><table border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"border=
+-collapse:collapse;border-spacing:0px;" class=3D"full-width-mobile"><tbody>=
+<tr><td style=3D"width:75px;" class=3D"full-width-mobile"><a href=3D"https:=
+//go.sparkpostmail.com/f/a/DVGGhyvVM7JeSz19V9kq6A~~/AAA-fBA~/z6VZJ05fDrLEQV=
+EGzk310_EEfZlbGMtHVYu5wqdsYku0tUsHmJQY0h7RckVIC6VGZ7Nni9VMxvdOhYSkTyoHejmVl=
+Cgxv4oMXprY5RHRfpxDUDQ86BmmLlJZTVi2fhR3kkeVhdIiaorUUFUgU-dMI0lLDdTuvfu7TL6a=
+jDgKCXqhldWxeocYt_Hbwz_S_6towbYQR9JMBD54i4E4xrm74sqwfbEnTHxwEM8vpCWVXuSadWf=
+DBSjlKRwtcQrMgjboCnYF4vydEHRdYS_YT9BrmCHnWqiloV2m4e6H-HSii-X7ZenA5y96XvdajT=
+DspJ3lUM8uN2bnYfnYEt61v8d4ZrqlC02elxU7cXSFGL1swMiBqcbT4dVjccyxeunuqTVCnFQVt=
+IBoboyFskbFFMJ484kHtH90m1Datp24oHb186k~" target=3D"_blank" style=3D"color: =
+#007BC2;"><img alt=3D"Petra Dan=C4=9B=C4=8Dkov=C3=A1 =E2=80=93 Pe=C5=A5ule"=
+ height=3D"auto" src=3D"https://storage.googleapis.com/skaut11862/novinky-p=
+etule.png" style=3D"border:0;border-radius:0px 0px 0px 0px;display:block;ou=
+tline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" tit=
+le=3D"Petra Dan=C4=9B=C4=8Dkov=C3=A1 =E2=80=93 Pe=C5=A5ule" width=3D"75"></=
+a></td></tr></tbody></table></td></tr></table></div><!--[if mso | IE]></td>=
+<td style=3D"vertical-align:top;width:435px;" ><![endif]--><div class=3D"mj=
+-column-per-75 outlook-group-fix" style=3D"font-size:0px;text-align:left;di=
+rection:ltr;display:inline-block;vertical-align:top;width:75%;"><table bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D=
+"vertical-align:top;" width=3D"100%"><tr><td align=3D"left" style=3D"font-s=
+ize:0px;padding:0px 0px 0px 20px;word-break:break-word;"><div style=3D"font=
+-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.5=
+;text-align:left;color:#000000;"><p style=3D"font-family: Open Sans, sans-s=
+erif; font-size: 14px; color: #575757;"><strong>Petra Dan=C4=9B=C4=8Dkov=C3=
+=A1 =E2=80=93 Pe=C5=A5ule</strong><br>redaktorka intern=C3=AD komunikace</p=
+></div></td></tr></table></div><!--[if mso | IE]></td></tr></table><![endif=
+]--></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody=
+></table></div><!--[if mso | IE]></td></tr></table><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"" style=3D"width:=
+600px;" width=3D"600" ><tr><td style=3D"line-height:0px;font-size:0px;mso-l=
+ine-height-rule:exactly;"><![endif]--><div style=3D"background:#FAFAFA;back=
+ground-color:#FAFAFA;margin:0px auto;max-width:600px;"><table align=3D"cent=
+er" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" =
+style=3D"background:#FAFAFA;background-color:#FAFAFA;width:100%;"><tbody><t=
+r><td style=3D"direction:ltr;font-size:0px;padding:0px 0px 0px 0px;text-ali=
+gn:center;"><!--[if mso | IE]><table role=3D"presentation" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"><tr><td class=3D"" style=3D"vertical-align=
+:top;width:600px;" ><![endif]--><div class=3D"mj-column-per-100 outlook-gro=
+up-fix" style=3D"font-size:0px;text-align:left;direction:ltr;display:inline=
+-block;vertical-align:top;width:100%;"><table border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" role=3D"presentation" style=3D"vertical-align:top;" wid=
+th=3D"100%"><tr><td style=3D"font-size:0px;padding:10px 44px;padding-top:10=
+px;word-break:break-word;"><p style=3D"font-family: Open Sans, sans-serif; =
+color: #575757; border-top: solid 1px #CCCCCC; font-size: 1; margin: 0px au=
+to; width: 100%;"></p><!--[if mso | IE]><table align=3D"center" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-top:solid 1px #CCCCCC=
+;font-size:1;margin:0px auto;width:512px;" role=3D"presentation" width=3D"5=
+12px" ><tr><td style=3D"height:0;line-height:0;"> &nbsp;=0A</td></tr></tabl=
+e><![endif]--></td></tr><tr><td align=3D"left" style=3D"font-size:0px;paddi=
+ng:0px 30px 0px 30px;word-break:break-word;"><div style=3D"font-family:Ubun=
+tu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.5;text-align:=
+left;color:#000000;"><h3 style=3D"font-family: Open Sans, sans-serif; font-=
+size: 18px; color: #575757; font-weight: bold; line-height: 1.5; text-decor=
+ation: none;"><a href=3D"https://go.sparkpostmail.com/f/a/zhagByo63FrGgILRL=
+cdk9g~~/AAA-fBA~/RNICQElG1asUF5HafUHAOKxaeKGXVi2cPViRbQWklEIeYLxwnMCvPpz-2R=
+2jLrktC3CYbRlaZmxA-5GLq59AA1_bRgpQisU3Dsz8wRVqRSTj8JR6WY-7ShCrN55WL32Y6U2Qj=
+55mTHDHIW2KmOabOQ9RKk1HCg9SGD8Eo3UO87Qwzm3_oXcuLsWBjOdJEbKkhWJDT5iazNQ4HE_L=
+zK_sRsMIaP6bTmURUuuL-5q4bZddRBa7PfXJx6KkVUvVXI7T5ReAFxnVQop8OZZIUzuVgAuC816=
+mcmNmy2glQ1DhTWZARZ6jJlOgwXCZnbakwlEsEs_ob6DDiPW1WDUfBHqhbkaI09FJ3dD6tcMxlJ=
+EM2mXk-JzCHw2cGdOvVSAR_mZFq1Avkqbvt1Wmv93tIue9x1_Xlcv_IZatgJgFzD674Ydz-g2Bc=
+2gXpte8AjD9nztSW4pZQKs9QJsO1jZH3A5STg~~" target=3D"_blank" rel=3D"noopener"=
+ style=3D"color: #007BC2;">Solidarita =E2=80=93 nov=C3=A9 t=C3=A9ma v Dobr=
+=C3=A1=C4=8Dkovi. Bu=C4=8F u tvorby podpory pro odd=C3=ADly</a></h3></div><=
+/td></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td=
+></tr></tbody></table></div><!--[if mso | IE]></td></tr></table><table alig=
+n=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"" st=
+yle=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;font-s=
+ize:0px;mso-line-height-rule:exactly;"><![endif]--><div style=3D"background=
+:#fafafa;background-color:#fafafa;margin:0px auto;max-width:600px;"><table =
+align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"p=
+resentation" style=3D"background:#fafafa;background-color:#fafafa;width:100=
+%;"><tbody><tr><td style=3D"direction:ltr;font-size:0px;padding:10px 10px 1=
+0px 10px;text-align:center;"><!--[if mso | IE]><table role=3D"presentation"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td class=3D"" style=
+=3D"vertical-align:top;width:232px;" ><![endif]--><div class=3D"mj-column-p=
+er-40 outlook-group-fix" style=3D"font-size:0px;text-align:left;direction:l=
+tr;display:inline-block;vertical-align:top;width:40%;"><table border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"100%"><t=
+body><tr><td style=3D"border:0px #000000 solid;vertical-align:top;padding:0=
+px 6px 0px 20px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" r=
+ole=3D"presentation" width=3D"100%"><tr><td align=3D"center" style=3D"font-=
+size:0px;padding:10px 10px 10px 0px;word-break:break-word;"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"b=
+order-collapse:collapse;border-spacing:0px;" class=3D"full-width-mobile"><t=
+body><tr><td style=3D"width:196px;" class=3D"full-width-mobile"><a href=3D"=
+https://go.sparkpostmail.com/f/a/zhagByo63FrGgILRLcdk9g~~/AAA-fBA~/RNICQElG=
+1asUF5HafUHAOKxaeKGXVi2cPViRbQWklEIeYLxwnMCvPpz-2R2jLrktC3CYbRlaZmxA-5GLq59=
+AA1_bRgpQisU3Dsz8wRVqRSTj8JR6WY-7ShCrN55WL32Y6U2Qj55mTHDHIW2KmOabOQ9RKk1HCg=
+9SGD8Eo3UO87Qwzm3_oXcuLsWBjOdJEbKkhWJDT5iazNQ4HE_LzK_sRsMIaP6bTmURUuuL-5q4b=
+ZddRBa7PfXJx6KkVUvVXI7T5ReAFxnVQop8OZZIUzuVgAuC816mcmNmy2glQ1DhTWZARZ6jJlOg=
+wXCZnbakwlEsEs_ob6DDiPW1WDUfBHqhbkaI09FJ3dD6tcMxlJEM2mXk-JzCHw2cGdOvVSAR_mZ=
+Fq1Avkqbvt1Wmv93tIue9x1_Xlcv_IZatgJgFzD674Ydz-g2Bc2gXpte8AjD9nztSW4pZQKs9QJ=
+sO1jZH3A5STg~~" target=3D"_blank" style=3D"color: #007BC2;"><img height=3D"=
+auto" src=3D"https://storage.googleapis.com/skautkom47421/novinky-dobracek-=
+solidarita.png" style=3D"border:0;border-radius:0px 0px 0px 0px;display:blo=
+ck;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;=
+" width=3D"196"></a></td></tr></tbody></table></td></tr></table></td></tr><=
+/tbody></table></div><!--[if mso | IE]></td><td class=3D"" style=3D"vertica=
+l-align:top;width:348px;" ><![endif]--><div class=3D"mj-column-per-60 outlo=
+ok-group-fix" style=3D"font-size:0px;text-align:left;direction:ltr;display:=
+inline-block;vertical-align:top;width:60%;"><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"vertical-align:top;=
+" width=3D"100%"><tr><td align=3D"left" style=3D"font-size:0px;padding:10px=
+ 10px 10px 10px;word-break:break-word;"><div style=3D"font-family:Ubuntu, H=
+elvetica, Arial, sans-serif;font-size:13px;line-height:1.5;text-align:left;=
+color:#000000;"><p style=3D"font-family: Open Sans, sans-serif; font-size: =
+14px; color: #575757;">Projekt =E2=80=9EDobr=C3=A1=C4=8Dek =E2=80=93 skauti=
+ a skautky pom=C3=A1haj=C3=AD=E2=80=9C chyst=C3=A1 na nov=C3=BD =C5=A1koln=
+=C3=AD rok velkou novinku: =C4=8Dtvrtou tematickou linku zam=C4=9B=C5=99eno=
+u na solidaritu. Chceme odd=C3=ADl=C5=AFm uleh=C4=8Dit pr=C3=A1ci a p=C5=99=
+ipravit pro n=C4=9B hotov=C3=A9 programy, d=C3=ADky kter=C3=BDm bude toto t=
+=C3=A9ma hra=C4=8Dka. Pom=C3=A1h=C3=A1te u=C5=BE te=C4=8F lidem v nouzi neb=
+o po=C5=99=C3=A1d=C3=A1te dobro=C4=8Dinn=C3=A9 akce=3F Poj=C4=8Fte s n=C3=
+=A1mi p=C5=99es l=C3=A9to vytvo=C5=99it podporu, kterou ocen=C3=AD vedouc=
+=C3=AD po cel=C3=A9 republice.</p></div></td></tr></table></div><!--[if mso=
+ | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div><!--[i=
+f mso | IE]></td></tr></table><table align=3D"center" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" class=3D"" style=3D"width:600px;" width=3D"600"=
+ ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:exact=
+ly;"><![endif]--><div style=3D"background:#FAFAFA;background-color:#FAFAFA;=
+margin:0px auto;max-width:600px;"><table align=3D"center" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"background:#=
+FAFAFA;background-color:#FAFAFA;width:100%;"><tbody><tr><td style=3D"direct=
+ion:ltr;font-size:0px;padding:0px 0px 0px 0px;text-align:center;"><!--[if m=
+so | IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;width:600px;" ><=
+![endif]--><div class=3D"mj-column-per-100 outlook-group-fix" style=3D"font=
+-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align=
+:top;width:100%;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" r=
+ole=3D"presentation" style=3D"vertical-align:top;" width=3D"100%"><tr><td s=
+tyle=3D"font-size:0px;padding:10px 44px;padding-top:10px;word-break:break-w=
+ord;"><p style=3D"font-family: Open Sans, sans-serif; color: #575757; borde=
+r-top: solid 1px #CCCCCC; font-size: 1; margin: 0px auto; width: 100%;"></p=
+><!--[if mso | IE]><table align=3D"center" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"border-top:solid 1px #CCCCCC;font-size:1;margin:0=
+px auto;width:512px;" role=3D"presentation" width=3D"512px" ><tr><td style=
+=3D"height:0;line-height:0;"> &nbsp;=0A</td></tr></table><![endif]--></td><=
+/tr><tr><td align=3D"left" style=3D"font-size:0px;padding:0px 30px 0px 30px=
+;word-break:break-word;"><div style=3D"font-family:Ubuntu, Helvetica, Arial=
+, sans-serif;font-size:13px;line-height:1.5;text-align:left;color:#000000;"=
+><h3 style=3D"font-family: Open Sans, sans-serif; font-size: 18px; color: #=
+575757; font-weight: bold; line-height: 1.5; text-decoration: none;"><a hre=
+f=3D"https://go.sparkpostmail.com/f/a/yrsmiidnfEwc4ORRUlG9jg~~/AAA-fBA~/-FN=
+0AJA_S5dSEPgxhUE0zXS0aGEobsf6b5wy9b51TcAo-KzcDtFKkI7kFKyTxuP1i2y3-y9L0Caf1w=
+JjfxB5aFf_Ts7tChJSgDrt6utQ0tWccZiPyLPUxLoi1bEUhGo8Pmmsvezbcv1_SC_PJSJbMwKsg=
+WKnIprBeZ4l0XjGRFkb23e8x615op8-Rr1F6hXPw2wdObxxIm8SNkXyAYxjlzWVmd6MlZUddooq=
+q0dB5y_jDZU7xMvW_7Tc1YSHJUhngaNPwuZXh2L6S2wiNGXXvAoSs7DDoPC40PJHIpeOa_k5OU_=
+S_WkVFw32YIkkg_iZyVLT4vYtEoLsYSuzvoysXAz-kqciD1vunSHmLm6_qO8s0lo9p5Rm9mOLvZ=
+EVa2MoOeYPcQlW-qPJJ9fjiMqVBSUj9irn7fvxgdxT5xGrZxQvMQSthX07N_oXZ5KuvIUS" tar=
+get=3D"_blank" rel=3D"noopener" style=3D"color: #007BC2;">Oslav=C3=ADme Svo=
+js=C3=ADkovy 150. narozeniny spole=C4=8Dnou Ve=C4=8Derkou=3F</a></h3></div>=
+</td></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></t=
+d></tr></tbody></table></div><!--[if mso | IE]></td></tr></table><table ali=
+gn=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"" s=
+tyle=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;font-=
+size:0px;mso-line-height-rule:exactly;"><![endif]--><div style=3D"backgroun=
+d:#fafafa;background-color:#fafafa;margin:0px auto;max-width:600px;"><table=
+ align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"=
+presentation" style=3D"background:#fafafa;background-color:#fafafa;width:10=
+0%;"><tbody><tr><td style=3D"direction:ltr;font-size:0px;padding:10px 10px =
+10px 10px;text-align:center;"><!--[if mso | IE]><table role=3D"presentation=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td class=3D"" style=
+=3D"vertical-align:top;width:232px;" ><![endif]--><div class=3D"mj-column-p=
+er-40 outlook-group-fix" style=3D"font-size:0px;text-align:left;direction:l=
+tr;display:inline-block;vertical-align:top;width:40%;"><table border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"100%"><t=
+body><tr><td style=3D"border:0px #000000 solid;vertical-align:top;padding:0=
+px 6px 0px 20px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" r=
+ole=3D"presentation" width=3D"100%"><tr><td align=3D"center" style=3D"font-=
+size:0px;padding:10px 10px 10px 0px;word-break:break-word;"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"b=
+order-collapse:collapse;border-spacing:0px;" class=3D"full-width-mobile"><t=
+body><tr><td style=3D"width:196px;" class=3D"full-width-mobile"><a href=3D"=
+https://go.sparkpostmail.com/f/a/yrsmiidnfEwc4ORRUlG9jg~~/AAA-fBA~/-FN0AJA_=
+S5dSEPgxhUE0zXS0aGEobsf6b5wy9b51TcAo-KzcDtFKkI7kFKyTxuP1i2y3-y9L0Caf1wJjfxB=
+5aFf_Ts7tChJSgDrt6utQ0tWccZiPyLPUxLoi1bEUhGo8Pmmsvezbcv1_SC_PJSJbMwKsgWKnIp=
+rBeZ4l0XjGRFkb23e8x615op8-Rr1F6hXPw2wdObxxIm8SNkXyAYxjlzWVmd6MlZUddooqq0dB5=
+y_jDZU7xMvW_7Tc1YSHJUhngaNPwuZXh2L6S2wiNGXXvAoSs7DDoPC40PJHIpeOa_k5OU_S_WkV=
+Fw32YIkkg_iZyVLT4vYtEoLsYSuzvoysXAz-kqciD1vunSHmLm6_qO8s0lo9p5Rm9mOLvZEVa2M=
+oOeYPcQlW-qPJJ9fjiMqVBSUj9irn7fvxgdxT5xGrZxQvMQSthX07N_oXZ5KuvIUS" target=
+=3D"_blank" style=3D"color: #007BC2;"><img height=3D"auto" src=3D"https://s=
+torage.googleapis.com/skautkom47421/novinky-oslavime-svojsika.png" style=3D=
+"border:0;border-radius:0px 0px 0px 0px;display:block;outline:none;text-dec=
+oration:none;height:auto;width:100%;font-size:13px;" width=3D"196"></a></td=
+></tr></tbody></table></td></tr></table></td></tr></tbody></table></div><!-=
+-[if mso | IE]></td><td class=3D"" style=3D"vertical-align:top;width:348px;=
+" ><![endif]--><div class=3D"mj-column-per-60 outlook-group-fix" style=3D"f=
+ont-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-al=
+ign:top;width:60%;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%"><tr><td=
+ align=3D"left" style=3D"font-size:0px;padding:10px 10px 10px 10px;word-bre=
+ak:break-word;"><div style=3D"font-family:Ubuntu, Helvetica, Arial, sans-se=
+rif;font-size:13px;line-height:1.5;text-align:left;color:#000000;"><p style=
+=3D"font-family: Open Sans, sans-serif; font-size: 14px; color: #575757;">V=
+ sobotu 5. z=C3=A1=C5=99=C3=AD 2026 uplyne 150 let od narozen=C3=AD zaklada=
+tele skautingu v =C4=8Desk=C3=BDch zem=C3=ADch, Anton=C3=ADna Benjamina Svo=
+js=C3=ADka. P=C5=99in=C3=A1=C5=A1=C3=ADme n=C3=A1pad, jak se v tento den pr=
+opojit alespo=C5=88 na d=C3=A1lku, n=C4=9B=C4=8D=C3=ADm, co je n=C3=A1m spo=
+le=C4=8Dn=C3=A9, =C4=8Dasto drah=C3=A9 a napln=C4=9Bn=C3=A9 kr=C3=A1sn=C3=
+=BDmi vzpom=C3=ADnkami a co prov=C3=A1z=C3=AD t=C3=A1borov=C3=A9 dny i dal=
+=C5=A1=C3=AD ud=C3=A1losti: Skautskou ve=C4=8Derkou. Jej=C3=AD text napsal =
+pr=C3=A1v=C4=9B A. B. Svojs=C3=ADk.</p></div></td></tr></table></div><!--[i=
+f mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div><=
+!--[if mso | IE]></td></tr></table><table align=3D"center" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" class=3D"" style=3D"width:600px;" width=3D=
+"600" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:=
+exactly;"><![endif]--><div style=3D"background:#FAFAFA;background-color:#FA=
+FAFA;margin:0px auto;max-width:600px;"><table align=3D"center" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"backgro=
+und:#FAFAFA;background-color:#FAFAFA;width:100%;"><tbody><tr><td style=3D"d=
+irection:ltr;font-size:0px;padding:0px 0px 0px 0px;text-align:center;"><!--=
+[if mso | IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;width:600px=
+;" ><![endif]--><div class=3D"mj-column-per-100 outlook-group-fix" style=3D=
+"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-=
+align:top;width:100%;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%"><tr>=
+<td style=3D"font-size:0px;padding:10px 44px;padding-top:10px;word-break:br=
+eak-word;"><p style=3D"font-family: Open Sans, sans-serif; color: #575757; =
+border-top: solid 1px #CCCCCC; font-size: 1; margin: 0px auto; width: 100%;=
+"></p><!--[if mso | IE]><table align=3D"center" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" style=3D"border-top:solid 1px #CCCCCC;font-size:1;mar=
+gin:0px auto;width:512px;" role=3D"presentation" width=3D"512px" ><tr><td s=
+tyle=3D"height:0;line-height:0;"> &nbsp;=0A</td></tr></table><![endif]--></=
+td></tr><tr><td align=3D"left" style=3D"font-size:0px;padding:0px 30px 0px =
+30px;word-break:break-word;"><div style=3D"font-family:Ubuntu, Helvetica, A=
+rial, sans-serif;font-size:13px;line-height:1.5;text-align:left;color:#0000=
+00;"><h3 style=3D"font-family: Open Sans, sans-serif; font-size: 18px; colo=
+r: #575757; font-weight: bold; line-height: 1.5; text-decoration: none;"><a=
+ href=3D"https://go.sparkpostmail.com/f/a/H95_X4Tsiu7owGTAGjKgvA~~/AAA-fBA~=
+/Pn9XO6uYV6PFMp2gdWm_4veF24uQN1qqTgFt_KQUbRX9sO9_EPZ4q3wSlbnZeIlhNkAOnUgSIy=
+LObd1SccT7S3bklkIgeibl2Yb_N2aSpK_S0CzXlEWrzldJmwycDX7WvC-MBElaWmLHf5eyhucd2=
+KtEPXFPrCsgkWM5y3fodtwMKZCzQZ4MPaPBpvzfcVKrmabLJ0WLleQ3qooj6snfaQZ-gge3DalE=
+Wx7S08e7fAsmJc-2E2a3BP546NgO9hjbGy_wlQ36Ud25TvJcLGyRlQWTgf7DyG8nLMnChWk1JKO=
+KBn_CjoCi2LfYzhXDWi3r3Mg71fpjCeGZITk5BZFdInXmESbTo1NaUNs7dUWHxQQoubwuHhylmw=
+JdPca7cXXqVaaM9zVcPAAlGKOnExT4u2WezZJ3uB0o1lZt_bdnBoo~" target=3D"_blank" r=
+el=3D"noopener" style=3D"color: #007BC2;">Skautsk=C3=A9 pr=C5=AF=C5=A1vihy:=
+ D=C4=9Bti pokousan=C3=A9 t=C3=A1borov=C3=BDmi psy</a></h3></div></td></tr>=
+</table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></t=
+body></table></div><!--[if mso | IE]></td></tr></table><table align=3D"cent=
+er" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"" style=3D"wi=
+dth:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;font-size:0px;m=
+so-line-height-rule:exactly;"><![endif]--><div style=3D"background:#fafafa;=
+background-color:#fafafa;margin:0px auto;max-width:600px;"><table align=3D"=
+center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentati=
+on" style=3D"background:#fafafa;background-color:#fafafa;width:100%;"><tbod=
+y><tr><td style=3D"direction:ltr;font-size:0px;padding:10px 10px 10px 10px;=
+text-align:center;"><!--[if mso | IE]><table role=3D"presentation" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td class=3D"" style=3D"vert=
+ical-align:top;width:232px;" ><![endif]--><div class=3D"mj-column-per-40 ou=
+tlook-group-fix" style=3D"font-size:0px;text-align:left;direction:ltr;displ=
+ay:inline-block;vertical-align:top;width:40%;"><table border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"100%"><tbody><tr=
+><td style=3D"border:0px #000000 solid;vertical-align:top;padding:0px 6px 0=
+px 20px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"p=
+resentation" width=3D"100%"><tr><td align=3D"center" style=3D"font-size:0px=
+;padding:10px 10px 10px 0px;word-break:break-word;"><table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"border-coll=
+apse:collapse;border-spacing:0px;" class=3D"full-width-mobile"><tbody><tr><=
+td style=3D"width:196px;" class=3D"full-width-mobile"><a href=3D"https://go=
+.sparkpostmail.com/f/a/H95_X4Tsiu7owGTAGjKgvA~~/AAA-fBA~/Pn9XO6uYV6PFMp2gd=
+Wm_4veF24uQN1qqTgFt_KQUbRX9sO9_EPZ4q3wSlbnZeIlhNkAOnUgSIyLObd1SccT7S3bklkIg=
+eibl2Yb_N2aSpK_S0CzXlEWrzldJmwycDX7WvC-MBElaWmLHf5eyhucd2KtEPXFPrCsgkWM5y3f=
+odtwMKZCzQZ4MPaPBpvzfcVKrmabLJ0WLleQ3qooj6snfaQZ-gge3DalEWx7S08e7fAsmJc-2E2=
+a3BP546NgO9hjbGy_wlQ36Ud25TvJcLGyRlQWTgf7DyG8nLMnChWk1JKOKBn_CjoCi2LfYzhXDW=
+i3r3Mg71fpjCeGZITk5BZFdInXmESbTo1NaUNs7dUWHxQQoubwuHhylmwJdPca7cXXqVaaM9zVc=
+PAAlGKOnExT4u2WezZJ3uB0o1lZt_bdnBoo~" target=3D"_blank" style=3D"color: #00=
+7BC2;"><img height=3D"auto" src=3D"https://storage.googleapis.com/skautkom4=
+7421/novinky-psi.png" style=3D"border:0;border-radius:0px 0px 0px 0px;displ=
+ay:block;outline:none;text-decoration:none;height:auto;width:100%;font-size=
+:13px;" width=3D"196"></a></td></tr></tbody></table></td></tr></table></td>=
+</tr></tbody></table></div><!--[if mso | IE]></td><td class=3D"" style=3D"v=
+ertical-align:top;width:348px;" ><![endif]--><div class=3D"mj-column-per-60=
+ outlook-group-fix" style=3D"font-size:0px;text-align:left;direction:ltr;di=
+splay:inline-block;vertical-align:top;width:60%;"><table border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"vertical-alig=
+n:top;" width=3D"100%"><tr><td align=3D"left" style=3D"font-size:0px;paddin=
+g:10px 10px 10px 10px;word-break:break-word;"><div style=3D"font-family:Ubu=
+ntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.5;text-align=
+:left;color:#000000;"><p style=3D"font-family: Open Sans, sans-serif; font-=
+size: 14px; color: #575757;">Na mnoha skautsk=C3=BDch t=C3=A1borech b=C3=BD=
+vaj=C3=AD p=C5=99=C3=ADtomn=C3=AD psi, zpravidla vedouc=C3=ADch. Mohou m=C3=
+=ADt mnoho p=C5=99=C3=ADnos=C5=AF: n=C4=9Bkdy upozorn=C3=AD hl=C3=ADdku na =
+pohyb v okol=C3=AD t=C3=A1bo=C5=99i=C5=A1t=C4=9B, pomohou vyhnat divokou zv=
+=C4=9B=C5=99 z chlad=C3=ADren a pln=C3=AD i terapeutickou funkci p=C5=99i=
+=C2=A0 t=C3=A1borov=C3=BDch smutc=C3=ADch. Psi na t=C3=A1borech=C2=A0 p=C5=
+=99in=C3=A1=C5=A1ej=C3=AD tak=C3=A9 rizika, jak dokl=C3=A1d=C3=A1 p=C5=99=
+=C3=ADpad z lo=C5=88sk=C3=A9ho t=C3=A1bora.</p></div></td></tr></table></di=
+v><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table=
+></div><!--[if mso | IE]></td></tr></table><table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"" style=3D"width:600px;=
+" width=3D"600" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-he=
+ight-rule:exactly;"><![endif]--><div style=3D"background:#FAFAFA;background=
+-color:#FAFAFA;margin:0px auto;max-width:600px;"><table align=3D"center" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=
+=3D"background:#FAFAFA;background-color:#FAFAFA;width:100%;"><tbody><tr><td=
+ style=3D"direction:ltr;font-size:0px;padding:0px 0px 0px 0px;text-align:ce=
+nter;"><!--[if mso | IE]><table role=3D"presentation" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;=
+width:600px;" ><![endif]--><div class=3D"mj-column-per-100 outlook-group-fi=
+x" style=3D"font-size:0px;text-align:left;direction:ltr;display:inline-bloc=
+k;vertical-align:top;width:100%;"><table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" role=3D"presentation" style=3D"vertical-align:top;" width=3D=
+"100%"><tr><td style=3D"font-size:0px;padding:10px 44px;padding-top:10px;wo=
+rd-break:break-word;"><p style=3D"font-family: Open Sans, sans-serif; color=
+: #575757; border-top: solid 1px #CCCCCC; font-size: 1; margin: 0px auto; w=
+idth: 100%;"></p><!--[if mso | IE]><table align=3D"center" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" style=3D"border-top:solid 1px #CCCCCC;font=
+-size:1;margin:0px auto;width:512px;" role=3D"presentation" width=3D"512px"=
+ ><tr><td style=3D"height:0;line-height:0;"> &nbsp;=0A</td></tr></table><![=
+endif]--></td></tr><tr><td align=3D"left" style=3D"font-size:0px;padding:0p=
+x 30px 0px 30px;word-break:break-word;"><div style=3D"font-family:Ubuntu, H=
+elvetica, Arial, sans-serif;font-size:13px;line-height:1.5;text-align:left;=
+color:#000000;"><h3 style=3D"font-family: Open Sans, sans-serif; font-size:=
+ 18px; color: #575757; font-weight: bold; line-height: 1.5; text-decoration=
+: none;"><a href=3D"https://go.sparkpostmail.com/f/a/iVK6g1h712TCjiD5wGFu_Q=
+~~/AAA-fBA~/PaXMXyZSpl5PQIrNU_FXXPdNYg5uAWCzID0MfuwnU1XJIE0FHWHgpVK5a8DqMLs=
+sz6Lc7C-XbOA4gkUXPJcqdD84flvVAob4UIR5KG4bCErwdbHwH1SXHrQPUWfySVnk4LZkFh9Idk=
+frErZDel9mOafgUTI4y9YzuYzGHWqx0dTXh0vjpzT2TQE33pZqCFalr5ttg0YLoZS3kJ3Uf6YMT=
+F5Mum9KZZGy9vhDdYKDk0F_xRWHa0mfc6BvfAeivo_BSykoJtzMNGKtXQ_yFeKVwLzCau5xBsaR=
+AB_O0_ljT5UX5swpQzc_0l7-hSP6b-xQoyatQadfXQWF5u_e3ZHDbodWphZDznnUMDBbamvq5u7=
+ry_DQ5oyYMpjUWgYrCZSCcBCRe1ZRm7S--Wr65v2SUw~~" target=3D"_blank" rel=3D"noo=
+pener" style=3D"color: #007BC2;">SKAUTbot hl=C3=A1s=C3=AD dal=C5=A1=C3=AD k=
+rok: Vstupujeme do beta testov=C3=A1n=C3=AD a&nbsp;pot=C5=99ebujeme tvoji p=
+omoc</a></h3></div></td></tr></table></div><!--[if mso | IE]></td></tr></ta=
+ble><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr=
+></table><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"" style=3D"width:600px;" width=3D"600" ><tr><td style=3D"li=
+ne-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div=
+ style=3D"background:#fafafa;background-color:#fafafa;margin:0px auto;max-w=
+idth:600px;"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" role=3D"presentation" style=3D"background:#fafafa;background-col=
+or:#fafafa;width:100%;"><tbody><tr><td style=3D"direction:ltr;font-size:0px=
+;padding:10px 10px 10px 10px;text-align:center;"><!--[if mso | IE]><table r=
+ole=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><=
+td class=3D"" style=3D"vertical-align:top;width:232px;" ><![endif]--><div c=
+lass=3D"mj-column-per-40 outlook-group-fix" style=3D"font-size:0px;text-ali=
+gn:left;direction:ltr;display:inline-block;vertical-align:top;width:40%;"><=
+table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation=
+" width=3D"100%"><tbody><tr><td style=3D"border:0px #000000 solid;vertical-=
+align:top;padding:0px 6px 0px 20px;"><table border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" role=3D"presentation" width=3D"100%"><tr><td align=3D"cen=
+ter" style=3D"font-size:0px;padding:10px 10px 10px 0px;word-break:break-wor=
+d;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"present=
+ation" style=3D"border-collapse:collapse;border-spacing:0px;" class=3D"full=
+-width-mobile"><tbody><tr><td style=3D"width:196px;" class=3D"full-width-mo=
+bile"><a href=3D"https://go.sparkpostmail.com/f/a/iVK6g1h712TCjiD5wGFu_Q~~/=
+AAA-fBA~/PaXMXyZSpl5PQIrNU_FXXPdNYg5uAWCzID0MfuwnU1XJIE0FHWHgpVK5a8DqMLssz6=
+Lc7C-XbOA4gkUXPJcqdD84flvVAob4UIR5KG4bCErwdbHwH1SXHrQPUWfySVnk4LZkFh9IdkfrE=
+rZDel9mOafgUTI4y9YzuYzGHWqx0dTXh0vjpzT2TQE33pZqCFalr5ttg0YLoZS3kJ3Uf6YMTF5M=
+um9KZZGy9vhDdYKDk0F_xRWHa0mfc6BvfAeivo_BSykoJtzMNGKtXQ_yFeKVwLzCau5xBsaRAB_=
+O0_ljT5UX5swpQzc_0l7-hSP6b-xQoyatQadfXQWF5u_e3ZHDbodWphZDznnUMDBbamvq5u7ry_=
+DQ5oyYMpjUWgYrCZSCcBCRe1ZRm7S--Wr65v2SUw~~" target=3D"_blank" style=3D"colo=
+r: #007BC2;"><img height=3D"auto" src=3D"https://storage.googleapis.com/ska=
+utkom47421/novinky-budujeme-skautbota.png" style=3D"border:0;border-radius:=
+0px 0px 0px 0px;display:block;outline:none;text-decoration:none;height:auto=
+;width:100%;font-size:13px;" width=3D"196"></a></td></tr></tbody></table></=
+td></tr></table></td></tr></tbody></table></div><!--[if mso | IE]></td><td =
+class=3D"" style=3D"vertical-align:top;width:348px;" ><![endif]--><div clas=
+s=3D"mj-column-per-60 outlook-group-fix" style=3D"font-size:0px;text-align:=
+left;direction:ltr;display:inline-block;vertical-align:top;width:60%;"><tab=
+le border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" s=
+tyle=3D"vertical-align:top;" width=3D"100%"><tr><td align=3D"left" style=3D=
+"font-size:0px;padding:10px 10px 10px 10px;word-break:break-word;"><div sty=
+le=3D"font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-=
+height:1.5;text-align:left;color:#000000;"><p style=3D"font-family: Open Sa=
+ns, sans-serif; font-size: 14px; color: #575757;">V b=C5=99eznu jsme p=C5=
+=99edstavili vizi SKAUTbota =E2=80=93 inteligentn=C3=ADho AI pomocn=C3=ADka=
+, kter=C3=BD m=C3=A1 u=C5=A1et=C5=99it =C4=8Das n=C3=A1m v=C5=A1em p=C5=99i=
+ skautsk=C3=A9 =C4=8Dinnosti. Sl=C3=ADbili jsme, =C5=BEe do pr=C3=A1zdnin m=
+=C3=A1kneme na v=C3=BDvoji =E2=80=93 a jedeme p=C5=99esn=C4=9B podle pl=C3=
+=A1nu! =C3=9Asp=C4=9B=C5=A1n=C4=9B jsme uzav=C5=99eli alfa f=C3=A1zi a nyn=
+=C3=AD spou=C5=A1t=C3=ADme ve=C5=99ejn=C3=A9 beta testov=C3=A1n=C3=AD prvn=
+=C3=ADch p=C4=9Bti AI asistent=C5=AF. Poj=C4=8Fte do toho s n=C3=A1mi a pom=
+ozte n=C3=A1m je otestovat v re=C3=A1ln=C3=A9m provozu.</p></div></td></tr>=
+</table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></t=
+body></table></div><!--[if mso | IE]></td></tr></table><table align=3D"cent=
+er" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"" style=3D"wi=
+dth:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;font-size:0px;m=
+so-line-height-rule:exactly;"><![endif]--><div style=3D"background:#FAFAFA;=
+background-color:#FAFAFA;margin:0px auto;max-width:600px;"><table align=3D"=
+center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentati=
+on" style=3D"background:#FAFAFA;background-color:#FAFAFA;width:100%;"><tbod=
+y><tr><td style=3D"direction:ltr;font-size:0px;padding:0px 0px 0px 0px;text=
+-align:center;"><!--[if mso | IE]><table role=3D"presentation" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0"><tr><td class=3D"" style=3D"vertical-a=
+lign:top;width:600px;" ><![endif]--><div class=3D"mj-column-per-100 outlook=
+-group-fix" style=3D"font-size:0px;text-align:left;direction:ltr;display:in=
+line-block;vertical-align:top;width:100%;"><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"vertical-align:top;=
+" width=3D"100%"><tr><td style=3D"font-size:0px;padding:10px 44px;padding-t=
+op:10px;word-break:break-word;"><p style=3D"font-family: Open Sans, sans-se=
+rif; color: #575757; border-top: solid 1px #CCCCCC; font-size: 1; margin: 0=
+px auto; width: 100%;"></p><!--[if mso | IE]><table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-top:solid 1px #C=
+CCCCC;font-size:1;margin:0px auto;width:512px;" role=3D"presentation" width=
+=3D"512px" ><tr><td style=3D"height:0;line-height:0;"> &nbsp;=0A</td></tr><=
+/table><![endif]--></td></tr><tr><td align=3D"left" style=3D"font-size:0px;=
+padding:0px 30px 0px 30px;word-break:break-word;"><div style=3D"font-family=
+:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.5;text-a=
+lign:left;color:#000000;"><h3 style=3D"font-family: Open Sans, sans-serif; =
+font-size: 18px; color: #575757; font-weight: bold; line-height: 1.5; text-=
+decoration: none; text-align: left;"><a href=3D"https://go.sparkpostmail.co=
+m/f/a/Z28ONJlIeRQO1TcyKOAYag~~/AAA-fBA~/JYxISkJJT7iXWsxhH9mfpZEeHUSa3IH_2vq=
+Drtg2_ASV2YbkS2dCsEOWlHJpTXojlJSQaRAhqKmnkpGIBzV90DAm97zepo_5nDwkIO3UFVsziO=
+03boEAh4XdgiWcxEHdFlwLa7kP_GUMdKh5-U62ZAgD-xklpprMuy_tezZUZi1npHmCIHxOAMlnv=
+NFJW7fSILg1LK4zrAIK4rpN0xBdtRFiu3PXnv9ju4SiqfZDvIbm6KwQ9EtIe3yRmWaIHXTXR1tn=
+oMRP1rTSdVB6xJLEqHT2BzPe_WN_fFiPRZAxpo0KpbSU8cj7xGo3xnsxHrXc1FCs78ZIyBwuKBS=
+Y1Bj4AnHJCK6wcO70MB-E4qfiN9st3j1mZg7JDgO3WZpHnF5mBtJkhGLxLHTAREc2GnggaqunES=
+SXEGtROdbcGVxxKbP-Uu2IYijHKHYDyzENI2K26bwpwptNIqAlsFhri3VVXg~~" target=3D"_=
+blank" rel=3D"noopener" style=3D"color: #007BC2;">Novinka pro v=C3=BDchovn=
+=C3=A9 zpravodaje: SeV=C3=BDZ chyst=C3=A1 dv=C4=9B jednodenn=C3=AD setk=C3=
+=A1n=C3=AD</a></h3></div></td></tr></table></div><!--[if mso | IE]></td></t=
+r></table><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]></t=
+d></tr></table><table align=3D"center" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" class=3D"" style=3D"width:600px;" width=3D"600" ><tr><td style=
+=3D"line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-=
+-><div style=3D"background:#fafafa;background-color:#fafafa;margin:0px auto=
+;max-width:600px;"><table align=3D"center" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" role=3D"presentation" style=3D"background:#fafafa;backgrou=
+nd-color:#fafafa;width:100%;"><tbody><tr><td style=3D"direction:ltr;font-si=
+ze:0px;padding:10px 10px 10px 10px;text-align:center;"><!--[if mso | IE]><t=
+able role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+><tr><td class=3D"" style=3D"vertical-align:top;width:232px;" ><![endif]-->=
+<div class=3D"mj-column-per-40 outlook-group-fix" style=3D"font-size:0px;te=
+xt-align:left;direction:ltr;display:inline-block;vertical-align:top;width:4=
+0%;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presen=
+tation" width=3D"100%"><tbody><tr><td style=3D"border:0px #000000 solid;ver=
+tical-align:top;padding:0px 6px 0px 20px;"><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"100%"><tr><td align=
+=3D"center" style=3D"font-size:0px;padding:10px 10px 10px 0px;word-break:br=
+eak-word;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"=
+presentation" style=3D"border-collapse:collapse;border-spacing:0px;" class=
+=3D"full-width-mobile"><tbody><tr><td style=3D"width:196px;" class=3D"full-=
+width-mobile"><a href=3D"https://go.sparkpostmail.com/f/a/Z28ONJlIeRQO1TcyK=
+OAYag~~/AAA-fBA~/JYxISkJJT7iXWsxhH9mfpZEeHUSa3IH_2vqDrtg2_ASV2YbkS2dCsEOWlH=
+JpTXojlJSQaRAhqKmnkpGIBzV90DAm97zepo_5nDwkIO3UFVsziO03boEAh4XdgiWcxEHdFlwLa=
+7kP_GUMdKh5-U62ZAgD-xklpprMuy_tezZUZi1npHmCIHxOAMlnvNFJW7fSILg1LK4zrAIK4rpN=
+0xBdtRFiu3PXnv9ju4SiqfZDvIbm6KwQ9EtIe3yRmWaIHXTXR1tnoMRP1rTSdVB6xJLEqHT2BzP=
+e_WN_fFiPRZAxpo0KpbSU8cj7xGo3xnsxHrXc1FCs78ZIyBwuKBSY1Bj4AnHJCK6wcO70MB-E4q=
+fiN9st3j1mZg7JDgO3WZpHnF5mBtJkhGLxLHTAREc2GnggaqunESSXEGtROdbcGVxxKbP-Uu2IY=
+ijHKHYDyzENI2K26bwpwptNIqAlsFhri3VVXg~~" target=3D"_blank" style=3D"color: =
+#007BC2;"><img height=3D"auto" src=3D"https://storage.googleapis.com/skautk=
+om47421/novinky-sevyz-setkani.png" style=3D"border:0;border-radius:0px 0px =
+0px 0px;display:block;outline:none;text-decoration:none;height:auto;width:1=
+00%;font-size:13px;" width=3D"196"></a></td></tr></tbody></table></td></tr>=
+</table></td></tr></tbody></table></div><!--[if mso | IE]></td><td class=3D=
+"" style=3D"vertical-align:top;width:348px;" ><![endif]--><div class=3D"mj-=
+column-per-60 outlook-group-fix" style=3D"font-size:0px;text-align:left;dir=
+ection:ltr;display:inline-block;vertical-align:top;width:60%;"><table borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"=
+vertical-align:top;" width=3D"100%"><tr><td align=3D"left" style=3D"font-si=
+ze:0px;padding:10px 10px 10px 10px;word-break:break-word;"><div style=3D"fo=
+nt-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1=
+.5;text-align:left;color:#000000;"><p style=3D"font-family: Open Sans, san=
+s-serif; font-size: 14px; color: #575757;">Chyst=C3=A1te se na=C4=8Derpat n=
+ovou inspiraci pro v=C3=BDchovnou pr=C3=A1ci ve va=C5=A1em st=C5=99edisku, =
+okrese =C4=8Di kraji=3F Skv=C4=9Bl=C3=A1 zpr=C3=A1va: Setk=C3=A1n=C3=AD v=
+=C3=BDchovn=C3=BDch zpravodaj=C5=AF (SeV=C3=BDZ) p=C5=99ich=C3=A1z=C3=AD s =
+novinkou.</p><p style=3D"font-family: Open Sans, sans-serif; font-size: 14p=
+x; color: #575757;">=C2=A0</p></div></td></tr></table></div><!--[if mso | I=
+E]></td></tr></table><![endif]--></td></tr></tbody></table></div><!--[if ms=
+o | IE]></td></tr></table><table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" class=3D"" style=3D"width:600px;" width=3D"600" ><=
+tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:exactly;=
+"><![endif]--><div style=3D"background:#FAFAFA;background-color:#FAFAFA;mar=
+gin:0px auto;max-width:600px;"><table align=3D"center" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"background:#FAF=
+AFA;background-color:#FAFAFA;width:100%;"><tbody><tr><td style=3D"direction=
+:ltr;font-size:0px;padding:0px 0px 0px 0px;text-align:center;"><!--[if mso =
+| IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;width:600px;" ><![e=
+ndif]--><div class=3D"mj-column-per-100 outlook-group-fix" style=3D"font-si=
+ze:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:to=
+p;width:100%;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=
+=3D"presentation" style=3D"vertical-align:top;" width=3D"100%"><tr><td styl=
+e=3D"font-size:0px;padding:10px 44px;padding-top:10px;word-break:break-word=
+;"><p style=3D"font-family: Open Sans, sans-serif; color: #575757; border-t=
+op: solid 1px #CCCCCC; font-size: 1; margin: 0px auto; width: 100%;"></p><!=
+--[if mso | IE]><table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" style=3D"border-top:solid 1px #CCCCCC;font-size:1;margin:0px =
+auto;width:512px;" role=3D"presentation" width=3D"512px" ><tr><td style=3D"=
+height:0;line-height:0;"> &nbsp;=0A</td></tr></table><![endif]--></td></tr>=
+<tr><td align=3D"left" style=3D"font-size:0px;padding:0px 30px 0px 30px;wor=
+d-break:break-word;"><div style=3D"font-family:Ubuntu, Helvetica, Arial, sa=
+ns-serif;font-size:13px;line-height:1.5;text-align:left;color:#000000;"><h3=
+ style=3D"font-family: Open Sans, sans-serif; font-size: 18px; color: #5757=
+57; font-weight: bold; line-height: 1.5; text-decoration: none;"><a href=3D=
+"https://go.sparkpostmail.com/f/a/Ryjfqq2rkAhGYal-Kbj60Q~~/AAA-fBA~/g36yQbj=
+MLUcL1k9k7hLbaqU6wL_H-OQtx3h_HGyVTIM6yYkbOXqhfA7nmVvfAFgI70iv3EPwDzsz5AE63b=
+BsHe8RUfHifi4xVWMCW-DrIFIdUy2DrdumGXV94K0ZTJSaIPB2gwpkltxEPpT0fdblcFCvkS5Qy=
+p267fgbOXsksFiIwEfpNY1EU_vRR7QeVtF7TEo6JI0-8ElhHS_IOQkNnGKui3qQz1jw419PL7JM=
+2aWql-8Z40eNFGrBGInBLIzEIMsqWnCHCqHuWP3btixLES1dQARp-zVcwOZlhtEHb-A8Iin5CAH=
+E7DpWHq17H83SMszN1gtnfY_zsx850gp7jLW2P2856v3wD4TMd-pwGIhtnNSBDD3TgApuRo9j5d=
+gXp9_zu40vJZ2dwfQnkttC-Mx4VMkh2KLhFbmcAc8BaBndVcQAD3aeAGurmE1Q4UuB" target=
+=3D"_blank" rel=3D"noopener" style=3D"color: #007BC2;">Drsn=C3=A1 p=C3=B3za=
+ nebo v=C3=A1=C5=BEn=C3=BD probl=C3=A9m=3F Jak =C4=8D=C3=ADst chov=C3=A1n=
+=C3=AD kluk=C5=AF v&nbsp;odd=C3=ADle</a></h3></div></td></tr></table></div>=
+<!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table><=
+/div><!--[if mso | IE]></td></tr></table><table align=3D"center" border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" class=3D"" style=3D"width:600px;" wi=
+dth=3D"600" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height=
+-rule:exactly;"><![endif]--><div style=3D"background:#fafafa;background-col=
+or:#fafafa;margin:0px auto;max-width:600px;"><table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"b=
+ackground:#fafafa;background-color:#fafafa;width:100%;"><tbody><tr><td styl=
+e=3D"direction:ltr;font-size:0px;padding:10px 10px 10px 10px;text-align:cen=
+ter;"><!--[if mso | IE]><table role=3D"presentation" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;w=
+idth:232px;" ><![endif]--><div class=3D"mj-column-per-40 outlook-group-fix"=
+ style=3D"font-size:0px;text-align:left;direction:ltr;display:inline-block;=
+vertical-align:top;width:40%;"><table border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" role=3D"presentation" width=3D"100%"><tbody><tr><td style=3D"bo=
+rder:0px #000000 solid;vertical-align:top;padding:0px 6px 0px 20px;"><table=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" wid=
+th=3D"100%"><tr><td align=3D"center" style=3D"font-size:0px;padding:10px 10=
+px 10px 0px;word-break:break-word;"><table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" role=3D"presentation" style=3D"border-collapse:collapse;bo=
+rder-spacing:0px;" class=3D"full-width-mobile"><tbody><tr><td style=3D"widt=
+h:196px;" class=3D"full-width-mobile"><a href=3D"https://go.sparkpostmail.c=
+om/f/a/Ryjfqq2rkAhGYal-Kbj60Q~~/AAA-fBA~/g36yQbjMLUcL1k9k7hLbaqU6wL_H-OQtx3=
+h_HGyVTIM6yYkbOXqhfA7nmVvfAFgI70iv3EPwDzsz5AE63bBsHe8RUfHifi4xVWMCW-DrIFIdU=
+y2DrdumGXV94K0ZTJSaIPB2gwpkltxEPpT0fdblcFCvkS5Qyp267fgbOXsksFiIwEfpNY1EU_vR=
+R7QeVtF7TEo6JI0-8ElhHS_IOQkNnGKui3qQz1jw419PL7JM2aWql-8Z40eNFGrBGInBLIzEIMs=
+qWnCHCqHuWP3btixLES1dQARp-zVcwOZlhtEHb-A8Iin5CAHE7DpWHq17H83SMszN1gtnfY_zsx=
+850gp7jLW2P2856v3wD4TMd-pwGIhtnNSBDD3TgApuRo9j5dgXp9_zu40vJZ2dwfQnkttC-Mx4V=
+Mkh2KLhFbmcAc8BaBndVcQAD3aeAGurmE1Q4UuB" target=3D"_blank" style=3D"color: =
+#007BC2;"><img height=3D"auto" src=3D"https://storage.googleapis.com/skautk=
+om47421/novinky-drsnapoza.png" style=3D"border:0;border-radius:0px 0px 0px =
+0px;display:block;outline:none;text-decoration:none;height:auto;width:100%;=
+font-size:13px;" width=3D"196"></a></td></tr></tbody></table></td></tr></ta=
+ble></td></tr></tbody></table></div><!--[if mso | IE]></td><td class=3D"" s=
+tyle=3D"vertical-align:top;width:348px;" ><![endif]--><div class=3D"mj-colu=
+mn-per-60 outlook-group-fix" style=3D"font-size:0px;text-align:left;directi=
+on:ltr;display:inline-block;vertical-align:top;width:60%;"><table border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"vert=
+ical-align:top;" width=3D"100%"><tr><td align=3D"left" style=3D"font-size:0=
+px;padding:10px 10px 10px 10px;word-break:break-word;"><div style=3D"font-f=
+amily:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.5;t=
+ext-align:left;color:#000000;"><p style=3D"font-family: Open Sans, sans-ser=
+if; font-size: 14px; color: #575757;">Balen=C3=AD, p=C5=99=C3=ADprava j=C3=
+=ADdeln=C3=AD=C4=8Dku a dola=C4=8Fov=C3=A1n=C3=AD etapovek. Koloto=C4=8D p=
+=C5=99=C3=ADprav na letn=C3=AD t=C3=A1bory vrchol=C3=AD, ale ruku na srdce =
+=E2=80=93 jsme p=C5=99ipraveni i na n=C3=A1ro=C4=8Dn=C3=A9 v=C3=BDzvy v cho=
+v=C3=A1n=C3=AD na=C5=A1ich d=C4=9Bt=C3=AD=3F</p><p style=3D"font-family: Op=
+en Sans, sans-serif; font-size: 14px; color: #575757;">=C2=A0</p></div></td=
+></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></=
+tr></tbody></table></div><!--[if mso | IE]></td></tr></table><table align=
+=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"" sty=
+le=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;font-si=
+ze:0px;mso-line-height-rule:exactly;"><![endif]--><div style=3D"background:=
+#FAFAFA;background-color:#FAFAFA;margin:0px auto;max-width:600px;"><table a=
+lign=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"pr=
+esentation" style=3D"background:#FAFAFA;background-color:#FAFAFA;width:100%=
+;"><tbody><tr><td style=3D"direction:ltr;font-size:0px;padding:0px 0px 0px =
+0px;text-align:center;"><!--[if mso | IE]><table role=3D"presentation" bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td class=3D"" style=3D"ve=
+rtical-align:top;width:600px;" ><![endif]--><div class=3D"mj-column-per-100=
+ outlook-group-fix" style=3D"font-size:0px;text-align:left;direction:ltr;di=
+splay:inline-block;vertical-align:top;width:100%;"><table border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"vertical-ali=
+gn:top;" width=3D"100%"><tr><td style=3D"font-size:0px;padding:10px 44px;pa=
+dding-top:10px;word-break:break-word;"><p style=3D"font-family: Open Sans, =
+sans-serif; color: #575757; border-top: solid 1px #CCCCCC; font-size: 1; ma=
+rgin: 0px auto; width: 100%;"></p><!--[if mso | IE]><table align=3D"center"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-top:solid=
+ 1px #CCCCCC;font-size:1;margin:0px auto;width:512px;" role=3D"presentation=
+" width=3D"512px" ><tr><td style=3D"height:0;line-height:0;"> &nbsp;=0A</td=
+></tr></table><![endif]--></td></tr><tr><td align=3D"left" style=3D"font-si=
+ze:0px;padding:0px 30px 0px 30px;word-break:break-word;"><div style=3D"font=
+-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.5=
+;text-align:left;color:#000000;"><h3 style=3D"font-family: Open Sans, sans-=
+serif; font-size: 18px; color: #575757; font-weight: bold; line-height: 1.5=
+; text-decoration: none;"><a href=3D"https://go.sparkpostmail.com/f/a/v_RHj=
+nxh48Knqx1J5f9ZPA~~/AAA-fBA~/mwmqLsIQkAEwY-oxqSbCov1mKGRR_l-mcjkIk3SR40PaK-=
+gjEeMlvOqvC_DETZelhIuOA10pLDPT79HJZsmfTzPT3nMvHAoThdqxwnrAWsEnt4THYjXnWqYca=
+9Z5xqepwu3i68bEo7yaYnNi0DUFtcfd_Zmup9tf4UpqA-90tFUZO5mc44ijsP2DZKcP13QIRk93=
+uDufBzh0OavYIHBvitLKO4tXz3p5qOd2pco_dvWarScDZJaE84xMD4ojzFtc1Bal088Or4w3-dI=
+XKkKmoJe-lZxRh8P27b_vmD4qF0MLJ_prCDrPR9HYoul5zDjk9KThhL3uFleE1HqzhXnB_Evces=
+M9Pkh8boOwfjwR3gIWIABZIxBsUzeFHa3UshrtHKFuxtxoLu11sX2dVZIWnoBzPfru2HpI7_adh=
+UEbDC_0xUb6EO_BVEQXDPO3TioF92F3mWV65lthlG6fCtcZSg~~" target=3D"_blank" rel=
+=3D"noopener" style=3D"color: #007BC2;">Vyplat=C3=AD se letos p=C5=99idat k=
+e Skautsk=C3=A9 energii=3F Odpov=C4=9B=C4=8F hledaly Seznam Zpr=C3=A1vy</a>=
+</h3></div></td></tr></table></div><!--[if mso | IE]></td></tr></table><![e=
+ndif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table=
+><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" c=
+lass=3D"" style=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-heigh=
+t:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]--><div style=
+=3D"background:#fafafa;background-color:#fafafa;margin:0px auto;max-width:6=
+00px;"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"background:#fafafa;background-color:#=
+fafafa;width:100%;"><tbody><tr><td style=3D"direction:ltr;font-size:0px;pad=
+ding:10px 10px 10px 10px;text-align:center;"><!--[if mso | IE]><table role=
+=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td =
+class=3D"" style=3D"vertical-align:top;width:232px;" ><![endif]--><div clas=
+s=3D"mj-column-per-40 outlook-group-fix" style=3D"font-size:0px;text-align:=
+left;direction:ltr;display:inline-block;vertical-align:top;width:40%;"><tab=
+le border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" w=
+idth=3D"100%"><tbody><tr><td style=3D"border:0px #000000 solid;vertical-ali=
+gn:top;padding:0px 6px 0px 20px;"><table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" role=3D"presentation" width=3D"100%"><tr><td align=3D"center=
+" style=3D"font-size:0px;padding:10px 10px 10px 0px;word-break:break-word;"=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentati=
+on" style=3D"border-collapse:collapse;border-spacing:0px;" class=3D"full-wi=
+dth-mobile"><tbody><tr><td style=3D"width:196px;" class=3D"full-width-mobil=
+e"><a href=3D"https://go.sparkpostmail.com/f/a/v_RHjnxh48Knqx1J5f9ZPA~~/AAA=
+-fBA~/mwmqLsIQkAEwY-oxqSbCov1mKGRR_l-mcjkIk3SR40PaK-gjEeMlvOqvC_DETZelhIuOA=
+10pLDPT79HJZsmfTzPT3nMvHAoThdqxwnrAWsEnt4THYjXnWqYca9Z5xqepwu3i68bEo7yaYnNi=
+0DUFtcfd_Zmup9tf4UpqA-90tFUZO5mc44ijsP2DZKcP13QIRk93uDufBzh0OavYIHBvitLKO4t=
+Xz3p5qOd2pco_dvWarScDZJaE84xMD4ojzFtc1Bal088Or4w3-dIXKkKmoJe-lZxRh8P27b_vmD=
+4qF0MLJ_prCDrPR9HYoul5zDjk9KThhL3uFleE1HqzhXnB_EvcesM9Pkh8boOwfjwR3gIWIABZI=
+xBsUzeFHa3UshrtHKFuxtxoLu11sX2dVZIWnoBzPfru2HpI7_adhUEbDC_0xUb6EO_BVEQXDPO3=
+TioF92F3mWV65lthlG6fCtcZSg~~" target=3D"_blank" style=3D"color: #007BC2;"><=
+img height=3D"auto" src=3D"https://storage.googleapis.com/skautkom47421/nov=
+inky-seznam-energie.png" style=3D"border:0;border-radius:0px 0px 0px 0px;di=
+splay:block;outline:none;text-decoration:none;height:auto;width:100%;font-s=
+ize:13px;" width=3D"196"></a></td></tr></tbody></table></td></tr></table></=
+td></tr></tbody></table></div><!--[if mso | IE]></td><td class=3D"" style=
+=3D"vertical-align:top;width:348px;" ><![endif]--><div class=3D"mj-column-p=
+er-60 outlook-group-fix" style=3D"font-size:0px;text-align:left;direction:l=
+tr;display:inline-block;vertical-align:top;width:60%;"><table border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"vertical=
+-align:top;" width=3D"100%"><tr><td align=3D"left" style=3D"font-size:0px;p=
+adding:10px 10px 10px 10px;word-break:break-word;"><div style=3D"font-famil=
+y:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.5;text-=
+align:left;color:#000000;"><p style=3D"font-family: Open Sans, sans-serif; =
+font-size: 14px; color: #575757;">Projekt Skautsk=C3=A1 energie se znovu ob=
+jevil na str=C3=A1nk=C3=A1ch Seznam Zpr=C3=A1v. Redaktor Ji=C5=99=C3=AD N=
+=C3=A1doba ve sv=C3=A9m newsletteru Cash Only nav=C3=A1zal na lo=C5=88sk=C3=
+=BD =C4=8Dl=C3=A1nek a letos se znovu v=C4=9Bnuje tomu, jak funguje na=C5=
+=A1e spole=C4=8Dn=C3=A1 aukce elekt=C5=99iny a plynu a komu m=C5=AF=C5=BEe =
+pomoci u=C5=A1et=C5=99it.</p></div></td></tr></table></div><!--[if mso | IE=
+]></td></tr></table><![endif]--></td></tr></tbody></table></div><!--[if mso=
+ | IE]></td></tr></table><table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" class=3D"" style=3D"width:600px;" width=3D"600" ><=
+tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:exactly;=
+"><![endif]--><div style=3D"background:#FAFAFA;background-color:#FAFAFA;mar=
+gin:0px auto;max-width:600px;"><table align=3D"center" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"background:#FAF=
+AFA;background-color:#FAFAFA;width:100%;"><tbody><tr><td style=3D"direction=
+:ltr;font-size:0px;padding:0px 0px 0px 0px;text-align:center;"><!--[if mso =
+| IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;width:600px;" ><![e=
+ndif]--><div class=3D"mj-column-per-100 outlook-group-fix" style=3D"font-si=
+ze:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:to=
+p;width:100%;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=
+=3D"presentation" style=3D"vertical-align:top;" width=3D"100%"><tr><td styl=
+e=3D"font-size:0px;padding:10px 44px;padding-top:10px;word-break:break-word=
+;"><p style=3D"font-family: Open Sans, sans-serif; color: #575757; border-t=
+op: solid 1px #CCCCCC; font-size: 1; margin: 0px auto; width: 100%;"></p><!=
+--[if mso | IE]><table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" style=3D"border-top:solid 1px #CCCCCC;font-size:1;margin:0px =
+auto;width:512px;" role=3D"presentation" width=3D"512px" ><tr><td style=3D"=
+height:0;line-height:0;"> &nbsp;=0A</td></tr></table><![endif]--></td></tr>=
+<tr><td align=3D"left" style=3D"font-size:0px;padding:0px 30px 0px 30px;wor=
+d-break:break-word;"><div style=3D"font-family:Ubuntu, Helvetica, Arial, sa=
+ns-serif;font-size:13px;line-height:1.5;text-align:left;color:#000000;"><h3=
+ style=3D"font-family: Open Sans, sans-serif; font-size: 18px; color: #5757=
+57; font-weight: bold; line-height: 1.5; text-decoration: none;"><a href=3D=
+"https://go.sparkpostmail.com/f/a/jYi52Byy3sEGIO7n2Yqp1A~~/AAA-fBA~/kTolrnG=
+XkE8r1DNw1djHkUgcQAI_9QLuRwtDPI-kuazQsROQvaFqdN9GeQNMFBIch2-h8gs2MRMxgehAP_=
+vJhourhWedGmspyH9S4cCJXD51D8mCqRB0i8auTD4bEtTHm07AFxHfStnsZiqrpdva5NF4UpNVA=
+f516FKzEbOSJy_WoaOr64i2nbW_RquyZDnHqwndfAnByfkN-8jzNv174XrQkqJYtan14c3QEYSX=
+J4D9e5ebwWs_quU5NrwzDUT9uohN1JJHDwZP1vIp3okiF3d938hPraZOg2JBcBryUKKT2D6wgdA=
+h6rJ1WZr2VsLQem7gKSr3RchtYVJEeFQcExzxinuFwhQi-B5Nt8Oqpqs5-_CXX5yehrsSBl474o=
+uGxnsfgNT-zQYAPvbJoIF3wC-HacLGU8SNGvJdi6e2nz_AzC2IsOSP_zlspvJ62Z1XBLCvWQoxq=
+sPdWqZqgtWHrAsCqX_286zfV6y38uv5pS8~" target=3D"_blank" rel=3D"noopener" sty=
+le=3D"color: #007BC2;">D=C4=9Bn=C3=AD na =C4=8Dervnov=C3=A9m N=C3=A1=C4=8De=
+lnictvu o=C4=8Dima K=C3=A1di. Za=C4=8Dti se do =C4=8Dl=C3=A1nku nebo nahl=
+=C3=A9dni do z=C3=A1pisu z jedn=C3=A1n=C3=AD</a></h3></div></td></tr></tabl=
+e></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody><=
+/table></div><!--[if mso | IE]></td></tr></table><table align=3D"center" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"" style=3D"width:60=
+0px;" width=3D"600" ><tr><td style=3D"line-height:0px;font-size:0px;mso-lin=
+e-height-rule:exactly;"><![endif]--><div style=3D"background:#fafafa;backgr=
+ound-color:#fafafa;margin:0px auto;max-width:600px;"><table align=3D"center=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" st=
+yle=3D"background:#fafafa;background-color:#fafafa;width:100%;"><tbody><tr>=
+<td style=3D"direction:ltr;font-size:0px;padding:10px 10px 10px 10px;text-a=
+lign:center;"><!--[if mso | IE]><table role=3D"presentation" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0"><tr><td class=3D"" style=3D"vertical-ali=
+gn:top;width:232px;" ><![endif]--><div class=3D"mj-column-per-40 outlook-gr=
+oup-fix" style=3D"font-size:0px;text-align:left;direction:ltr;display:inlin=
+e-block;vertical-align:top;width:40%;"><table border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" role=3D"presentation" width=3D"100%"><tbody><tr><td sty=
+le=3D"border:0px #000000 solid;vertical-align:top;padding:0px 6px 0px 20px;=
+"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentat=
+ion" width=3D"100%"><tr><td align=3D"center" style=3D"font-size:0px;padding=
+:10px 10px 10px 0px;word-break:break-word;"><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"border-collapse:col=
+lapse;border-spacing:0px;" class=3D"full-width-mobile"><tbody><tr><td style=
+=3D"width:196px;" class=3D"full-width-mobile"><a href=3D"https://go.sparkpo=
+stmail.com/f/a/jYi52Byy3sEGIO7n2Yqp1A~~/AAA-fBA~/kTolrnGXkE8r1DNw1djHkUgcQA=
+I_9QLuRwtDPI-kuazQsROQvaFqdN9GeQNMFBIch2-h8gs2MRMxgehAP_vJhourhWedGmspyH9S4=
+cCJXD51D8mCqRB0i8auTD4bEtTHm07AFxHfStnsZiqrpdva5NF4UpNVAf516FKzEbOSJy_WoaOr=
+64i2nbW_RquyZDnHqwndfAnByfkN-8jzNv174XrQkqJYtan14c3QEYSXJ4D9e5ebwWs_quU5Nrw=
+zDUT9uohN1JJHDwZP1vIp3okiF3d938hPraZOg2JBcBryUKKT2D6wgdAh6rJ1WZr2VsLQem7gKS=
+r3RchtYVJEeFQcExzxinuFwhQi-B5Nt8Oqpqs5-_CXX5yehrsSBl474ouGxnsfgNT-zQYAPvbJo=
+IF3wC-HacLGU8SNGvJdi6e2nz_AzC2IsOSP_zlspvJ62Z1XBLCvWQoxqsPdWqZqgtWHrAsCqX_2=
+86zfV6y38uv5pS8~" target=3D"_blank" style=3D"color: #007BC2;"><img height=
+=3D"auto" src=3D"https://storage.googleapis.com/skautkom47421/novinky-nacel=
+nictvo-ocima-kadi.png" style=3D"border:0;border-radius:0px 0px 0px 0px;disp=
+lay:block;outline:none;text-decoration:none;height:auto;width:100%;font-siz=
+e:13px;" width=3D"196"></a></td></tr></tbody></table></td></tr></table></td=
+></tr></tbody></table></div><!--[if mso | IE]></td><td class=3D"" style=3D"=
+vertical-align:top;width:348px;" ><![endif]--><div class=3D"mj-column-per-6=
+0 outlook-group-fix" style=3D"font-size:0px;text-align:left;direction:ltr;d=
+isplay:inline-block;vertical-align:top;width:60%;"><table border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"vertical-ali=
+gn:top;" width=3D"100%"><tr><td align=3D"left" style=3D"font-size:0px;paddi=
+ng:10px 10px 10px 10px;word-break:break-word;"><div style=3D"font-family:Ub=
+untu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.5;text-alig=
+n:left;color:#000000;"><p style=3D"font-family: Open Sans, sans-serif; font=
+-size: 14px; color: #575757;">Na programu bylo hned n=C4=9Bkolik materi=C3=
+=A1l=C5=AF z oblasti hospoda=C5=99en=C3=AD organizace v=C4=8Detn=C4=9B n=C3=
+=A1vrhu v=C3=BD=C5=A1e =C4=8Dlensk=C3=A9ho p=C5=99=C3=ADsp=C4=9Bvku na rok =
+2027, materi=C3=A1ly signalizuj=C3=ADc=C3=AD, =C5=BEe se pomalu bl=C3=AD=C5=
+=BE=C3=AD Valn=C3=BD sn=C4=9Bm, nebo t=C5=99eba Koncepce celost=C3=A1tn=C3=
+=ADch akc=C3=AD.</p><p style=3D"font-family: Open Sans, sans-serif; font-si=
+ze: 14px; color: #575757;">=C2=A0</p></div></td></tr></table></div><!--[if =
+mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div><!-=
+-[if mso | IE]></td></tr></table><table align=3D"center" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" class=3D"" style=3D"width:600px;" width=3D"6=
+00" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:ex=
+actly;"><![endif]--><div style=3D"background:#FAFAFA;background-color:#FAFA=
+FA;margin:0px auto;max-width:600px;"><table align=3D"center" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"backgroun=
+d:#FAFAFA;background-color:#FAFAFA;width:100%;"><tbody><tr><td style=3D"dir=
+ection:ltr;font-size:0px;padding:0px 0px 0px 0px;text-align:center;"><!--[i=
+f mso | IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;width:600px;"=
+ ><![endif]--><div class=3D"mj-column-per-100 outlook-group-fix" style=3D"f=
+ont-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-al=
+ign:top;width:100%;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%"><tr><t=
+d style=3D"font-size:0px;padding:10px 44px;padding-top:10px;word-break:brea=
+k-word;"><p style=3D"font-family: Open Sans, sans-serif; color: #575757; bo=
+rder-top: solid 1px #CCCCCC; font-size: 1; margin: 0px auto; width: 100%;">=
+</p><!--[if mso | IE]><table align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"border-top:solid 1px #CCCCCC;font-size:1;margi=
+n:0px auto;width:512px;" role=3D"presentation" width=3D"512px" ><tr><td sty=
+le=3D"height:0;line-height:0;"> &nbsp;=0A</td></tr></table><![endif]--></td=
+></tr><tr><td align=3D"left" style=3D"font-size:0px;padding:0px 30px 0px 30=
+px;word-break:break-word;"><div style=3D"font-family:Ubuntu, Helvetica, Ari=
+al, sans-serif;font-size:13px;line-height:1.5;text-align:left;color:#000000=
+;"><h3 style=3D"font-family: Open Sans, sans-serif; font-size: 18px; color:=
+ #575757; font-weight: bold; line-height: 1.5; text-decoration: none;"><a h=
+ref=3D"https://go.sparkpostmail.com/f/a/ZbxL9DcHtdjeAA0UYstT0g~~/AAA-fBA~/g=
+36yQbjMLUcL1k9k7hLbaqU6wL_H-OQtx3h_HGyVTIM6yYkbOXqhfA7nmVvfAFgIAS26wxh-IoF7=
+hW5DqoMj0gveGKEW3Vdavck3ZVaEXLHwgUVlG-0sgfPBcLvBKbG6F88Gdv6XGk1RVPU8WUikC-n=
+FZHgMtOS8YdhquhjjgmJEm59HvRmFYqYc2JLuI9NlmVCaoIxJdmUOODRD_GAlSMC4AzpIvQ46GO=
+H89I0QtBOIh3FLkKebv1_y4d5hvXcfvQAoiPoMjrac2fSxCvTRN_W0e-p0XJiDkTqfGME403eoL=
+3sDlwlfRtR4JsfV4GpVaRPHixxGhZ24enLqVZmV3eoaL0aDgR97_ai7mN83aVGIkvv-GlcZ5AE0=
+aD70GSkXOP71EaioBtr9wipK0shCRkgKpCple1O0mULJAFhvWIpzkF_0zbb7kGt4HnHXVIM7" t=
+arget=3D"_blank" rel=3D"noopener" style=3D"color: #007BC2;">Explorer Belt z=
+n=C3=A1 sv=C3=A9 veden=C3=AD. P=C5=99=C3=ADpravy obnoven=C3=A9 akce pokra=
+=C4=8Duj=C3=AD</a></h3></div></td></tr></table></div><!--[if mso | IE]></td=
+></tr></table><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]=
+></td></tr></table><table align=3D"center" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" class=3D"" style=3D"width:600px;" width=3D"600" ><tr><td s=
+tyle=3D"line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![end=
+if]--><div style=3D"background:#fafafa;background-color:#fafafa;margin:0px =
+auto;max-width:600px;"><table align=3D"center" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" role=3D"presentation" style=3D"background:#fafafa;back=
+ground-color:#fafafa;width:100%;"><tbody><tr><td style=3D"direction:ltr;fon=
+t-size:0px;padding:10px 10px 10px 10px;text-align:center;"><!--[if mso | IE=
+]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;width:232px;" ><![end=
+if]--><div class=3D"mj-column-per-40 outlook-group-fix" style=3D"font-size:=
+0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;w=
+idth:40%;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"=
+presentation" width=3D"100%"><tbody><tr><td style=3D"border:0px #000000 sol=
+id;vertical-align:top;padding:0px 6px 0px 20px;"><table border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"100%"><tr><td =
+align=3D"center" style=3D"font-size:0px;padding:10px 10px 10px 0px;word-bre=
+ak:break-word;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" rol=
+e=3D"presentation" style=3D"border-collapse:collapse;border-spacing:0px;" c=
+lass=3D"full-width-mobile"><tbody><tr><td style=3D"width:196px;" class=3D"f=
+ull-width-mobile"><a href=3D"https://go.sparkpostmail.com/f/a/ZbxL9DcHtdjeA=
+A0UYstT0g~~/AAA-fBA~/g36yQbjMLUcL1k9k7hLbaqU6wL_H-OQtx3h_HGyVTIM6yYkbOXqhfA=
+7nmVvfAFgIAS26wxh-IoF7hW5DqoMj0gveGKEW3Vdavck3ZVaEXLHwgUVlG-0sgfPBcLvBKbG6F=
+88Gdv6XGk1RVPU8WUikC-nFZHgMtOS8YdhquhjjgmJEm59HvRmFYqYc2JLuI9NlmVCaoIxJdmUO=
+ODRD_GAlSMC4AzpIvQ46GOH89I0QtBOIh3FLkKebv1_y4d5hvXcfvQAoiPoMjrac2fSxCvTRN_W=
+0e-p0XJiDkTqfGME403eoL3sDlwlfRtR4JsfV4GpVaRPHixxGhZ24enLqVZmV3eoaL0aDgR97_a=
+i7mN83aVGIkvv-GlcZ5AE0aD70GSkXOP71EaioBtr9wipK0shCRkgKpCple1O0mULJAFhvWIpzk=
+F_0zbb7kGt4HnHXVIM7" target=3D"_blank" style=3D"color: #007BC2;"><img heigh=
+t=3D"auto" src=3D"https://storage.googleapis.com/skautkom47421/novinky-expo=
+rerbelt.png" style=3D"border:0;border-radius:0px 0px 0px 0px;display:block;=
+outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" w=
+idth=3D"196"></a></td></tr></tbody></table></td></tr></table></td></tr></tb=
+ody></table></div><!--[if mso | IE]></td><td class=3D"" style=3D"vertical-a=
+lign:top;width:348px;" ><![endif]--><div class=3D"mj-column-per-60 outlook-=
+group-fix" style=3D"font-size:0px;text-align:left;direction:ltr;display:inl=
+ine-block;vertical-align:top;width:60%;"><table border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" role=3D"presentation" style=3D"vertical-align:top;" w=
+idth=3D"100%"><tr><td align=3D"left" style=3D"font-size:0px;padding:10px 10=
+px 10px 10px;word-break:break-word;"><div style=3D"font-family:Ubuntu, Helv=
+etica, Arial, sans-serif;font-size:13px;line-height:1.5;text-align:left;col=
+or:#000000;"><p style=3D"font-family: Open Sans, sans-serif; font-size: 14p=
+x; color: #575757;">Explorer Belt se po letech vrac=C3=AD a nyn=C3=AD zn=C3=
+=A1 i sv=C3=A9 veden=C3=AD. Jakub =E2=80=9EMarley=E2=80=9C Nani=C5=A1ta a B=
+arbora =E2=80=9EKISSeLINa=E2=80=9C Sta=C5=88kov=C3=A1 povedou p=C5=99=C3=AD=
+pravu i realizaci t=C3=A9to jedine=C4=8Dn=C3=A9 mezin=C3=A1rodn=C3=AD v=C3=
+=BDzvy pro RS.</p><p style=3D"font-family: Open Sans, sans-serif; font-size=
+: 14px; color: #575757;">=C2=A0</p></div></td></tr></table></div><!--[if ms=
+o | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div><!--[=
+if mso | IE]></td></tr></table><table align=3D"center" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" class=3D"" style=3D"width:600px;" width=3D"600=
+" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:exac=
+tly;"><![endif]--><div style=3D"background:#FAFAFA;background-color:#FAFAFA=
+;margin:0px auto;max-width:600px;"><table align=3D"center" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"background:=
+#FAFAFA;background-color:#FAFAFA;width:100%;"><tbody><tr><td style=3D"direc=
+tion:ltr;font-size:0px;padding:0px 0px 0px 0px;text-align:center;"><!--[if =
+mso | IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;width:600px;" >=
+<![endif]--><div class=3D"mj-column-per-100 outlook-group-fix" style=3D"fon=
+t-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-alig=
+n:top;width:100%;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%"><tr><td =
+style=3D"font-size:0px;padding:10px 44px;padding-top:10px;word-break:break-=
+word;"><p style=3D"font-family: Open Sans, sans-serif; color: #575757; bord=
+er-top: solid 1px #CCCCCC; font-size: 1; margin: 0px auto; width: 100%;"></=
+p><!--[if mso | IE]><table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"border-top:solid 1px #CCCCCC;font-size:1;margin:=
+0px auto;width:512px;" role=3D"presentation" width=3D"512px" ><tr><td style=
+=3D"height:0;line-height:0;"> &nbsp;=0A</td></tr></table><![endif]--></td><=
+/tr><tr><td align=3D"left" style=3D"font-size:0px;padding:0px 30px 0px 30px=
+;word-break:break-word;"><div style=3D"font-family:Ubuntu, Helvetica, Arial=
+, sans-serif;font-size:13px;line-height:1.5;text-align:left;color:#000000;"=
+><h3 style=3D"font-family: Open Sans, sans-serif; font-size: 18px; color: #=
+575757; font-weight: bold; line-height: 1.5; text-decoration: none;"><a hre=
+f=3D"https://go.sparkpostmail.com/f/a/dt_xAxJeS3Y0m6mQa9eA6Q~~/AAA-fBA~/xAg=
+N056RGwOwxbqjQXJBi-rxjhO1GSH9loLHZGO9RNl6W5VP3Dwz1D120r0w2kXrtoDJqyVOSbXapQ=
+Cki3pK3wS8fkzpvq6sETSKLsgoywqaGVGsqLRzNb99klidHym8r0k95WEMsaxQ-SFr9rGhdWOmE=
+oTZ12kZ6Mp-fznbVCibqcxrsxDakwYOeur6fVTXSdg43m7f4l89F60Fgd8CRuP0KyVHE5LEZf6a=
+5KIE1GMuFBec2aw4mc1pTO6OOl3MfdL0xAMZMzD7iKXFjdRlqTpaAH2E4ltnxnl-nvULBHAbnyf=
+mJYWTmTbBtUDxew9mz7KfP8ZMa9N6SiLXR0TQOEB_9yYewQv5q5LuNVXamNnO5i3kBYALDE7Udh=
+aTBTsMZU5JQ9RGnFXub8zZrY11BseeKdMJWZSC9Q7arhYopfMNGHKiOcLKajtQwmZbvzDJiEHZB=
+k7_AZdOFETdff__uw~~" target=3D"_blank" rel=3D"noopener" style=3D"color: #00=
+7BC2;">Dobrovolnictv=C3=AD v Pyrenej=C3=ADch: Vyje=C4=8F v l=C3=A9t=C4=9B 2=
+026 do skautsk=C3=A9ho centra Gri=C3=A9bal</a></h3></div></td></tr></table>=
+</div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></t=
+able></div><!--[if mso | IE]></td></tr></table><table align=3D"center" bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"" style=3D"width:600p=
+x;" width=3D"600" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-=
+height-rule:exactly;"><![endif]--><div style=3D"background:#fafafa;backgrou=
+nd-color:#fafafa;margin:0px auto;max-width:600px;"><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" styl=
+e=3D"background:#fafafa;background-color:#fafafa;width:100%;"><tbody><tr><t=
+d style=3D"direction:ltr;font-size:0px;padding:10px 10px 10px 10px;text-ali=
+gn:center;"><!--[if mso | IE]><table role=3D"presentation" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"><tr><td class=3D"" style=3D"vertical-align=
+:top;width:232px;" ><![endif]--><div class=3D"mj-column-per-40 outlook-grou=
+p-fix" style=3D"font-size:0px;text-align:left;direction:ltr;display:inline-=
+block;vertical-align:top;width:40%;"><table border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" role=3D"presentation" width=3D"100%"><tbody><tr><td style=
+=3D"border:0px #000000 solid;vertical-align:top;padding:0px 6px 0px 20px;">=
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" width=3D"100%"><tr><td align=3D"center" style=3D"font-size:0px;padding:1=
+0px 10px 10px 0px;word-break:break-word;"><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"border-collapse:col=
+lapse;border-spacing:0px;" class=3D"full-width-mobile"><tbody><tr><td style=
+=3D"width:196px;" class=3D"full-width-mobile"><a href=3D"https://go.sparkpo=
+stmail.com/f/a/dt_xAxJeS3Y0m6mQa9eA6Q~~/AAA-fBA~/xAgN056RGwOwxbqjQXJBi-rxjh=
+O1GSH9loLHZGO9RNl6W5VP3Dwz1D120r0w2kXrtoDJqyVOSbXapQCki3pK3wS8fkzpvq6sETSKL=
+sgoywqaGVGsqLRzNb99klidHym8r0k95WEMsaxQ-SFr9rGhdWOmEoTZ12kZ6Mp-fznbVCibqcxr=
+sxDakwYOeur6fVTXSdg43m7f4l89F60Fgd8CRuP0KyVHE5LEZf6a5KIE1GMuFBec2aw4mc1pTO6=
+OOl3MfdL0xAMZMzD7iKXFjdRlqTpaAH2E4ltnxnl-nvULBHAbnyfmJYWTmTbBtUDxew9mz7KfP8=
+ZMa9N6SiLXR0TQOEB_9yYewQv5q5LuNVXamNnO5i3kBYALDE7UdhaTBTsMZU5JQ9RGnFXub8zZr=
+Y11BseeKdMJWZSC9Q7arhYopfMNGHKiOcLKajtQwmZbvzDJiEHZBk7_AZdOFETdff__uw~~" ta=
+rget=3D"_blank" style=3D"color: #007BC2;"><img height=3D"auto" src=3D"https=
+://storage.googleapis.com/skautkom47421/novinky-pyreneje.png" style=3D"bord=
+er:0;border-radius:0px 0px 0px 0px;display:block;outline:none;text-decorati=
+on:none;height:auto;width:100%;font-size:13px;" width=3D"196"></a></td></tr=
+></tbody></table></td></tr></table></td></tr></tbody></table></div><!--[if =
+mso | IE]></td><td class=3D"" style=3D"vertical-align:top;width:348px;" ><!=
+[endif]--><div class=3D"mj-column-per-60 outlook-group-fix" style=3D"font-s=
+ize:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:t=
+op;width:60%;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=
+=3D"presentation" style=3D"vertical-align:top;" width=3D"100%"><tr><td alig=
+n=3D"left" style=3D"font-size:0px;padding:10px 10px 10px 10px;word-break:br=
+eak-word;"><div style=3D"font-family:Ubuntu, Helvetica, Arial, sans-serif;f=
+ont-size:13px;line-height:1.5;text-align:left;color:#000000;"><p style=3D"f=
+ont-family: Open Sans, sans-serif; font-size: 14px; color: #575757;">L=C3=
+=A1k=C3=A1 t=C4=9B l=C3=A9to ve =C5=A0pan=C4=9Blsku, mezin=C3=A1rodn=C3=AD =
+skautsk=C3=A9 prost=C5=99ed=C3=AD a smyslupln=C3=A1 dobrovolnick=C3=A1 zku=
+=C5=A1enost=3F P=C5=99ihlas se na letn=C3=AD projekt Evropsk=C3=A9ho sboru =
+solidarity ve skautsk=C3=A9m centru Gri=C3=A9bal. Hledaj=C3=AD se dva dobro=
+voln=C3=ADci z cel=C3=A9 Evropy.</p></div></td></tr></table></div><!--[if m=
+so | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div><!--=
+[if mso | IE]></td></tr></table><table align=3D"center" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" class=3D"" style=3D"width:600px;" width=3D"60=
+0" ><tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:exa=
+ctly;"><![endif]--><div style=3D"background:#2E6276;background-color:#2E627=
+6;margin:0px auto;max-width:600px;"><table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"background=
+:#2E6276;background-color:#2E6276;width:100%;"><tbody><tr><td style=3D"dire=
+ction:ltr;font-size:0px;padding:0px 0px 0px 0px;text-align:center;"><!--[if=
+ mso | IE]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0"><tr><td class=3D"" style=3D"vertical-align:top;width:240px;" =
+><![endif]--><div class=3D"mj-column-per-40 outlook-group-fix" style=3D"fon=
+t-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-alig=
+n:top;width:40%;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" r=
+ole=3D"presentation" style=3D"vertical-align:top;" width=3D"100%"><tr><td a=
+lign=3D"center" style=3D"font-size:0px;padding:20px 25px 0px 25px;word-brea=
+k:break-word;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=
+=3D"presentation" style=3D"border-collapse:collapse;border-spacing:0px;"><t=
+body><tr><td style=3D"width:90px;"><img height=3D"auto" src=3D"https://stor=
+age.googleapis.com/skaut11862/logo_bile.png" style=3D"border:0;border-radiu=
+s:0px 0px 0px 0px;display:block;outline:none;text-decoration:none;height:au=
+to;width:100%;font-size:13px;" width=3D"90"></td></tr></tbody></table></td>=
+</tr><tr><td align=3D"center" style=3D"font-size:0px;padding:10px 25px 10px=
+ 25px;word-break:break-word;"><!--[if mso | IE]><table align=3D"center" bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" ><tr><t=
+d><![endif]--><table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" role=3D"presentation" style=3D"float:none;display:inline-table;=
+"><tr><td style=3D"padding:4px;"><table border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" style=3D"background:transparent;border-=
+radius:3px;width:28px;"><tr><td style=3D"font-size:0;height:28px;vertical-a=
+lign:middle;width:28px;"><a href=3D"https://go.sparkpostmail.com/f/a/fNeVEg=
+rntAvLZaNoLlHyhg~~/AAA-fBA~/pXLhqdXcY-_cO1CVTwrfZh6_esOsMbWq0zgvw8oXcCxU1YR=
+ao_FQookD0p4GGcwIr331qGM9W_nmv0EoezIyP1vlrk4UK0mosSddEJmGBijQFO6O8plgf3y652=
+rQ647_VNA2krhfZfrNXLahUJVdXA4OGiAJyx-AQ3-iPJYBO6bOsmEF10MGB9kHlkXczd7MPTrtl=
+HTtbnqZAGz9_PcBr0-DMftBbEOhUOMnSIID4EKVjLZ8GjAIYCrRLFXTaXoleabGW5wZF-x0sz5f=
+pyRoxLq3T7ktglclG7nQoUH35ImMlAV3lheO4jqWj03AvXDoHzs6xKk9Ka3fLNqUOhuyOu3K8Sh=
+j9TNppl7D8i6fHhs~" target=3D"_blank" style=3D"color: #007BC2;"><img height=
+=3D"28" src=3D"https://d70shl7vidtft.cloudfront.net/editor/social-icos/roun=
+dedwhite/facebook.png" style=3D"border-radius:3px;display:block;" width=3D"=
+28"></a></td></tr></table></td></tr></table><!--[if mso | IE]></td><td><![e=
+ndif]--><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"float:none;display:inline-table;"><tr=
+><td style=3D"padding:4px;"><table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" role=3D"presentation" style=3D"background:transparent;border-radiu=
+s:3px;width:28px;"><tr><td style=3D"font-size:0;height:28px;vertical-align:=
+middle;width:28px;"><a href=3D"https://go.sparkpostmail.com/f/a/1KI7aZPvNup=
+M3kdZ4jNGjA~~/AAA-fBA~/172PwQCoInHPXYmVvD8yma0uB6vOvmlVN0uwVBmyLI9Dxzui8L_L=
+3g2Lh4BnHqCCkiHgt1oJvV3XHPdw_d9fnaxhk0dQvF-ZMh8aM62licDwBCoegFv0TqIylJJ0LBX=
+dT2m5yp3W4q0IOJWpfTaQ6fYJvWs-nXxPht4ZIYkWpR4H3YXqFf7TULq9QeBb2kKtqpr5Z2qSIi=
+OBPzOxqOmeMERABgcvqkQyEaOgda1ShqT1H5bsOC8yxZMZhP9MxCTxUzg8eU9XYpM2AkW8xahrM=
+1yxeAcnvZFtrSe5sxPqmbHwYLJiCWzxQtOwyRQbuc9ZQIc8aFFlWRp1bhlCnWhFd8QjM8Y-PdT0=
+bLJQe1jWFa0~" target=3D"_blank" style=3D"color: #007BC2;"><img height=3D"28=
+" src=3D"https://d70shl7vidtft.cloudfront.net/editor/social-icos/roundedwhi=
+te/instagram.png" style=3D"border-radius:3px;display:block;" width=3D"28"><=
+/a></td></tr></table></td></tr></table><!--[if mso | IE]></td><td><![endif]=
+--><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ role=3D"presentation" style=3D"float:none;display:inline-table;"><tr><td s=
+tyle=3D"padding:4px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" role=3D"presentation" style=3D"background:transparent;border-radius:3px;=
+width:28px;"><tr><td style=3D"font-size:0;height:28px;vertical-align:middle=
+;width:28px;"><a href=3D"https://go.sparkpostmail.com/f/a/Kz5pGSYZodvA751Oy=
+_x-uw~~/AAA-fBA~/eFN7BHbG72vTiOD8RaNwYvWx6YHmWEE8sHnatbRPMcgNZY-O7acSYhRxEH=
+P5zDJeahHHHpES-oAn0_ECH-ohFjJN6Nj8hGRPFFwk4tKgi7YFn_eprSCN3f66aRQzdQhDp12L1=
+wVTAU9SqejcUdaHAAmY3ZvA9Er1JUw_E7vd7aY_TwvibjwiA1aeiArrZDHrr58rhfbJvofLmDx6=
+_ef23lGMBPJyA1-UTEil_QHk3q0X_xuvpcV9_uKViRKHyvuPBbhjnXH2nE4oi6ej_ekrpkSU62a=
+UaOh3RKqVCIEaJxYcObrN_aOuh_72tzNmHqBy35KwaklbA_4gL1Xk5LLUTQ9L81kroJTZOsCOJf=
+hnyEk~" target=3D"_blank" style=3D"color: #007BC2;"><img height=3D"28" src=
+=3D"https://d70shl7vidtft.cloudfront.net/editor/social-icos/roundedwhite/yo=
+utube.png" style=3D"border-radius:3px;display:block;" width=3D"28"></a></td=
+></tr></table></td></tr></table><!--[if mso | IE]></td><td><![endif]--><tab=
+le align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=
+=3D"presentation" style=3D"float:none;display:inline-table;"><tr><td style=
+=3D"padding:4px;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" r=
+ole=3D"presentation" style=3D"background:transparent;border-radius:3px;widt=
+h:28px;"><tr><td style=3D"font-size:0;height:28px;vertical-align:middle;wid=
+th:28px;"><a href=3D"https://go.sparkpostmail.com/f/a/LGD2eE10ex68ab1y6-9A5=
+g~~/AAA-fBA~/yfRzsC1tQMHhxL0pnbg7N1WQlsYVW3XUgQzF49my5iDsdYe8NfEx3xAG7WuQDO=
+RPJQWGRU9_DUJ52HTJZV3eHji2WjUP-U-87IZIRv5yJ3A0cyAOeSehPl90uhIKT1DVVlbSguBwS=
+v2dmE5CK955SxbxB3YYKvF56N1PCVxFQyxzmDImV6f46KYfGJyt6rT56iVNfRKICbwEx0m3wgHK=
+C7mrNwpFRgaiiTzte5Upo6WczIRMFu1XeKFZnC1zvUb2oNb_Ee3-dTLnhLhTzVlw-PjLZCelwDO=
+LVXFQskG6Bcvw_BZISQ0hVMXRSXNhmSgQCSVByZrMraVCdrNLK4Fgyw~~" target=3D"_blank=
+" style=3D"color: #007BC2;"><img height=3D"28" src=3D"https://d70shl7vidtft=
+.cloudfront.net/editor/social-icos/roundedwhite/spotify.png" style=3D"bord=
+er-radius:3px;display:block;" width=3D"28"></a></td></tr></table></td></tr>=
+</table><!--[if mso | IE]></td><td><![endif]--><table align=3D"center" bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D=
+"float:none;display:inline-table;"><tr><td style=3D"padding:4px;"><table bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=
+=3D"background:transparent;border-radius:3px;width:28px;"><tr><td style=3D"=
+font-size:0;height:28px;vertical-align:middle;width:28px;"><a href=3D"https=
+://go.sparkpostmail.com/f/a/FYIEkDvGkcVvz_peKFViAg~~/AAA-fBA~/ADTvZwxSABKYT=
+e-tWsO-Kfv7PRUuU1qMm6IGpDi3PCvyrKnqB9KqaIlXnRv_nogbmNQyp0pLK2yuQ5mzu7qOMMas=
+dxd1Jq92v-b5rF23v2GzLc-JG_teKsJXIcavNNdTPb8C1JA8X7i5flgvlcsd07c5LEyvljIp3D8=
+SupNwABKlFi1As9yRf0PaSkpMipvJ3ga2d1bLBItN7VbygPmFtlkD5H5EVFL5jrbeCCcjhc-oR-=
+ETdllqJDepfSoF9uE76jTCYLftVwh0PS2-bSzxQ-8MbrIOyRIM1wsZX56-Rkpqj91XWx8hci-JO=
+Ysn_VDF97vOrkKR1XrM1eVGuJqbs37ULFTm85rQWiLrTs2sq4Af4cNziSIpdSa_KqQEgyYfxdN4=
+eI-DgSiakpeK5R0yJg~~" target=3D"_blank" style=3D"color: #007BC2;"><img alt=
+=3D"WhatsApp" height=3D"28" src=3D"https://storage.googleapis.com/skautkom4=
+7421/toppng.com-whatsapp-svg-png-icon-free-download-whatsapp-logo-vector-bl=
+ack-980x982.png" style=3D"border-radius:3px;display:block;" width=3D"28"></=
+a></td></tr></table></td></tr></table><!--[if mso | IE]></td></tr></table><=
+![endif]--></td></tr></table></div><!--[if mso | IE]></td><td class=3D"" st=
+yle=3D"vertical-align:top;width:360px;" ><![endif]--><div class=3D"mj-colum=
+n-per-60 outlook-group-fix" style=3D"font-size:0px;text-align:left;directio=
+n:ltr;display:inline-block;vertical-align:top;width:60%;"><table border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"verti=
+cal-align:top;" width=3D"100%"><tr><td align=3D"left" style=3D"font-size:0p=
+x;padding:40px 42px 40px 42px;word-break:break-word;"><div style=3D"font-fa=
+mily:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.5;te=
+xt-align:left;color:#000000;"><p style=3D"font-family: Open Sans, sans-seri=
+f; font-size: 14px; color: #575757;"><span style=3D"color: #ffffff; font-si=
+ze: 14px;"><strong>Jun=C3=A1k =E2=80=93 =C4=8Desk=C3=BD skaut, z. s.</stron=
+g></span><br><span style=3D"color: #ffffff; font-size: 14px;">Senov=C3=A1=
+=C5=BEn=C3=A9 n=C3=A1m=C4=9Bst=C3=AD 24, 110 00 Praha 1<br>tel. 776 720 220=
+</span></p><p style=3D"font-family: Open Sans, sans-serif; font-size: 14px;=
+ color: #575757;"><span style=3D"font-size: 14px;"><a href=3D"mailto:kancel=
+ar@skaut.cz" target=3D"_blank" rel=3D"noopener" style=3D"color: #007BC2;"><=
+span style=3D"color: #ffffff;">kancelar@skaut.cz</span></a></span></p><p st=
+yle=3D"font-family: Open Sans, sans-serif; font-size: 14px; color: #575757;=
+"><span style=3D"font-size: 14px; color: #ffffff;"><a style=3D"color: #ffff=
+ff;" href=3D"https://go.sparkpostmail.com/f/a/yoxWk7Fcun0hed5e7BTdNg~~/AAA-=
+fBA~/_g5zx-ww03YILWiRMVPLy233aTWCIYRMjR6RXditKuxje5YWazKngCWFwFA3sAiYSBEnGw=
+GVa_6mC5_YJhvmwb8ostKWQhjoPZe9kYKMEPJjNBWbn0IQvbkAgq7W-bc6FPAhh1VwooC5VlMVb=
+Wb7uv5rJEursG88k6TAZXhuwVD8xHPbPju4rDGxA0pruvkiRLCjfYqvdMKL5GojYBu5xWiKzKFU=
+q41TDI9S_zQd0i9cdz7bNUoY9UF2JSsSThNKK2ryPkACeBvJBqep94EhhW-MuBobJuDCY3-l9ne=
+ZQ0SS9msaYE1vY7omN1bggHaJ6YV697KmczodUAnO_a8_PbJa3clkaEW8Nql-ySzY2N8~" targ=
+et=3D"_blank" rel=3D"noopener">krizovatka.skaut.cz</a></span></p><p style=
+=3D"font-family: Open Sans, sans-serif; font-size: 14px; color: #575757;"><=
+span style=3D"font-size: 14px; color: #ffffff;"><a style=3D"color: #ffffff;=
+" href=3D"https://go.sparkpostmail.com/f/a/jykz2g4roRnGYd3cdsvniA~~/AAA-fBA=
+~/172PwQCoInHPXYmVvD8ymcXlMbt50GMi0v32tn9NJGDkz3Y5TL2grgb8PHcURs32YKkGV39T7=
+l9bKFr4R17UJhTJ9m6gNYH0JJqanY6ea__ADTS9gCt7KVRkz6Mi474xBQWDE_9jcZ5pMr-EK9Ip=
+PXpmStZAleQcWfkuQnERE0ZsbIx4ixPIiXIDA7Y0bLEl8eGtuh_t5mmVmyo0qH6Lp49_BD7qZ9C=
+HSvnO5nQL88kKQoAyn_Fv0DRBVLGve8bTxuDO4cnC3j-6sN-CRMPmhBK-KsAQ8zYEtwQVf64RZo=
+22Elx_RATqdqQSNRC2WwpvRBEv3cQigubDZ8iRptAOs9_aEqMtglh8iNCqQ58Wi0M~" target=
+=3D"_blank" rel=3D"noopener">zpravodajstvi.skaut.cz</a></span></p></div></t=
+d></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td><=
+/tr></tbody></table></div><!--[if mso | IE]></td></tr></table><table align=
+=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"" sty=
+le=3D"width:600px;" width=3D"600" ><tr><td style=3D"line-height:0px;font-si=
+ze:0px;mso-line-height-rule:exactly;"><![endif]--><div style=3D"background:=
+#26425B;background-color:#26425B;margin:0px auto;max-width:600px;"><table a=
+lign=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"pr=
+esentation" style=3D"background:#26425B;background-color:#26425B;width:100%=
+;"><tbody><tr><td style=3D"direction:ltr;font-size:0px;padding:0px 0px 0px =
+0px;text-align:center;"><!--[if mso | IE]><table role=3D"presentation" bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td class=3D"" style=3D"ve=
+rtical-align:top;width:600px;" ><![endif]--><div class=3D"mj-column-per-100=
+ outlook-group-fix" style=3D"font-size:0px;text-align:left;direction:ltr;di=
+splay:inline-block;vertical-align:top;width:100%;"><table border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"vertical-ali=
+gn:top;" width=3D"100%"><tr><td align=3D"center" style=3D"font-size:0px;pad=
+ding:13px 25px 13px 25px;word-break:break-word;"><div style=3D"font-family:=
+Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.5;text-al=
+ign:center;color:#000000;"><p style=3D"font-family: Open Sans, sans-serif; =
+font-size: 14px; color: #575757;"><span style=3D"font-size: 11px;"><span st=
+yle=3D"color: rgb(149, 165, 166);">Zde se m=C5=AF=C5=BEete z odb=C4=9Bru Sk=
+autsk=C3=BDch novinek </span><a href=3D"https://go.sparkpostmail.com/f/a/xV=
+BiDeYB8IeCy9G32SEMrQ~~/AAA-fBA~/r3coTntmaek7R8gRIGDT2drdLxt3lFajdpFmYD4fU-j=
+NaH5XFIndz5m7Jrvjyb4e4uoPai92uRvsDVc7oYhnVoB2w0FOf4FZ1pJY-611JVC0nsHXKT20SU=
+VdJS2IFswMqqpZpo79sZvG9UY9Wo34XyWkXqki2Q551uiRONeaYluKKv-HYNczuXU0aRuFuu76p=
+NPTsiDhVjaSlpKAPANCV_6ISt1lD9LbFp1YzCEacKPj70l_GY3-0r3qW2C3oiiGZh5qgEeNMcB4=
+zMIxDkBOqmnQ2Yfm4tE1AMdKgoomCPXQBwRKOCh0dwkUsfl90O7Ay7-ysbJk0ZA8ngS9mMBsAHy=
+dAGNxxYFHRXEa3xpPnVxIkZVILcxU1kI4T2rZKQ9P5s7q-B2y0STdpfWcS7miKsaVAbxcnzBpin=
+jdGoWoG4ngZYoSiy6JDk1TBazvRNrL" style=3D"color: #007BC2;"><span style=3D"co=
+lor: #ffffff;">odhl=C3=A1sit</span></a><span style=3D"color: #999999;">.<sp=
+an style=3D"color: rgb(149, 165, 166);"> Nebo naopak <span style=3D"color: =
+rgb(255, 255, 255);"><a style=3D"color: rgb(255, 255, 255);" href=3D"https:=
+//go.sparkpostmail.com/f/a/rTItsfM7fevecfwEJ_D2Uw~~/AAA-fBA~/9L_s1G-MDFJhum=
+wtzpJncj_jX5f11DLDCV7ING9Dvv36lGIXqLGjj9OFZlrkGOAipXId6R4DntGw9iOF4JQRL3ktp=
+8sYW4TFVYOeFyPRZpJayfdmLWddiwGvHOufEqmGVtgA5MbpENO6YgYSXHq4dxhaj3_JB5IFKGW5=
+eVw3D5ncOuHlTGs5bFp-j9-ih4BGXJpl2eCs2jVaJegs5-PXrMmlPtvGmG2pXf5djO3nL3QvXIt=
+WXUZVQcObTqw4szmTduwPmZXUge4oslRRq2gxCx5SloybKQPlHUVJztRVjXgJ3KxxjfGCLw2ccj=
+k6IE3sD4cC1OxSmmBHdDKRnJcsPhq5BwkJb7kLQj28cKngOGRmuUtZ38PR7DpsVZGihaCiT6Deu=
+FO6ydYxjuXm1yyDOQ~~" target=3D"_blank" rel=3D"noopener">odeb=C3=ADrat newsl=
+etter=C5=AF v=C3=ADce</a>.</span></span></span></span></p></div></td></tr><=
+/table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tb=
+ody></table></div><!--[if mso | IE]></td></tr></table><![endif]--></div>=0D=
+=0A<img border=3D"0" width=3D"1" height=3D"1" alt=3D"" src=3D"https://go.sp=
+arkpostmail.com/q/JS-rjFPi33o5lbFAK_CS7A~~/AAA-fBA~/1Bn7eejXK6bnjSN-F5mM_zS=
+5AKmrHuHyg4xbi_ZldiHxUAD9QJ7nQvIIwoarqEM-AecpfwvnZUAAvZ4SVx3Rsg~~">=0D=0A</=
+body></html>
+--_----1EECAQyTvR7I7EdZ/n9xRQ===_36/D0-03915-1AC564A6--
+
