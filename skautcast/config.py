@@ -97,7 +97,7 @@ DISCLAIMER_GAP_MS = 300     # silence between the notice and the jingle
 # addition to the audible disclaimer) and the AI-generated text of the show notes
 # itself, since episodes publish without human editorial review.
 AI_DISCLOSURE_LINE = (
-    "Obsah vytvořený umělou inteligencí: text i hlas, bez lidské redakční úpravy."
+    "Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy."
 )
 
 
