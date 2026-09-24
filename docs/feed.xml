@@ -13,7 +13,7 @@
       <link>https://marekl11.github.io/skautcast/feed.xml</link>
     </image>
     <language>cs</language>
-    <lastBuildDate>Sun, 09 Aug 2026 13:27:21 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2026 20:54:28 +0000</lastBuildDate>
     <itunes:author>Skautské minutky</itunes:author>
     <itunes:category text="Society &amp; Culture"/>
     <itunes:image href="https://marekl11.github.io/skautcast/cover-v2.jpg"/>
@@ -352,6 +352,17 @@
       <pubDate>Sun, 09 Aug 2026 11:59:56 +0000</pubDate>
       <itunes:image href="https://marekl11.github.io/skautcast/img/2c84d879dfcc697a.jpg"/>
       <itunes:duration>178</itunes:duration>
+    </item>
+    <item>
+      <title>Proč nám AI s nábory a komunikací spíš nepomáhá</title>
+      <link>https://zpravodajstvi.skaut.cz/clanek/proc-a-v-cem-nam-ai-s-nabory-a-skautskou-komunikaci-spis-nepomaha</link>
+      <description>&lt;p&gt;Obsah napsala a namluvila umělá inteligence, bez lidské redakční úpravy.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zpravodajstvi.skaut.cz/clanek/proc-a-v-cem-nam-ai-s-nabory-a-skautskou-komunikaci-spis-nepomaha"&gt;Přečíst celý článek&lt;/a&gt;&lt;br&gt;&lt;a href="https://www.facebook.com/photo/?fbid=1063705592968284&amp;amp;set=a.181258797879639"&gt;Příspěvek na Facebooku&lt;/a&gt;&lt;br&gt;Skautský komunikační tým doporučuje nepoužívat AI obrázky, celé grafiky ani kompletně generované texty pro nábory a komunikaci s veřejností: snižují důvěru, posilují stereotypy o skautech, oslabují značku Junáka a sítě jim nepřejí, protože víc lidí osloví obyčejná fotka z výpravy. AI má zůstat pomocníkem v pozadí, třeba na nápady, zpětnou vazbu podle příručky Jak mluvit o skautingu, korekturu nebo zkracování. Místo AI grafik nabízí generator.skaut.cz, Skautskou Canvu a komunikačního parťáka ze SKAUTbota, který záměrně nic kompletně negeneruje.&lt;/p&gt;</description>
+      <guid isPermaLink="false">b72b1b098b718071</guid>
+      <enclosure url="https://marekl11.github.io/skautcast/audio/b72b1b098b718071.mp3?v=1579628" length="1579628" type="audio/mpeg"/>
+      <pubDate>Thu, 24 Sep 2026 20:49:49 +0000</pubDate>
+      <itunes:image href="https://marekl11.github.io/skautcast/img/b72b1b098b718071.jpg"/>
+      <itunes:duration>197</itunes:duration>
     </item>
   </channel>
 </rss>

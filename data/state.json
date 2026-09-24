@@ -4,7 +4,8 @@
     "1dd61dbc72dfa453",
     "7ddba3c6ebf0efc1",
     "a717147c36e14c15",
-    "eb39e7a0ceb526f6"
+    "eb39e7a0ceb526f6",
+    "manual-2026-09-24"
   ],
   "episodes": {
     "57aed40895cae606": {
@@ -1772,6 +1773,45 @@
       "audio_bytes": null,
       "duration_sec": null,
       "status": "fetched"
+    },
+    "b72b1b098b718071": {
+      "url": "https://zpravodajstvi.skaut.cz/clanek/proc-a-v-cem-nam-ai-s-nabory-a-skautskou-komunikaci-spis-nepomaha",
+      "title": "Proč nám AI s nábory a komunikací spíš nepomáhá",
+      "image_url": "https://scontent.fprg6-1.fna.fbcdn.net/v/t39.99422-6/800996472_1430999009091246_1672732105773200466_n.png?stp=dst-jpg_tt6&cstp=mx1024x1280&ctp=s1024x1280&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ev9NxafEz7cQ7kNvwE10VuK&_nc_oc=AdoXYul8UjGSF4MzwlVOAoR_JAXsPfCBkpEMKYhCv2ph8fpV_KbRB_l6oNp4UWqZMseR96YkDV9QH-66890_-RVg&_nc_zt=14&_nc_ht=scontent.fprg6-1.fna&_nc_gid=BdB7dn7ZDDFJtSIdOPUSrA&_nc_ss=7b2a8&oh=00_AQKoaz6h1QYegtfuK0oAYdZDaMyrI93a4H-Q_VOAwJYYQg&oe=6ABB6271",
+      "links": [
+        {
+          "text": "SKAUTbot | Komunikační a propagační parťák",
+          "url": "https://gemini.google.com/gem/3d6234d29107?usp=sharing"
+        },
+        {
+          "text": "generator.skaut.cz",
+          "url": "https://generator.skaut.cz/rozcestnik/"
+        },
+        {
+          "text": "Skautská Canva",
+          "url": "https://krizovatka.skaut.cz/komunikace-a-propagace/skautsky-vizualni-styl/graficke-nastroje-aneb-jake-mam-moznosti/canva-zakladni-navod"
+        }
+      ],
+      "first_seen": "2026-09-24T20:49:49.539137+00:00",
+      "newsletter_subject": "Ručně přidaný článek (zpravodajstvi.skaut.cz)",
+      "newsletter_msgid": "manual-2026-09-24",
+      "article_path": "data\\articles\\b72b1b098b718071.json",
+      "summary_path": "data\\summaries\\b72b1b098b718071.md",
+      "audio_path": "audio/b72b1b098b718071.mp3",
+      "audio_bytes": 1579628,
+      "duration_sec": 197,
+      "status": "published",
+      "extra_links": [
+        {
+          "text": "Příspěvek na Facebooku",
+          "url": "https://www.facebook.com/photo/?fbid=1063705592968284&set=a.181258797879639"
+        }
+      ],
+      "blurb": "Skautský komunikační tým doporučuje nepoužívat AI obrázky, celé grafiky ani kompletně generované texty pro nábory a komunikaci s veřejností: snižují důvěru, posilují stereotypy o skautech, oslabují značku Junáka a sítě jim nepřejí, protože víc lidí osloví obyčejná fotka z výpravy. AI má zůstat pomocníkem v pozadí, třeba na nápady, zpětnou vazbu podle příručky Jak mluvit o skautingu, korekturu nebo zkracování. Místo AI grafik nabízí generator.skaut.cz, Skautskou Canvu a komunikačního parťáka ze SKAUTbota, který záměrně nic kompletně negeneruje.",
+      "summary_text": "V tomhle díle se podíváme, proč na profilech oddílů přibývá náborových plakátů s typickým AI vzhledem, proč na ně lidé reagují spíš negativně a k čemu je umělá inteligence v komunikaci naopak dobrá. Radí Skautský komunikační tým.\n\nZačněme tím, proč AI grafiky škodí. Za prvé, skautská komunikace stojí na opravdovosti. Ukazuje skutečné výpravy, kamarády a dobrovolníky, a to je podle průzkumů velmi silná značka. AI obrázek místo toho ukazuje umělý svět.\n\nZa druhé, AI obsah snižuje důvěru. Lidé ho čím dál častěji poznají a část publika ho odmítá. Pod AI grafikami přibývají komentáře typu „tohle prosím nepoužívejte\". A pozor, žádný komentář neznamená žádný problém. Důvěra se oslabuje nenápadně a pomalu. Přitom právě kvůli důvěře nám rodiče svěřují své děti. Platformy jako Meta navíc samy přidávají k takovým příspěvkům štítek „AI info\", který může část lidí odradit.\n\nZa třetí, generované obrázky posilují stereotypy. Skauti v nich vypadají jako z amerického filmu, v cizích krojích, všichni stejní a pořád se smějí. Tedy přesně jako karikatura, kterou se jinak snažíme vyvracet.\n\nZa čtvrté, AI grafikám nepřeje ani algoritmus sociálních sítí. Ten zvýhodňuje obsah, který působí autenticky a vyvolává emoce. U skutečné fotky lidé víc komentují a sdílejí. Obyčejná, klidně trochu rozmazaná fotka z výpravy tak často osloví víc lidí než dokonalá AI grafika.\n\nZa páté, AI grafiky oslabují naši značku. Nepoužívají Skautský vizuální styl, skautské logo ani písmo, takže lidé nepoznají, že jde o Junáka. A bez hodně konkrétního zadání vypadá AI plakát oddílu stejně jako reklama kadeřnictví nebo pozvánka na grilovačku.\n\nA nejde jen o obrázky. Obecný a příliš uhlazený text začnou čtenáři vnímat jako napsaný umělou inteligencí a méně mu věří.\n\nKde tedy AI opravdu pomůže? Jako pomocník v pozadí. Může navrhnout témata a osnovu, text ale piš vlastními slovy. Když do ní nahraješ příručku Jak mluvit o skautingu, zhodnotí tvůj návrh textu. Poradí, co příště fotit. Opraví pravopis, navrhne titulek nebo text zkrátí. A pomůže ověřit, jestli text pochopí i rodič. Jen do veřejné AI neposílej fotky dětí, u kterých nevíš, co se s nimi dál stane.\n\nCo použít místo AI grafik? Jednoduché grafiky ve skautském stylu vytvoří generator.skaut.cz. Šablony k vyplnění nabízí Skautská Canva. A pro komunikaci vzniká i komunikační a propagační parťák v rámci SKAUTbota. Ten záměrně negeneruje hotové texty ani obrázky. Má tě naučit o komunikaci správně přemýšlet.\n\nShrňme si to. AI obrázky a celé generované texty v náborech spíš škodí důvěře, značce i dosahu. AI ať ti pomáhá v pozadí, s nápady, zpětnou vazbou a korekturou. Nejlepší materiál pro skautskou komunikaci je totiž to, co v oddíle opravdu zažíváte. S čímkoli ti komunikační tým rád poradí, stačí napsat na adresu komunikace zavináč skaut tečka cz.",
+      "summary_sha": "ad0054661dde",
+      "voice": "Callirrhoe",
+      "published_at": "2026-09-24T20:54:28.895461+00:00"
     }
   }
 }
