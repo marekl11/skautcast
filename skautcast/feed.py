@@ -60,8 +60,8 @@ def ensure_cover() -> None:
 
 
 def _episode_description(ep: dict) -> str:
-    """Show notes, as a small HTML document: the AI disclosure, a short blurb of what
-    the episode says, then the source link.
+    """Show notes, as a small HTML document: the AI disclosure, then the source link
+    (plus any hand-picked `extra_links`) and a short blurb of what the episode says.
 
     Podcast clients render a limited HTML subset (p, a, b, i, lists), which is what
     gives us the blank lines between paragraphs and a clickable link — plain text
@@ -78,6 +78,10 @@ def _episode_description(ep: dict) -> str:
     second = []
     if ep.get("url"):
         second.append(f'<a href="{escape(ep["url"], quote=True)}">Přečíst celý článek</a>')
+    # Hand-picked extras set per episode in state.json (e.g. a Facebook post about the
+    # article). Deliberately separate from the auto-extracted `links`, which stay out.
+    for link in ep.get("extra_links") or []:
+        second.append(f'<a href="{escape(link["url"], quote=True)}">{escape(link["text"])}</a>')
     if blurb:
         second.append(escape(blurb))
     if second:

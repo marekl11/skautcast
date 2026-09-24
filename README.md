@@ -59,8 +59,10 @@ part of the wording can be revisited.
 
 ### Show notes
 
-Emitted as a small HTML document (`feed._episode_description`): AI disclosure, the
-episode's blurb, then a link to the source article. Podcast clients render a limited HTML
+Emitted as a small HTML document (`feed._episode_description`): AI disclosure, a link
+to the source article, then the episode's blurb. Extra hand-picked links (say, a Facebook
+post about the article) go in the episode's `extra_links` list in `data/state.json` as
+`{"text", "url"}` and show up under the article link. Podcast clients render a limited HTML
 subset, which is what gives the paragraphs their spacing and makes the link clickable —
 a bare URL in plain text shows up as dead characters in most apps.
 
