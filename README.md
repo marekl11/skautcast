@@ -70,6 +70,14 @@ The blurb comes from the `> ` block under the title in the summary file, never f
 transcript. Because the content hash covers only the *spoken* text, rewriting a blurb
 refreshes the show notes without re-synthesizing any audio.
 
+### Episode images
+
+Each episode's image is its article's `og:image`, saved as `docs/img/<hash>.jpg` no
+bigger than `IMAGE_MAX_PX` (1280 px) on the long side. Article photos often come
+straight off a camera, up to 24 MB, while players and the Skautban grid show them a few
+hundred pixels wide. An image kept from before (larger, or a PNG) is shrunk on the next
+build.
+
 ## One-time setup
 
 1. **Python env:** `py -m venv .venv` → activate → `pip install -r requirements.txt`.

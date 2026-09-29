@@ -1,6 +1,7 @@
 """Generate the podcast RSS feed (docs/feed.xml) from state.json."""
 from datetime import datetime, timezone
 from html import escape
+from pathlib import Path
 
 import requests
 from feedgen.feed import FeedGenerator
@@ -8,17 +9,49 @@ from feedgen.feed import FeedGenerator
 from . import config, state
 
 
+def _fit_image(src: Path) -> Path:
+    """Shrink an episode image to IMAGE_MAX_PX on its long side and store it as
+    JPEG (docs/img/<hash>.jpg), returning the path it ends up at. Article photos
+    often come straight off a camera — 6000x4000 and 24 MB — while players and the
+    Skautban grid show them a few hundred pixels wide. A JPEG that is already small
+    enough is left alone, so rebuilding the feed rewrites nothing; one that cannot
+    be read is left alone as well, as it was before."""
+    from PIL import Image, ImageOps
+
+    try:
+        with Image.open(src) as opened:
+            if src.suffix == ".jpg" and max(opened.size) <= config.IMAGE_MAX_PX:
+                return src
+            # A camera may store the photo sideways with a note to turn it. The note
+            # does not survive re-encoding, so the turn is done now.
+            im = ImageOps.exif_transpose(opened)
+    except OSError:
+        return src
+    im.thumbnail((config.IMAGE_MAX_PX, config.IMAGE_MAX_PX), Image.LANCZOS)
+    if im.mode != "RGB":
+        # JPEG has no transparency: whatever is see-through goes onto white.
+        rgba = im.convert("RGBA")
+        im = Image.new("RGB", rgba.size, (255, 255, 255))
+        im.paste(rgba, mask=rgba.getchannel("A"))
+    dst = src.with_suffix(".jpg")
+    im.save(dst, "JPEG", quality=config.IMAGE_QUALITY, optimize=True, progressive=True)
+    if dst != src:
+        src.unlink()
+    return dst
+
+
 def _ensure_image(h: str, url: str):
-    """Download an episode's article image into docs/img/<hash>.<ext> and return
+    """Download an episode's article image into docs/img/<hash>.jpg and return
     its Pages URL. Self-hosting avoids feedgen's png/jpg-extension requirement and
-    keeps artwork available even if the source moves it."""
+    keeps artwork available even if the source moves it. Images kept from before
+    they were shrunk (large, or PNG) are shrunk here on the next build."""
     if not url or not url.startswith("http"):
         return None
     imgdir = config.DOCS / "img"
     imgdir.mkdir(parents=True, exist_ok=True)
     for ext in ("jpg", "png"):
         if (imgdir / f"{h}.{ext}").exists():
-            return f"{config.BASE_URL}/img/{h}.{ext}"
+            return f"{config.BASE_URL}/img/{_fit_image(imgdir / f'{h}.{ext}').name}"
     try:
         r = requests.get(url, timeout=20, headers={"User-Agent": config.USER_AGENT})
         if r.status_code != 200:
@@ -34,7 +67,7 @@ def _ensure_image(h: str, url: str):
         else:
             return None
         (imgdir / f"{h}.{ext}").write_bytes(r.content)
-        return f"{config.BASE_URL}/img/{h}.{ext}"
+        return f"{config.BASE_URL}/img/{_fit_image(imgdir / f'{h}.{ext}').name}"
     except requests.RequestException:
         return None
 

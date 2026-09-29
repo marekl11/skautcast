@@ -24,6 +24,11 @@ FEED_FILE = DOCS / "feed.xml"
 # number when the artwork changes to force players to re-fetch instead of serving a cached one.
 COVER_FILE = DOCS / "cover-v2.jpg"
 ASSETS = ROOT / "assets"         # intro jingle + generated AI-notice clips
+# Episode images (the articles' og:image) are kept no bigger than this on the long
+# side, as JPEG: players and the Skautban grid show them a few hundred px wide, and a
+# camera original can be 24 MB. 1280 still covers a phone screen at 3x.
+IMAGE_MAX_PX = 1280
+IMAGE_QUALITY = 82
 
 
 def ensure_dirs() -> None:
