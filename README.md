@@ -1,7 +1,8 @@
 # SkautCast
 
-Turn the skaut HQ newsletter ("Balíček ústředí") into a private Czech podcast you
-listen to in **AntennaPod**. Each article is summarized (by Claude Code, following
+Turn the skaut HQ newsletter ("Balíček ústředí") into a Czech podcast, *Skautské
+minutky*, listened to on **Spotify** and in the Podcast tab of **Skautban** (the scout
+board app). Each article is summarized (by Claude Code, following
 [SUMMARY_STYLE.md](SUMMARY_STYLE.md)), read aloud by a TTS voice, packaged as an RSS
 feed with per-episode artwork and source links, and published to GitHub Pages.
 
@@ -17,7 +18,8 @@ Gmail (read by Claude via MCP)  ->  data/inbox/<msgid>.html
   (Claude writes Czech summaries)      # data/summaries/<hash>.md  (see SUMMARY_STYLE.md)
   python -m skautcast.build            # TTS -> docs/audio/*.mp3 + docs/img/*.jpg + feed.xml + state.json
   python -m skautcast.publish          # git push docs/ -> GitHub Pages
-AntennaPod (subscribed once)  ->  auto-download + notification
+Spotify (show added once from the feed)  ->  picks up new episodes by itself, within hours
+Skautban (Podcast tab)                   ->  reads feed.xml in the browser, new episodes at once
 ```
 
 ## Voice / TTS
@@ -93,7 +95,11 @@ build.
 2. **TTS key:** for Gemini, get a free key at **aistudio.google.com** → save it to `.gemini_key`.
 3. **GitHub Pages:** already wired to `https://marekl11.github.io/skautcast` (Settings →
    Pages → `main` / `/docs`). Change `BASE_URL` in config if the repo changes.
-4. **AntennaPod:** Add Podcast → by URL → `https://marekl11.github.io/skautcast/feed.xml`.
+4. **Listeners:** the show is on Spotify
+   (`https://open.spotify.com/show/0343NuteYi6unrnhj43d5S`), added once from
+   `https://marekl11.github.io/skautcast/feed.xml`, which Spotify re-reads on its own.
+   Skautban reads the same feed (`FEED_URL` in its `src/lib/podcast.ts`), so there is
+   nothing to set up on either side when publishing.
 
 ## Commands
 

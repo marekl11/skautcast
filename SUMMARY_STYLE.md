@@ -33,7 +33,7 @@ what you told them" structure.
 - **Active voice, warm/conversational tone**, keep the source's address (ty/vy).
 - **Repeat the key noun** instead of an ambiguous pronoun when it aids clarity.
 - **One topic per episode**, ~1.5–3 minutes spoken (roughly 1000–1800 characters).
-- First line is always `# <Episode title>` (becomes the AntennaPod episode name).
+- First line is always `# <Episode title>` (becomes the episode name on Spotify and in Skautban).
 
 ## The blurb (show notes)
 
