@@ -35,10 +35,15 @@ To give one episode a particular voice (say, the two halves of a series read by 
 a woman when their hashes happen to pick the same voice), set its `voice_override` in
 `data/state.json` to one of `GEMINI_VOICES`.
 
-Text longer than `GEMINI_MAX_CHARS` (3200, about three and a half minutes of speech) is
-read in several requests, split at paragraph breaks and joined with a short pause
-(`GEMINI_PART_GAP_MS`). Ordinary episodes fit in one request; this is for the occasional
-ten-minute one, where a single long request risks the voice drifting or being cut short.
+Gemini tends to start **ringing** — a metallic, telephone-like tone — the longer one
+request runs, usually after a minute and a half or so. So text longer than
+`GEMINI_MAX_CHARS` (1200, about 80 seconds of speech) is read in several requests, split
+at paragraph breaks and joined with a short pause (`GEMINI_PART_GAP_MS`), and each part
+is checked: one that still rings above `GEMINI_MAX_RINGING_DB` is read again, up to
+`GEMINI_TAKES` times, keeping the cleanest take. Finished parts are cached in
+`data/_wav/parts/`, so a build stopped half-way (the free tier has a daily limit) resumes
+without paying for them again. The first ten-minute episodes were read in three-minute
+parts and rang audibly in the second half of each.
 
 ### Intro (AI notice + jingle)
 

@@ -3,15 +3,20 @@ speaking style is promptable. Returns a WAV (24 kHz mono PCM) which build.py
 then encodes to mp3.
 """
 import base64
+import hashlib
 import time
 import wave
 from pathlib import Path
 
+import numpy as np
 import requests
 
 from . import config
 
 API = "https://generativelanguage.googleapis.com/v1beta/models"
+# Finished parts, so a build stopped half-way (say, by the free tier's daily limit)
+# picks up where it left off instead of paying for the same parts again.
+PART_CACHE = config.DATA / "_wav" / "parts"
 
 
 def _pcm_to_wav(pcm: bytes, path: Path, rate: int = 24000) -> None:
@@ -42,7 +47,8 @@ def synth_wav(text: str, wav_path: Path, voice: str | None = None,
     """Synthesize `text` to a 24 kHz mono WAV. `style` overrides GEMINI_STYLE when
     given (pass "" to read the text plainly, e.g. for the AI notice); None falls
     back to the configured podcast style. Text longer than GEMINI_MAX_CHARS is read
-    in several requests, joined by GEMINI_PART_GAP_MS of silence."""
+    in several requests, joined by GEMINI_PART_GAP_MS of silence, and a part that
+    rings is read again (see _clean_take)."""
     if not config.GEMINI_API_KEY:
         raise RuntimeError("GEMINI_API_KEY not set (env var or .gemini_key file).")
     wav_path = Path(wav_path)
@@ -57,9 +63,55 @@ def synth_wav(text: str, wav_path: Path, voice: str | None = None,
     for i, part in enumerate(parts, 1):
         if len(parts) > 1:
             print(f"  [gemini] part {i}/{len(parts)} ({len(part)} chars)", flush=True)
-        pcm.append(_synth_pcm(part, voice, style))
+        pcm.append(_clean_take(part, voice, style))
     _pcm_to_wav(gap.join(pcm), wav_path)
     return wav_path
+
+
+def _clean_take(text: str, voice: str, style: str) -> bytes:
+    """Read `text`, reading it again (up to GEMINI_TAKES times in all) while the take
+    rings, and return the cleanest take. Finished parts are kept in PART_CACHE."""
+    key = f"{config.GEMINI_TTS_MODEL}|{voice}|{style}|{text}"
+    cached = PART_CACHE / f"{hashlib.sha1(key.encode('utf-8')).hexdigest()[:16]}.pcm"
+    if cached.exists():
+        return cached.read_bytes()
+    best, best_db = b"", None
+    for take in range(1, config.GEMINI_TAKES + 1):
+        pcm = _synth_pcm(text, voice, style)
+        ring = _ringing_db(pcm)
+        if best_db is None or ring < best_db:
+            best, best_db = pcm, ring
+        if ring <= config.GEMINI_MAX_RINGING_DB:
+            break
+        print(f"  [gemini] take {take} rings ({ring:.1f} dB)"
+              + (", reading it again ..." if take < config.GEMINI_TAKES else ", keeping the cleanest"),
+              flush=True)
+    PART_CACHE.mkdir(parents=True, exist_ok=True)
+    cached.write_bytes(best)
+    return best
+
+
+def _ringing_db(pcm: bytes, rate: int = 24000) -> float:
+    """How much Gemini rings in `pcm`: the metallic, telephone-like tone it slips into
+    now and then, which shows up as steady lines across the spectrum that speech never
+    holds that long. For each 10 s stretch, the median spectrum (over time) is compared
+    with a running median across frequency, which follows the voice but not a narrow
+    line; the result is how far the 10 strongest lines in 2–10 kHz stick out, in dB,
+    for the worst stretch."""
+    x = np.frombuffer(pcm, dtype=np.int16).astype(np.float32) / 32768
+    nfft, hop, win = 2048, 512, 10 * rate
+    freqs = np.fft.rfftfreq(nfft, 1 / rate)
+    band = (freqs >= 2000) & (freqs <= 10000)
+    worst = 0.0
+    for start in range(0, len(x), win):
+        stretch = x[start:start + win]
+        if len(stretch) < 3 * rate:  # too short to tell a held tone from a vowel
+            continue
+        frames = np.lib.stride_tricks.sliding_window_view(stretch, nfft)[::hop] * np.hanning(nfft)
+        spec = 10 * np.log10(np.median(np.abs(np.fft.rfft(frames, axis=1)) ** 2, axis=0) + 1e-20)
+        voice = np.median(np.lib.stride_tricks.sliding_window_view(np.pad(spec, 15, mode="edge"), 31), axis=1)
+        worst = max(worst, float(np.sort((spec - voice)[band])[-10:].mean()))
+    return worst
 
 
 def _synth_pcm(text: str, voice: str, style: str) -> bytes:

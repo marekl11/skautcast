@@ -1,5 +1,6 @@
 # SkautCast — dependencies (Gemini cloud TTS pipeline)
 requests                # Gemini TTS calls, follow redirects, fetch articles + images
+numpy                   # spot Gemini's metallic ringing in a take so it can be re-read
 beautifulsoup4          # parse the newsletter HTML
 lxml                    # fast parser for bs4 / trafilatura
 trafilatura             # extract clean article text + og:image

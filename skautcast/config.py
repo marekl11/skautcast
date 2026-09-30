@@ -86,12 +86,19 @@ GEMINI_STYLE = (
     "dělej krátké pomlky mezi myšlenkami, ať se text dobře poslouchá a snadno "
     "chápe. Vyhni se monotónnímu a strojovému projevu. "
     "Čti pouze samotný text, nic nepřidávej:")
-# One request reads at most this many characters. Longer text (a ten-minute episode
-# is ~9000) is split at paragraph breaks and the parts are joined with a short pause:
-# every episode up to ~2900 characters has come out of a single request fine, but one
-# very long request risks the voice drifting or the audio being cut short.
-GEMINI_MAX_CHARS = 3200
+# One request reads at most this many characters, about 80 seconds of speech. Longer
+# text is split at paragraph breaks and the parts are joined with a short pause. The
+# limit is short on purpose: the longer one request runs, the likelier Gemini starts
+# to ring (a metallic, telephone-like tone), usually after a minute and a half or so.
+# Three-minute requests rang badly in their second half; their first 80 s never did.
+GEMINI_MAX_CHARS = 1200
 GEMINI_PART_GAP_MS = 500  # silence between the parts of a split text
+# A part that still rings above this is read again, up to GEMINI_TAKES times in all,
+# and the cleanest take is kept. The measure is how far steady tones stick out of the
+# 2–10 kHz spectrum in the worst 10 s: clean speech is about 1.5–3.5 dB, a ringing
+# stretch you can hear 4–17 dB.
+GEMINI_MAX_RINGING_DB = 4.0
+GEMINI_TAKES = 3
 
 # --- AI notice (EU AI Act) --------------------------------------------------
 # A short spoken disclosure that the episode is AI-narrated, prepended before the
