@@ -147,7 +147,7 @@ def _synth_pcm(text: str, voice: str, style: str) -> bytes:
             continue
         if resp.status_code == 200:
             break
-        if resp.status_code in (429, 500, 503) and attempt < 4:
+        if resp.status_code in (429, 500, 502, 503, 504) and attempt < 4:
             wait = 2 ** attempt * 3  # 3, 6, 12, 24s
             print(f"  [gemini] {resp.status_code}, retrying in {wait}s ...", flush=True)
             time.sleep(wait)
