@@ -86,6 +86,12 @@ GEMINI_STYLE = (
     "dělej krátké pomlky mezi myšlenkami, ať se text dobře poslouchá a snadno "
     "chápe. Vyhni se monotónnímu a strojovému projevu. "
     "Čti pouze samotný text, nic nepřidávej:")
+# One request reads at most this many characters. Longer text (a ten-minute episode
+# is ~9000) is split at paragraph breaks and the parts are joined with a short pause:
+# every episode up to ~2900 characters has come out of a single request fine, but one
+# very long request risks the voice drifting or the audio being cut short.
+GEMINI_MAX_CHARS = 3200
+GEMINI_PART_GAP_MS = 500  # silence between the parts of a split text
 
 # --- AI notice (EU AI Act) --------------------------------------------------
 # A short spoken disclosure that the episode is AI-narrated, prepended before the

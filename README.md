@@ -29,6 +29,15 @@ each episode picks one deterministically from its hash, so the feed mixes voices
 given episode never flips — and the delivery is shaped by `GEMINI_STYLE`. The key lives in
 a gitignored `.gemini_key` file (or the `GEMINI_API_KEY` env var).
 
+To give one episode a particular voice (say, the two halves of a series read by a man and
+a woman when their hashes happen to pick the same voice), set its `voice_override` in
+`data/state.json` to one of `GEMINI_VOICES`.
+
+Text longer than `GEMINI_MAX_CHARS` (3200, about three and a half minutes of speech) is
+read in several requests, split at paragraph breaks and joined with a short pause
+(`GEMINI_PART_GAP_MS`). Ordinary episodes fit in one request; this is for the occasional
+ten-minute one, where a single long request risks the voice drifting or being cut short.
+
 ### Intro (AI notice + jingle)
 
 Every episode starts with a short spoken **"Napsala a namluvila umělá inteligence."**

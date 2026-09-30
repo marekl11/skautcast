@@ -102,7 +102,9 @@ def build(force: bool = False) -> int:
     if not todo:
         print("[build] nothing to synthesize (all summaries up to date).")
     for i, (h, ep, summ, sha, title, blurb, body, spoken) in enumerate(todo, 1):
-        voice = _voice_for(h)
+        # A voice set by hand in state.json wins, e.g. so the two halves of a series
+        # get a man and a woman even when their hashes pick the same voice.
+        voice = ep.get("voice_override") or _voice_for(h)
         print(f"[build] ({i}/{len(todo)}) synthesizing [{voice}]: {title}", flush=True)
 
         mp3 = config.AUDIO / f"{h}.mp3"

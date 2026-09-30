@@ -22,11 +22,27 @@ def _pcm_to_wav(pcm: bytes, path: Path, rate: int = 24000) -> None:
         w.writeframes(pcm)
 
 
+def _parts(text: str, limit: int) -> list[str]:
+    """Split `text` at line breaks into parts of at most `limit` characters. A single
+    paragraph longer than that stays whole rather than being cut mid-sentence."""
+    parts, cur = [], ""
+    for para in text.split("\n"):
+        if cur and len(cur) + 1 + len(para) > limit:
+            parts.append(cur)
+            cur = para
+        else:
+            cur = f"{cur}\n{para}" if cur else para
+    if cur:
+        parts.append(cur)
+    return parts
+
+
 def synth_wav(text: str, wav_path: Path, voice: str | None = None,
               style: str | None = None) -> Path:
     """Synthesize `text` to a 24 kHz mono WAV. `style` overrides GEMINI_STYLE when
     given (pass "" to read the text plainly, e.g. for the AI notice); None falls
-    back to the configured podcast style."""
+    back to the configured podcast style. Text longer than GEMINI_MAX_CHARS is read
+    in several requests, joined by GEMINI_PART_GAP_MS of silence."""
     if not config.GEMINI_API_KEY:
         raise RuntimeError("GEMINI_API_KEY not set (env var or .gemini_key file).")
     wav_path = Path(wav_path)
@@ -35,6 +51,19 @@ def synth_wav(text: str, wav_path: Path, voice: str | None = None,
 
     if style is None:
         style = getattr(config, "GEMINI_STYLE", "")
+    parts = _parts(text, config.GEMINI_MAX_CHARS)
+    gap = b"\x00\x00" * (24000 * config.GEMINI_PART_GAP_MS // 1000)  # 16-bit silence
+    pcm = []
+    for i, part in enumerate(parts, 1):
+        if len(parts) > 1:
+            print(f"  [gemini] part {i}/{len(parts)} ({len(part)} chars)", flush=True)
+        pcm.append(_synth_pcm(part, voice, style))
+    _pcm_to_wav(gap.join(pcm), wav_path)
+    return wav_path
+
+
+def _synth_pcm(text: str, voice: str, style: str) -> bytes:
+    """One Gemini TTS request: `text` read in `voice`, returned as raw 24 kHz PCM."""
     prompt = f"{style}\n\n{text}" if style else text
 
     body = {
@@ -74,6 +103,4 @@ def synth_wav(text: str, wav_path: Path, voice: str | None = None,
         raise RuntimeError(f"Gemini TTS {resp.status_code}: {resp.text[:300]}")
 
     part = resp.json()["candidates"][0]["content"]["parts"][0]
-    pcm = base64.b64decode(part["inlineData"]["data"])
-    _pcm_to_wav(pcm, wav_path)
-    return wav_path
+    return base64.b64decode(part["inlineData"]["data"])
